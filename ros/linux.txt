@@ -1,0 +1,9 @@
+Useful linux commands
+
+ls (list files)
+pwd (lists the current working directory)
+cd <directory> (change the directory)
+cd .. (navigate one directory up)
+clear (clear the screen)
+Use the up arrow key to type last used command
+Ctrl+Shit+T (to open new tab)
