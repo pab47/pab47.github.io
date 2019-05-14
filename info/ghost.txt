@@ -1,0 +1,33 @@
+
+
+From: Tom Jacobs <support@ghostrobotics.freshdesk.com>
+Date: February 22, 2018 at 10:52:00 AM CST
+To: jeremy.krause@utsa.edu
+Cc: support@ghostrobotics.io
+Subject: Re: Ghost Minitaur Wiring Schematic
+Reply-To: Tom Jacobs <support@ghostrobotics.freshdesk.com>
+
+Hi Jeremy,
+
+Ah, I see. Yes there's no PWM ethernet cable pin wiring diagram, but we can let you know what the pins do here.
+
+As per RJ-45 connector pin numbers:
+
+Pin 1: GND
+Pin 2: 3.3V
+Pin 3: PWM cmd (command from mb -> motor controller),
+Pin 4: PWM pos (position from motor controller -> mb)
+Pins 5 - 8 unused.
+
+So only pins 1, 2, 3, 4 are actually needed. That'll get it down to 8 a leg - you may even be able to share GND and 3.3v across two modules, but that might introduce noise.
+
+For external sensors, the SDK has analog read input pins available. What sort of sensor interface (digital/analog/I2C etc) were you looking for?
+
+Thanks,
+Tom.
+
+Ticket: https://ghostrobotics.freshdesk.com/helpdesk/tickets/45
+
+On Wed, 21 Feb at 11:20 AM , Jeremy Krause <jeremy.krause@utsa.edu> wrote:
+Hello Tom, I assume the schematic diagram is either propreitary or nonexistent then? The exact question I am trying to answer is: What is the pinout for the individual motor data connections? Are all 8 circuits in each plug utilized? I need to pass all cabling through an electronic slip ring, so I need to know if I can reduce the number of data wires for an individual leg (2 motors) from 16. Also, what is the best way to connect external sensors to the Minitaur main board? Thanks, Jeremy
+
