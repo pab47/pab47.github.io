@@ -1,0 +1,108 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head>
+
+
+<meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>My car project</title>
+
+<meta content="Pranav Bhounsule" name="author"></head><body>
+<div style="text-align: center;">
+<div style="text-align: center; width: 1403px; height: 86px;"><big><big><big><big><big><small><span style="font-weight: bold;">Beginners
+car project</span></small></big></big></big></big></big><br>
+<big><big><big><big><big>
+</big></big></big></big></big></div>
+
+<table style="text-align: left; width: 1405px; height: 331px;" border="0" cellpadding="2" cellspacing="2">
+<tbody>
+<tr>
+<td style="width: 404px; text-align: center;">
+      <a href="car_project/car_pic_top.JPG"><img style="border: 0px solid ; width: 412px; height: 309px;" alt="top" src="car_project/car_pic_top_thumb.jpg"></a><br>
+</td>
+<td style="width: 573px; text-align: center;"><iframe src="http://www.youtube.com/embed/mcd7RDEmkbM" allowfullscreen="" frameborder="0" height="315" width="560"></iframe><br>
+</td><td style="vertical-align: top; width: 400px; text-align: center;"><a href="car_project/car_pic_side.JPG"><img style="border: 0px solid ; width: 421px; height: 316px;" alt="side" src="car_project/car_pic_side_thumb.jpg"></a><br>
+      </td>
+
+</tr>
+</tbody>
+</table>
+<br>
+<div style="text-align: left;"><big style="font-weight: bold;"><big>About:</big></big><br>
+A wheeled robot that moves around and uses a flex (bend) sensor to detect collision. Videos: <a href="car_project/car_video_small.mov">low(0.5 MB)</a> and <a href="car_project/car_video_medium.mov">high (4MB)</a><br>
+<br>
+<br>
+<big style="font-weight: bold;"><big>Things needed</big></big><br>
+<ul>
+  <li>Magician chassis (comes with 2 motors) - $15 <a href="https://sparkfun.com/products/10825">(link</a>) (<a href="car_project/cached/magician_chassis.pdf">cached</a>)</li>
+  <li>Arduino uno (for control) 2560 $59 (<a href="https://www.sparkfun.com/products/9949">link</a>)</li>
+  <li>H-bridge motor driver (can be
+used to control 2 motors) SN754410 $2.35
+(<a href="https://www.sparkfun.com/products/315">link</a>)</li>
+  <li>Flex sensor $8.00 (<a href="https://www.sparkfun.com/products/10264">link</a>) (<a href="car_project/cached/flex_sensor.pdf">cached)</a></li>
+  <li>20 kilo ohm resistor</li>
+  <li>Solderless breadboard jumper
+wire kit $7 (search on radioshack.com) (<a href="car_project/cached/jumper_wire.pdf">cached)</a></li>
+  <li>Breadboard (used 6" but smaller
+is better) $16.50
+(<a href="http://www.radioshack.com/product/index.jsp?productId=2734154">link</a>)</li>
+  <li>Voltmeter (useful for debugging)</li>
+  <li>2 LEDs (1 Red for forward motion) and (1 Green for reverse motion) (useful for debugging)</li>
+  <li>2 Resistors of 100 ohm (for connecting the LEDs)</li>
+  <li>4 AA batteries (to power the motors and arduino)</li>
+  <li>USB A to B cable (to program
+the arduino). These are used on printers and some external hard drives.
+  </li>
+</ul>
+
+Total excluding LEDs, resistors, Voltmeter and USB cable is about $110.<br>
+<br>
+
+<br>
+<big style="font-weight: bold;"><big>How to build</big></big><br>
+<ol>
+  <li>Building the magician chassis. See the instructions that come with the chassis.</li>
+  <li>Download arduino software and
+play with some examples before you start writing code for h-bridge and
+flex sensor. <a href="http://arduino.cc/en/Tutorial/HomePage">Link to Examples</a>.</li>
+  <li>Interfacing the h-bridges. See
+tutorial by Prof Winkler <a href="http://web.ics.purdue.edu/%7Efwinkler/616/sn754410_Arduino.pdf">(link</a> and <a href="car_project/cached/h_bridge_wiring.pdf">cached file</a>). You can extend this to power two motors. This will
+take 3 digital pins per motor on your arduino. 2 for direction control
+and 1 for speed control.</li>
+  <li>Interfacing the flex sensor.
+The flex sensor is a variable resistor (like a pot). The resistance
+increases as the sensor is bent. Use a <a href="http://en.wikipedia.org/wiki/Voltage_divider">voltage divider</a> circuit to
+interface the flex sensor. The flex sensor I used had a
+range of 5 - 30 kilo ohm. I used a 20 kilo-ohm external resistor in
+series with the sensor. This sensor takes 1 analog port on the arduino.</li>
+</ol>
+
+<br>
+<big style="font-weight: bold;">Code:</big><br>
+<a href="car_project/my_car_project.ino">my_car_project.ino</a> (.ino is arduino file extension. This can also be opened with text editor)<br>
+<br>
+<big style="font-weight: bold;">A tip:</big><br>
+Understand, interface and write code each component separately before putting it all together.<br>
+<br>
+<br>
+<big style="font-weight: bold;"><big>Ideas that failed </big></big><br>
+I was looking for various sensing options. Some failed ideas<br>
+<ol>
+  <li><a href="https://www.sparkfun.com/products/9453">Infra Red (IR) sensor QRE1113
+(analog)</a>. The idea here was to use a the IR sensor to do line detection. Here is the circuit I
+used to hook up the sensor (<a href="http://bildr.org/2011/06/qre1113-arduino/">link</a> and <a href="car_project/cached/line_sensing.pdf">cached</a>). My goal was to attach
+it to the chassis like this <a href="http://www.hobbytronics.co.uk/tutorials-code/robotics-tutorials/magician-line-avoidance">(link</a> and <a href="car_project/cached/line_sensor_to_chassis.pdf">cached file)</a>.&nbsp;
+I gave up on this idea because I did not have a suitable track to test
+it.</li>
+  <li><a href="https://www.sparkfun.com/products/246">Optical detector QRD1114</a>. The idea was to use this sensor detect obstacles. Here is the circuit I used (<a href="http://bildr.org/2011/03/various-proximity-sensors-arduino/">see
+end of page</a> and <a href="car_project/cached/proximity_sensing.pdf">cached</a>). But the range was so small that the car collided with the obstacles all the time. The other more expensive proximity sensors <a href="http://bildr.org/2011/03/various-proximity-sensors-arduino/">on this webpage</a> might
+have worked better.</li>
+  <li><a href="https://www.sparkfun.com/products/8635">Electret Microphone</a>. The idea was to use some sound
+(like a clap) to turn. The output of this is very low (~mV). This needs
+an op-amp to amplify the signal. I could not get the amplification to a
+significant value to be useful. On hind sight I would buy the <a href="https://www.sparkfun.com/products/9964">breakout
+board for the mike</a> (amplification done on the board and hence no need for op-amps).</li>
+</ol>
+<br>
+Updated: 15 Nov 2012.<br>
+</div>
+<br>
+</div>
+</body></html>

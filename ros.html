@@ -1,0 +1,227 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html><head><title>Pranav Bhounsule</title>
+
+
+
+
+  
+
+  
+  
+  <style type="text/css">
+body {
+background-color : #ffffff;
+color : #000000;
+margin : 0px 0px 0px 0px;
+}
+#content {
+background-color : #ffffff;
+position : absolute;
+left : 200px;
+top : 0px;
+}
+#leftnav {
+position : fixed;
+width : 150px;
+height : 100%; border-right : 2px solid #000;
+margin-right : 15px;
+padding-bottom : 20px;
+background-color : #002244;
+}
+  </style></head><body topmargin="0" leftmargin="0">
+<div style="width: 203px;" id="leftnav"><br>
+<div style="text-align: left;">
+<h1 style="margin-top: 0px; height: 74px; margin-left: 10px; width: 191px;"><small style="color: rgb(244, 115, 33);"><small><a style="color: rgb(255, 102, 0);" href="ros.html#top">Navigation Bar</a><br>
+</small></small></h1>
+</div>
+<div style="text-align: left; width: 204px;">
+<div style="margin-left: 16px; margin-top: 14px; width: 175px; height: 133px;"><a style="color: rgb(204, 204, 255);" href="ros.html#read">Read this
+before you start</a><br>
+<br>
+<a style="color: rgb(204, 204, 255);" href="ros.html#part1">Part 1:
+Introduction</a><br>
+<br>
+<a style="color: rgb(204, 204, 255);" href="ros.html#part2">Part 2:
+Modeling</a><br>
+<br>
+<a style="color: rgb(204, 204, 255);" href="ros.html#resources">Resources</a><br>
+<br>
+<a style="color: rgb(204, 204, 255);" href="ros.html#acknowledge">Acknowledgements</a><br>
+<br>
+<a style="color: rgb(204, 204, 255);" href="ros.html#updates">Updates</a><br>
+
+<br>
+
+<br>
+
+<br>
+
+
+<big>&nbsp;&nbsp;&nbsp; </big><br>
+<br>
+<br>
+<br>
+</div>
+<big>&nbsp;&nbsp;&nbsp; <br><br>
+<br>
+</big><big> <br>
+<a style="color: rgb(255, 204, 255);" href="http://webdesign.about.com/"><small><small>template
+source</small></small></a></big><br>
+
+</div>
+</div>
+
+<!-- ***************************************************************************************** -->
+<!-- Main content --><br style="color: red;">
+
+<div style="left: 231px; width: 711px; top: 0px; height: 1293px;" id="content">
+<div style="text-align: center;">
+<div style="text-align: left; margin-top: 0px; margin-left: 0px; width: 857px; height: 989px;"><br>
+<div style="text-align: center;"><br>
+
+<a name="top"></a><big><big><big>ME5493 Robotics @ The
+University of Texas at San Antonio</big></big></big><br>
+<br>
+<big><big>Module on Robot Operating System v1 (ROS) (link to this page:
+<a href="http://tiny.cc/pranavb_ros">tiny.cc/pranavb_ros</a>)<br>
+<a href="index.html"><small>By Pranav Bhounsule</small></a> <small>(pranav.bhounsule@utsa.edu)</small><br>
+</big></big></div>
+<big><big><br>
+<a name="read"></a>Read this before you start</big></big><br>
+<br>
+<span style="font-weight: bold;">Overview: </span>This material is
+aimed to help people who want to learn the basics of ROS but have very
+limited knowledge of C++ or Ubuntu. A little bit of programming
+experiences (e.g., C, MATLAB, Python) would be helpful but not
+necessary. <br>
+<br>
+<span style="font-weight: bold;">How to use the material: </span>Follow
+the lessons 1-7 then do the problems to learn about ROS. Then move onto
+8-11 then do the related problem to learn about modeling and
+visualization of manipulators using ROS. The lesson plans require you
+to follow a set of instructions in the read_me file. The problem set
+tests you on the lesson plan. It is very important to do the problems
+to reinforce the lessons. You will learn best by coding rather than
+just reading the material. <br>
+<br>
+<span style="font-weight: bold;">What is needed:</span> A windows/mac
+machine that has atleast 8 GB RAM. You will install Virtual Box and
+copy the disk image provided by ROS-Industrial to get Ubuntu with
+ROS-Kinetic preinstalled on it. You will work in C++ environment within
+Ubuntu. If you have Ubuntu then you only need to install ROS-kinetic
+(see Jason O Kane's book, Chapter 1, below for instructions).<br>
+<br>
+<a href="ros/linux.txt">Useful linux commands</a><br>
+<br>
+<br>
+<big><big><a name="part1"></a>Part 1: Introduction</big></big><br>
+<br>
+<a href="ros/ROS_OKane_pab_notes.pdf">Jason OKane's book, with comments
+to help with coding</a><br>
+<ol>
+  <li><a href="ros/01.setup_ROS.zip">ROS setup</a></li>
+  <li><a href="ros/02.OKane_chapter2.zip">OKane Chapter 2</a><a href="ros/02.OKane_chapter2.zip">: Basic ROS commands, nodes, package,
+messages, and topics</a><br>
+  </li>
+  <li><a href="ros/03.setting_catkin_ws.zip">Setting catkin workspace<br>
+    </a></li>
+  <li><a href="ros/04.hello_world.zip">Hello World in ROS</a></li>
+  <li><a href="ros/05.pub_sub2.zip">Publisher and Subscriber&nbsp;</a></li>
+  <li><a href="ros/06.params.zip">Parameters<br>
+    </a></li>
+  <li><a href="ros/07.services.zip">Services</a></li>
+</ol>
+Problems based on <a href="ros/Hw8_ros.pdf">1-7 Introduction to ROS</a><br>
+<br>
+<br>
+<br>
+<big><big><a name="part2"></a>Part 2: Modeling</big></big><br>
+<br>
+<ol start="8">
+  <li><a href="ros/08.learning_urdf.zip">Learning urdf</a></li>
+  <li><a href="ros/09.simple_urdf.zip">Simple urdf. Learning to use
+xacro. Planar double pendulum model</a></li>
+  <li><a href="ros/10.simple_urdf_state_publisher.zip">Simple urdf with
+state publisher</a></li>
+  <li><a href="ros/11.simple_urdf_tf.zip">Simple urdf with tf.</a><br>
+  </li>
+</ol>
+<br>
+Problems based on Modeling based on <a href="ros/Hw9_ros.pdf">8-11
+Modeling</a><br>
+<br>
+<br>
+<br>
+<big><big><a name="resources"></a>Resources</big></big><br>
+Want more? I recommend going through ROS Industrial training (link
+below).<br>
+<ul>
+  <li>SwRI ROS Industrial Training Material (free), <a href="https://github.com/ros-industrial/industrial_training/wiki">https://github.com/ros-industrial/industrial_training/wiki</a></li>
+  <li>Jason O'Kane's Gentle Introduction to ROS (free ebook) <a href="https://www.cse.sc.edu/%7Ejokane/agitr/">https://www.cse.sc.edu/~jokane/agitr/</a></li>
+  <li>ROS URDF tutorials (free), <a href="http://wiki.ros.org/urdf/Tutorials">http://wiki.ros.org/urdf/Tutorials</a></li>
+  <li>ROS tutorial by Clearpath Robotics (free), <a href="http://www.clearpathrobotics.com/assets/guides/ros/">http://www.clearpathrobotics.com/assets/guides/ros/</a><br>
+  </li>
+
+</ul>
+<br>
+<br>
+<big><big><a name="acknowledge"></a>Acknowledgements<br>
+</big></big>
+<ul>
+  <li>Automation and Data Systems Division at <a href="http://www.swri.org/">Southwest Research Institute</a> (SwRI)
+for their ROS-Industrial training material. <br>
+  </li>
+</ul>
+<ul>
+  <li>Austin Deric, Jeremy Zoss,&nbsp; Matt Robinson from SwRI for
+providing hands-on ROS-Industrial training.</li>
+</ul>
+<ul>
+  <li>Paul Evans from SwRI and Shaun Edwards from PlusONE Robotics for
+their encouragement to teach ROS as part of the Robotics curriculum at
+UTSA<br>
+  </li>
+</ul>
+<ul>
+  <li><a href="https://www.cse.sc.edu/%7Ejokane/">Jason O'Kane</a>
+Professor from U of South Carolina for his ROS book, which he makes
+available free of charge.</li>
+</ul>
+<ul>
+  <li>Geoffrey Chiou, Graduate Student Mechanical Engineering, UTSA for
+help with the tf package.</li><br>
+  <br>
+
+</ul><a name="updates"></a><big style="font-weight: bold;">Last updated</big> Dec 03, 2017<br>
+<br>
+Dec 3, 2017, Part 2: Modeling streamlined 8, 9, 10, and 11.<br>
+Nov 26, 2017:&nbsp; Part 1:&nbsp; Introduction, Streamlined examples
+05. pub_sub2, 06. parameters, 07.services and updated OKane pdf noted<br>
+
+<br>
+<table style="text-align: left; width: 275px; height: 89px; top: 1312px;" border="0" cellpadding="2" cellspacing="2">
+  <tbody>
+    <tr>
+      <td style="vertical-align: top;"><br>
+<!-- Start of StatCounter Code for Default Guide -->
+      <script type="text/javascript">
+var sc_project=11548221; 
+var sc_invisible=0; 
+var sc_security="78f8b116"; 
+var scJsHost = (("https:" == document.location.protocol) ?
+"https://secure." : "http://www.");
+document.write("<sc"+"ript type='text/javascript' src='" +
+scJsHost+
+"statcounter.com/counter/counter.js'></"+"script>");
+      </script><noscript><div class="statcounter"><a title="website
+statistics" href="http://statcounter.com/" target="_blank"><img class="statcounter" src="//c.statcounter.com/11548221/0/78f8b116/0/" alt="website statistics"></a></div></noscript>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<br>
+</div>
+</div>
+</div>
+
+</body></html>
