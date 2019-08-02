@@ -1,15 +1,15 @@
-% PASSIVEWALKER simulates passive ramp walkers.
-% passivewalker(1) - simplest walker as a limiting case of a passive walker (Garcia et. al 1998)
-% passivewalker(2) - more general passive walker with round feet.
+% PASSIVEWALKER_MID simulates passive ramp walkers.
+% passivewalker_mid(1) - simplest walker as a limiting case of a passive walker (Garcia et. al 1998)
+% passivewalker_mid(2) - more general passive walker with round feet.
 % 
 % Needs ODE113, FSOLVE, INTERP1. 
 % If you find bugs in this code please mail, 
 % Pranav A. Bhounsule, pab47@cornell.edu
-% First version: December, 26 2009
-% Last update: June 27, 2019 on R2016a (fixed Erasmode, which is depreciated)
-% The Poincare section is afer footstrike
+% First version: June, 27 2019
+% The Poincare section is at mid-stance
 
-function passivewalker(flag)  
+
+function passivewalker_mid(flag)  
 
 clc
 close all
@@ -28,15 +28,13 @@ if flag == 1
     walker.M = 1000; walker.m = 1.0; walker.I = 0.00; walker.l = 1.0; walker.w = 0.0; 
     walker.c = 1.0;  walker.r = 0.0; walker.g = 1.0; walker.gam = 0.009; 
     
-
     %%%% Initial State %%%%%
-    q1 = 0.2; u1 = -0.2;
-    q2 = 0.4; u2 = -0.3;
+    q1 = 0; u1 = -0.04;
+    q2 = 0; u2 = -0.3;
 
     z0 = [q1 u1 q2 u2];
     %%% Root finding will give this stable root 
-    %zstar = [0.200161072169750  -0.199906060087682   0.400322144339512  -0.015805473227965];
-
+    %zstar = [-0.000000000000002  -0.059229276790079  -0.053316353562209  -0.339566832353173];
 else 
     %%  More General round feet walker with roots
     %%%% Dimensions %%
@@ -46,13 +44,12 @@ else
     walker.c = 0.5; walker.r = 0.2; walker.g = 1.0; walker.gam = 0.01; 
     
     %%%% Initial State %%%%%
-    q1 = 0.2; u1 = -0.3;
-    q2 = 0.4; u2 = -0.3;
+    q1 = 0; u1 = -0.1;
+    q2 = -0.05; u2 = -0.3;
     
     z0 = [q1 u1 q2 u2];
     %% Root finding will give this stable root 
-    %zstar = [0.189472782205104  -0.239124222551699   0.378945564410209  -0.053691703909393];
-    %%
+    %zstar = [-0.000000000000003  -0.108244286766183  -0.047136539406388  -0.482614895484426];
 end
 
 %%%%%%%%%%%%%%%%%%%%%%%%%
@@ -81,10 +78,12 @@ eig(J)
 
 %%% Animate result %%%
 disp('Animating...');
+figure(1)
 animate(t,z,walker,steps,fps);
-
+% 
 %%% Plot data %%%
 disp('Some plots...')
+figure(2)
 plot(t,z(:,1),'r',t,z(:,3),'b')
 xlabel('time'); ylabel('Angle (rad)');
 legend('Stance Angle','Swing Angle');
@@ -164,21 +163,27 @@ z_ode = z0;
 
 for i=1:steps
     options=odeset('abstol',1e-13,'reltol',1e-13,'events',@collision);
-    tspan = linspace(t0,t0+dt,time_stamps);
-    [t_temp, z_temp] = ode113(@single_stance,tspan,z0,options,walker);
+    tspan1 = linspace(t0,t0+dt,time_stamps);
+    [t_temp1, z_temp1] = ode113(@single_stance,tspan1,z0,options,walker);
     
-    zplus=heelstrike(t_temp(end),z_temp(end,:),walker); 
+    zplus=heelstrike(t_temp1(end),z_temp1(end,:),walker);
     
+    t0 = t_temp1(end);
     z0 = zplus;
-    t0 = t_temp(end);
+    options=odeset('abstol',1e-13,'reltol',1e-13,'events',@midstance);
+    tspan2 = linspace(t0,t0+dt,time_stamps);
+    [t_temp2, z_temp2] = ode113(@single_stance,tspan2,z0,options,walker);
+          
+    z0 = z_temp2(end,:);
+    t0 = t_temp2(end);
     
     %%%%% Ignore time stamps for heelstrike and first integration point
-    t_ode = [t_ode; t_temp(2:end)];
-    z_ode = [z_ode; z_temp(2:end,:)];
+    t_ode = [t_ode; t_temp1(2:end); t_temp2(2:end)];
+    z_ode = [z_ode; z_temp1(2:end,:); z_temp2(2:end,:)];
     
 end
 
-z = zplus(1:4);
+z = z0(1:4);
 
 if flag==1
    z=z_ode;
@@ -224,15 +229,22 @@ axh = l*sin(q1)*u1^2+(-l*cos(q1)-r)*ud1;
 ayh = -l*cos(q1)*u1^2-l*sin(q1)*ud1; 
 
 zdot = [u1 ud1 u2 ud2 ...           
-        DTE vxh axh vyh ayh]';  
+        DTE vxh axh vyh ayh]'; 
+    
+%===================================================================
+function [gstop, isterminal,direction]=midstance(t,z,walker)
+%===================================================================
+
+q1 = z(1); 
+
+gstop = q1;
+isterminal=1; %ode should terminate is conveyed by 1, if you put 0 it goes till the final time u specify
+direction=-1; % The t_final can be approached by any direction is indicated by the direction
+    
 
 %===================================================================
 function [gstop, isterminal,direction]=collision(t,z,walker)
 %===================================================================
-
-M = walker.M;  m = walker.m; I = walker.I;   
-l = walker.l;  c = walker.c; w = walker.w;   
-r = walker.r;  g = walker.g; gam = walker.gam; 
 
 q1 = z(1); q2 = z(3); 
 
