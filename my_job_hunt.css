@@ -1,12 +1,10 @@
  
 /* start css.sty */
-.cmr-10x-x-109{}
-.cmr-17{font-size:154%;}
-.cmr-12{font-size:109%;}
-.cmti-10x-x-109{ font-style: italic;}
-.cmmi-10x-x-109{font-style: italic;}
-.cmsy-10x-x-109{}
-.cmbx-10x-x-109{ font-weight: bold;}
+.cmmi-14{font-style: italic;}
+.cmr-17x-x-120{font-size:204%;}
+.cmr-14{font-size:120%;}
+.cmti-14{ font-style: italic;}
+.cmbx-14{ font-weight: bold;}
 p.noindent { text-indent: 0em }
 td p.noindent { text-indent: 0em; margin-top:0em; }
 p.nopar { text-indent: 0em; }
