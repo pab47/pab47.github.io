@@ -6,7 +6,8 @@
 % If you find bugs in this code please mail, 
 % Pranav A. Bhounsule, pab47@cornell.edu
 % First version: December, 26 2009
-% Last update: June 27, 2019 on R2016a (fixed Erasmode, which is depreciated)
+% Updated: June 27, 2019 on R2016a (fixed Erasmode, which is depreciated)
+% Updated: Dec 14, 2019 on R2019b (heelstrike equations fixed)
 % The Poincare section is afer footstrike
 
 function passivewalker(flag)  
@@ -14,6 +15,7 @@ function passivewalker(flag)
 clc
 close all
 format long
+
 
 if nargin == 0
     flag = 1; %simulates simplest walker by default
@@ -44,7 +46,7 @@ else
     %% M = hip mass, m = leg mass, I = leg inertia, l = leg length
     walker.M = 1.0; walker.m = 0.5; walker.I = 0.02; walker.l = 1.0; walker.w = 0.0; 
     walker.c = 0.5; walker.r = 0.2; walker.g = 1.0; walker.gam = 0.01; 
-    
+
     %%%% Initial State %%%%%
     q1 = 0.2; u1 = -0.3;
     q2 = 0.4; u2 = -0.3;
@@ -57,7 +59,7 @@ end
 
 %%%%%%%%%%%%%%%%%%%%%%%%%
 steps = 10; %number of steps to animate
-fps = 10; %Use low frames per second for low gravity
+fps = 20; %Use low frames per second for low gravity
 
 
 %%%% Root finding, Period one gait %%%%
@@ -74,8 +76,11 @@ end
 %%% Stability, using eigenvalues of Poincare map %%%
 J=partialder(@onestep,zstar,walker);
 disp('EigenValues for linearized map are');
-eig(J)
- 
+eigJ = eig(J);
+for i=1:4
+    disp(norm(eigJ(i)));
+end
+%  
 %%%% Get data for all the steps %%%
 [z,t] = onestep(zstar,walker,steps);
 
@@ -166,8 +171,8 @@ for i=1:steps
     options=odeset('abstol',1e-13,'reltol',1e-13,'events',@collision);
     tspan = linspace(t0,t0+dt,time_stamps);
     [t_temp, z_temp] = ode113(@single_stance,tspan,z0,options,walker);
-    
-    zplus=heelstrike(t_temp(end),z_temp(end,:),walker); 
+
+    zplus=heelstrike(t_temp(end),z_temp(end,:),walker);    
     
     z0 = zplus;
     t0 = t_temp(end);
@@ -259,14 +264,15 @@ M = walker.M;  m = walker.m; I = walker.I;
 l = walker.l;  c = walker.c; w = walker.w;   
 r = walker.r;  g = walker.g; gam = walker.gam; 
 
-M11 = 2*m*l^2-2*m*l*c+2*m*c^2+2*m*w^2+2*m*r^2+4*m*r*l*cos(q1)-2*m*r*c*cos(q1)+2*m*w*sin(q1)*r-2*m*l*c*cos(q2)-2*m*l*w*sin(q2)-2*m*r*c*cos(q1-q2)+2*m*sin(q1-q2)*w*r+M*l^2+2*M*r*l*cos(q1)+M*r^2+2*I; 
-M12 = m*l*c*cos(q2)+m*l*w*sin(q2)-m*c^2-m*w^2+m*r*c*cos(q1-q2)-m*sin(q1-q2)*w*r-I; 
 
-M21 = -m*l*c*cos(q2)-m*l*w*sin(q2)+m*c^2+m*w^2-m*r*c*cos(q1-q2)+m*sin(q1-q2)*w*r+I; 
-M22 = -m*w^2-m*c^2-I; 
+M11 = 2*I + m*((r - c*cos(q1) + l*cos(q1) + w*sin(q1))^2 + (c*sin(q1) + w*cos(q1) - l*sin(q1))^2) + M*(l^2 + r^2 + 2*l*r*cos(q1)) + m*((c*sin(q1 - q2) - l*sin(q1) + w*cos(q1 - q2))^2 + (r + l*cos(q1) - c*cos(q1 - q2) + w*sin(q1 - q2))^2); 
+M12 = c*l*m*cos(q2) - c^2*m - m*w^2 - I + l*m*w*sin(q2) + c*m*r*cos(q1 - q2) - m*r*w*sin(q1 - q2); 
 
-RHS1 = m*l*v2*c-m*c^2*v2+M*v1*r^2-2*m*c*l*v1+M*v1*l^2*cos(r2)+2*m*l^2*v1*cos(r2)+2*I*v1-I*v2+2*m*v1*r^2-2*m*l*v1*c*cos(r2)+2*m*c^2*v1+2*m*w^2*v1-m*w^2*v2+2*m*r*v1*w*sin(r1)+M*r*v1*l*cos(r1)+M*l*cos(-r1+r2)*v1*r-2*m*r*v1*c*cos(r1)+2*m*l*cos(-r1+r2)*v1*r+2*m*r*v1*l*cos(r1)-2*m*r*v1*c*cos(-r1+r2)-2*m*r*v1*w*sin(-r1+r2)+m*r*v2*c*cos(-r1+r2)+m*r*v2*w*sin(-r1+r2); 
-RHS2 = m*r*v1*w*sin(r1)-m*r*v1*c*cos(r1)+I*v1-I*v2+m*w^2*v1-m*c*l*v1+m*c^2*v1; 
+M21 = I + c^2*m + m*w^2 - c*l*m*cos(q2) - l*m*w*sin(q2) - c*m*r*cos(q1 - q2) + m*r*w*sin(q1 - q2); 
+M22 = - I - c^2*m - m*w^2; 
+
+RHS1 = 2*I*v1 - I*v2 + 2*c^2*m*v1 - c^2*m*v2 + 2*m*r^2*v1 + 2*m*v1*w^2 - m*v2*w^2 + M*r^2*v1 - 2*c*l*m*v1 + c*l*m*v2 + M*l^2*v1*cos(r2) + 2*l^2*m*v1*cos(r2) + M*l*r*v1*cos(r1 - r2) + 2*m*r*v1*w*sin(r1) - 2*c*m*r*v1*cos(r1 - r2) + c*m*r*v2*cos(r1 - r2) + 2*l*m*r*v1*cos(r1 - r2) + 2*m*r*v1*w*sin(r1 - r2) - m*r*v2*w*sin(r1 - r2) + M*l*r*v1*cos(r1) - 2*c*l*m*v1*cos(r2) - 2*c*m*r*v1*cos(r1) + 2*l*m*r*v1*cos(r1); 
+RHS2 = I*v1 + m*((v1*(c*sin(r1) + w*cos(r1)) - l*v1*sin(r1))*(c*sin(r1) + w*cos(r1)) - (v1*(r + l*cos(r1)) - v1*(c*cos(r1) - w*sin(r1)))*(c*cos(r1) - w*sin(r1))); 
 
 MM = [M11 M12;                               
      M21 M22];    
