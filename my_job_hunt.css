@@ -1,10 +1,10 @@
  
 /* start css.sty */
-.cmmi-14{font-style: italic;}
+.cmmi-10{font-style: italic;}
 .cmr-17x-x-120{font-size:204%;}
-.cmr-14{font-size:120%;}
-.cmti-14{ font-style: italic;}
-.cmbx-14{ font-weight: bold;}
+.cmr-12{font-size:120%;}
+.cmbx-10{ font-weight: bold;}
+.cmti-10{ font-style: italic;}
 p.noindent { text-indent: 0em }
 td p.noindent { text-indent: 0em; margin-top:0em; }
 p.nopar { text-indent: 0em; }
@@ -74,8 +74,9 @@ span.LATEX span.TEX{ position:relative; left: -0.4em; }
 div.float, div.figure {margin-left: auto; margin-right: auto;}
 div.float img {text-align:center;}
 div.figure img {text-align:center;}
-.marginpar {width:20%; float:right; text-align:left; margin-left:auto; margin-top:0.5em; font-size:85%; text-decoration:underline;}
-.marginpar p{margin-top:0.4em; margin-bottom:0.4em;}
+.marginpar,.reversemarginpar {width:20%; float:right; text-align:left; margin-left:auto; margin-top:0.5em; font-size:85%; text-decoration:underline;}
+.marginpar p,.reversemarginpar p{margin-top:0.4em; margin-bottom:0.4em;}
+.reversemarginpar{float:left;}
 table.equation {width:100%;}
 .equation td{text-align:center; }
 td.equation { margin-top:1em; margin-bottom:1em; } 
