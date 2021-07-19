@@ -1,0 +1,33 @@
+@charset "utf-8";
+/* CSS Document */
+
+/* covers the header */
+h2 {
+    color: black;
+}
+
+
+
+/*removes the underline in the link*/
+a {
+    text-decoration: none;
+}
+/* covers the header */
+h2 span{
+    background-color: #FF1616;
+}
+
+/* covers the bottom part of the text */
+#bottom {
+    background-color: lavender;
+}
+
+
+#extra {
+    font-weight: bold;
+    color: black;
+}
+
+body{
+    background-color:#EEE;
+}
