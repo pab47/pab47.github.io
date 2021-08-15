@@ -1,363 +1,1174 @@
-<!Doctype html>
+<!doctype html>
 <html>
-<html lang="en">
 <head>
 <meta charset="utf-8">
-<title>Wesite</title>
-<link href="legs/style1.css" rel="stylesheet" type="text/css">
+<title>Legged Robotics</title>
+    
+    <!--Scripts required to use the dynamic nav-bar and bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <link href="legs/style.css" rel="stylesheet" type="text/css">
+    
+    <!--Scripts required to use the dynamic nav-bar and bootstrap-->
 </head>
-<body>
-<h1 align="center">Legged Robotics Course Page</h1>
-<h2 align="center">Instructor: <a href="https://pab47.github.io/">Pranav Bhounsule</a> </h2>
-<!------------------------>
-  <h3>A first course on Legged Robotics. It is beneficial to have prior knowledge of undergraduate dynamics and programming, but these are also taught here. The structure of the course is to teach theory and supplement that with simple examples and computer code. Using MATLAB one can see how to code the physics, control, and animate. Using <a href="https://www.coppeliarobotics.com/">CoppeliaSim</a> (a free robotics simulator for education purposes) one can see how to use a simulator to model and write control code. MATLAB 2021a (need symbolic toolbox, optimization toolbox) and CoppeliaSim v4.1.0 (July 21, 2020) were used. </h3>
 
-<!------------------------>
-       <!-- <h2 align="center"> <span>Other Useful Links:</span></h2>-->
-      <ul>
-		<li><big><a href="https://www.youtube.com/watch?v=g9O2MNDZTmY&list=PLc7bpbeTIk74esZj1hd7LF3VYeJM3NYo5&index=4">Syllabus Video (see Topics (Units) below)</a></big></li>
-		<li><big><a href="https://www.youtube.com/playlist?list=PLc7bpbeTIk74esZj1hd7LF3VYeJM3NYo5">Legged Robotics Playlist (see YouTube Videos )</a></big></li>
-		<li><big><a href="legs/notes.zip">All lectures notes in pdf (zipped) (see Lecture notes below) </a></big></li>
-		<li><big><a href="legs/code.zip">All code (zipped) (see Source code  below) </a></big></li>
-		<li><big><a href="legs/Website2.html">Interactive Webpage (link not active)</a></big></li>
-        <!--<li><big><a href="https://pab47.github.io/">Pranav Bhounsule's homepage</a></big></li>-->
-      </ul>
-    </div>
-<!------------------------>
-	<h3>The following table gives more details on Topics with YouTube videos, lecture notes, and code</h3>
-<br>
-    <div align="center">
+<!--This is for the navbar via bootstrap-->
+<body>
+    <h1 class="display-1 text-center"> Legged Robotics</h1>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top sticky-top">
+        <a class="navbar-brand" href="#"></a>
+        <img src="https://asianroboticsreview.com/wp-content/uploads/2019/01/walkerInsert.png" width="30" height="30" class="d-inline-block align-top" alt="Picture of a walker">
+      <a class="navbar-brand" href="#"> Top/About</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+	<!--   Modules start  !-->
+		<li class="nav-item dropdown active">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Modules
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#mod1"><b>Module 1: </b> 2D Passive Hopper (MATLAB)</a>
+              <a class="dropdown-item" href="#mod2"><b>Module 2: </b> 2D hopper control using foot placement (Raibert control) (MATLAB) </a> 
+              <a class="dropdown-item" href="#mod3"><b>Module 3: </b> 2D Passive Walker (MATLAB)</a>
+              <a class="dropdown-item" href="#mod4"><b>Module 4: </b> 2D Walker Controlled by Partial Feedback Linearization (MATLAB) </a>
+              <a class="dropdown-item" href="#mod5"><b>Module 5: </b> 3D Biped Walking (MATLAB) </a>
+              <a class="dropdown-item" href="#mod6"><b>Module 6: </b> 2D Rimless wheel modeling (CoppiliaSim) </a>
+              <a class="dropdown-item" href="#mod7"><b>Module 7: </b> 2D passive Dynamic Walker (CopileaSim) </a>
+        </div>
+      </li>
+	<!--   Modules end  !-->
+    <!--   Download/Links start  !-->
+       <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Downloads/Links
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="https://www.youtube.com/watch?v=g9O2MNDZTmY&list=PLc7bpbeTIk74esZj1hd7LF3VYeJM3NYo5&index=4"><b>Syllabus:</b> YouTube video</a>
+			  <a class="dropdown-item" href="legs/notes.zip"><b> All notes</b> zipped</a>
+			  <a class="dropdown-item" href="legs/code.zip"><b> All code</b> zipped</a>
+			<a class="dropdown-item" href="https://www.youtube.com/playlist?list=PLc7bpbeTIk74esZj1hd7LF3VYeJM3NYo5"><b> All         Videos: </b> YouTube playlist</a>
+              <a class="dropdown-item" href="legs/notes/MATLAB-Basics.pdf"><b> MATLAB Intro 1: </b>Basics of MATLAB</a>
+              <a class="dropdown-item" href="legs/notes/MATLAB-Scripts.pdf"><b>MATLAB Intro 2: </b> MATLAB Scripts</a> 
+              <a class="dropdown-item" href="legs/notes/MATLAB-Animations.pdf"><b>MATLAB Intro 3: </b>MATLAB Animations</a>
+        </div> 
+      </li>
+	<!--   Download/Links end  !-->
+	<!--   All Material  !-->
+      <li class="nav-item active">
+        <a class="nav-link" href="#FullTable">All Material<span class="sr-only">(current)</span></a>
+      </li>
+    <!--   All Material end  !-->
+		 <!--   All Material end  !-->
+		<li class="nav-item active">
+        <a class="nav-link" href="https://pab47.github.io">Pranav Bhounsule (homepage)</a>
+      </li>
+		 <!--   All Material end  !-->
+    </ul>
+  </div>
+</nav>
+<!--The header/comments of the page, You need to update this-->
+    <div id ="header" align="left" class="col-xl-12"      
+<p> <br>
+	A first course in legged robotics. The course is organized in a few ways. <br> 
+<ol>
+<li> 
+	The <b>“Modules”</b> tab divides the course material into a broader outcome (e.g., passive dynamic walker, hopper control) and suggests topics to cover to learn the outcome. We recommend this approach to the beginner.
+</li>
+<li> 
+	The <b>“Download/Links”</b>  tab can be used to download all material offline and provides links to external YouTube videos. 
+</li>
+<li> 
+	The <b>“All Materials”</b>  tab provides all lectures material as they were taught. This is ideal if the beginner wants a semester long learning experience.
+</li>
+</ol>
+<b>About:</b> The course is structured to explain theory and required mathematics and supplement with simple examples and computer code. MATLAB code provides how to program the physics, develop controllers, and animate. CoppeliaSim (free simulator for education) is used to show how to use graphical user interface to model and write control code in Lua. MATLAB 2021 with symbolic and optimization toolbox and CoppeliaSim v4.1.0 (July 21, 2020) are needed.
+    
+     </div>
+    
+    
+    
+    <!--This is for the navbar link to work and go to that module-->
+<div id="mod1">
+        <br><br>
+
+</div>
+        <div class="col-xl-12" id="main">
+            <h2 align="center"><strong>Module 1</strong>: 2D passive hopper (MATLAB)</h2>
+            <div align="center">
     <table style="width:100%" border="3">
         <tr>
             <!-- Adding the header colums of content materials and videos -->
             <th style="text-align: center"><big><big>Topic (Units)</big></big></th>
-            <th style="text-align: center"><big><big>Youtube Videos</big></big></th>
+            <th style="text-align: center"><big><big>Videos</big></big></th>
             <th style="text-align: center"><big><big>Lecture Notes</big></big></th>
             <th style="text-align: center"><big><big>Source Code</big></big></th>
-        </tr>
-        
-        
-        <tr style="background-color: lightgray">
-            <td rowspan="3">MATLAB Tutorials</td>
-            <td> <a href="https://www.youtube.com/watch?v=Am2PJmDh0GE&list=PLc7bpbeTIk74esZj1hd7LF3VYeJM3NYo5">MATLAB Basics</a></td>
-            <td> <a href="legs/notes/MATLAB-Basics.pdf">Basics PDF</a></td>
-            <td rowspan="3" align="center">N/A</td>
-        </tr>
+            <th style="text-align: center"><big><big>Description</big></big></th>
             
-        <tr style="background-color: lightgray"> 
-            <td><a href="https://www.youtube.com/watch?v=wnK08yAXpPY&list=PLc7bpbeTIk74esZj1hd7LF3VYeJM3NYo5&index=2"> MATLAB Scripts</a> </td>
-            <td><a href="legs/notes/MATLAB-Scripts.pdf">Scripts PDF</a> </td>
         </tr>
-
-        <tr style="background-color: lightgray">
-            <td rowspan="1"> <a href="https://www.youtube.com/watch?v=8uRHF3lrc3k&list=PLc7bpbeTIk74esZj1hd7LF3VYeJM3NYo5&index=3"> MATLAB Animations  </a></td>
-            <td> <a href="legs/notes/MATLAB-Animations.pdf">Animations PDF </a></td>
+        
+         <tr style="background-color: #f0f0f2">
+            <td rowspan="1" align="center"><b>3. Euler-Lagrange </b> </td>
+           <td align="center"> <a href = "https://www.youtube.com/watch?v=XcTsx85kjV8"><strong>3a</strong>. Dynamics using Euler-Lagrange Equations</a></td>
+           <td rowspan="1" align="center"> <a href="legs/notes/Lec3_dynamics_euler_lagrange.pdf">Dynamics of Euler-Lagrange PDF</a></td>
+           <td rowspan="1" align="center"> <a href="legs/code/lec3_euler_lagrange.zip">Lec Code 3</a></td>
+           <td rowspan="1"> <ul>
+              <li>Algorithm for solving for equations of motion using Euler-Lagrange equations.</li>
+              <li>This is illustrated using a simple projectile with drag</li>
+                </ul>
+           </td>
         </tr>
-    
+        
         <tr>
-            <td><b>1. </b> <strong> 2D Forward Kinematics</strong></td>
-            <td> <a href="https://www.youtube.com/watch?v=rn5bZ8AHl6s&list=PLc7bpbeTIk74esZj1hd7LF3VYeJM3NYo5&index=5">Forward Kinematics Video </a></td>
-            <td> <a href="legs/notes/Lec1_fwd_kinematics.pdf"> Forward Kinematics PDF</a></td>
-            <td> <a href="legs/code/lec1_forwardkinematics.zip" >Lec Code 1</a></td>
+            <td rowspan="2" align="center"><b>7. Intro to Hybrid Systems </b></td>
+            <td align="center"> <a href="https://www.youtube.com/watch?v=empN1pMBxkk">Hybrid Systems Bouncing Ball Example</a></td>
+            <td align="center"><a href="legs/notes/Lec7a_hybrid_intro.pdf">Hybrid Intro PDF</a></td>
+            <td rowspan="2" align="center"><a href="legs/code/lec7a_ball_bounce.zip">Lec 7 Code</a></td>
+            <td rowspan="2" align="center"> <ul>
+                <li>Illustrate a hybrid system, a bouncing ball. We develop basic framework for simulating the system by coding one bounce and then repeated calls to one bounce</li>
+                <li>Introduction to passive dynamic walker as a hybrid system. Terminology of hybrid systems such as Poincare map, fixed point, linearized stability of the fixed point, and a simple analytical example. </li>
+                </ul>
+            </td>
         </tr>
         
-        <tr style="background-color: lightgray">
-            <td> <strong>2. </strong>2D<strong>&nbsp;</strong>Inverse Kinematics</td>
-            <td> <a href="https://www.youtube.com/watch?v=v9-DZoZhWHM&list=PLc7bpbeTIk74esZj1hd7LF3VYeJM3NYo5&index=6">Inverse Kinematics Video</a></td>
-            <td><a href="legs/notes/Lec2_inverse_kinematics.pdf">Inverse Kinematics PDF</a></td>
-            <td> <a href="legs/code/lec2_inversekine_projectile.zip">Lec Code 2</a></td>
+        
+        <tr>
+            <td align="center"><a href="https://www.youtube.com/watch?v=YrnhthxnVVU&list=PLc7bpbeTIk74esZj1hd7LF3VYeJM3NYo5&index=16">Hybrid Systems Termonology</a></td>
+            <td align="center"><a href="legs/notes/Lec7b_hybrid_terminology.pdf">Hybrid Terminology PDF</a></td>
         </tr>
         
+         <tr style="background-color: #f0f0f2">
+            <td align="center"><b>12. Hopping model: Spring Loaded Inverted Pendulum</b></td>
+            <td align="center"><a href="https://www.youtube.com/watch?v=qI_94iU1S0c&list=PLc7bpbeTIk74esZj1hd7LF3VYeJM3NYo5&index=23">Spring load inverted pendulum model</a></td>
+            <td align="center"><a href="legs/notes/Lec12_Hopping_Model.pdf">Hopping Model PDF</a></td>
+            <td align="center"> <a href="legs/code/Lec12_Spring_Loaded_Inverted_Pendulum.zip">Lec 12 Code</a></td>
+            <td>
+                <ul>
+                <li>Using Euler-Lagrange equations to derive the equations of motion.</li>
+                <li>Details on simulation and animation.</li>
+                <li>Generating steady state gaits and analyzing linear stability (see terminolgy for hybrid systems)</li>
+                </ul>
+           </td>
+        </tr>
+        
+          </table> </div>
+            
+            
+            
+    <div id="mod2">
+        <br><br>
+    </div>
+        <br>
+    <div>
+        <h2 align="center"><strong>Module 2</strong>: 2D Hopper Control using Foot Placement (Raibert Control)</h2>
+        <table style="width:100%" border="3">
+            <tr>
+            <!-- Adding the header colums of content materials and videos -->
+                <th style="text-align: center"><big><big>Topic (Units)</big></big></th>
+                <th style="text-align: center"><big><big>Videos</big></big></th>
+                <th style="text-align: center"><big><big>Lecture Notes</big></big></th>
+                <th style="text-align: center"><big><big>Source Code</big></big></th>
+                <th style="text-align: center"><big><big>Description</big></big></th>
+            </tr>
       
+        <tr style="background-color: #f0f0f2">
+            <td align="center"><b>3. </b><strong>Dynamics using Euler-Lagrange Equations </strong><strong></strong></td>
+            <td align="center"> <a href="https://www.youtube.com/watch?v=rn5bZ8AHl6s&list=PLc7bpbeTIk74esZj1hd7LF3VYeJM3NYo5&index=5"><strong>3a.</strong> Dynamics using Euler-Lagrange equations video</a></td>
+            <td align="center"> <a href="legs/notes/Lec1_fwd_kinematics.pdf">Dynamics of Euler-Lagrange PDF</a></td>
+            <td align="center"> <a href="legs/code/lec3_euler_lagrange.zip" >Lec Code 3</a></td>
+            <td><ul>
+                <li>Algorithm for solving for equations of motion using Euler-Lagrange equations.</li>
+                <li> This is illustrated on a simple projectitle with drag.</li>
+                </ul>
+            </td>
+        </tr>
+        
+         <tr>
+           <td align="center"><b>14. </b><strong>Foot Placment Contro</strong>l</td>
+           <td align="center"><a href="https://www.youtube.com/watch?v=7eWLyo2a5UE&list=PLc7bpbeTIk74esZj1hd7LF3VYeJM3NYo5&index=25"><strong>14a.</strong> Foot Placement Control for Hopper</a></td>
+            <td align="center"><a href="legs/notes/Lec14a_FootPlacement_Hopper.pdf">Hopper Foot Control PDF</a></td>
+            <td align="center"> <a href="legs/code/Lec14a_raibert_controller_for_hopper.zip">Lec 14a Code</a></td>
+           <td> <ul>
+                <li>Foot placement control of hopper using Raibert’s control</li>
+                <li>This section derives a simple control law using some intuition.</li>
+                <li>MATLAB code shows how the controller works.</li>
+                </ul>
+           </td>
+        </tr>
+       
+</table> </div>
+      
+            
+            
+<div id="mod3">
+    <br><br>       
+</div>          
+    <br>
+        <div>
+            <h2 align="center"><strong>Module 3: </strong>Passive Dynamic Walker (MATLAB) </h2>
+        </div>
+    <table style="width:100%" border="3">
         <tr>
-            <td rowspan="4"><b>3. 2D Dynamics: Euler-Lagrange </b> </td>
-            <td> <a href = "https://www.youtube.com/watch?v=XcTsx85kjV8">Dynamics using Euler-Lagrange Equations</a></td>
-            <td rowspan="4" align="center"> <a href="legs/notes/Lec3_dynamics_euler_lagrange.pdf">Dynamics of Euler-Lagrange PDF</a></td>
-            <td rowspan="4" align="center"> <a href="legs/code/lec3_euler_lagrange.zip">Lec Code 3</a></td>
+            <!-- Adding the header colums of content materials and videos -->
+            <th style="text-align: center"><big><big>Topic (Units)</big></big></th>
+            <th style="text-align: center"><big><big>Videos</big></big></th>
+            <th style="text-align: center"><big><big>Lecture Notes</big></big></th>
+            <th style="text-align: center"><big><big>Source Code</big></big></th>
+            <th style="text-align: center"><big><big>Description</big></big></th>
+        </tr>
+                
+        <tr style="background-color: #f0f0f2">
+            <td align="center"><b>1. </b> <strong> Foward Kinematics</strong></td>
+            <td> <a href="https://www.youtube.com/watch?v=rn5bZ8AHl6s&list=PLc7bpbeTIk74esZj1hd7LF3VYeJM3NYo5&index=5">Forward Kinematics Video </a></td>
+            <td align="center"> <a href="legs/notes/Lec1_fwd_kinematics.pdf"> Forward Kinemetics PDF</a></td>
+            <td align="center"> <a href="legs/code/lec1_forwardkinematics.zip" >Lec Code 1</a></td>
+            <td><ul><li>Representing the kinematics using homogenous rotaions and translations</li>
+                <li>Forward kinematics gives the end-effector position for the given joint angles</li>
+                <li>llustrated using a two-link planar manipulator.</li>
+                </ul> 
+            </td>
+        </tr>
+              
+        <tr>
+            <td rowspan="3" align="center"><b>3. Euler-Lagrange </b> </td>
+            <td align="center"> <a href = "https://www.youtube.com/watch?v=XcTsx85kjV8"><strong>3a.</strong> Dynamics using Euler-Lagrange Equations</a></td>
+            <td rowspan="3" align="center"> <a href="legs/notes/Lec3_dynamics_euler_lagrange.pdf">Dynamics of Euler-Lagrange PDF</a></td>
+            <td rowspan="3" align="center"> <a href="legs/code/lec3_euler_lagrange.zip">Lec Code 3</a></td>
+           <td rowspan="3"> <ul>
+              <li>Algorithm for solving for equations of motion using Euler-Lagrange equations. This is illistrated on a simple projectile withdrag</li>
+              <li>Basics of differentiation and chain rule. Writing symbolic code to derive the equations of motion.</li>
+              <li>Demonstrate how to derive equations of motion of a planar double pendulum</li>
+                </ul>
+            </td>
+        </tr>
+        
+        <tr align="center">
+            <td> <a href="https://www.youtube.com/watch?v=TmYCPXQLDZU"><strong>3b.</strong> Deriving Equations of Motion</a></td>
+        </tr>    
+        
+        <tr align="center">
+            <td> <a href="https://www.youtube.com/watch?v=nIxBa8WmdOI"><strong>3c.</strong> Double Pendulum Simulation</a></td>
+        </tr>
+        
+        <tr style="background-color: #f0f0f2">
+            <td rowspan="2" align="center"><b>7. Intro to Hybrid Systems </b></td>
+            <td align="center"> <a href="https://www.youtube.com/watch?v=empN1pMBxkk">Hybrid Systems Bouncing Ball Example</a></td>
+            <td align="center"><a href="legs/notes/Lec7a_hybrid_intro.pdf">Hybrid Intro PDF</a></td>
+            <td rowspan="2" align="center"><a href="legs/code/lec7a_ball_bounce.zip">Lec 7 Code</a></td>
+            <td rowspan="2" align="center"> <ul>
+                <li>Illustrate a hybrid system, a bouncing ball. We develop basic framework for simulating the system by coding one bounce and then repeated calls to one bounce</li>
+                <li>Introduction to passive dynamic walker as a hybrid system. Terminology of hybrid systems such as Poincare map, fixed point, linearized stability of the fixed point, and a simple analytical example. </li>
+                </ul>
+            </td>
+        </tr>
+        
+        
+       <tr style="background-color: #f0f0f2">
+            <td align="center"><a href="https://www.youtube.com/watch?v=YrnhthxnVVU&list=PLc7bpbeTIk74esZj1hd7LF3VYeJM3NYo5&index=16">Hybrid Systems Termonology</a></td>
+            <td align="center"><a href="legs/notes/Lec7b_hybrid_terminology.pdf">Hybrid Terminology PDF</a></td>
+        </tr>
+        
+        
+    
+                
+          <tr>
+            <td rowspan="3" align="center"><strong>8. </strong><strong>Passive Dynamic Walkers</strong></td>
+            <td align="center"><a href="https://www.youtube.com/watch?v=rCfF-hsvCG8&list=PLc7bpbeTIk74esZj1hd7LF3VYeJM3NYo5&index=17"><strong>8a.</strong>&nbsp; Passive Dynamic Walker (Pt1)</a></td>
+            <td align="center"><a href="legs/notes/Lec8a_passivewalker_part1.pdf">Passive Dynamic Walker PDF 1</a></td>
+            <td align="center" rowspan="3"><a href="legs/code/lec8_passivewalker.zip">Lec 8 Code</a></td>
+            <td rowspan="3"><ul>
+                <li>(Pt1- derivation) Intuition behind writing the equations of motion. Use of Euler-Lagrage equations to derive the equation for stance phase.</li>
+                <li>(Pt2 - derivation) Use of Euler-Lagrage equations to derive the equations for heelstrike. Some intuition about how to simulate the system</li>
+                <li>(Pt3- coding) Live coding of the equations to generate steady state gaits and analyze their linearized stability (see Terminology for hybrid systems)</li>
+                </ul></td>
         </tr>
         
         <tr>
-            <td> <a href="https://www.youtube.com/watch?v=TmYCPXQLDZU">Deriving Equations of Motion</a></td>
+            <td align="center"><a href="https://www.youtube.com/watch?v=3hnDr_zOWV4&list=PLc7bpbeTIk74esZj1hd7LF3VYeJM3NYo5&index=18"><strong>8b. </strong> Passive Dynamic Walker (Pt2)</a></td>
+            <td rowspan="2" align="center"> <a href="legs/notes/Lec8b_passivewalker_part2.pdf">Passive Dynamic Walker PDF 2</a></td>
         </tr>    
         
         <tr>
-            <td> <a href="https://www.youtube.com/watch?v=nIxBa8WmdOI">Double Pendulum Simulation</a></td>
+            <td align="center"><a href="https://www.youtube.com/watch?v=3hnDr_zOWV4"><strong> 8c.</strong> Passive Dynamic Walker (Pt3) Coding</a></td>    
+        </tr>
+</table>
+            
+            
+<div id="mod4">
+    <br><br>       
+</div>          
+    <br>
+        <div>
+            <h2 align="center"><strong>Module 4: 2D</strong>Walker Controled by Partial Feedback Linearization</h2>
+          </div>
+    <table style="width:100%" border="3">
+        <tr>
+            <!-- Adding the header colums of content materials and videos -->
+            <th style="text-align: center"><big><big>Topic (Units)</big></big></th>
+            <th style="text-align: center"><big><big>Videos</big></big></th>
+            <th style="text-align: center"><big><big>Lecture Notes</big></big></th>
+            <th style="text-align: center"><big><big>Source Code</big></big></th>
+            <th style="text-align: center"><big><big>Description</big></big></th>
+        </tr>
+                
+         <tr style="background-color: #f0f0f2">
+            <td align="center"><b>1. </b> <strong> Foward Kinematics</strong></td>
+            <td> <a href="https://www.youtube.com/watch?v=rn5bZ8AHl6s&list=PLc7bpbeTIk74esZj1hd7LF3VYeJM3NYo5&index=5">Forward Kinematics Video </a></td>
+            <td align="center"> <a href="legs/notes/Lec1_fwd_kinematics.pdf"> Forward Kinemetics PDF</a></td>
+            <td align="center"> <a href="legs/code/lec1_forwardkinematics.zip" >Lec Code 1</a></td>
+            <td><ul><li>Representing the kinematics using homogenous rotaions and translations</li>
+                <li>Forward kinematics gives the end-effector position for the given joint angles</li>
+                <li>llustrated using a two-link planar manipulator.</li>
+                </ul> </td>
+        </tr>
+        
+                
+               
+                
+         <tr>
+            <td rowspan="3" align="center"><b>3. Euler-Lagrange </b> </td>
+            <td align="center"> <a href = "https://www.youtube.com/watch?v=XcTsx85kjV8"><strong>3a.</strong> Dynamics using Euler-Lagrange Equations</a></td>
+            <td rowspan="3" align="center"> <a href="legs/notes/Lec3_dynamics_euler_lagrange.pdf">Dynamics of Euler-Lagrange PDF</a></td>
+            <td rowspan="3" align="center"> <a href="legs/code/lec3_euler_lagrange.zip">Lec Code 3</a></td>
+           <td rowspan="3"> <ul>
+              <li>Algorithm for solving for equations of motion using Euler-Lagrange equations. This is illistrated on a simple projectile withdrag</li>
+              <li>Basics of differentiation and chain rule. Writing symbolic code to derive the equations of motion.</li>
+              <li>Demonstrate how to derive equations of motion of a planar double pendulum</li>
+            </ul></td>
+        </tr>
+        
+        <tr align="center">
+            <td> <a href="https://www.youtube.com/watch?v=TmYCPXQLDZU"><strong>3b.</strong> Deriving Equations of Motion</a></td>
+        </tr>    
+        
+        <tr align="center">
+            <td> <a href="https://www.youtube.com/watch?v=nIxBa8WmdOI"><strong>3c.</strong> Double Pendulum Simulation</a></td>
     
         </tr>
         
+        
+                
+                
+        <tr style="background-color: #f0f0f2">
+            <td align="center"><strong>6.</strong> <strong>Jacobian Applications </strong></td>
+            <td align="center"> <a href="https://www.youtube.com/watch?v=RdIXGO9aBnc&list=PLc7bpbeTIk74esZj1hd7LF3VYeJM3NYo5&index=13">Jacobian and its Applications</a></td>
+            <td align="center"> <a href="legs/notes/Lec6a_Jacobian.pdf">Jacobian PDF</a></td>
+            
+          <td align="center"><a href="legs/code/lec6a_example_jacobian.zip">Lec 6 Code</a></td>
+            <td><ul>
+                <p align="center">Basics of Jacobian. We show how to compute the Jacobian using symbolic computations and finite differences. We present two applications of Jacobian</p>
+                <li>Find the velocity of points of interest and illustrated on planar double pendulum</li>
+                <li>Find the static forces on a double pendulum.</li>
+            </ul>
+         </td>
+        </tr>
+                
         <tr>
-            <td> <a href="https://www.youtube.com/watch?v=pNZ1ux164q8">1D projectile using Euler-Lagrange</a></td>
-        </tr>
-        
-        <tr style="background-color: lightgray">
-            <td>4. Introduction to CoppeliaSim</td>
-            <td> <a href="https://www.youtube.com/watch?v=pNZ1ux164q8&list=PLc7bpbeTIk74esZj1hd7LF3VYeJM3NYo5&index=10">Projectile using Euler-Lagrange</a></td>
-            <td align="center">N/A</td>
-            <td><a href="legs/code/lec4_CoppeliaSim_projectile.zip">Lec 4 Code</a></td>
-        </tr>
-        
-        <tr>
-            <td><b>5. </b> <strong> CoppeliaSim Modeling</strong></td>
-            <td><a href="https://www.youtube.com/watch?v=ANqvp7ZabG0&list=PLc7bpbeTIk74esZj1hd7LF3VYeJM3NYo5&index=12">Modeling a Simple Pendulum</a></td>
-            <td align="center"> N/A</td>
-            <td> <a href="legs/code/lec5_CoppeliaSim_pendulum.zip">Lec 5 Code</a></td>
-        </tr>
-        
-        <tr style="background-color: lightgray">
-            <td>6. Jacobian and its applications </td>
-            <td> <a href="https://www.youtube.com/watch?v=RdIXGO9aBnc&list=PLc7bpbeTIk74esZj1hd7LF3VYeJM3NYo5&index=13">Jacobian and its Applications</a></td>
-            <td> <a href="legs/notes/Lec6a_Jacobian.pdf">Jacobian PDF</a></td>
-            <td align="left"><a href="legs/code/lec6a_example_jacobian.zip">Lec 6 Code</a></td>
-        </tr>
-        
-        
-        <tr>
-            <td rowspan="2"><b>7. Introduction to Hybrid Systems </b></td>
-            <td> <a href="https://www.youtube.com/watch?v=empN1pMBxkk">Hybrid Systems Bouncing Ball Example</a></td>
-            <td><a href="legs/notes/Lec7a_hybrid_intro.pdf">Hybrid Intro PDF</a></td>
-            <td rowspan="2" align="left"><a href="legs/code/lec7a_ball_bounce.zip">Lec 7 Code</a></td>
+            <td rowspan="2" align="center"><b>7. Intro to Hybrid Systems </b></td>
+            <td align="center"> <a href="https://www.youtube.com/watch?v=empN1pMBxkk">Hybrid Systems Bouncing Ball Example</a></td>
+            <td align="center"><a href="legs/notes/Lec7a_hybrid_intro.pdf">Hybrid Intro PDF</a></td>
+            <td rowspan="2" align="center"><a href="legs/code/lec7a_ball_bounce.zip">Lec 7 Code</a></td>
+            <td rowspan="2" align="center"> <ul>
+                <li>Illustrate a hybrid system, a bouncing ball. We develop basic framework for simulating the system by coding one bounce and then repeated calls to one bounce</li>
+                <li>Introduction to passive dynamic walker as a hybrid system. Terminology of hybrid systems such as Poincare map, fixed point, linearized stability of the fixed point, and a simple analytical example. </li>
+                </ul>
+            </td>
         </tr>
         
         <tr>
-            <td><a href="https://www.youtube.com/watch?v=YrnhthxnVVU&list=PLc7bpbeTIk74esZj1hd7LF3VYeJM3NYo5&index=16">Hybrid Systems Terminology</a></td>
-            <td><a href="legs/notes/Lec7b_hybrid_terminology.pdf">Hybrid Terminology PDF</a></td>
+            <td align="center"><a href="https://www.youtube.com/watch?v=YrnhthxnVVU&list=PLc7bpbeTIk74esZj1hd7LF3VYeJM3NYo5&index=16">Hybrid Systems Termonology</a></td>
+            <td align="center"><a href="legs/notes/Lec7b_hybrid_terminology.pdf">Hybrid Terminology PDF</a></td>
         </tr>
+                
         
-        <tr style="background-color: lightgray">
-            <td rowspan="3"><b>8. </b>Passive Dynamic Walkers</td>
-            <td><a href="https://www.youtube.com/watch?v=rCfF-hsvCG8&list=PLc7bpbeTIk74esZj1hd7LF3VYeJM3NYo5&index=17">Passive Dynamic Walker (Pt1)</a></td>
-            <td><a href="legs/notes/Lec8a_passivewalker_part1.pdf">Passive Dynamic Walker PDF 1</a></td>
-            <td align="left" rowspan="3"><a href="legs/code/lec8_passivewalker.zip">Lec 8 Code</a></td>
+        <tr style="background-color: #f0f0f2">
+            <td rowspan="2" align="center"><b>8. </b><strong>Passive Dynamic Walkers</strong></td>
+            <td align="center"><a href="https://www.youtube.com/watch?v=rCfF-hsvCG8&list=PLc7bpbeTIk74esZj1hd7LF3VYeJM3NYo5&index=17">Passive Dynamic Walker (Pt1)</a></td>
+            <td align="center"><a href="legs/notes/Lec8a_passivewalker_part1.pdf">Passive Dynamic Walker PDF 1</a></td>
+            <td align="center" rowspan="2"><a href="legs/code/lec8_passivewalker.zip">Lec 8 Code</a></td>
+            <td rowspan="2"><ul>
+                <li>Intuition behind writing the equations of motion. Use of Euler-Lagrage equations to derive the equation for stance phase.</li>
+                <li>Use of Euler-Lagrage equations to derive the equations for heelstrike. Some intuition about how to simulate the system. </li>
+                </ul>
+            </td>
         </tr>
+                
+                
         
-        <tr style="background-color: lightgray">
+        
+        <tr style="background-color: #f0f0f2" align="center">
             <td><a href="https://www.youtube.com/watch?v=3hnDr_zOWV4&list=PLc7bpbeTIk74esZj1hd7LF3VYeJM3NYo5&index=18">Passive Dynamic Walker (Pt2)</a></td>
-            <td rowspan="2"> <a href="legs/notes/Lec8b_passivewalker_part2.pdf">Passive Dynamic Walker PDF 2</a></td>
+            <td> <a href="legs/notes/Lec8b_passivewalker_part2.pdf">Passive Dynamic Walker PDF 2</a></td>
         </tr>    
         
-        <tr style="background-color: lightgray">
-            <td><a href="https://www.youtube.com/watch?v=3hnDr_zOWV4"> Passive Dynamic Walker (Pt3) Coding</a></td>    
+        <tr>
+            <td rowspan="1" align="center"><b>15. </b><strong>Trajectory simulation</strong></td><br>
+             <td align="center"><a href="https://www.youtube.com/watch?v=krGtHrMJfXc">15b. Trajectory Generation</a></td>
+            <td align="center"><a href="legs/notes/Lec15b_Trajectory_Generation.pdf">Trajactory Generations PDF</a></td>
+            <td align="center"><a href="legs/code/lec15b_trajectory_generation.zip">Lec 15b Code</a></td>
+            <td><ul>
+              <li>Generating a reference trajectory using polynomials and given start and end conditions</li>
+              </ul>
+            </td>
         </tr>
         
-        <tr>
-            <td rowspan="2"><b>9. </b>CoppeliaSim Rimless Wheel Modeling</td>
+        
+                
+         <tr style="background-color: #f0f0f2">
+            <td rowspan="2" align="center"><b>17.2 </b><strong>Control Patitioning/Feedback Linearization</strong></td>
+            <td align="center"> <a href="https://www.youtube.com/watch?v=vCauH-fdbQY&list=PLc7bpbeTIk74esZj1hd7LF3VYeJM3NYo5&index=29">Control Partitioning (pt1)</a></td>
+            <td align="center"><a href="legs/notes/Lec17b_FeedbackLinearization_part1.pdf">Feedback Lineraization PDF 1</a></td>
+            <td align="center"><a href="legs/code/Lec17b_control_partitioning.zip">Lec 17b Code</a></td>
+           <td rowspan="2"><ul>
+                 <li>This section introduces control partitioning or feedback linearization to track the reference motion.</li>
+                 <li>The key idea is to cancel the nonlinear dynamics and gravitational dynamics followed by wrapping a feedback controller</li>
+                 <li>The concepts are illustrated using simple MATLAB examples.</li>
+                 <li>Additional methods such as feed-forward, gravity + feedback, proportional-integral-derivative control are also introduced.</li>
+           </ul></td>
+        </tr>
+        
+        <tr style="background-color: #f0f0f2" align="center">
+            <td> <a href="https://www.youtube.com/watch?v=YCAKSYM_r7Y&list=PLc7bpbeTIk74esZj1hd7LF3VYeJM3NYo5&index=30">Control Partitioning (pt2)</a></td>
+            <td> <a href="legs/notes/Lec17c_FeedbackLinearization_part2.pdf">Feedback Lineraization PDF 2</a></td>
+            <td align="center"> <a href="legs/code/Lec17c_control_partitioning.zip">Lec 17c Code</a></td>
         </tr>
     
+                
+                
         <tr>
-            <td> <a href="https://www.youtube.com/watch?v=Mbrs5IK46Ys&list=PLc7bpbeTIk74esZj1hd7LF3VYeJM3NYo5&index=19">Rimless Wheel Modeling</a></td>
-            <td align="center"> N/A</td>
-            <td align="left"> <a href="legs/code/lec9_CoppeliaSim_rimlesswheel.zip">Lec 9 Code</a></td>
+            <td align="center"><strong>23. </strong><strong>Legged mechanics for Walkers</strong></td>
+            <td align="center"> <a href="https://www.youtube.com/watch?v=jBMEm9U2Pbk&list=PLc7bpbeTIk74esZj1hd7LF3VYeJM3NYo5&index=36">Walker with Feedback Linerazation</a></td>
+            <td align="center"> <a href="legs/notes/Lec23_Walker_Partial_Feedback_Linearization.pdf">Mechanics of Walkers PDF</a></td>
+            <td align="center"> <a href="legs/code/Lec23_Walker_with_partial_feedback_linearization.zip"> Lec 23 Code</a></td>
+            <td><ul>
+                <li>Since one of the two joints of the robt are unactuated, one can only usal partial feedback to control one joint</li>
+                <li>The other joint is left free and is analzed using tools from hybrid systems (see Terminology for hybrid systems)</li>
+                </ul>
+            </td>
         </tr>
         
-        <tr style="background-color: lightgray">
-            <td rowspan="1"><b>10. </b>Jacobian Application Review</td>
-            <td rowspan="1"><a href="https://www.youtube.com/watch?v=hscXG4GKTm0&list=PLc7bpbeTIk74esZj1hd7LF3VYeJM3NYo5&index=20">Jacobian Review Problems</a></td>
-            <td> <a href="legs/notes/Lec10a_Jacobian.pdf"> Jacobian Review PDF</a></td>
-            <td align="center">N/A</td>
-        </tr>
-        
-        <tr>
-            <td rowspan="2"><b>11. </b><strong>Closed Loop Chain Simulations</strong></td>
-            <td> <a href="https://www.youtube.com/watch?v=0Xg2KGAgQBg&list=PLc7bpbeTIk74esZj1hd7LF3VYeJM3NYo5&index=21">Dynamic simulation of closed chains</a></td>
-            <td rowspan="2"><a href="legs/notes/Lec11_Closed_Loop_Chains.pdf">Closed Chain Loops PDF</a></td>
-            <td> <a href="legs/code/Lec11a_ClosedLoopSystems.zip">Lec 11.1 Code</a></td>
-        </tr>
-        
-        <tr>
-            <td><a href="https://www.youtube.com/watch?v=4bwSXbMDrJM&feature=youtu.be">5-link Chain in CoppeliaSim</a></td>
-            <td> <a href="legs/code/Lec11b_CoppeliaSim_closed_chain.zip">Lec 11.2 Code</a></td>
-        </tr>
-        
-        <tr style="background-color: lightgray">
-            <td><strong>12. </strong>Single Leg hopper</td>
-            <td><a href="https://www.youtube.com/watch?v=qI_94iU1S0c&list=PLc7bpbeTIk74esZj1hd7LF3VYeJM3NYo5&index=23">Spring load inverted pendulum model</a></td>
-            <td><a href="legs/notes/Lec12_Hopping_Model.pdf">Hopping Model PDF</a></td>
-            <td> <a href="legs/code/Lec12_Spring_Loaded_Inverted_Pendulum.zip">Lec 12 Code</a></td>
-        </tr>
-        
-        <tr>
-            <td><b>13. </b><strong>CoppeliaSim Custom PID Control</strong></td>
-            <td><a href="https://www.youtube.com/watch?v=_hN8zYMbXt0&list=PLc7bpbeTIk74esZj1hd7LF3VYeJM3NYo5&index=24">Custom PID Control Video</a></td>
-            <td align="center">N/A</td>
-            <td><a href="legs/code/Lec13_Coppelia_Pendulum_CustomPID.zip">Lec 13 Code</a></td>
-        </tr>
-        
-        <tr style="background-color: lightgray">
-            <td rowspan="2"><b>14. </b>Foot Placment Control</td>
-            <td><a href="https://www.youtube.com/watch?v=7eWLyo2a5UE&list=PLc7bpbeTIk74esZj1hd7LF3VYeJM3NYo5&index=25">Foot Placement Control for Hopper</a></td>
-            <td><a href="legs/notes/Lec14a_FootPlacement_Hopper.pdf">Hopper Foot Control PDF</a></td>
-            <td> <a href="legs/code/Lec14a_raibert_controller_for_hopper.zip">Lec 14.1 Code</a></td>
-        </tr>
-        
-        <tr style="background-color: lightgray">
-            <td><a href="https://www.youtube.com/watch?v=8aAyfx6JNDw&list=PLc7bpbeTIk74esZj1hd7LF3VYeJM3NYo5&index=26">Foot Placement Control for Walker</a></td>
-            <td> <a href="legs/notes/Lec14b_FootPlacement_Walker.pdf">Walker Foot Control PDF</a></td>
-            <td><a href="legs/code/Lec14b_walker_foot_placement.zip">Lec 14.2 Code</a></td>
-        </tr>
-        
-        
-        <tr>
-            <td><b>15.1 </b><strong>Two tricks for 2D legged simulation</strong></td>
-            <td><a href="https://www.youtube.com/watch?v=RTq-HxSx3IE">Two tricks for 2D legged simulation</a></td>
-            <td><a href="legs/notes/Lec15a_TwoTricks_PlanarSystems_Coppeliasim.pdf">Walker Simulations PDF</a></td>
-            <td><a href="legs/code/lec15a_TwoTricks_PlanarLegged_CoppeliaSim.zip">Lec 15.1 Code</a></td>
-        </tr>
-        
-        <tr>
-			<td><b>15.2 </b><strong>Trajectory Generation</strong></td>
-            <td><a href="https://www.youtube.com/watch?v=krGtHrMJfXc">Trajectory Generation</a></td>
-            <td><a href="legs/notes/Lec15b_Trajectory_Generation.pdf">Trajectory Generation PDF</a></td>
-            <td><a href="legs/code/lec15b_trajectory_generation.zip">Lec 15.2 Code</a></td>
-        </tr>
-        
-        <tr style="background-color: lightgray">
-            <td><b>16. </b>Trajectory Optimization</td>
-            <td> <a href="https://www.youtube.com/watch?v=tr_rg-XS61M&list=PLc7bpbeTIk74esZj1hd7LF3VYeJM3NYo5&index=27">Trajectory Optimization Video</a></td>
-            <td><a href="legs/notes/Lec16_Trajectory_Optimization.pdf"> Trajectory Optimization PDF</a></td>
-            <td><a href="legs/code/Lec16_Optimization.zip">Lec 16 Code</a></td>
-        </tr>
-        
-        <tr>
-            <td><b>17.1 </b><strong>CoppeliaSim Trajectory Generation</strong></td>
-            <td><a href="https://www.youtube.com/watch?v=uHQUUe8t_oU&list=PLc7bpbeTIk74esZj1hd7LF3VYeJM3NYo5&index=28">Reflexess Motion Library</a></td>
-           <td align="center">N/A</td>
-           <td> <a href="legs/code/Lec17aCoppeliaSim_RML.zip">Lec 17.1 Code</a></td>
-        </tr>
-        
-        <tr style="background-color: lightgray">
-            <td rowspan="2"><b>17.2 </b>Control Partitioning/Feedback Linearization</td>
-            <td> <a href="https://www.youtube.com/watch?v=vCauH-fdbQY&list=PLc7bpbeTIk74esZj1hd7LF3VYeJM3NYo5&index=29">Control Partitioning (pt1)</a></td>
-            <td><a href="legs/notes/Lec17b_FeedbackLinearization_part1.pdf">Feedback Lineraization PDF 1</a></td>
-            <td><a href="legs/code/Lec17b_control_partitioning.zip">Lec 17.2 Code</a></td>
-        </tr>
-        
-        <tr>
-            <td style="background-color: lightgray"> <a href="https://www.youtube.com/watch?v=YCAKSYM_r7Y&list=PLc7bpbeTIk74esZj1hd7LF3VYeJM3NYo5&index=30">Control Partitioning (pt2)</a></td>
-            <td style="background-color: lightgray"> <a href="legs/notes/Lec17c_FeedbackLinearization_part2.pdf">Feedback Lineraization PDF 2</a></td>
-            <td style="background-color: lightgray"> <a href="legs/code/Lec17c_control_partitioning.zip">Lec 17.3 Code</a></td>
-        </tr>
-        
-        <tr>
-            <td><b>18. </b><strong>Debugging Trajectory Optimaztion</strong></td>
-            <td><a href="https://www.youtube.com/watch?v=3UlAdj9UnnI&list=PLc7bpbeTIk74esZj1hd7LF3VYeJM3NYo5&index=31">Debugging Video</a></td>
-            <td> <a href="legs/notes/Lec18_Deubgging_Trajectory_Optimization.pdf">Optimization PDF</a><br></td>
-            <td align="center">N/A</td>
-        
-        </tr>
-        
-        <tr style="background-color: lightgray">
-            <td> <b>19. </b>CoppeliaSim Projectile from MATLAB</td>
-            <td><a href="https://www.youtube.com/watch?v=80xDU8y_qwk&list=PLc7bpbeTIk74esZj1hd7LF3VYeJM3NYo5&index=32">Projectile Sim via&nbsp; Remote API</a></td>
-            <td align="center">N/A<br></td>
-            <td><a href="legs/code/Lec19_CoppeliaSimMatlab.zip">Lec 19 Code</a></td>
-        </tr>
-        
-        <tr>
-            <td> <b>20. </b><strong>Solving Periodic Gaits Using fmincon</strong></td>
-            <td><a href="https://www.youtube.com/watch?v=YLvHQMdERHU&list=PLc7bpbeTIk74esZj1hd7LF3VYeJM3NYo5&index=33">Solving for periodic gait</a></td>
-            <td align="center">N/A<br></td>
-            <td> <a href="legs/code/Lec20_powered_walker_optimization.zip">Lec 20 Code</a></td>
-        </tr>
-        
-        <tr style="background-color: lightgray">
-            <td> <b>21. </b>Coppelia Sim Control Partitioning</td>
-            <td><a href="https://www.youtube.com/watch?v=W65Eavchw8Q&list=PLc7bpbeTIk74esZj1hd7LF3VYeJM3NYo5&index=34">Control Partitioning/Feedback Linearization</a></td>
-            <td align="center">N/A</td>
-            <td><a href="legs/code/Lec21_Coppelia_control_partitioning.zip"> Lec 21 Code</a></td>
-        </tr>
-        
-        <tr>
-            <td><b>22. </b><strong>Introduction to Finite State Machine</strong></td>
-            <td><a href="https://www.youtube.com/watch?v=ms1V_IuiK-A&list=PLc7bpbeTIk74esZj1hd7LF3VYeJM3NYo5&index=35">Using State machine to Control Pendulum</a></td>
-            <td align="center">N/A<br></td>
-            <td><a href="legs/code/Lec22_Finite_State_Machine.zip"> Lec 22 Code</a></td>
-        </tr>
-        
-        <tr style="background-color: lightgray">
-            <td><b>23. </b>Control of&nbsp; Walkers using Partial Feedback Linearization</td>
-            <td> <a href="https://www.youtube.com/watch?v=jBMEm9U2Pbk&list=PLc7bpbeTIk74esZj1hd7LF3VYeJM3NYo5&index=36">Walker with Feedback Linearization</a></td>
-            <td> <a href="legs/notes/Lec23_Walker_Partial_Feedback_Linearization.pdf">Control&nbsp; of Walkers PDF</a></td>
-            <td> <a href="legs/code/Lec23_Walker_with_partial_feedback_linearization.zip"> Lec 23 Code</a></td>
-        
-        </tr>
-        
-        <tr>
-            <big><td><b>24. </b><strong>Passive Dynamic Walker in CoppeliaSim</strong></td></big>
-            <td><a href="https://www.youtube.com/watch?v=5CORuzqC61I&list=PLc7bpbeTIk74esZj1hd7LF3VYeJM3NYo5&index=38"> Passive Dynamic Walker Video</a> </td>
-            <td align="center">N/A</td>
-            <td><a href="legs/code/Lec24_PassiveDynamicWalker_CoppeliaSim.zip">Lec 24 Code</a></td>
-        </tr>
-        
-        <tr style="background-color: lightgray">
-            <td><b>25. </b>Feedback Linearization of closed chains</td>
-            <td> <a href="https://www.youtube.com/watch?v=zz74EHmmC0M&list=PLc7bpbeTIk74esZj1hd7LF3VYeJM3NYo5&index=40">Feedback Linearization for Closed Chains</a></td>
-            <td><a href="legs/notes/Lec25_FeedbackLinearization_ClosedChains.pdf">Closed Chain Modeling and Simulation Control</a></td>
-            <td><a href="legs/code/Lec25_ClosedChain_FeedbackLinearization.zip"> Lec 25 Code</a></td>
-        </tr>
-        
-        <tr>
-            <td><b>26. </b><strong>3D Rotations and Euler Angles </strong></td>
+                
+        <tr style="background-color: #f0f0f2">
+            <td align="center"><strong>14b. Foot Placement control of Walker</strong></td>
+            <td align="center"><a href="https://www.youtube.com/watch?v=8aAyfx6JNDw&list=PLc7bpbeTIk74esZj1hd7LF3VYeJM3NYo5&index=26">Walker foot placement</a></td>
+            <td align="center"> <a href="legs/notes/Lec14b_FootPlacement_Walker.pdf">Walker Foot Control PDF</a></td>
+            <td align="center"><a href="legs/code/Lec14b_walker_foot_placement.zip">Lec 14b Code</a></td>   
+            <td><ul>
+                <li>This section sketches some ideas on developing a foot placement control using a table lookup.</li>
+                <li>No Code provided</li>
+                </ul></td>
+                
+        </tr> 
+</table>
+    
+
+            
+    <div id="mod5">
+        <br><br>       
+    </div>          
+        <br>
+    <div>
+        <h2 align="center"><strong>Module 5: 3D Biped walking (MATLAB) </strong></h2>
+    </div>
+<table style="width:100%" border="3">
+    <tr>
+    <!-- Adding the header colums of content materials and videos -->
+        <th style="text-align: center"><big><big>Topic (Units)</big></big></th>
+        <th style="text-align: center"><big><big>Videos</big></big></th>
+        <th style="text-align: center"><big><big>Lecture Notes</big></big></th>
+        <th style="text-align: center"><big><big>Source Code</big></big></th>
+        <th style="text-align: center"><big><big>Description</big></big></th>
+    </tr>
+                
+         <tr style="background-color: #f0f0f2" align="center">
+            <td><b>26. </b><strong>Euler Parameters and Rotations</strong></td>
             <td> <a href="https://www.youtube.com/watch?v=v7XDqFt7a90&list=PLc7bpbeTIk74esZj1hd7LF3VYeJM3NYo5&index=41">Rotations and Euler Parameters</a></td>
             <td><a href="legs/notes/Lec26_3D_rotations.pdf">3D rotations and Velocity PDF</a></td>
             <td> <a href="legs/code/Lec26_3Drotations.zip"> Lec 26 Code</a></td>
+            <td> Introduction to 3D rotations using Euler Angles</td>
         </tr>
         
-        <tr style="background-color: lightgray">
-            <td><b>27. </b>3D Angular Velocity</td>
-            <td> <a href="https://www.youtube.com/watch?v=JI-pNtvodJA&list=PLc7bpbeTIk74esZj1hd7LF3VYeJM3NYo5&index=42">3D anguar Velocity</a></td>
-            <td><a href="legs/notes/Lec27_3D_angularvelocity.pdf">3D angular Velocity PDF</a></td>
+                
+               
+       <tr>
+            <td align="center"><b>27. </b><strong>Angular Velocity</strong></td>
+            <td align="center"> <a href="https://www.youtube.com/watch?v=JI-pNtvodJA&list=PLc7bpbeTIk74esZj1hd7LF3VYeJM3NYo5&index=42">3D anguar Velocity</a></td>
+            <td align="center"><a href="legs/notes/Lec27_3D_angularvelocity.pdf">3D angular Velocity PDF</a></td>
             <td align="center">N/A</td>
+            <td><ul>
+                <li>Euler-Lagrange equations applied to a free falling block</li>
+                <li>This includes derivations, simulations and animation for the falling block.</li>
+                </ul></td>
+        </tr>
+        
+        <tr style="background-color: #f0f0f2">
+            <td rowspan="2" align="center"><b>29. </b><strong>Zero Refrenece Model</strong></td>
+            <td> <a href="https://www.youtube.com/watch?v=VijV9o3rekQ&list=PLc7bpbeTIk74esZj1hd7LF3VYeJM3NYo5&index=44">Zero Reference Model for Kimetics</a></td>
+            <td rowspan="2" align="center"><a href="legs/notes/Lec29a_zero_reference_model.pdf">Zero Reference Model PDF</a></td>
+            <td rowspan="2" align="center"> <a href="legs/code/Lec29b_mex_files.zip"> Lec 29 Code</a></td>
+            <td rowspan="2"><ul>
+                <li>Since Euler-Lagrange equations for simple systems get unwiedly it is recommended to these time consuming equations to C (called MEX files) and call them from MATLAB</li>
+                <li>This section illustrates how to write MEX files and demonstrates derivation, simulation, and animation of a n-link pendulum where the number of links n can be set by the user</li>
+                </ul></td>
+        </tr>
+        
+       <tr style="background-color: #f0f0f2">
+            <td><a href="https://www.youtube.com/watch?v=Hn0ZYvWG5a4">MEX Files MATLAB to C++ Interface</a></td>
+        </tr>     
+                
+        
+            
+        
+        <tr>
+            <td rowspan="2" align="center"><b>8. </b><strong>Passive Dynamic Walkers</strong></td>
+            <td><a href="https://www.youtube.com/watch?v=rCfF-hsvCG8&list=PLc7bpbeTIk74esZj1hd7LF3VYeJM3NYo5&index=17">Passive Dynamic Walker (Pt1)</a></td>
+            <td><a href="legs/notes/Lec8a_passivewalker_part1.pdf">Passive Dynamic Walker PDF 1</a></td>
+            <td align="center" rowspan="2"><a href="legs/code/lec8_passivewalker.zip">Lec 8 Code</a></td>
+            <td rowspan="2"><ul>
+                <li>Intuition behind writing the equations of motion. Use of Euler-Lagrage equations to derive the equation for stance phase.</li>
+                <li>Use of Euler-Lagrage equations to derive the equations for heelstrike. Some intuition about how to simulate the system. </li>
+                </ul>
+            </td>
+        </tr>
+                
+        <tr>
+            <td><a href="https://www.youtube.com/watch?v=3hnDr_zOWV4&list=PLc7bpbeTIk74esZj1hd7LF3VYeJM3NYo5&index=18">Passive Dynamic Walker (Pt2)</a></td>
+            <td> <a href="legs/notes/Lec8b_passivewalker_part2.pdf">Passive Dynamic Walker PDF 2</a></td>
+        </tr>    
+        
+        <tr style="background-color: #f0f0f2">
+            <td align="center"><b>15. </b><strong>Trajectory generation</strong></td><br>
+             <td><a href="https://www.youtube.com/watch?v=krGtHrMJfXc">15b. Trajectory Generation</a></td>
+            <td><a href="legs/notes/Lec15b_Trajectory_Generation.pdf">Trajactory Generations PDF</a></td>
+            <td align="center"><a href="legs/code/lec15b_trajectory_generation.zip">Lec 15b Code</a></td>
+            <td><ul>
+              <li>Generating a reference trajectory using polynomials and given start and end conditions</li>
+              </ul>
+            </td>
+        </tr>
+        
+        
+                
+        <tr style="background-color: #f0f0f2">
+            <td rowspan="2" align="center"><b>17.2 </b><strong>Control Patitioning/Feedback Linearization</strong></td>
+            <td> <a href="https://www.youtube.com/watch?v=vCauH-fdbQY&list=PLc7bpbeTIk74esZj1hd7LF3VYeJM3NYo5&index=29">Control Partitioning (pt1)</a></td>
+            <td><a href="legs/notes/Lec17b_FeedbackLinearization_part1.pdf">Feedback Lineraization PDF 1</a></td>
+            <td align="center"><a href="legs/code/Lec17b_control_partitioning.zip">Lec 17b Code</a></td>
+           <td rowspan="2"><ul>
+                 <li>This section introduces control partitioning or feedback linearization to track the reference motion.</li>
+                 <li>The key idea is to cancel the nonlinear dynamics and gravitational dynamics followed by wrapping a feedback controller</li>
+                 <li>The concepts are illustrated using simple MATLAB examples.</li>
+                 <li>Additional methods such as feed-forward, gravity + feedback, proportional-integral-derivative control are also introduced.</li>
+           </ul></td>
+        </tr>
+        
+        <tr style="background-color: #f0f0f2">
+            <td> <a href="https://www.youtube.com/watch?v=YCAKSYM_r7Y&list=PLc7bpbeTIk74esZj1hd7LF3VYeJM3NYo5&index=30">Control Partitioning (pt2)</a></td>
+            <td> <a href="legs/notes/Lec17c_FeedbackLinearization_part2.pdf">Feedback Lineraization PDF 2</a></td>
+            <td align="center"> <a href="legs/code/Lec17c_control_partitioning.zip">Lec 17c Code</a></td>
+        </tr>
+                       
+        <tr>
+          <td align="center"> <b>30. </b> <strong> Biped Control and Simulations</strong></td>
+          <td align="center"> <a href="https://www.youtube.com/watch?v=0u_-KxBioAo&list=PLc7bpbeTIk74esZj1hd7LF3VYeJM3NYo5&index=46">Humaniod Modeling and Control</a></td>
+          <td align="center"> <a href="legs/notes/Lec30_humanoid.pdf">Humanoid PDF</a></td>
+          <td align="center"> <a href="legs/code/Lec30_humanoid.zip"> Lec 30 Code </a></td>
+            <td><ul>
+                <li>Uses Euler-Lagrange equations to derive the equation</li>
+                <li>Using trajectory generation to generate profiles for hip and knee.</li>
+                <li>Use of partial feedback linearization to control the 3D model.</li>
+                <li>Includes simulations, generation of MEX files, and animations.</li>
+                </ul></td>
+       </tr>
+            
+</table>
+            
+    <div id="mod6">
+         <br><br>       
+          </div>          
+        <br>
+        <div>
+            <h2 align="center"><strong>Module 6: </strong>2D Rimless wheel modeling (CoppeliaSim) </h2>
+          </div>
+            <table style="width:100%" border="3">
+                <tr>
+            <!-- Adding the header colums of content materials and videos -->
+            <th style="text-align: center"><big><big>Topic (Units)</big></big></th>
+            <th style="text-align: center"><big><big>Videos</big></big></th>
+            <th style="text-align: center"><big><big>Lecture Notes</big></big></th>
+            <th style="text-align: center"><big><big>Source Code</big></big></th>
+            <th style="text-align: center"><big><big>Description</big></big></th>
+        </tr>
+                
+        <tr>
+            <td align="center"><strong>4. Intro to Coppelia Sim</strong></td>
+            <td align="center"> <a href="https://www.youtube.com/watch?v=pNZ1ux164q8&list=PLc7bpbeTIk74esZj1hd7LF3VYeJM3NYo5&index=10">Projectile using Euler-Lagrange</a></td>
+            <td align="center">N/A</td>
+            <td align="center"><a href="legs/code/lec4_CoppeliaSim_projectile.zip">Lec 4 Code</a></td>
+            <td> <ul>
+                <li>Shows how to model and simulate a 2D projectile with drag in CoppeliaSim.</li>
+                </ul>
+          </td>
+        </tr>
+        
+            
+        <tr style="background-color: #f0f0f2">
+            <td rowspan="1" align="center"><b>9. </b><strong>CoppeliaSim Rimless Wheel Modeling</strong></td>
+            <td align="center"> <a href="https://www.youtube.com/watch?v=Mbrs5IK46Ys&list=PLc7bpbeTIk74esZj1hd7LF3VYeJM3NYo5&index=19">Rimless Wheel Modeling Video</a></td>
+            <td align="center"> N/A</td>
+            <td align="center"> <a href="legs/code/lec9_CoppeliaSim_rimlesswheel.zip">Lec 9 Code</a></td>
+            <td>Shows different ways of modeling a 2D rimless wheel:
+                <ol>
+                <li> Using two wheels attached side to side</li>
+                <li>Using a spherical joint to constrain the wheel to 2D.</li>
+                </ol>
+            </td>
+        </tr>
+         
+                
+        <tr style="background-color: #f0f0f2">
+           <td align="center"><b>15. </b><strong>Two tricks for simulating planar systems in CoppeliaSim</strong></td>
+            <td align="center"><a href="https://www.youtube.com/watch?v=RTq-HxSx3IE">15a. Two tricks for 2D legged simulation</a></td>
+            <td align="center"><a href="legs/notes/Lec15a_TwoTricks_PlanarSystems_Coppeliasim.pdf">Walker Simulations PDF</a></td>
+            <td align="center"><a href="legs/code/lec15a_TwoTricks_PlanarLegged_CoppeliaSim.zip">Lec 15a Code</a></td>
+            <td> <ul>
+                <li>This rimless model shown here has a torso. </li>
+                <li>The torso can be controlled to a constant pitch angle to get the rimless wheel to move continuously.</li>
+                <li> (See 5 Modeling and control in CoppeliaSim on how to do position, velocity, and torque control).</li>
+                </ul></td>
+        </tr>                
+</table>
+            
+            
+    <div id="mod7">
+        <br><br>       
+    </div>          
+        <br>
+        <div>
+            <h2 align="center"><strong>Module 7: </strong>2D Passive dynamic Walker (CoppeliaSim) </h2>
+        </div>
+<table style="width:100%" border="3">
+        <tr>
+            <!-- Adding the header colums of content materials and videos -->
+            <th style="text-align: center"><big><big>Topic (Units)</big></big></th>
+            <th style="text-align: center"><big><big>Videos</big></big></th>
+            <th style="text-align: center"><big><big>Lecture Notes</big></big></th>
+            <th style="text-align: center"><big><big>Source Code</big></big></th>
+            <th style="text-align: center"><big><big>Description</big></big></th>
+        </tr>
+                
+       <tr style="background-color: #f0f0f2">
+            <td align="center"><strong>4. Intro to Coppelia Sim</strong></td>
+            <td align="center"> <a href="https://www.youtube.com/watch?v=pNZ1ux164q8&list=PLc7bpbeTIk74esZj1hd7LF3VYeJM3NYo5&index=10">Projectile using Euler-Lagrange</a></td>
+            <td align="center">N/A</td>
+            <td align="center"><a href="legs/code/lec4_CoppeliaSim_projectile.zip">Lec 4 Code</a></td>
+            <td> <ul>
+                <li>Shows how to model and simulate a 2D projectile with drag in CoppeliaSim.</li>
+                </ul>
+          </td>
+        </tr>
+        
+            
+        <tr>
+            <td rowspan="1" align="center"><b>9. </b><strong>CoppeliaSim Rimless Wheel Modeling</strong></td>
+            <td align="center"> <a href="https://www.youtube.com/watch?v=Mbrs5IK46Ys&list=PLc7bpbeTIk74esZj1hd7LF3VYeJM3NYo5&index=19">Rimless Wheel Modeling Video</a></td>
+            <td align="center"> N/A</td>
+            <td align="center"> <a href="legs/code/lec9_CoppeliaSim_rimlesswheel.zip">Lec 9 Code</a></td>
+            <td>Shows different ways of modeling a 2D rimless wheel:
+                <ol>
+                <li> Using two wheels attached side to side</li>
+                <li>Using a spherical joint to constrain the wheel to 2D.</li>
+                </ol>
+            </td>
+        </tr>
+              
+         <tr style="background-color: #f0f0f2">
+           <td align="center"><b>15. </b><strong>Two tricks for simulating planar systems in coppeliaSim</strong></td>
+            <td align="center"><a href="https://www.youtube.com/watch?v=RTq-HxSx3IE">15a. Two tricks for 2D legged simulation</a></td>
+            <td align="center"><a href="legs/notes/Lec15a_TwoTricks_PlanarSystems_Coppeliasim.pdf">Walker Simulations PDF</a></td>
+            <td align="center"><a href="legs/code/lec15a_TwoTricks_PlanarLegged_CoppeliaSim.zip">Lec 15a Code</a></td>
+            <td> <ul>
+                <li>This rimless model shown here has a torso. </li>
+                <li>The torso can be controlled to a constant pitch angle to get the rimless wheel to move continuously.</li>
+                <li> (See 5 Modeling and control in CoppeliaSim on how to do position, velocity, and torque control).</li>
+                </ul>
+             </td>
+        </tr>
+                
+        <tr>
+            <td align="center"><b>22. </b><strong>Finite State machine to Control Pendulum</strong></td>
+            <td align="center"><a href="https://www.youtube.com/watch?v=ms1V_IuiK-A&list=PLc7bpbeTIk74esZj1hd7LF3VYeJM3NYo5&index=35">Using State machine to Control Pendulum</a></td>
+            <td align="center">N/A<br></td>
+            <td align="center"><a href="legs/code/Lec22_Finite_State_Machine.zip"> Lec 22 Code</a></td>
+            <td><ul>
+                <li>A finite state machine is a control architecture to develop controllers for walking machines.</li>
+                <li>This example illustrates how to program a finite state machine to do a swing up and hold. </li>
+                <li>Might be helful to review lecture 5. </li>
+                </ul></td>
+        </tr> 
+                
+                
+        <tr style="background-color: #f0f0f2">
+            <td align="center"><b>24. </b><strong>Passive Dynamic Walker</strong></td>
+            <td align="center"><a href="https://www.youtube.com/watch?v=5CORuzqC61I&list=PLc7bpbeTIk74esZj1hd7LF3VYeJM3NYo5&index=38"> Passive Dynamic Walker Video</a> </td>
+            <td align="center">N/A</td>
+            <td align="center"><a href="legs/code/Lec24_PassiveDynamicWalker_CoppeliaSim.zip">Lec 24 Code</a></td>
+            <td><ul>
+                <li>A model of passive walking with articulated knees (to get ground clearance) and hip spring to tune frequency of the swinging legs.</li>
+                <li>The two tricks <a href="#Lecture 15">(see 15 a)</a>are used to keep track of absolute angles and rotate gravity.</li>
+                <li>A finite state machine is used to generate the simulation. </li>
+                </ul>
+            </td>
+        </tr>
+            
+</table>
+                     
+   
+<br>
+    <div id="FullTable">
+         <br><br>       
+    </div>
+<!--THE START OF THE ALL LECTURES-->
+        <br>
+        <div>
+            <h1 class="display-2 text-center"> <strong> All Lecture Material</strong></h1>
+          </div>
+    <table style="width:100%" border="3">
+        <tr>
+            <!-- Adding the header colums of content materials and videos -->
+            <th style="text-align: center"><big><big>Topic (Units)</big></big></th>
+            <th style="text-align: center"><big><big>Videos</big></big></th>
+            <th style="text-align: center"><big><big>Lecture Notes</big></big></th>
+            <th style="text-align: center"><big><big>Source Code</big></big></th>
+            <th style="text-align: center"><big><big>Description</big></big></th>
+        </tr>
+                
+         <tr>
+            <td align="center"><strong>1. Foward Kinematics</strong></td>
+            <td align="center"> <a href="https://www.youtube.com/watch?v=rn5bZ8AHl6s&list=PLc7bpbeTIk74esZj1hd7LF3VYeJM3NYo5&index=5">Forward Kinematics Video </a></td>
+            <td align="center"> <a href="legs/notes/Lec1_fwd_kinematics.pdf"> Forward Kinemetics PDF</a></td>
+            <td align="center"> <a href="legs/code/lec1_forwardkinematics.zip" >Lec Code 1</a></td>
+            <td><ul><li>Representing the kinematics using homogenous rotaions and translations</li>
+                <li>Forward kinematics gives the end-effector position for the given joint angles</li>
+                <li>llustrated using a two-link planar manipulator.</li>
+                </ul> </td>
+        </tr>
+                
+        <tr style="background-color: #f0f0f2">
+            <td align="center"> <b>2. 2D Inverse Kinematics</b></td>
+            <td align="center"> <a href="https://www.youtube.com/watch?v=v9-DZoZhWHM&list=PLc7bpbeTIk74esZj1hd7LF3VYeJM3NYo5&index=6">Inverse Kinemetics Video</a></td>
+            <td align="center"><a href="legs/notes/Lec2_inverse_kinematics.pdf">Inverse Kinemetics PDF</a></td>
+            <td align="center"> <a href="legs/code/lec2_inversekine_projectile.zip">Lec Code 2</a></td>
+            <td><ul>
+                <li>Inverse kinematics is solving for joint angles for a given position of the end-effector. </li>
+                <li> This is harder because there may be a single, multiple or no solution to the inverse kinematics problem.</li>
+                <li>Here we use root finding to solver for the inverse kinematics and illustrate it on a 2D planar manipulator.</li>
+                </ul>
+            </td>
+        </tr>
+          
+         <tr>
+            <td rowspan="4" align="center"><b>3. Euler-Lagrange </b> </td>
+            <td align="center"> <a href = "https://www.youtube.com/watch?v=XcTsx85kjV8"><strong>3a.</strong> Dynamics using Euler-Lagrange Equations</a></td>
+            <td rowspan="4" align="center"> <a href="legs/notes/Lec3_dynamics_euler_lagrange.pdf">Dynamics of Euler-Lagrange PDF</a></td>
+            <td rowspan="4" align="center"> <a href="legs/code/lec3_euler_lagrange.zip">Lec Code 3</a></td>
+           <td rowspan="4"> <ul>
+              <li>Algorithm for solving for equations of motion using Euler-Lagrange equations. This is illistrated on a simple projectile withdrag</li>
+              <li>Basics of differentiation and chain rule. Writing symbolic code to derive the equations of motion.</li>
+              <li>Demonstrate how to derive equations of motion of a planar double pendulum</li>
+            </ul></td>
+        </tr>
+        
+        <tr align="center">
+            <td> <a href="https://www.youtube.com/watch?v=TmYCPXQLDZU"><strong>3b.</strong> Deriving Equations of Motion</a></td>
+        </tr>    
+        
+        <tr align="center">
+            <td> <a href="https://www.youtube.com/watch?v=nIxBa8WmdOI"><strong>3c.</strong> Double Pendulum Simulation</a></td>
+    
+        </tr>
+        <tr align="center">
+            <td> <a href="https://www.youtube.com/watch?v=pNZ1ux164q8"><strong>3d.</strong> 1D projectile using Euler-Lagrange</a></td>
+        </tr>
+            
+        <tr style="background-color: #f0f0f2">
+            <td align="center"><strong>4. Intro to Coppelia Sim</strong></td>
+            <td align="center"> <a href="https://www.youtube.com/watch?v=pNZ1ux164q8&list=PLc7bpbeTIk74esZj1hd7LF3VYeJM3NYo5&index=10">Projectile using Euler-Lagrange</a></td>
+            <td align="center">N/A</td>
+            <td align="center"><a href="legs/code/lec4_CoppeliaSim_projectile.zip">Lec 4 Code</a></td>
+            <td> <ul>
+                <li>Shows how to model and simulate a 2D projectile with drag in CoppeliaSim.</li>
+                </ul>
+          </td>
+        </tr>
+                
+        <tr>
+            <td align="center"><b>5. </b> <strong> Coppelia Sim Modeling</strong></td>
+            <td align="center"><a href="https://www.youtube.com/watch?v=ANqvp7ZabG0&list=PLc7bpbeTIk74esZj1hd7LF3VYeJM3NYo5&index=12">Modeling Simple Pendulum</a></td>
+            <td align="center"> N/A</td>
+            <td align="center"> <a href="legs/code/lec5_CoppeliaSim_pendulum.zip">Lec 5 Code</a></td>
+            <td><ul>
+                <li>Modeling for a simple pendulum in CoppeliaSim</li>
+                <li>Then we demonstrate how to do velocity, postion and torque using Lua scripts.</li>
+                </ul></td>
+        </tr>
+                
+        <tr style="background-color: #f0f0f2">
+            <td align="center"><strong>6.</strong> <strong>Jacobian Applications </strong></td>
+            <td align="center"> <a href="https://www.youtube.com/watch?v=RdIXGO9aBnc&list=PLc7bpbeTIk74esZj1hd7LF3VYeJM3NYo5&index=13">Jacobian and its Applications</a></td>
+            <td align="center"> <a href="legs/notes/Lec6a_Jacobian.pdf">Jacobian PDF</a></td>
+            
+          <td align="center"><a href="legs/code/lec6a_example_jacobian.zip">Lec 6 Code</a></td>
+            <td><ul>
+                <p align="center">Basics of Jacobian. We show how to compute the Jacobian using symbolic computations and finite differences. We present two applications of Jacobian</p>
+                <li>Find the velocity of points of interest and illustrated on planar double pendulum</li>
+                <li>Find the static forces on a double pendulum.</li>
+            </ul>
+         </td>
+        </tr>
+                
+        <tr>
+            <td rowspan="2" align="center"><b>7. Intro to Hybrid Systems </b></td>
+            <td align="center"> <a href="https://www.youtube.com/watch?v=empN1pMBxkk">Hybrid Systems Bouncing Ball Example</a></td>
+            <td align="center"><a href="legs/notes/Lec7a_hybrid_intro.pdf">Hybrid Intro PDF</a></td>
+            <td rowspan="2" align="center"><a href="legs/code/lec7a_ball_bounce.zip">Lec 7 Code</a></td>
+            <td rowspan="2" align="center"> <ul>
+                <li>Illustrate a hybrid system, a bouncing ball. We develop basic framework for simulating the system by coding one bounce and then repeated calls to one bounce</li>
+                <li>Introduction to passive dynamic walker as a hybrid system. Terminology of hybrid systems such as Poincare map, fixed point, linearized stability of the fixed point, and a simple analytical example. </li>
+                </ul>
+            </td>
         </tr>
         
         <tr>
+            <td align="center"><a href="https://www.youtube.com/watch?v=YrnhthxnVVU&list=PLc7bpbeTIk74esZj1hd7LF3VYeJM3NYo5&index=16">Hybrid Systems Termonology</a></td>
+            <td align="center"><a href="legs/notes/Lec7b_hybrid_terminology.pdf">Hybrid Terminology PDF</a></td>
+        </tr>
+                
+        
+         
+         <tr style="background-color: #f0f0f2">
+            <td rowspan="3" align="center"><strong>8. </strong><strong>Passive Dynamic Walkers</strong></td>
+            <td align="center"><a href="https://www.youtube.com/watch?v=rCfF-hsvCG8&list=PLc7bpbeTIk74esZj1hd7LF3VYeJM3NYo5&index=17"><strong>8a.</strong>&nbsp; Passive Dynamic Walker (Pt1)</a></td>
+            <td align="center"><a href="legs/notes/Lec8a_passivewalker_part1.pdf">Passive Dynamic Walker PDF 1</a></td>
+            <td align="center" rowspan="3"><a href="legs/code/lec8_passivewalker.zip">Lec 8 Code</a></td>
+            <td rowspan="3"><ul>
+                <li>(Pt1- derivation) Intuition behind writing the equations of motion. Use of Euler-Lagrage equations to derive the equation for stance phase.</li>
+                <li>(Pt2 - derivation) Use of Euler-Lagrage equations to derive the equations for heelstrike. Some intuition about how to simulate the system</li>
+                <li>(Pt3- coding) Live coding of the equations to generate steady state gaits and analyze their linearized stability (see Terminology for hybrid systems)</li>
+                </ul></td>
+        </tr>
+        
+        <tr style="background-color: #f0f0f2">
+            <td align="center"><a href="https://www.youtube.com/watch?v=3hnDr_zOWV4&list=PLc7bpbeTIk74esZj1hd7LF3VYeJM3NYo5&index=18"><strong>8b. </strong> Passive Dynamic Walker (Pt2)</a></td>
+            <td rowspan="2" align="center"> <a href="legs/notes/Lec8b_passivewalker_part2.pdf">Passive Dynamic Walker PDF 2</a></td>
+        </tr>    
+        
+        <tr style="background-color: #f0f0f2">
+            <td align="center"><a href="https://www.youtube.com/watch?v=3hnDr_zOWV4"><strong> 8c.</strong> Passive Dynamic Walker (Pt3) Coding</a></td>    
+        </tr>
+                
+         <tr>
+            <td rowspan="1" align="center"><b>9. </b><strong>CoppeliaSim Rimless Wheel Modeling</strong></td>
+            <td align="center"> <a href="https://www.youtube.com/watch?v=Mbrs5IK46Ys&list=PLc7bpbeTIk74esZj1hd7LF3VYeJM3NYo5&index=19">Rimless Wheel Modeling Video</a></td>
+            <td align="center"> N/A</td>
+            <td align="center"> <a href="legs/code/lec9_CoppeliaSim_rimlesswheel.zip">Lec 9 Code</a></td>
+            <td>Shows different ways of modeling a 2D rimless wheel:
+                <ol>
+                <li> Using two wheels attached side to side</li>
+                <li>Using a spherical joint to constrain the wheel to 2D.</li>
+                </ol>
+            </td>
+        </tr>
+        
+         
+        <tr id="Lecture10" align="center" style="background-color: #f0f0f2">
+            <td rowspan="1"><b>10. Jacobian Application Review </b></td>
+            <td rowspan="1"><a href="https://www.youtube.com/watch?v=hscXG4GKTm0&list=PLc7bpbeTIk74esZj1hd7LF3VYeJM3NYo5&index=20">Jacobian Review Problems</a></td>
+            <td> <a href="legs/notes/Lec10a_Jacobian.pdf"> Jacobian Review PDF</a></td>
+            <td align="center">N/A</td>
+            <td>We review Jacobians disscussed in Unit 6.</td>
+        </tr>
+                
+                
+        <tr>
+            <td rowspan="2" align="center"><b>11. </b><strong>Closed Loop 5-link Chain Simuations</strong></td>
+            <td align="center"> <a href="https://www.youtube.com/watch?v=0Xg2KGAgQBg&list=PLc7bpbeTIk74esZj1hd7LF3VYeJM3NYo5&index=21">Dynamics simulation of clsoed 5 chain loops</a></td>
+            <td rowspan="2" align="center"><a href="legs/notes/Lec11_Closed_Loop_Chains.pdf">Closed Chain Loops PDF</a></td>
+            <td align="center"> <a href="legs/code/Lec11a_ClosedLoopSystems.zip">Lec 11.1 Code</a></td>
+            <td rowspan="2"><ul>
+                <li>We demonstrate how to derive equations of a closed-loop chain and simulate.</li>
+                <li>We start off deriving equations of a 5-link pendulum and then add a constraint to create the closed loop chain. </li>
+                <li>Next, we show how to model and simulate a closed-loop chain in Coppelia Sim</li>
+                </ul></td>
+        </tr>
+        
+        <tr align="center">
+            <td><a href="https://www.youtube.com/watch?v=4bwSXbMDrJM&feature=youtu.be">5-link Chain in Coppelia Sim</a></td>
+            <td> <a href="legs/code/Lec11b_CoppeliaSim_closed_chain.zip">Lec 11.2 Code</a></td>
+        </tr>
+        
+        <tr style="background-color: #f0f0f2">
+            <td align="center"><b>12. Hopping model: Spring Loaded Inverted Pendulum</b></td>
+            <td align="center"><a href="https://www.youtube.com/watch?v=qI_94iU1S0c&list=PLc7bpbeTIk74esZj1hd7LF3VYeJM3NYo5&index=23">Spring load inverted pendulum model</a></td>
+            <td align="center"><a href="legs/notes/Lec12_Hopping_Model.pdf">Hopping Model PDF</a></td>
+            <td align="center"> <a href="legs/code/Lec12_Spring_Loaded_Inverted_Pendulum.zip">Lec 12 Code</a></td>
+            <td>
+                <ul>
+                <li>Using Euler-Lagrange equations to <strong>derive</strong> the equations of motion.</li>
+                <li>Details on <strong>simulation</strong> and animation.</li>
+                <li><strong>Generating</strong> steady state gaits and analyzing linear stability (see terminolgy for hybrid systems)</li>
+                </ul>
+           </td>
+        </tr>
+                
+                
+        <tr>
+            <td align="center"><b>13. </b><strong>CoppeliaSim Custom PID Control</strong></td>
+            <td align="center"><a href="https://www.youtube.com/watch?v=_hN8zYMbXt0&list=PLc7bpbeTIk74esZj1hd7LF3VYeJM3NYo5&index=24">Custom PID Control Video</a></td>
+            <td align="center">N/A</td>
+            <td align="center"><a href="legs/code/Lec13_Coppelia_Pendulum_CustomPID.zip">Lec 13 Code</a></td>
+            <td><ul>
+                <li>We illustrate how to do a custom PID control.</li>
+                <li>The pendulum is in torque control mode and the PID is on either the position or suitable cartesian coordinate.</li>
+                </ul></td>
+        </tr>
+        
+        <tr style="background-color: #f0f0f2">
+            <td rowspan="2" align="center"><b>14. Foot Placment Control</b></td>
+            <td align="center"><a href="https://www.youtube.com/watch?v=7eWLyo2a5UE&list=PLc7bpbeTIk74esZj1hd7LF3VYeJM3NYo5&index=25">Foot Placement Control for Hopper</a></td>
+            <td align="center"><a href="legs/notes/Lec14a_FootPlacement_Hopper.pdf">Hopper Foot Control PDF</a></td>
+            <td align="center"> <a href="legs/code/Lec14a_raibert_controller_for_hopper.zip">Lec 14.1 Code</a></td>
+            <td><ul>
+                <li>Foot placement control of hopper using Raibert’s control</li>
+                <li>This section derives a simple control law using some intuition.</li>
+                <li>MATLAB code shows how the controller works.</li>
+                </ul>
+            </td>
+        </tr>
+        
+        <tr style="background-color: #f0f0f2">
+            <td align="center"><a href="https://www.youtube.com/watch?v=8aAyfx6JNDw&list=PLc7bpbeTIk74esZj1hd7LF3VYeJM3NYo5&index=26">Foot Placement Control for Walker</a></td>
+            <td align="center"> <a href="legs/notes/Lec14b_FootPlacement_Walker.pdf">Walker Foot Control PDF</a></td>
+            <td align="center"><a href="legs/code/Lec14b_walker_foot_placement.zip">Lec 14.2 Code</a></td>
+            <td> <ul>
+                <li>This section sketches some ideas on developing a foot placement control using a table lookup.</li>
+                <li>No code provided</li>
+                </ul></td>
+        </tr>
+        
+        <tr align="center">
+            <td rowspan="2"><b>15. </b><strong>CoppeliaSim Walker and Hopper Simulations</strong></td>
+            <td><a href="https://www.youtube.com/watch?v=RTq-HxSx3IE">Two tricks for 2D legged simulation</a></td>
+            <td><a href="legs/notes/Lec15a_TwoTricks_PlanarSystems_Coppeliasim.pdf">Walker Simulations PDF</a></td>
+            <td><a href="legs/code/lec15a_TwoTricks_PlanarLegged_CoppeliaSim.zip">Lec 15a Code</a></td>
+            <td rowspan="2">Generating a reference trajectory using polynomials and given start and end conditions</td>
+        </tr>
+        
+        <tr id="Lecture 15">
+            <td align="center"><a href="https://www.youtube.com/watch?v=krGtHrMJfXc">15b. Trajectory Generation</a></td>
+            <td align="center"><a href="legs/notes/Lec15b_Trajectory_Generation.pdf">Trajactory Generations PDF</a></td>
+            <td align="center"><a href="legs/code/lec15b_trajectory_generation.zip">Lec 15b Code</a></td>
+        </tr>
+        
+                
+        <tr style="background-color: #f0f0f2">
+            <td align="center"><b>16. Trajectory Optimization</b></td>
+            <td align="center"> <a href="https://www.youtube.com/watch?v=tr_rg-XS61M&list=PLc7bpbeTIk74esZj1hd7LF3VYeJM3NYo5&index=27">Trajectory Optimization Video</a></td>
+            <td align="center"><a href="legs/notes/Lec16_Trajectory_Optimization.pdf"> Trajectory Optimization PDF</a></td>
+            <td align="center"><a href="legs/code/Lec16_Optimization.zip">Lec 16 Code</a></td>
+            <td><ul>
+                <li>Shows how to setup trajectory optimization using shooting and transcription method.</li>
+                <li>The example problem was to get a car to travel from start to goal in minimum time.</li>
+                </ul>
+            </td>
+        </tr>
+        
+                
+         <tr id ="Lecture 17">
+            <td rowspan="2" align="center"><b>17.2 </b><strong>Control Patitioning/Feedback Linearization</strong></td>
+            <td align="center"> <a href="https://www.youtube.com/watch?v=vCauH-fdbQY&list=PLc7bpbeTIk74esZj1hd7LF3VYeJM3NYo5&index=29">Control Partitioning (pt1)</a></td>
+            <td align="center"><a href="legs/notes/Lec17b_FeedbackLinearization_part1.pdf">Feedback Lineraization PDF 1</a></td>
+            <td align="center"><a href="legs/code/Lec17b_control_partitioning.zip">Lec 17b Code</a></td>
+           <td rowspan="2"><ul>
+                 <li>This section introduces control partitioning or feedback linearization to track the reference motion.</li>
+                 <li>The key idea is to cancel the nonlinear dynamics and gravitational dynamics followed by wrapping a feedback controller</li>
+                 <li>The concepts are illustrated using simple MATLAB examples.</li>
+                 <li>Additional methods such as feed-forward, gravity + feedback, proportional-integral-derivative control are also introduced.</li>
+           </ul></td>
+        </tr>
+        
+        <tr align="center">
+            <td> <a href="https://www.youtube.com/watch?v=YCAKSYM_r7Y&list=PLc7bpbeTIk74esZj1hd7LF3VYeJM3NYo5&index=30">Control Partitioning (pt2)</a></td>
+            <td> <a href="legs/notes/Lec17c_FeedbackLinearization_part2.pdf">Feedback Lineraization PDF 2</a></td>
+            <td align="center"> <a href="legs/code/Lec17c_control_partitioning.zip">Lec 17c Code</a></td>
+        </tr>
+    
+       <tr align="center" style="background-color: #f0f0f2">
+            <td align="center"><b>18. </b><strong>Debugging Trajectory Optimiztion</strong></td>
+            <td><a href="https://www.youtube.com/watch?v=3UlAdj9UnnI&list=PLc7bpbeTIk74esZj1hd7LF3VYeJM3NYo5&index=31">Debugging Video</a></td>
+            <td> <a href="legs/notes/Lec18_Deubgging_Trajectory_Optimization.pdf">Optimization PDF</a><br></td>
+            <td align="center">N/A</td>
+           <td>
+               Discusses some issues for performing trajectory optimization for projectile and legged systems.  
+           </td>
+        </tr>         
+        
+                
+                
+         <tr>
+             <td align="center"> <b>19. Coppilea Projectile Sim from MATLAB</b></td>
+            <td align="center"><a href="https://www.youtube.com/watch?v=80xDU8y_qwk&list=PLc7bpbeTIk74esZj1hd7LF3VYeJM3NYo5&index=32">MATLAB Projectile Sim via CS Sim API</a></td>
+            <td align="center">N/A<br></td>
+            <td align="center"><a href="legs/code/Lec19_CoppeliaSimMatlab.zip">Lec 19 Code</a></td>
+            <td><ul>
+                <li>We demonstrate how to control a projectile from MATLAB using the remote API</li>
+                <li>This video is similar to Unit 4, but using Remote API instead of Regular API</li>
+                </ul>
+             </td>
+        </tr>        
+        
+                
+         <tr align="center" style="background-color: #f0f0f2">
+            <td> <b>20. </b><strong>Solving Periodic Gait Using Fmincon</strong></td>
+            <td><a href="https://www.youtube.com/watch?v=YLvHQMdERHU&list=PLc7bpbeTIk74esZj1hd7LF3VYeJM3NYo5&index=33">Solving Periodic Gait</a></td>
+            <td align="center">N/A<br></td>
+            <td> <a href="legs/code/Lec20_powered_walker_optimization.zip">Lec 20 Code</a></td>
+            <td> <ul>
+                <li>This video shows how to solve for periodic gaits for a compass gait walker on level ground that is powered only by an ankle push-off.</li>
+                </ul></td>
+        </tr> 
+                
+                
+        <tr align="center">
+            <td> <b>21. Coppelia Sim Control Partitioning</b></td>
+            <td><a href="https://www.youtube.com/watch?v=W65Eavchw8Q&list=PLc7bpbeTIk74esZj1hd7LF3VYeJM3NYo5&index=34">Control Partitioning/Feedback Linearization</a></td>
+            <td align="center">N/A</td>
+            <td><a href="legs/code/Lec21_Coppelia_control_partitioning.zip"> Lec 21 Code</a></td>
+            <td>We use reflexxes motion library to generate a trajectory and then use control partitioning to track it.</td>
+        </tr>
+                
+                
+        <tr style="background-color: #f0f0f2">
+            <td align="center"><b>22. </b><strong>Finite State machine to Control Pendulem</strong></td>
+            <td align="center"><a href="https://www.youtube.com/watch?v=ms1V_IuiK-A&list=PLc7bpbeTIk74esZj1hd7LF3VYeJM3NYo5&index=35">Using State machine to Control Pendulum</a></td>
+            <td align="center">N/A<br></td>
+            <td align="center"><a href="legs/code/Lec22_Finite_State_Machine.zip"> Lec 22 Code</a></td>
+            <td><ul>
+                <li>A finite state machine is a control architecture to develop controllers for walking machines.</li>
+                <li>This example illustrates how to program a finite state machine to do a swing up and hold. </li>
+                <li>Might be helful to review lecture 5. </li>
+                </ul></td>
+        </tr>
+                
+        <tr>
+            <td align="center"><strong>23. </strong><strong>Control of&nbsp; Walker</strong></td>
+            <td align="center"> <a href="https://www.youtube.com/watch?v=jBMEm9U2Pbk&list=PLc7bpbeTIk74esZj1hd7LF3VYeJM3NYo5&index=36">Walker control using Partial Feedback Linearization</a></td>
+            <td align="center"> <a href="legs/notes/Lec23_Walker_Partial_Feedback_Linearization.pdf">Mechanics of Walkers PDF</a></td>
+            <td align="center"> <a href="legs/code/Lec23_Walker_with_partial_feedback_linearization.zip"> Lec 23 Code</a></td>
+            <td><ul>
+                <li>Since one of the two joints of the robot are unactuated, one can only usal partial feedback to control one joint</li>
+                <li>The other joint is left free and is analzed using tools from hybrid systems (see Terminology for hybrid systems)</li>
+                </ul>
+            </td>
+        </tr>
+                
+                
+        <tr style="background-color: #f0f0f2">
+            <td align="center"><b>24. </b><strong>Passive Dynamic Walker</strong></td>
+            <td align="center"><a href="https://www.youtube.com/watch?v=5CORuzqC61I&list=PLc7bpbeTIk74esZj1hd7LF3VYeJM3NYo5&index=38"> Passive Dynamic Walker Video</a> </td>
+            <td align="center">N/A</td>
+            <td align="center"><a href="legs/code/Lec24_PassiveDynamicWalker_CoppeliaSim.zip">Lec 24 Code</a></td>
+            <td><ul>
+                <li>A model of passive walking with articulated knees (to get ground clearance) and hip spring to tune frequency of the swinging legs.</li>
+                <li>The two tricks <a href="#Lecture 15">(see 15 a)</a>are used to keep track of absolute angles and rotate gravity.</li>
+                <li>A finite state machine is used to generate the simulation. </li>
+                </ul>
+            </td>
+        </tr>
+                
+        <tr align="center">
+            <td><b>25. Feedback Linearization</b></td>
+            <td> <a href="https://www.youtube.com/watch?v=zz74EHmmC0M&list=PLc7bpbeTIk74esZj1hd7LF3VYeJM3NYo5&index=40">Feedback Linearization for Closed Chains</a></td>
+            <td><a href="legs/notes/Lec25_FeedbackLinearization_ClosedChains.pdf">Closed Chain Modeling and Simulation Control</a></td>
+            <td><a href="legs/code/Lec25_ClosedChain_FeedbackLinearization.zip"> Lec 25 Code</a></td>
+            <td><ul>
+                <li>We demonstrate feedback linearization of closed chains.</li>
+                <li>We demonstrate 3 models, symmetric linkage, parallel linkage with two points of actuation.</li>
+                </ul>
+            </td>
+        </tr>
+                
+                
+          <tr style="background-color: #f0f0f2" align="center">
+            <td><b>26. </b><strong>Euler Parameters and Rotations</strong></td>
+            <td> <a href="https://www.youtube.com/watch?v=v7XDqFt7a90&list=PLc7bpbeTIk74esZj1hd7LF3VYeJM3NYo5&index=41">Rotations and Euler Parameters</a></td>
+            <td><a href="legs/notes/Lec26_3D_rotations.pdf">3D rotations and Velocity PDF</a></td>
+            <td> <a href="legs/code/Lec26_3Drotations.zip"> Lec 26 Code</a></td>
+            <td> Introduction to 3D rotations using Euler Angles</td>
+        </tr>
+                
+                
+        <tr>
+            <td align="center"><b>27. </b><strong>3D Angular Velocity</strong></td>
+            <td align="center"> <a href="https://www.youtube.com/watch?v=JI-pNtvodJA&list=PLc7bpbeTIk74esZj1hd7LF3VYeJM3NYo5&index=42">3D anguar velocity</a></td>
+            <td align="center"><a href="legs/notes/Lec27_3D_angularvelocity.pdf">3D angular Velocity PDF</a></td>
+            <td align="center">N/A</td>
+            <td><ul>
+                <li>Euler-Lagrange equations applied to a free falling block</li>
+                <li>This includes derivations, simulations and animation for the falling block.</li>
+                </ul>
+            </td>
+        </tr>
+                
+                
+        <tr align="center" style="background-color: #f0f0f2">
             <td><b>28. </b><strong>3D Dynamics</strong></td>
             <td> <a href="https://www.youtube.com/watch?v=xCGfzV67GO4&list=PLc7bpbeTIk74esZj1hd7LF3VYeJM3NYo5&index=43">Free Falling Block</a></td>
             <td><a href="legs/notes/Lec28_3D_dynamics.pdf">3D Dynamics PDF</a></td>
             <td> <a href="legs/code/lec28_3D_dynamics.zip"> Lec 28 Code</a></td>
-        </tr>
-        
-        <tr style="background-color: lightgray">
-            <td rowspan="2"><b>29. </b>3D Kinematics using zero reference model</td>
-            <td> <a href="https://www.youtube.com/watch?v=VijV9o3rekQ&list=PLc7bpbeTIk74esZj1hd7LF3VYeJM3NYo5&index=44">Zero Reference Model for Kinematics</a></td>
-            <td rowspan="2" align="left"><a href="legs/notes/Lec29a_zero_reference_model.pdf">Zero Reference Model PDF</a></td>
-            <td rowspan="2" align="left"> <a href="legs/code/Lec29b_mex_files.zip"> Lec 29 Code</a></td>
-        </tr>
-        
-        <tr style="background-color: lightgrey">
-            <td><a href="https://www.youtube.com/watch?v=Hn0ZYvWG5a4">MEX Files MATLAB to C++ Interface</a></td>
+            <td>Illustrates the use of Euler-Lagrange equations in 3D on a block falling under gravity</td>
         </tr>
         
         <tr>
-            <td> <b>30. </b> <strong> 3D Biped Simulation and Control</strong></td>
-            <td> <a href="https://www.youtube.com/watch?v=0u_-KxBioAo&list=PLc7bpbeTIk74esZj1hd7LF3VYeJM3NYo5&index=46">Humanoid modeling and control</a></td>
-            <td> <a href="legs/notes/Lec30_humanoid.pdf">Humanoid PDF</a></td>
-            <td> <a href="legs/code/Lec30_humanoid.zip"> Lec 30 Code </a></td>
+            <td rowspan="2" align="center"><b>29. </b><strong>Zero Reference Model</strong></td>
+            <td align="center"> <a href="https://www.youtube.com/watch?v=VijV9o3rekQ&list=PLc7bpbeTIk74esZj1hd7LF3VYeJM3NYo5&index=44">Zero Reference Model for Kinmatics</a></td>
+            <td rowspan="2" align="center"><a href="legs/notes/Lec29a_zero_reference_model.pdf">Zero Reference Model PDF</a></td>
+            <td rowspan="2" align="center"> <a href="legs/code/Lec29b_mex_files.zip"> Lec 29 Code</a></td>
+            <td rowspan="2"><ul>
+                <li>Since Euler-Lagrange equations for simple systems get unwiedly it is recommended to these time consuming equations to C (called MEX files) and call them from MATLAB</li>
+                <li>This section illustrates how to write MEX files and demonstrates derivation, simulation, and animation of a n-link pendulum where the number of links n can be set by the user</li>
+                </ul></td>
+        </tr>
+        
+       <tr align="center">
+            <td><a href="https://www.youtube.com/watch?v=Hn0ZYvWG5a4">MEX Files MATLAB to C++ Interface</a></td>
+        </tr>
+                
+        <tr style="background-color: #f0f0f2">
+          <td align="center"> <b>30. </b> <strong> Biped Control and Simulations</strong></td>
+          <td align="center"> <a href="https://www.youtube.com/watch?v=0u_-KxBioAo&list=PLc7bpbeTIk74esZj1hd7LF3VYeJM3NYo5&index=46">Humanoid Modeling and Control</a></td>
+          <td align="center"> <a href="legs/notes/Lec30_humanoid.pdf">Humanoid PDF</a></td>
+          <td align="center"> <a href="legs/code/Lec30_humanoid.zip"> Lec 30 Code </a></td>
+            <td><ul>
+                <li>Uses Euler-Lagrange equations to derive the equation</li>
+                <li>Using trajectory generation to generate profiles for hip and knee.</li>
+                <li>Use of partial feedback linearization to control the 3D model.</li>
+                <li>Includes simulations, generation of MEX files, and animations.</li>
+                </ul>
+            </td>
        </tr>
-        </table> 
-</div>
-<br>
-    <!--
-	<div id ="bottom">
-        <h2 align="center"> <span>Other Useful Links:</span></h2>
-      <ul>
-		<li><big><a href="https://www.youtube.com/watch?v=g9O2MNDZTmY&list=PLc7bpbeTIk74esZj1hd7LF3VYeJM3NYo5&index=4">Syllabus Video</a></big></li>
-		<li><big><a href="https://www.youtube.com/playlist?list=PLc7bpbeTIk74esZj1hd7LF3VYeJM3NYo5">Legged Robotics Playlist</a></big></li>
-		<li><big><a href="Website2.html">Interactive Webpage (link not active)</a></big></li>
-		<li><big><a href="notes.zip">All lectures notes in pdf (zipped) </a></big></li>
-		<li><big><a href="code.zip">All code (zipped) </a></big></li>
-        <li><big><a href="https://pab47.github.io/">Pranav Bhounsule's homepage</a></big></li>
-      </ul>
-    </div>
-	-->
-			<!-- Comment here-->
-     <!-- <center><img  src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/University_of_Illinois_at_Chicago_circle_logo.svg/330px-University_of_Illinois_at_Chicago_circle_logo.svg.png" alt="Pic of UIC" width="149" height="150"></center> -->
-
-    
-			<!-- Comment here-->
+          </table>
+    </div>    
+	<!-- Comment here-->
+	<br>
 		<ul>
         <li>Website design by Mohammed Hassan. </li>
         <li>Comments/Suggestions to Pranav A. Bhounsule (pranav AT uic.edu) </li>
-		<li>Last update: July 19, 2021</li>
+		<li>Last updated: August 14, 2021</li>
       </ul>
 		 <br> <!-- line break-->
     
@@ -382,4 +1193,4 @@ alt="Web Analytics"></a></div></noscript>
     
     
 </body>
-</html> </html>
+</html>
