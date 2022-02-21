@@ -1,0 +1,359 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Robotics with MuJoCo</title>
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+<link href="mujoco/undergradStyle.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    
+    
+<h1 class="display-1 text-center">Robotics with MuJoCo</h1>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-info fixed-top sticky-top">
+        <a class="navbar-brand" href="#"></a>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/University_of_Illinois_at_Chicago_circle_logo.svg/1200px-University_of_Illinois_at_Chicago_circle_logo.svg.png" width="30" height="30" class="d-inline-block align-top" alt="UIC Picture">
+      <a class="navbar-brand" href="#"> Top/About</a>
+        
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+			<!--   All Material  !-->
+      <li class="nav-item active">
+        <a class="nav-link" href="#FullTable">All Material<span class="sr-only">(current)</span></a>
+      </li>
+    <!--   All Material end  !-->
+		
+					<!--   HW starts -->
+      <li class="nav-item active">
+        <a class="nav-link" href="#Homework">Homework<span class="sr-only">(current)</span></a>
+      </li>
+		
+		<!--   HW ends  !-->
+		
+    <!--   All Material end  !-->
+		
+		<!--   CoppeliaSim starts  !-->
+		
+<!--
+       <li class="nav-item dropdown active">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          CoppeliaSim
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+				<a class="dropdown-item" href="https://www.youtube.com/playlist?list=PLc7bpbeTIk77hTOItZGt5Fn-zIWmjAblh"><b> Video Playlist: </b>CoppeliaSim Tutorial Videos</a>
+              <a class="dropdown-item" href="robotics/f20/CoppeliaSim/Coppelia1_modeling_projectile_w_drag.zip"><b> CoppeliaSim 1: </b>Projectile Modeling</a>
+              <a class="dropdown-item" href="robotics/f20/CoppeliaSim/Coppelia2_modeling_pendulum.zip"><b>CoppeliaSim 2: </b> Pendulum Modeling</a> 
+              <a class="dropdown-item" href="robotics/f20/CoppeliaSim/Coppelia3_control_pendulum.zip"><b>CoppeliaSim 3: </b>Control Pendulum</a>
+              <a class="dropdown-item" href="robotics/f20/CoppeliaSim/Coppelia4_proximity_vision_sensor.zip"><b>CoppeliaSim 4: </b>Proximity Vision Sensor</a>
+              <a class="dropdown-item" href="robotics/f20/CoppeliaSim/Coppelia5_inverse_kinematics.zip"><b>CoppeliaSim 5: </b>Inverse Kinematics</a>
+              <a class="dropdown-item" href="robotics/f20/CoppeliaSim/Coppelia6_pick_and_place1.zip"><b>CoppeliaSim 6: </b> Pick and Place 1</a>
+              <a class="dropdown-item" href="robotics/f20/CoppeliaSim/Coppelia7_pick_and_place2.zip"><b>CoppeliaSim 7: </b>Pick and Place 2</a>
+        </div> 
+        </li>		
+-->
+		<!--   CoppeliaSim ends  !-->
+		
+			<!--   My project starts  !-->
+<!--
+      <li class="nav-item dropdown active">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Projects
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="robotics/f20/Projects/project_maze.zip"><b>Project 1: </b> MAZE</a>
+              <a class="dropdown-item" href="robotics/f20/Projects/project_pick_and_place.zip"><b>Project 2: </b> PICK AND PLACE </a> 
+              <a class="dropdown-item" href="robotics/f20/Projects/project_pong.zip"><b>Project 3: </b> PONG</a>
+              <a class="dropdown-item" href="robotics/f20/Projects/project_pump_swing.zip"><b>Project 4: </b>PUMP AND SWING</a>
+        </div>
+      </li>
+        <li class="nav-item dropdown active">
+        <a class="nav-link dropdown-toggle" href="#" id="NavbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Downloads/Links</a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="robotics/f20/CoppeliaSim.zip"><b>ALL COPPELIASIM LECTURES</b></a>
+              <a class="dropdown-item" href="robotics/f20/Projects.zip"><b>ALL PROJECTS</b></a> 
+              <a class="dropdown-item" href="robotics/f20/MATLAB.zip"><b>ALL MATLAB CODE</b></a>
+              <a class="dropdown-item" href="robotics/f20/Lectures.zip"><b>ALL LECTURES</b></a>
+			  <a class="dropdown-item" href="https://pab47.github.io/robotics_archive.html"><b>Archived pages</b></a>
+        </div>		
+      </li>
+-->
+	  <!--   Project ends  !-->
+		
+				<!--   other course1  !-->
+		<li class="nav-item active">
+        <a class="nav-link" href="http://tiny.cc/pranavb_robotics">Robotics Course</a>
+      </li>
+		 <!--   other course1 !-->
+		
+		<!--   other course1  2-->
+		<li class="nav-item active">
+        <a class="nav-link" href="http://tiny.cc/legged">Legged Robotics Course</a>
+      </li>
+		 <!--   other course1 2-->
+		
+	  <!--   My webpage starts  !-->
+		<li class="nav-item active">
+        <a class="nav-link" href="https://pab47.github.io">Pranav Bhounsule (homepage)</a>
+      </li>
+		 <!--   My webpage ends !-->
+    </ul>
+  </div>
+</nav>
+    
+<br><br>
+    <div id ="header" align="center" class="col-xl-12">
+        
+<p class="text-justify"><b>
+<b>About:</b> &nbsp; </b>This mini course aims to give you working knowledge of <a href="https://mujoco.org/">MuJoCo</a>, rigid body dynamics and controls. The tutorials are based on using mujoco200 available at <a href="roboti.us">roboti.us</a>. The software needs the file mjkey.txt which is also available on the website. A shortened link to this webste is <a href="http://tiny.cc/mujoco">http://tiny.cc/mujoco</a>. The YouTube playlist is here: <a href="http://tiny.cc/mujoco2">http://tiny.cc/mujoco2.</a> The course is taught using C interface of MuJoCo. Prior knowledge of C/unix commands is not assumed. Everything is taught from scratch. All software used in this course is freely available. This includes MuJoCo 200, Atom Editor, C, make, Visual Studio (community edition) for Windows</p>   
+</div>
+	
+
+	
+		<!--- Module -->
+	
+<!--	Tag to create shortcut-->
+<div id="FullTable">
+</div>
+	<br>
+	<br>
+	   <div class="col-xl-12" id="main">
+            <h1 align="center"> All Material</h1>
+            <div align="center">
+    <table style="width:100%" border="3">
+        <tr>
+            <!-- Adding the header colums of content materials and videos -->
+            <th style="text-align: center"><big><big>Topic</big></big></th>
+            <th style="text-align: center"><big><big>Video</big></big></th>
+            <th style="text-align: center"><big><big>Starter Code</big></big></th>
+            <th style="text-align: center"><big><big>Final Code</big></big></th>
+            <th style="text-align: center"><big><big>Description</big></big></th>
+            
+        </tr>
+		
+		<!-- Number 0-->
+        
+         <tr style="background-color: #f0f0f2">
+            <td rowspan="1" align="left"><a href="mujoco/notes/Lec0_MuJoCo_installation.pdf">0. Installation</a> </td>
+           <td align="left"> <a href = "https://youtu.be/p7wqTpVXug4">Installation/File structure</a></td>
+           <td rowspan="1" align="left"> None </td>
+           <td rowspan="1" align="left"> None</td>
+           <td rowspan="1"> <ul>
+              <li>Installing MuJoCo 200 on Mac/Linux/Windows</li>
+              <li><a href="mujoco/installation/install_mujoco_mac.pdf">Instructions for Mac</a></li>
+			  <li><a href="mujoco/installation/install_mujoco_linux.pdf">Instructions for Linux</a></li>
+             <li><a href="mujoco/installation/install_mujoco_windows.pdf">Instructions for Windows</a></li>
+			   <li><a href="mujoco/installation/install_mujoco_virtual_machine_ubuntu.pdf">Instructions for Linux via Virtual Machine</a></li>
+              <li>MuJoCo file structure is explained.  Create myproject within mujoco. Folders for each lecture are created within this folder</li>
+           </ul>
+           </td>
+        </tr>
+        
+		<!-- Number 1-->
+		<tr>
+            <td rowspan="1" align="left"><a href="mujoco/notes/Lec1_MuJoCo_xml_files.pdf">1. Modeling building in MuJoCo</a> </td>
+           <td align="left"> <a href = "https://youtu.be/j1nCeqtfySQ">Writing xml</a></td>
+           <td rowspan="1" align="left"> <a href="mujoco/startercode/hello.xml">hello.xml </a></td>
+           <td rowspan="1" align="left"> <a href="mujoco/code/learning_xml.zip">learning_xml.zip </a></td>
+           <td rowspan="1"> <ul>
+              <li>Using the executable *simulate* to load hello.xml </li>
+			   <li>Understanding the various features of *simulate* </li>
+              <li><a href="https://mujoco.readthedocs.io/en/latest/XMLreference.html">Using the XML reference</a></li>
+			  <li>Adding more geometries to hello.xml and viewing with *simulate*</li>
+           </ul>
+           </td>
+        </tr>
+		
+	   <!-- Number 2-->
+		<tr style="background-color: #f0f0f2">
+            <td rowspan="1" align="left"><a href="mujoco/notes/Lec2_MuJoCo_projectile_w_drag.pdf">2. Creating simulations in MuJoCo</a> </td>
+           <td align="left"> <a href = "https://youtu.be/Ga3twtlgKsM">Projectile with drag</a></td>
+           <td rowspan="1" align="left"> <a href="mujoco/startercode/template.zip">template.zip </a></td>
+           <td rowspan="1" align="left"> <a href="mujoco/code/projectile.zip">projectile.zip </a></td>
+           <td rowspan="1"> <ul>
+              <li>Using the executable *simulate* to model a projectile </li>
+			   <li>Compiling and running your own executable file </li>
+              <li><a href="https://mujoco.readthedocs.io/en/latest/APIreference.html">Using the API reference</a></li>
+			  <li>Setting initial conditions for the projectile</li>
+			  <li>Adding a drag force to the projectile</li>
+           </ul>
+           </td>
+        </tr>
+		
+		<!-- Number 3-->
+		<tr >
+            <td rowspan="1" align="left"><a href="mujoco/notes/Lec3_simple_pendulum">3. Position/Velocity/Torque control</a> </td>
+           <td align="left"> <a href = "https://youtu.be/JNgO_OPVb5k">Control a simple pendulum</a></td>
+           <td rowspan="1" align="left"> <a href="mujoco/startercode/template.zip">template.zip </a></td>
+           <td rowspan="1" align="left"> <a href="mujoco/code/control_pendulum.zip">control_pendulum.zip </a></td>
+           <td rowspan="1"> <ul>
+              <li>Using the executable *simulate* to model of a simple pendulum </li>
+			   <li>Add a torque actuator to xml and use it in the code </li>
+              <li>Add a position servo actuator to xml and use it in the code </li>
+			  <li>Add a velocity servo actuator to xml and use it in the code</li>
+			  <li>Position control using either torque control of position/velocity servo</li>
+			   <li>Create noisy sensor in xml and use it in the code</li>
+			   <li>Switch between different controllers in the code</li>
+           </ul>
+           </td>
+        </tr>
+		
+				<!-- Number 4-->
+		<tr  style="background-color: #f0f0f2">
+            <td rowspan="1" align="left"><a href="mujoco/notes/Lec4_double_pendulum">4. Model-based control</a> </td>
+           <td align="left"> <a href = "https://youtu.be/HYVPysAGp6g">Control a double pendulum</a></td>
+           <td rowspan="1" align="left"> <a href="mujoco/startercode/template_writeData.zip">template_writeData.zip </a></td>
+           <td rowspan="1" align="left"> <a href="mujoco/code/dbpendulum.zip">dbpendulum.zip </a></td>
+           <td rowspan="1"> <ul>
+              <li>Create a model of double pendulum </li>
+			   <li>Check conservation of energy </li>
+              <li>Check validity of equations of motion </li>
+			  <li>Add a velocity servo actuator to xml and use it in the code</li>
+			  <li>Model-based control, compensating for gravity and coriolis forces</li>
+           </ul>
+           </td>
+        </tr>
+		
+						<!-- Number 5-->
+<!--		<tr  style="background-color: #f0f0f2">-->
+		 <tr >
+            <td rowspan="1" align="left"><a href="mujoco/notes/Lec5_double_pendulum_fsm.pdf">5. Trajectory tracking &amp; Finite State Machines</a> </td>
+           <td align="left"> <a href = "https://youtu.be/-oGNxB86YEk">Swinging leg with adequate clearance</a></td>
+           <td rowspan="1" align="left"> <a href="mujoco/startercode/template_writeData2.zip">template_writeData2.zip </a></td>
+           <td rowspan="1" align="left"> <a href="mujoco/code/dbpendulum_fsm.zip">dbpendulum_fsm.zip </a></td>
+           <td rowspan="1"> <ul>
+              <li>Finite state machines for creating switching controllers </li>
+			   <li>Trajectory generation, linear and cubic profiles</li>
+              <li>Trajectory tracking </li>
+           </ul>
+           </td>
+        </tr>
+		
+			<!-- Number 6-->
+		<tr  style="background-color: #f0f0f2">
+<!--		 <tr >-->
+            <td rowspan="1" align="left"><a href="mujoco/notes/Lec6_double_pendulum_ik.pdf">6. Jacobian and Inverse Kinematics</a> </td>
+           <td align="left"> <a href = "https://youtu.be/ZspzVxFAreQ">Drawing a circle with a double pendulum</a></td>
+           <td rowspan="1" align="left"> <a href="mujoco/startercode/template_writeData2.zip">template_writeData2.zip </a></td>
+           <td rowspan="1" align="left"> <a href="mujoco/code/dbpendulum_ik.zip">dbpendulum_ik.zip </a></td>
+           <td rowspan="1"> <ul>
+              <li>Computing Jacobian </li>
+			   <li>Using Jacobian to compute velocity of end-effector</li>
+              <li>Inverse kinematics using the inverse of the Jacobian </li>
+           </ul>
+           </td>
+        </tr>
+		
+					<!-- Number 7-->
+<!--		<tr  style="background-color: #f0f0f2">-->
+		 <tr >
+            <td rowspan="1" align="left"><a href="mujoco/notes/Lec7_double_pendulum_lqr.pdf">7. Linear Quadratic Regulator</a> </td>
+           <td align="left"> <a href = "https://youtu.be/HMyD0IfPHfA">Balance control of under-actuated double pendulum</a></td>
+           <td rowspan="1" align="left"> <a href="mujoco/startercode/template_dbpendulum.zip">template_dbpendulum.zip </a></td>
+           <td rowspan="1" align="left"> <a href="mujoco/code/dbpendulum_lqr.zip">dbpendulum_lqr.zip </a></td>
+           <td rowspan="1"> <ul>
+              <li>Computing the numerical form of differential equation xdot = f(x,u)</li>
+			   <li>Computing the linearization of the system</li>
+              <li>Computing LQR controller in MATLAB </li>
+			   <li>Testing the controller using perturbation </li>
+           </ul>
+           </td>
+        </tr>
+		
+		<!-- Number 8-->
+		<tr  style="background-color: #f0f0f2">
+<!--		 <tr >-->
+            <td rowspan="1" align="left"><a href="mujoco/notes/Lec8_hybrid_systems">8. Hybrid Systems</a> </td>
+           <td align="left"> <a href = "https://youtu.be/p5_nQcsg2jM">Modeling and controlling a gymnast</a></td>
+           <td rowspan="1" align="left"> <a href="mujoco/startercode/template_pendulum.zip">template_pendulum.zip </a></td>
+           <td rowspan="1" align="left"> <a href="mujoco/code/hybrid_pendulum.zip">hybrid_pendulum.zip </a></td>
+           <td rowspan="1"> <ul>
+              <li>Modeling a floating base system, a pendulum with moving support</li>
+			   <li>Using tag equality to constrain the pendulum</li>
+			   <li>Verifying the equations of a floating base system </li>
+              <li>Using a finite state machine to simulate the behavior of a hybrid system</li>
+           </ul>
+           </td>
+        </tr>
+		
+       
+          </table>
+	     </div>
+</div>
+   
+	
+	<!--- Projects -->
+    
+    <!--	Tag to create shortcut-->
+<div id="Homework">
+</div>
+	
+<!--<h1 class="display-2 text-center"> Homework</h1> -->
+<h1 align="center"> Homework</h1>
+    <div align="center" class="col-xl-12">
+    <table style="width:100%" border="3">
+		
+		
+        <tr>
+            <!-- Adding the header colums of content materials and videos -->
+            <th style="text-align: center"><big><big>Content</big></big></th>
+            <th style="text-align: center"><big><big>Concepts Tested</big></big></th>
+        </tr>
+        
+		<!-- HW1-->
+         <tr style="background-color: #f0f0f9" align="center">
+           <td rowspan="1" align="left"><a href="mujoco/homework/Hw1_MuJoCo.pdf">HW1: Rube Goldberg Machine</a></td>
+           <td rowspan="1" align="left"> Generate different geometries in xml and initializing using code.</td>
+        </tr> 
+		
+		
+ 		<!-- HW2 -->
+<!--        <tr style="background-color: #f0f0f9" align="center">-->
+	  <tr >
+            <td rowspan="1" align="left"><a href="mujoco/homework/Hw2_MuJoCo.pdf">HW2: Rott's pendulum &amp; Coupled pendulum </a></td>
+            <td rowspan="1" align="left"> Model systems with pin joints. Simulate spring behavior.</td>
+      </tr> 
+		
+		 		<!-- HW3 -->
+        <tr style="background-color: #f0f0f9" align="center">
+<!--	  <tr >-->
+            <td rowspan="1" align="left"><a href="mujoco/homework/Hw3_MuJoCo.pdf">HW3: Pumping a pendulum swing </a></td>
+            <td rowspan="1" align="left"> Model systems with pin/hinge joints. Position control. Finite State machine.</td>
+      </tr> 
+		
+				 		<!-- HW4 -->
+<!--        <tr style="background-color: #f0f0f9" align="center">-->
+	  <tr >
+          <td rowspan="1" align="left"><a href="mujoco/homework/Hw4_MuJoCo.pdf">HW4: Manipulator drawing &amp; Balance a cart-pendulum </a></td>
+          <td rowspan="1" align="left"> Jacobian and Inverse Kinematics. Linearization and linear quadratic control</td>
+      </tr> 
+        
+        
+</table> </div>
+    
+    <br>
+	<!-- Comment here-->
+	<br>
+		<ul>
+        <li>Comments/Suggestions to Pranav A. Bhounsule (pranav AT uic.edu) </li>
+		<li>Last updated: February 20, 2022</li>
+</ul>
+<br> 
+		 <!-- line break-->
+	
+	  <!--Comment here-->
+<!-- Default Statcounter code for Robotics Course
+pab47.github.io -->
+
+<!-- End of Statcounter Code -->
+    
+    
+</body>
+</html>
