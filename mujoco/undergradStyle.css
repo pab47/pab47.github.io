@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+
+
+td{
+    padding:10px;
+    border-bottom:2px solid black;
+    border-right:2px solid black;
+    border-top:2px solid black;
+    
+}
+
+
+th{
+    border:3px solid black;
+    background:  #D3D3D3;
+}
+
+
+
+#header{
+    
+    color: black;
+}
+
+
+/* CSS Document */
+
