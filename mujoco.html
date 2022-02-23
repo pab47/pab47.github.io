@@ -63,7 +63,7 @@
     <div id ="header" align="center" class="col-xl-12">
         
 <p class="text-justify"><b>
-<b>About:</b> &nbsp; </b>This mini course aims to give you working knowledge of <a href="https://mujoco.org/">MuJoCo</a>, rigid body dynamics and controls. The tutorials are based on using mujoco200 available at <a href="roboti.us">roboti.us</a>. The software needs the file mjkey.txt which is also available on the website. A shortened link to this webste is <a href="http://tiny.cc/mujoco">http://tiny.cc/mujoco</a>. The YouTube playlist is here: <a href="http://tiny.cc/mujoco2">http://tiny.cc/mujoco2.</a> The course is taught using C interface of MuJoCo. Prior knowledge of C/unix commands is not assumed. Everything is taught from scratch. All software used in this course is freely available. This includes MuJoCo 200, Atom Editor, C, make, Visual Studio (community edition) for Windows. </p>   
+<b>About:</b> &nbsp; </b>This mini course aims to give you working knowledge of <a href="https://mujoco.org/">MuJoCo</a>, a rigid body dynamics simulator. The tutorials are based on using mujoco200 available at <a href="roboti.us">roboti.us</a>. The software needs the file mjkey.txt which is freely available on the website. A shortened link to this webste is <a href="http://tiny.cc/mujoco">http://tiny.cc/mujoco</a>. The YouTube playlist is here: <a href="http://tiny.cc/mujoco2">http://tiny.cc/mujoco2.</a> The course is taught using C interface of MuJoCo. Prior knowledge of C/unix commands is not assumed. Everything is taught from scratch. All software used in this course is freely available. This includes MuJoCo 200, <a href="https://atom.io/">Atom Editor</a>, C, make, Visual Studio (<a href="https://visualstudio.microsoft.com/vs/community/">community edition</a>) for Windows.</p>   
 </div>
 	
 
@@ -78,13 +78,14 @@
 	   <div class="col-xl-12" id="main">
             <h1 align="center"> All Material</h1>
             <div align="center">
-    <table style="width:100%" border="3">
+    <table style="width:90%" border="3">
         <tr>
             <!-- Adding the header colums of content materials and videos -->
-            <th style="text-align: center"><big><big>Topic</big></big></th>
-            <th style="text-align: center"><big><big>Video</big></big></th>
-            <th style="text-align: center"><big><big>Starter Code</big></big></th>
-            <th style="text-align: center"><big><big>Final Code</big></big></th>
+			<th style="text-align: center"><big><big>No.</big></big></th>
+            <th style="text-align: center"><big><big>Notes/Video</big></big></th>
+<!--            <th style="text-align: center"><big><big>Video</big></big></th>-->
+            <th style="text-align: center"><big><big>Starter/Final Code</big></big></th>
+<!--            <th style="text-align: center"><big><big>Final Code</big></big></th>-->
             <th style="text-align: center"><big><big>Description</big></big></th>
             
         </tr>
@@ -92,10 +93,13 @@
 		<!-- Number 0-->
         
          <tr style="background-color: #f0f0f2">
-            <td rowspan="1" align="left"><a href="mujoco/notes/Lec0_MuJoCo_installation.pdf">0. Installation</a> </td>
-           <td align="left"> <a href = "https://youtu.be/p7wqTpVXug4">Installation/File structure</a></td>
+			 <td rowspan="1" align="left"> 0 </td>
+            <td rowspan="1" align="left">
+				<a href="mujoco/notes/Lec0_MuJoCo_installation.pdf">Notes: Installation</a> 
+			<br> <br>
+             <a href = "https://youtu.be/p7wqTpVXug4">Video: Installation/File structure</a>
+			 </td>
            <td rowspan="1" align="left"> None </td>
-           <td rowspan="1" align="left"> None</td>
            <td rowspan="1"> <ul>
               <li>Installing MuJoCo 200 on Mac/Linux/Windows</li>
               <li><a href="mujoco/installation/install_mujoco_mac.pdf">Instructions for Mac</a></li>
@@ -109,10 +113,17 @@
         
 		<!-- Number 1-->
 		<tr>
-            <td rowspan="1" align="left"><a href="mujoco/notes/Lec1_MuJoCo_xml_files.pdf">1. Model building in MuJoCo</a> </td>
-           <td align="left"> <a href = "https://youtu.be/j1nCeqtfySQ">Writing xml</a></td>
-           <td rowspan="1" align="left"> <a href="mujoco/startercode/hello.xml">hello.xml </a></td>
-           <td rowspan="1" align="left"> <a href="mujoco/code/learning_xml.zip">learning_xml.zip </a></td>
+			<td rowspan="1" align="left"> 1 </td>
+            <td rowspan="1" align="left">
+				<a href="mujoco/notes/Lec1_MuJoCo_xml_files.pdf">Notes: Modelling in MuJoCo</a> 
+				<br> <br>
+				<a href = "https://youtu.be/j1nCeqtfySQ">Video: Writing xml</a>
+			</td>
+           <td rowspan="1" align="left"> 
+			   <a href="mujoco/startercode/hello.xml">Starter: hello.xml </a>
+			   <br><br>
+			   <a href="mujoco/code/learning_xml.zip">Final: learning_xml.zip </a>
+			</td>
            <td rowspan="1"> <ul>
               <li>Using the executable *simulate* to load hello.xml </li>
 			   <li>Understanding the various features of *simulate* </li>
@@ -124,10 +135,17 @@
 		
 	   <!-- Number 2-->
 		<tr style="background-color: #f0f0f2">
-            <td rowspan="1" align="left"><a href="mujoco/notes/Lec2_MuJoCo_projectile_w_drag.pdf">2. Creating simulations in MuJoCo</a> </td>
-           <td align="left"> <a href = "https://youtu.be/Ga3twtlgKsM">Projectile with drag</a></td>
-           <td rowspan="1" align="left"> <a href="mujoco/startercode/template.zip">template.zip </a></td>
-           <td rowspan="1" align="left"> <a href="mujoco/code/projectile.zip">projectile.zip </a></td>
+			<td rowspan="1" align="left"> 2 </td>
+            <td rowspan="1" align="left">
+				<a href="mujoco/notes/Lec2_MuJoCo_projectile_w_drag.pdf">Notes: Simulations in MuJoCo</a> 
+				<br> <br>
+                 <a href = "https://youtu.be/Ga3twtlgKsM">Video: Projectile with drag</a>
+			</td>
+           <td rowspan="1" align="left"> 
+			   <a href="mujoco/startercode/template.zip">Starter: template.zip </a>
+			   <br> <br>
+               <a href="mujoco/code/projectile.zip">Final: projectile.zip </a>
+			</td>
            <td rowspan="1"> <ul>
               <li>Using the executable *simulate* to model a projectile </li>
 			   <li>Compiling and running your own executable file </li>
@@ -140,10 +158,17 @@
 		
 		<!-- Number 3-->
 		<tr >
-            <td rowspan="1" align="left"><a href="mujoco/notes/Lec3_simple_pendulum">3. Position/Velocity/Torque control</a> </td>
-           <td align="left"> <a href = "https://youtu.be/JNgO_OPVb5k">Control a simple pendulum</a></td>
-           <td rowspan="1" align="left"> <a href="mujoco/startercode/template.zip">template.zip </a></td>
-           <td rowspan="1" align="left"> <a href="mujoco/code/control_pendulum.zip">control_pendulum.zip </a></td>
+			<td rowspan="1" align="left"> 3 </td>
+            <td rowspan="1" align="left">
+				<a href="mujoco/notes/Lec3_simple_pendulum">Notes: Position, Velocity, &amp; Torque control</a> 
+				<br> <br>
+                <a href = "https://youtu.be/JNgO_OPVb5k">Video: Control a simple pendulum</a>
+			</td>
+           <td rowspan="1" align="left">
+			   <a href="mujoco/startercode/template.zip">Starter: template.zip </a>
+			   <br> <br>
+           	   <a href="mujoco/code/control_pendulum.zip">Final: control_pendulum.zip </a>
+			</td>
            <td rowspan="1"> <ul>
               <li>Using the executable *simulate* to model of a simple pendulum </li>
 			   <li>Add a torque actuator to xml and use it in the code </li>
@@ -158,10 +183,17 @@
 		
 				<!-- Number 4-->
 		<tr  style="background-color: #f0f0f2">
-            <td rowspan="1" align="left"><a href="mujoco/notes/Lec4_double_pendulum">4. Model-based control</a> </td>
-           <td align="left"> <a href = "https://youtu.be/HYVPysAGp6g">Control a double pendulum</a></td>
-           <td rowspan="1" align="left"> <a href="mujoco/startercode/template_writeData.zip">template_writeData.zip </a></td>
-           <td rowspan="1" align="left"> <a href="mujoco/code/dbpendulum.zip">dbpendulum.zip </a></td>
+			<td rowspan="1" align="left"> 4 </td>
+            <td rowspan="1" align="left">
+				<a href="mujoco/notes/Lec4_double_pendulum">Notes: Model-based control</a> 
+				<br> <br>
+                <a href = "https://youtu.be/HYVPysAGp6g">Video: Control a double pendulum</a>
+			</td>
+           <td rowspan="1" align="left"> 
+			   <a href="mujoco/startercode/template_writeData.zip">Starter: template_writeData.zip </a>
+			   <br> <br>
+               <a href="mujoco/code/dbpendulum.zip">Final: dbpendulum.zip </a>
+			</td>
            <td rowspan="1"> <ul>
               <li>Create a model of double pendulum </li>
 			   <li>Check conservation of energy </li>
@@ -175,10 +207,16 @@
 						<!-- Number 5-->
 <!--		<tr  style="background-color: #f0f0f2">-->
 		 <tr >
-            <td rowspan="1" align="left"><a href="mujoco/notes/Lec5_double_pendulum_fsm.pdf">5. Trajectory tracking &amp; Finite State Machines</a> </td>
-           <td align="left"> <a href = "https://youtu.be/-oGNxB86YEk">Swinging leg with adequate clearance</a></td>
-           <td rowspan="1" align="left"> <a href="mujoco/startercode/template_writeData2.zip">template_writeData2.zip </a></td>
-           <td rowspan="1" align="left"> <a href="mujoco/code/dbpendulum_fsm.zip">dbpendulum_fsm.zip </a></td>
+			 <td rowspan="1" align="left"> 5 </td>
+            <td rowspan="1" align="left">
+				<a href="mujoco/notes/Lec5_double_pendulum_fsm.pdf">Notes: Trajectory tracking &amp; Finite State Machines</a> <br> <br>
+                <a href = "https://youtu.be/-oGNxB86YEk">Video: Leg Swing</a>
+			 </td>
+           <td rowspan="1" align="left">
+			   <a href="mujoco/startercode/template_writeData2.zip">Starter: template_writeData2.zip </a>
+			   <br> <br>
+               <a href="mujoco/code/dbpendulum_fsm.zip">Final: dbpendulum_fsm.zip </a>
+			 </td>
            <td rowspan="1"> <ul>
               <li>Finite state machines for creating switching controllers </li>
 			   <li>Trajectory generation, linear and cubic profiles</li>
@@ -190,10 +228,17 @@
 			<!-- Number 6-->
 		<tr  style="background-color: #f0f0f2">
 <!--		 <tr >-->
-            <td rowspan="1" align="left"><a href="mujoco/notes/Lec6_double_pendulum_ik.pdf">6. Jacobian and Inverse Kinematics</a> </td>
-           <td align="left"> <a href = "https://youtu.be/ZspzVxFAreQ">Drawing a circle with a double pendulum</a></td>
-           <td rowspan="1" align="left"> <a href="mujoco/startercode/template_writeData2.zip">template_writeData2.zip </a></td>
-           <td rowspan="1" align="left"> <a href="mujoco/code/dbpendulum_ik.zip">dbpendulum_ik.zip </a></td>
+			<td rowspan="1" align="left"> 6 </td>
+            <td rowspan="1" align="left">
+				<a href="mujoco/notes/Lec6_double_pendulum_ik.pdf">Notes: Jacobian and Inverse Kinematics</a> 
+			    <br> <br>
+                <a href = "https://youtu.be/ZspzVxFAreQ">Video: Manipulator drawing</a>
+			</td>
+           <td rowspan="1" align="left">
+			   <a href="mujoco/startercode/template_writeData2.zip">Starter: template_writeData2.zip </a>
+			   <br> <br>
+			   <a href="mujoco/code/dbpendulum_ik.zip">Final: dbpendulum_ik.zip </a>
+			</td>
            <td rowspan="1"> <ul>
               <li>Computing Jacobian </li>
 			   <li>Using Jacobian to compute velocity of end-effector</li>
@@ -205,10 +250,17 @@
 					<!-- Number 7-->
 <!--		<tr  style="background-color: #f0f0f2">-->
 		 <tr >
-            <td rowspan="1" align="left"><a href="mujoco/notes/Lec7_double_pendulum_lqr.pdf">7. Linear Quadratic Regulator</a> </td>
-           <td align="left"> <a href = "https://youtu.be/HMyD0IfPHfA">Balance control of under-actuated double pendulum</a></td>
-           <td rowspan="1" align="left"> <a href="mujoco/startercode/template_dbpendulum.zip">template_dbpendulum.zip </a></td>
-           <td rowspan="1" align="left"> <a href="mujoco/code/dbpendulum_lqr.zip">dbpendulum_lqr.zip </a></td>
+			 <td rowspan="1" align="left"> 7 </td>
+            <td rowspan="1" align="left">
+				<a href="mujoco/notes/Lec7_double_pendulum_lqr.pdf">Notes: Linear Quadratic Regulator</a> 
+			  <br> <br>
+               <a href = "https://youtu.be/HMyD0IfPHfA">Video: Control an under-actuated pendulum</a>
+			 </td>
+           <td rowspan="1" align="left">
+			   <a href="mujoco/startercode/template_dbpendulum.zip">Starter: template_dbpendulum.zip </a>
+			 <br> <br>
+              <a href="mujoco/code/dbpendulum_lqr.zip">Final: dbpendulum_lqr.zip </a>
+			 </td>
            <td rowspan="1"> <ul>
               <li>Computing the numerical form of differential equation xdot = f(x,u)</li>
 			   <li>Computing the linearization of the system</li>
@@ -220,11 +272,18 @@
 		
 		<!-- Number 8-->
 		<tr  style="background-color: #f0f0f2">
+			<td rowspan="1" align="left"> 8 </td>
 <!--		 <tr >-->
-            <td rowspan="1" align="left"><a href="mujoco/notes/Lec8_hybrid_systems.pdf">8. Hybrid Systems</a> </td>
-           <td align="left"> <a href = "https://youtu.be/p5_nQcsg2jM">Modeling and controlling a gymnast</a></td>
-           <td rowspan="1" align="left"> <a href="mujoco/startercode/template_pendulum.zip">template_pendulum.zip </a></td>
-           <td rowspan="1" align="left"> <a href="mujoco/code/hybrid_pendulum.zip">hybrid_pendulum.zip </a></td>
+            <td rowspan="1" align="left">
+				<a href="mujoco/notes/Lec8_hybrid_systems.pdf">Notes: Hybrid Systems</a> 
+				<br> <br>
+                <a href = "https://youtu.be/p5_nQcsg2jM">Video: Gymnast swing/release on a bar</a>
+			</td>
+           <td rowspan="1" align="left"> 
+			   <a href="mujoco/startercode/template_pendulum.zip">Starter: template_pendulum.zip </a>
+			  <br> <br>
+            <a href="mujoco/code/hybrid_pendulum.zip">Final: hybrid_pendulum.zip </a>
+			</td>
            <td rowspan="1"> <ul>
               <li>Modeling a floating base system, a pendulum with moving support</li>
 			   <li>Using tag equality to constrain the pendulum</li>
@@ -237,15 +296,22 @@
 				<!-- Number 9-->
 <!--		<tr  style="background-color: #f0f0f2">-->
 		 <tr >
-            <td rowspan="1" align="left"><a href="mujoco/notes/Lec9_2D_hopper.pdf">9. 2D Hopper</a> </td>
-           <td align="left"> <a href = "">Will be uploaded soon</a></td>
-           <td rowspan="1" align="left"> <a href="mujoco/startercode/template_pendulum.zip">template_pendulum.zip </a></td>
-           <td rowspan="1" align="left"> <a href="mujoco/code/">NA </a></td>
+			 <td rowspan="1" align="left"> 9 </td>
+            <td rowspan="1" align="left">
+				<a href="mujoco/notes/Lec9_2D_hopper.pdf">Notes: 2D Hopper</a>
+			 <br> <br>
+            <a href = "https://youtu.be/ve7AnF6bzdE">Video: 2D Hopper</a>
+			 </td>
+           <td rowspan="1" align="left">
+			   <a href="mujoco/startercode/template_pendulum.zip">Starter: template_pendulum.zip </a>
+			 	<br> <br>
+                <a href="mujoco/code/hopper.zip">Final: hopper.zip </a>
+			 </td>
            <td rowspan="1"> <ul>
               <li>Modeling a hopper</li>
 			   <li>State machine, transitions and actions</li>
 			   <li>Height control using spring-like actuation </li>
-              <li>Velocity control using reactive torque during stance</li>
+             <li>Velocity control using reactive torque during stance</li>
            </ul>
            </td>
         </tr>
@@ -265,7 +331,7 @@
 <!--<h1 class="display-2 text-center"> Homework</h1> -->
 <h1 align="center"> Homework</h1>
     <div align="center" class="col-xl-12">
-    <table style="width:100%" border="3">
+    <table style="width:90%" border="3">
 		
 		
         <tr>
@@ -309,8 +375,8 @@
 	<!-- Comment here-->
 	<br>
 		<ul>
-        <li>Comments/Suggestions to Pranav A. Bhounsule (pranav AT uic.edu) </li>
-		<li>Last updated: February 20, 2022</li>
+        <li>Comments/Suggestions to Pranav A. Bhounsule (pranavb129 AT gmail.com) </li>
+		<li>Last updated: February 22, 2022</li>
 </ul>
 <br> 
 		 <!-- line break-->
