@@ -25,10 +25,36 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarNavDropdown">
     <ul class="navbar-nav">
+		<!-- All Material !-->
+		 <li class="nav-item dropdown active">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          All Material
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#lec0"><b> 0 </b>Installation</a>
+              <a class="dropdown-item" href="#lec1"><b> 1 </b>Modeling Basics</a>
+              <a class="dropdown-item" href="#lec2"><b> 2 </b>Simulation Basics</a>
+              <a class="dropdown-item" href="#lec3"><b> 3 </b>Position/Torque Control</a>
+			  <a class="dropdown-item" href="#lec4"><b> 4 </b>Model-Based Control</a>
+			  <a class="dropdown-item" href="#lec5"><b> 5 </b>Tracking/State Machine</a>
+              <a class="dropdown-item" href="#lec6"><b> 6 </b>Jacobian/Inverse Kinematics</a>
+			  <a class="dropdown-item" href="#lec7"><b> 7 </b>Linear Quadratic Regulator</a>
+			  <a class="dropdown-item" href="#lec8"><b> 8 </b>Hybrid Systems</a>
+			  <a class="dropdown-item" href="#lec9"><b> 9 </b>2D Hopper</a>
+			  <a class="dropdown-item" href="#lec10"><b> 10 </b>Nonlinear Optimization</a>
+			  <a class="dropdown-item" href="#lec11"><b> 11 </b>Initial Value Problem with Optimization</a>
+			  <a class="dropdown-item" href="#lec12"><b> 12 </b>Inverse Kinematics with Optimization</a>
+			  <a class="dropdown-item" href="#lec13"><b> 13 </b>2D Biped</a>
+        </div> 
+        </li>
+
+		<!-- All Material end ! -->
 			<!--   All Material  !-->
+<!--
       <li class="nav-item active">
         <a class="nav-link" href="#FullTable">All Material<span class="sr-only">(current)</span></a>
       </li>
+-->
     <!--   All Material end  !-->
 		
 					<!--   HW starts -->
@@ -63,7 +89,7 @@
     <div id ="header" align="center" class="col-xl-12">
         
 <p class="text-justify"><b>
-<b>About:</b> &nbsp; </b>This mini course aims to give you working knowledge of <a href="https://mujoco.org/">MuJoCo</a>, a rigid body dynamics simulator. The tutorials are based on using mujoco200 available at <a href="roboti.us">roboti.us</a>. The software needs the file mjkey.txt which is freely available on the website. A shortened link to this webste is <a href="http://tiny.cc/mujoco">http://tiny.cc/mujoco</a>. The YouTube playlist is here: <a href="http://tiny.cc/mujoco2">http://tiny.cc/mujoco2.</a> The course is taught using C interface of MuJoCo. Prior knowledge of C/unix commands is not assumed. Everything is taught from scratch. All software used in this course is freely available. This includes MuJoCo 200, <a href="https://atom.io/">Atom Editor</a>, C, make, Visual Studio (<a href="https://visualstudio.microsoft.com/vs/community/">community edition</a>) for Windows.</p>   
+<b>About:</b> &nbsp; </b>This mini course aims to give you working knowledge of <a href="https://mujoco.org/">MuJoCo</a>, a rigid body dynamics simulator. The tutorials are based on using mujoco200 available at <a href="roboti.us">roboti.us</a>. The software needs the file mjkey.txt which is freely available on the website. A shortened link to this webste is <a href="http://tiny.cc/mujoco">http://tiny.cc/mujoco</a>. The YouTube playlist is here: <a href="http://tiny.cc/mujoco2">http://tiny.cc/mujoco2.</a> The course is taught using C interface of MuJoCo. Prior knowledge of C/unix commands is not assumed. Everything is taught from scratch. All software used in this course is freely available. This includes MuJoCo 200, <a href="https://atom.io/">Atom Editor</a>, C, make, <a href="https://nlopt.readthedocs.io/en/latest/">NLOPT</a>, Visual Studio (<a href="https://visualstudio.microsoft.com/vs/community/">community edition</a>) for Windows.</p>   
 </div>
 	
 
@@ -87,11 +113,10 @@
             <th style="text-align: center"><big><big>Starter/Final Code</big></big></th>
 <!--            <th style="text-align: center"><big><big>Final Code</big></big></th>-->
             <th style="text-align: center"><big><big>Description</big></big></th>
-            
+            <a id="lec0"></a> <!--tag for dropdown -->
         </tr>
 		
 		<!-- Number 0-->
-        
          <tr style="background-color: #f0f0f2">
 			 <td rowspan="1" align="left"> 0 </td>
             <td rowspan="1" align="left">
@@ -107,6 +132,7 @@
              <li><a href="mujoco/installation/install_mujoco_windows.pdf">Instructions for Windows</a></li>
 			   <li><a href="mujoco/installation/install_mujoco_virtual_machine_ubuntu.pdf">Instructions for Linux via Virtual Machine</a></li>
               <li>MuJoCo file structure is explained.  Create myproject within mujoco. Folders for each lecture are created within this folder</li>
+			    <a id="lec1"></a> <!--tag for dropdown -->
            </ul>
            </td>
         </tr>
@@ -129,6 +155,7 @@
 			   <li>Understanding the various features of *simulate* </li>
               <li><a href="https://mujoco.readthedocs.io/en/latest/XMLreference.html">Using the XML reference</a></li>
 			  <li>Adding more geometries to hello.xml and viewing with *simulate*</li>
+			   <a id="lec2"></a> <!--tag for dropdown -->
            </ul>
            </td>
         </tr>
@@ -152,6 +179,7 @@
               <li><a href="https://mujoco.readthedocs.io/en/latest/APIreference.html">Using the API reference</a></li>
 			  <li>Setting initial conditions for the projectile</li>
 			  <li>Adding a drag force to the projectile</li>
+			   <a id="lec3"></a> <!--tag for dropdown -->
            </ul>
            </td>
         </tr>
@@ -177,6 +205,7 @@
 			  <li>Position control using either torque control of position/velocity servo</li>
 			   <li>Create noisy sensor in xml and use it in the code</li>
 			   <li>Switch between different controllers in the code</li>
+			   <a id="lec4"></a> <!--tag for dropdown -->
            </ul>
            </td>
         </tr>
@@ -200,6 +229,7 @@
               <li>Check validity of equations of motion </li>
 			  <li>Add a velocity servo actuator to xml and use it in the code</li>
 			  <li>Model-based control, compensating for gravity and coriolis forces</li>
+			   <a id="lec5"></a> <!--tag for dropdown -->
            </ul>
            </td>
         </tr>
@@ -221,6 +251,7 @@
               <li>Finite state machines for creating switching controllers </li>
 			   <li>Trajectory generation, linear and cubic profiles</li>
               <li>Trajectory tracking </li>
+			   <a id="lec6"></a> <!--tag for dropdown -->
            </ul>
            </td>
         </tr>
@@ -243,6 +274,7 @@
               <li>Computing Jacobian </li>
 			   <li>Using Jacobian to compute velocity of end-effector</li>
               <li>Inverse kinematics using the inverse of the Jacobian </li>
+			   <a id="lec7"></a> <!--tag for dropdown -->
            </ul>
            </td>
         </tr>
@@ -266,6 +298,7 @@
 			   <li>Computing the linearization of the system</li>
               <li>Computing LQR controller in MATLAB </li>
 			   <li>Testing the controller using perturbation </li>
+			   <a id="lec8"></a> <!--tag for dropdown -->
            </ul>
            </td>
         </tr>
@@ -289,6 +322,7 @@
 			   <li>Using tag equality to constrain the pendulum</li>
 			   <li>Verifying the equations of a floating base system </li>
               <li>Using a finite state machine to simulate the behavior of a hybrid system</li>
+			   <a id="lec9"></a> <!--tag for dropdown -->
            </ul>
            </td>
         </tr>
@@ -312,6 +346,7 @@
 			   <li>State machine, transitions and actions</li>
 			   <li>Height control using spring-like actuation </li>
              <li>Velocity control using reactive torque during stance</li>
+			   <a id="lec10"></a> <!--tag for dropdown -->
            </ul>
            </td>
         </tr>
@@ -323,7 +358,7 @@
             <td rowspan="1" align="left">
 				<a href="mujoco/notes/Lec10_Installing_NLOPT">Notes: Installing NLOPT</a>
 			 <br> <br>
-            <a href = "https://youtu.be/">Video: Coming soon</a>
+            <a href = "https://youtu.be/m75bHHkPgqo">Video: Install and run NLOPT</a>
 			 </td>
            <td rowspan="1" align="left">
 			   <a href="mujoco/startercode/template_nlopt.zip">Starter: template_nlopt.zip </a>
@@ -334,6 +369,7 @@
               <li>Structure of nonlinear optimization problems</li>
 			   <li><a href="mujoco/installation/install_nlopt.pdf">Installing NLOPT on Mac/Linux</a></li>
 			   <li>Understanding NLOPT using a constrained optimization problem </li>
+			   <a id="lec11"></a> <!--tag for dropdown -->
            </ul>
            </td>
         </tr>
@@ -343,19 +379,68 @@
 		 <tr >
 			 <td rowspan="1" align="left"> 11 </td>
             <td rowspan="1" align="left">
-				<a href="mujoco/notes/Lec11_Projectile_Launch_Optimization">Notes: Projectile Launch</a>
+				<a href="mujoco/notes/Lec11_Projectile_Launch_Optimization.pdf">Notes: Projectile Launch</a>
 			 <br> <br>
-            <a href = "https://youtu.be/">Video: Coming soon</a>
+            <a href = "https://youtu.be/XStRXoEGE70">Video: Initial Value problem using Optimization</a>
 			 </td>
            <td rowspan="1" align="left">
 			   <a href="mujoco/startercode/template_projectile.zip">Starter: template_projectile.zip </a>
 			 	<br> <br>
-                <a href="mujoco/code/">Final: Coming soon </a>
+                <a href="mujoco/code/projectile_opt.zip">Final: projectile_opt.zip </a>
 			 </td>
            <td rowspan="1"> <ul>
               <li>Creating the scene in xml</li>
 			   <li>Formulation as a root finding problem </li>
 			   <li>Formulation as an optimization problem </li>
+			   <a id="lec12"></a> <!--tag for dropdown -->
+           </ul>
+           </td>
+        </tr>
+		
+								<!-- Number 12 -->
+		<tr  style="background-color: #f0f0f2">
+<!--		 <tr >-->
+			 <td rowspan="1" align="left"> 12 </td>
+            <td rowspan="1" align="left">
+			  <a href="mujoco/notes/Lec12_Inverse_Kinematics_using_Optimization.pdf">Notes: Inverse Kinematics</a>
+			 <br> <br>
+            <a href = "https://youtu.be/">Video: Inverse Kinematics using Optimization</a>
+		  </td>
+           <td rowspan="1" align="left">
+		     <a href="mujoco/startercode/template_manipulator.zip">Starter: template_manipulator.zip </a>
+			 	<br> <br>
+             <a href="mujoco/code/manipulator_ik.zip">Final: projectile_opt.zip </a>
+		  </td>
+           <td rowspan="1"> <ul>
+              <li>Creating two data objects; one for simulation and one for actual system</li>
+			   <li>Different between internal and external callbacks </li>
+			   <li>Formulation and solution as a root finding problem</li>
+			   <a id="lec13"></a> <!--tag for dropdown -->
+           </ul>
+           </td>
+        </tr>
+		
+		<!-- Number 13-->
+<!--		<tr  style="background-color: #f0f0f2">-->
+		 <tr >
+			 <td rowspan="1" align="left"> 13 </td>
+            <td rowspan="1" align="left">
+				<a href="mujoco/notes/Lec11_2D_Biped.pdf">Notes: 2D Biped</a>
+			 <br> <br>
+            <a href = "https://youtu.be/">Video: Coming Soon </a>
+			 </td>
+           <td rowspan="1" align="left">
+			   <a href="mujoco/startercode/">Starter: Coming Soon  </a>
+			 	<br> <br>
+                <a href="mujoco/code/">Final: Coming Soon </a>
+			 </td>
+           <td rowspan="1"> <ul>
+ 				<li>Modeling a biped</li>
+			   <li>State machine, transitions and actions</li>
+<!--
+			   <li>Height control using spring-like actuation </li>
+             <li>Velocity control using reactive torque during stance</li>
+-->
            </ul>
            </td>
         </tr>
@@ -420,7 +505,7 @@
 	<br>
 		<ul>
         <li>Comments/Suggestions to Pranav A. Bhounsule (pranavb129 AT gmail.com) </li>
-		<li>Last updated: February 22, 2022</li>
+		<li>Last updated: March 2, 2022</li>
 </ul>
 <br> 
 		 <!-- line break-->
