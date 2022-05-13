@@ -1,0 +1,162 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ME392: Robotics with MuJoCo</title>
+    <meta name="description" content="Undergraduate course on Robotics and MuJoCo">
+    <meta name="author" content="Pranav Bhounsule">
+
+    <link rel="stylesheet" href="style_doc.css?">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&family=Open+Sans:ital,wght@0,400;0,700;1,600&display=swap" rel="stylesheet">
+    
+    <script defer src="https://use.fontawesome.com/releases/v5.7.2/js/all.js" integrity="sha384-0pzryjIRos8mFBWMzSSZApWtPl/5++eIfzYmTgBBmXYdhvxPc+XcFEk+zJwDgWbP" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+
+    <div class="navbar clear nav-top">
+        <div class="row content">
+<!--            <a href="#"><img class="logo" src="logo.svg"></a>-->
+<!--            <a class="right" style="text-decoration: underline;" href="#"><i class="fas fa-book"></i>&nbsp; Documentation</a>-->
+<!--            <a class="right" href="mailto:pranavb129@gmail.com" target="_blank"><i class="fas fa-paper-plane"></i>&nbsp; yourapp@email.com</a>-->
+        </div>
+    </div>
+
+    <div class="container clear">
+        <div class="row wrapper">
+
+            <div class="sidepanel">
+
+                <a class="title" href="#overview">Overview</a>
+                
+<!--
+                <a class="section" href="#">Supported Versions</a>
+                <a class="section" href="#">About this App</a>
+                <a class="section" href="#technology">Technology</a>
+-->
+
+<!--                <div class="divider left"></div>-->
+
+              <a class="title" href="#grading">Grading</a>
+
+
+
+              <a class="title" href="#timeline">Timeline</a>
+
+
+              <a class="title" href="#lectures">Lectures</a>
+
+
+              <a class="title" href="#homework">Homework</a>
+
+
+              <a class="title" href="#projects">Potential Projects</a>
+				
+            
+			<div class="divider left"></div>
+				
+             <div class="space double"></div>
+				
+				
+
+            </div>
+
+            <div class="right-col">
+				 <h1 style="color:blue;font-size:50px;">ME 392: Robotics with MuJoCo</h1> 
+				<br>
+				<p> Click to go to <a href="https://pab47.github.io/mujoco.html">MuJoCo Bootcamp</a></p>
+                 <br id="overview">
+				 <br>
+
+                <h1>Overview</h1>
+                
+                <p >The 12-week course teaches fundamentals of robotics using MuJoCo, a robotics simulator. By the end of the course the student will learn
+				</p> 
+				
+				<ul>
+				  <li>Forward and inverse kinematics</li>
+				  <li>Dynamical equations of planar links</li>
+				  <li>Position, velocity, and torque control</li>
+				  <li>Finite State Machines</li>
+				  <li>Modeling using xml files</li>
+				  <li id="grading">Fundamentals of writing C code including makefile</li>
+				</ul>
+
+				<br>
+				
+                <h1>Grading</h1>
+				<ul>
+				  <li>Homework (individual or group work): 40%</li>
+				  <li id="timeline">Project (individual): 60%</li>
+				</ul>
+
+				<br>
+				
+				<h1>Timeline</h1>
+				<ul>
+				  <li>Week 1-6: Lectures and related HW</li>
+				  <li>Week 7: Project selection</li>
+				  <li>Week 8 - 11: Project work</li>
+				  <li id="lectures">Week 12: Final presentation and code submission</li>
+				</ul>
+				
+				<br>
+				
+				<h1>Lectures</h1>
+				<ul>
+				  <li><a href="https://pab47.github.io/mujoco.html#lec1">Lec 0 and Lec 1: Installation and Modeling</a> </li>
+				  <li><a href="https://pab47.github.io/mujoco.html#lec2">Lec 2: Projectile with drag </a> </li>
+				  <li><a href="https://pab47.github.io/mujoco.html#lec3">Lec 3: Position, velocity, torque control of a pendulum</a> </li>
+				  <li><a href="https://pab47.github.io/mujoco.html#lec4">Lec 4: Model-based control of double pendulum</a> </li>
+				  <li><a href="https://pab47.github.io/mujoco.html#lec1">Lec 5: Finite State Machine</a> </li>
+				  <li id="homework"><a href="https://pab47.github.io/mujoco.html#lec6">Lec 6: Jacobian and inverse kinematics. </a> </li>
+				</ul>
+				
+				<br>
+				
+				<h1>Homework</h1>
+				<ul>
+				  <li><a href="https://pab47.github.io/mujoco/homework/Hw1_mjc.pdf">HW1 Rube Goldberg (Lec 1)</a> </li>
+				  <li><a href="https://pab47.github.io/mujoco/homework/Hw2_mjc.pdf">HW2 Coupled Pendulum (Lec 2)</a> </li>
+				  <li><a href="https://pab47.github.io/mujoco/homework/Hw3_mjc.pdf">HW3 Rott’s Pendulum (Lec 3 and Lec 4)</a> </li>
+				  <li><a href="https://pab47.github.io/mujoco/homework/Hw4_mjc.pdf">HW4 Pumping a swing (Lec 3 and Lec 5)</a> </li>
+				  <li id="projects"><a href="https://pab47.github.io/mujoco/homework/Hw5_mjc.pdf">HW5 Manipulator drawing (Lec 6)</a> </li>
+				</ul>
+				
+				<br>
+				
+				<h1>Potential Projects</h1>
+				<ol>
+				  <li>Differential drive car modeling and control to follow a given trajectory</li>
+				  <li>Maze solving robot (uses wall following to reach a target)</li>
+				  <li> Balance a cart-pendulum (see LQR controllers) </li>
+				  <li>  Quadcopter modeling and control</li>
+				   <li> Industrial arm control (pick and place) </li>
+				  <li> Create an interactive game of your choice in MuJoCo (e.g., pin-ball) </li>
+				  <li> Legged robot modeling and control </li>
+				  <li> Project related to optimization and robotics </li>
+				  <li> Project of your choosing with discussion with the instructor. </li>
+				</ol>
+				
+            
+                <div class="doublespace"></div>
+                <div class="divider" style="width:24%; margin:30px 0;"></div>
+                
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+</body>
+
+</html>
