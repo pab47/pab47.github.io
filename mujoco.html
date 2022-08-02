@@ -92,12 +92,16 @@
 <p class="text-justify"><b>
 <b>About:</b> </b>This mini course aims to give you working knowledge of <a href="https://mujoco.org/">MuJoCo</a>, a rigid body dynamics simulator. The tutorials are based on using mujoco200 available at <a href="roboti.us">roboti.us</a>. The software needs the file mjkey.txt which is freely available on the website. A shortened link to this webste is <a href="http://tiny.cc/mujoco">http://tiny.cc/mujoco</a>. The YouTube playlist is here: <a href="http://tiny.cc/mujoco2">http://tiny.cc/mujoco2.</a> The course is taught using C interface of MuJoCo. Prior knowledge of C/unix commands is not assumed. Everything is taught from scratch. All software used in this course is freely available. This includes MuJoCo 200, <a href="https://atom.io/">Atom Editor</a>, C, make, <a href="https://nlopt.readthedocs.io/en/latest/">NLOPT</a>, Visual Studio (<a href="https://visualstudio.microsoft.com/vs/community/">community edition</a>) for Windows. If you have any <font style="color:red">feedback including suggestions for more course content</font> use this <a href="https://docs.google.com/forms/d/1ErjmkZonNXlxZVSkk4S33uiGTvh_YnkFB4wYyDUHYaw"> form</a>. <br><br>
 	  
+	<font style="color:red"> <strong> NEW </strong> (Aug 2, 2022):</font> <a href="https://bolundai0216.github.io/">Bolun Dai </a>  converted all C code into python code. A new column with python code is added to the webpage. In cmd or terminal type pip install mujoco to install the python bindings to mujoco. <br> <br>
+	
 	A 12-week MuJoCo course for senior-level undergraduates / first year graduate is here: <a href="https://pab47.github.io/mujoco2022.html">https://pab47.github.io/mujoco2022.html </a>   <br> <br>
+	
+	
 	
 		
 	<b>Citing this course: </b> <br>
 	@misc{mujoco, <br>
-  author={Bhounsule, Pranav A.}, <br>
+  author={Bhounsule, Pranav A. and Dai, Bolun}, <br>
   title = {MuJoCo Bootcamp, <br>
   howpublished = {\url{https://pab47.github.io/mujoco.html}, <br>
   year = {2022}, <br>
@@ -119,8 +123,8 @@
 			<th style="text-align: center"><big><big>No.</big></big></th>
             <th style="text-align: center"><big><big>Notes/Video</big></big></th>
 <!--            <th style="text-align: center"><big><big>Video</big></big></th>-->
-            <th style="text-align: center"><big><big>Starter/Final Code</big></big></th>
-<!--            <th style="text-align: center"><big><big>Final Code</big></big></th>-->
+            <th style="text-align: center"><big><big>C Code</big></big></th>
+            <th style="text-align: center"><big><big>Python Code</big></big></th>
             <th style="text-align: center"><big><big>Description</big></big></th>
             <a id="lec0"></a> <!--tag for dropdown -->
         </tr>
@@ -134,6 +138,7 @@
              <a href = "https://youtu.be/p7wqTpVXug4">Video: Installation/File structure</a>
 			 </td>
            <td rowspan="1" align="left"> None </td>
+		   <td rowspan="1" align="left"> None </td>
            <td rowspan="1"> <ul>
               <li>Installing MuJoCo 200 on Mac/Linux/Windows</li>
               <li><a href="mujoco/installation/install_mujoco_mac.pdf">Instructions for Mac</a></li>
@@ -159,6 +164,7 @@
 			   <br><br>
 			   <a href="mujoco/code/learning_xml.zip">Final: learning_xml.zip </a>
 			</td>
+			<td rowspan="1" align="left"> None </td>
            <td rowspan="1"> <ul>
               <li>Using the executable *simulate* to load hello.xml </li>
 			   <li>Understanding the various features of *simulate* </li>
@@ -177,10 +183,15 @@
 				<br> <br>
                  <a href = "https://youtu.be/Ga3twtlgKsM">Video: Projectile with drag</a>
 			</td>
-           <td rowspan="1" align="left"> 
+			<td rowspan="1" align="left"> 
 			   <a href="mujoco/startercode/template.zip">Starter: template.zip </a>
 			   <br> <br>
                <a href="mujoco/code/projectile.zip">Final: projectile.zip </a>
+			</td>
+			<td rowspan="1" align="left"> 
+			   <a href="mujoco/python/temp_mjcpy.zip">Start: temp_mjcpy.zip </a>
+			   <br> <br>
+               <a href="mujoco/python/2_projectile.zip">Final: 2_projectile.zip </a>
 			</td>
            <td rowspan="1"> <ul>
               <li>Using the executable *simulate* to model a projectile </li>
@@ -205,6 +216,11 @@
 			   <a href="mujoco/startercode/template.zip">Starter: template.zip </a>
 			   <br> <br>
            	   <a href="mujoco/code/control_pendulum.zip">Final: control_pendulum.zip </a>
+			</td>
+		  <td rowspan="1" align="left"> 
+			   <a href="mujoco/python/temp_mjcpy.zip">Start: temp_mjcpy.zip </a>
+			   <br> <br>
+               <a href="mujoco/python/3_control_pendulum.zip">Final: 3_control_pendulum.zip </a>
 			</td>
            <td rowspan="1"> <ul>
               <li>Using the executable *simulate* to model of a simple pendulum </li>
@@ -232,6 +248,11 @@
 			   <br> <br>
                <a href="mujoco/code/dbpendulum.zip">Final: dbpendulum.zip </a>
 			</td>
+			<td rowspan="1" align="left"> 
+			   <a href="mujoco/python/temp_mjcpy.zip">Start: temp_mjcpy.zip </a>
+			   <br> <br>
+               <a href="mujoco/python/4_dbpendulum.zip">Final: 4_dbpendulum.zip </a>
+			</td>
            <td rowspan="1"> <ul>
               <li>Create a model of double pendulum </li>
 			   <li>Check conservation of energy </li>
@@ -256,6 +277,11 @@
 			   <br> <br>
                <a href="mujoco/code/dbpendulum_fsm.zip">Final: dbpendulum_fsm.zip </a>
 			 </td>
+			 <td rowspan="1" align="left"> 
+			   <a href="mujoco/python/temp_mjcpy.zip">Start: temp_mjcpy.zip </a>
+			   <br> <br>
+               <a href="mujoco/python/5_dbpendulum_fsm.zip">Final: 5_dbpendulum_fsm.zip </a>
+			</td>
            <td rowspan="1"> <ul>
               <li>Finite state machines for creating switching controllers </li>
 			   <li>Trajectory generation, linear and cubic profiles</li>
@@ -278,6 +304,11 @@
 			   <a href="mujoco/startercode/template_writeData2.zip">Starter: template_writeData2.zip </a>
 			   <br> <br>
 			   <a href="mujoco/code/dbpendulum_ik.zip">Final: dbpendulum_ik.zip </a>
+			</td>
+			<td rowspan="1" align="left"> 
+			   <a href="mujoco/python/temp_mjcpy.zip">Start: temp_mjcpy.zip </a>
+			   <br> <br>
+               <a href="mujoco/python/6_dbpendulum_ik.zip">Final: 6_dbpendulum_ik.zip </a>
 			</td>
            <td rowspan="1"> <ul>
               <li>Computing Jacobian </li>
@@ -302,6 +333,11 @@
 			 <br> <br>
               <a href="mujoco/code/dbpendulum_lqr.zip">Final: dbpendulum_lqr.zip </a>
 			 </td>
+			 <td rowspan="1" align="left"> 
+			   <a href="mujoco/python/temp_mjcpy.zip">Start: temp_mjcpy.zip </a>
+			   <br> <br>
+               <a href="mujoco/python/7_dbpendulum_lqr.zip">Final: 7_dbpendulum_lqr.zip </a>
+			</td>
            <td rowspan="1"> <ul>
               <li>Computing the numerical form of differential equation xdot = f(x,u)</li>
 			   <li>Computing the linearization of the system</li>
@@ -325,6 +361,11 @@
 			   <a href="mujoco/startercode/template_pendulum.zip">Starter: template_pendulum.zip </a>
 			  <br> <br>
             <a href="mujoco/code/hybrid_pendulum.zip">Final: hybrid_pendulum.zip </a>
+			</td>
+			<td rowspan="1" align="left"> 
+			   <a href="mujoco/python/temp_mjcpy.zip">Start: temp_mjcpy.zip </a>
+			   <br> <br>
+               <a href="mujoco/python/8_hybrid_pendulum.zip">Final: 8_hybrid_pendulum.zip </a>
 			</td>
            <td rowspan="1"> <ul>
               <li>Modeling a floating base system, a pendulum with moving support</li>
@@ -350,6 +391,11 @@
 			 	<br> <br>
                 <a href="mujoco/code/hopper.zip">Final: hopper.zip </a>
 			 </td>
+			 <td rowspan="1" align="left"> 
+			   <a href="mujoco/python/temp_mjcpy.zip">Start: temp_mjcpy.zip </a>
+			   <br> <br>
+               <a href="mujoco/python/9_2D_hopper.zip">Final: 9_2D_hopper.zip </a>
+			</td>
            <td rowspan="1"> <ul>
               <li>Modeling a hopper</li>
 			   <li>State machine, transitions and actions</li>
@@ -371,6 +417,10 @@
 			 </td>
            <td rowspan="1" align="left">
 			   <a href="mujoco/startercode/template_nlopt.zip">Starter: template_nlopt.zip </a>
+			 	<br> <br>
+                None 
+			 </td>
+			 <td rowspan="1" align="left">
 			 	<br> <br>
                 None 
 			 </td>
@@ -397,6 +447,11 @@
 			 	<br> <br>
                 <a href="mujoco/code/projectile_opt.zip">Final: projectile_opt.zip </a>
 			 </td>
+			 <td rowspan="1" align="left"> 
+			   <a href="mujoco/python/temp_mjcpy.zip">Start: temp_mjcpy.zip </a>
+			   <br> <br>
+               <a href="mujoco/python/11_projectile_opt.zip">Final: 11_projectile_opt.zip </a>
+			</td>
            <td rowspan="1"> <ul>
               <li>Creating the scene in xml</li>
 			   <li>Formulation as a root finding problem </li>
@@ -420,6 +475,11 @@
 			 	<br> <br>
              <a href="mujoco/code/manipulator_ik.zip">Final: manipulator_ik.zip </a>
 		  </td>
+			<td rowspan="1" align="left"> 
+			   <a href="mujoco/python/temp_mjcpy.zip">Start: temp_mjcpy.zip </a>
+			   <br> <br>
+               <a href="mujoco/python/12_manipulator_ik.zip">Final: 12_manipulator_ik.zip </a>
+			</td>
            <td rowspan="1"> <ul>
               <li>Creating two data objects; one for simulation and one for actual system</li>
 			   <li>Different between internal and external callbacks for controller </li>
@@ -443,6 +503,11 @@
 			 	<br> <br>
                 <a href="mujoco/code/biped.zip">Final: biped.zip </a>
 			 </td>
+			 <td rowspan="1" align="left"> 
+			   <a href="mujoco/python/temp_mjcpy.zip">Start: temp_mjcpy.zip </a>
+			   <br> <br>
+               <a href="mujoco/python/13_2D_biped.zip">Final: 13_2D_biped.zip </a>
+			</td>
            <td rowspan="1"> <ul>
  				<li>Modeling a biped</li>
 			   <li>State estimation; foot positon and absolute leg angle</li>
@@ -529,7 +594,7 @@
 			<a href="mujoco/software/mjkey.txt">Key (drop in bin folder). </a>
 		</li>
         <li>Comments/Suggestions to Pranav A. Bhounsule (pranavb129 AT gmail.com) </li>
-		<li>Last updated: July 07, 2022</li>
+		<li>Last updated: August 02, 2022</li>
 </ul>
 <br> 
 		 <!-- line break-->
