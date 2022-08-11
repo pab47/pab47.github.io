@@ -1,0 +1,316 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>MuJoCoPy Bootcamp</title>
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+<link href="mujoco/undergradStyle.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    
+    
+<h1 class="display-1 text-center">MuJoCoPy Bootcamp</h1>
+<!--Colors: https://getbootstrap.com/docs/4.0/utilities/colors/-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success fixed-top sticky-top">
+        <a class="navbar-brand" href="#"></a>
+<!--        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/University_of_Illinois_at_Chicago_circle_logo.svg/1200px-University_of_Illinois_at_Chicago_circle_logo.svg.png" width="30" height="30" class="d-inline-block align-top" alt="UIC Picture">-->
+      <a class="navbar-brand" href="#"> Top/About</a>
+        
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+		<!-- All Material !-->
+		 <li class="nav-item dropdown active">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink1" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          All Material
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="#lec1"><b> 1 </b>Install app/C version</a>
+			  <a class="dropdown-item" href="#lec2"><b> 2 </b>Install python version</a>
+              <a class="dropdown-item" href="#lec3"><b> 3 </b>Modifying model files</a>
+        </div> 
+        </li>
+
+		<!-- All Material end ! -->
+			<!--   All Material  !-->
+<!--
+      <li class="nav-item active">
+        <a class="nav-link" href="#FullTable">All Material<span class="sr-only">(current)</span></a>
+      </li>
+-->
+    <!--   All Material end  !-->
+		
+					<!--   HW starts -->
+      <li class="nav-item active">
+        <a class="nav-link" href="#Homework">Homework<span class="sr-only">(current)</span></a>
+      </li>
+		
+		<!--   HW ends  !-->
+
+		
+	  <!--   other course1  !-->
+		<li class="nav-item active">
+        <a class="nav-link" href="http://tiny.cc/pranavb_robotics">Robotics</a>
+      </li>
+		 <!--   other course1 !-->
+		
+		<!--   other course1  2-->
+		<li class="nav-item active">
+        <a class="nav-link" href="http://tiny.cc/legged">Legged Robotics</a>
+      </li>
+		 <!--   other course1 2-->
+		
+			<!--   other course  3-->
+		<li class="nav-item active">
+        <a class="nav-link" href="http://tiny.cc/mujoco">MuJoCo Bootcamp (C/python)</a>
+      </li>
+		 <!--   other course 3-->
+		
+	  <!--   My webpage starts  !-->
+		<li class="nav-item active">
+        <a class="nav-link" href="https://pab47.github.io">Pranav's homepage</a>
+      </li>
+		 <!--   My webpage ends !-->
+    </ul>
+  </div>
+</nav>
+    
+<br>
+    <div id ="header" align="center" class="col-xl-12">
+        
+<p class="text-justify"><b>
+<b>About:</b> </b>This mini course aims to give&nbsp; you working knowledge of <a href="https://mujoco.org/">MuJoCo</a>, a rigid body dynamics simulator. The tutorials are based on using the python bindings of mujoco221. A shortened link to this webste is <a href="http://tiny.cc/mujoco">http://tiny.cc/mujocopy</a>. The YouTube playlist is here: <a href="http://tiny.cc/mujocopy2">http://tiny.cc/mujocopy2.</a> The course is taught using python interface of MuJoCo. Prior knowledge of python commands is not assumed. Everything is taught from scratch. All software used in this course is freely available. This includes MuJoCo 221, python3, and <a href="https://atom.io/">Atom Editor</a>. If you have any <font style="color:red">feedback including suggestions for more course content</font> use this <a href="https://docs.google.com/forms/d/1ErjmkZonNXlxZVSkk4S33uiGTvh_YnkFB4wYyDUHYaw"> form</a>. <br><br>
+	  
+	<font style="color:red"> <strong> Looking for MuJoCo Bootcamp C/python course?</strong></font>  The MuJoCo C/python course can be found here: <a href="http://tiny.cc/mujoco">http://tiny.cc/mujoco</a> This course differs from the MuJoCo C/python course above in number of ways: videos are shorter, new examples covered, I use only python in the videos as opposed to C, and finally I use the Deepmind version 2.2.1 as opposed to Emo Todorov's version 2.0.0. <br> <br>
+	
+	
+	<b>Citing this course: </b> <br>
+	@misc{mujocopy, <br>
+  author={Bhounsule, Pranav A.}, <br>
+  title = {MuJoCoPy Bootcamp, <br>
+  howpublished = {\url{https://pab47.github.io/mujocopy.html}, <br>
+  year = {2022}, <br>
+  note = {Accessed: {2022–07-07}} } <br>
+	</p>
+
+</div>
+	
+		<!--- Module -->
+	
+<!--	Tag to create shortcut-->
+<div id="FullTable"></div>
+	   <div class="col-xl-12" id="main">
+            <h1 align="center"> Course Material</h1>
+            <div align="center">
+    <table style="width:90%" border="3">
+        <tr>
+            <!-- Adding the header colums of content materials and videos -->
+			<th style="text-align: center"><big><big>No.</big></big></th>
+            <th style="text-align: center"><big><big>Notes/Video</big></big></th>
+<!--            <th style="text-align: center"><big><big>Video</big></big></th>-->
+            <th style="text-align: center"><big><big>Code</big></big></th>
+<!--            <th style="text-align: center"><big><big>Python Code</big></big></th>-->
+            <th style="text-align: center"><big><big>Description</big></big></th>
+            <a id="lec0"></a> <!--tag for dropdown -->
+        </tr>
+		
+		<!-- Number 1-->
+         <tr style="background-color: #f0f0f2">
+			 <td rowspan="1" align="left"> 1 </td>
+            <td rowspan="1" align="left">
+<!--				<a href="mujoco/notes/Lec0_MuJoCo_installation.pdf">Notes: Installation</a> -->
+             <a href = "https://youtu.be/tMo2zyaNCDQ">Video: Mac install app/C version</a> <br> <br>
+			 <a href = "https://youtu.be/u6tNfvLXK-I">Video: Win install app/C version</a> <br> <br>
+			 <a href = "https://youtu.be/G0Tv1BnNE2g">Video: Linux install app/C version</a>
+			 </td>
+           <td rowspan="1" align="left"> None </td>
+           <td rowspan="1"> <ul>
+              <li>Installing app/C version of MuJoCo 221 on Mac/Linux/Windows</li>
+              <li><a href="mujoco/installation/install_mujoco221_on_mac.pdf">Instructions for Mac</a></li>
+			  <li><a href="mujoco/installation/install_mujoco221_on_win.pdf">Instructions for Windows</a></li>
+             <li><a href="mujoco/installation/install_mujoco221_on_linux.pdf">Instructions for Linux</a></li>
+              <li>This video show how to install/run the MuJoCo app for mac and simulate executables for Win/Linux.</li>
+			   <li>Then the video shows how to install the C version (not needed for this tutorials)</li>
+			    <a id="lec1"></a> <!--tag for dropdown -->
+           </ul>
+           </td>
+        </tr>
+		
+			<!-- Number 2-->
+<!--         <tr style="background-color: #f0f0f2">-->
+			 <tr>
+			 <td rowspan="1" align="left"> 2 </td>
+            <td rowspan="1" align="left">
+<!--				<a href="mujoco/notes/Lec0_MuJoCo_installation.pdf">Notes: Installation</a> -->
+             <a href = "https://youtu.be/6MUDWwK0Trs">Video: Mac install python/atom IDE</a> <br> <br>
+			 <a href = "https://youtu.be/fq37vyg9hZA">Video: Win install python/atom IDE</a> <br> <br>
+			 <a href = "https://youtu.be/gAiQvJ0f5Ls">Video: Linux install python/atom IDE</a>
+			 </td>
+           <td rowspan="1" align="left"> None </td>
+           <td rowspan="1"> <ul>
+              <li>Installing app/C version of MuJoCo 221 on Mac/Linux/Windows</li>
+              <li><a href="mujoco/installation/install_mujoco_py_mac.pdf">Instructions for Mac</a></li>
+			  <li><a href="mujoco/installation/install_mujoco_py_windows.pdf">Instructions for Windows</a></li>
+             <li><a href="mujoco/installation/install_mujoco_py_linux.pdf">Instructions for Linux</a></li>
+              <li>This video show how to install python3, atom ide, and python bindings of MuJoCo.</li>
+			    <a id="lec2"></a> <!--tag for dropdown -->
+           </ul>
+           </td>
+        </tr>
+		
+		
+		
+		
+        
+		<!-- Number 3-->
+<!--		<tr>-->
+	  <tr style="background-color: #f0f0f2">
+			<td rowspan="1" align="left"> 3 </td>
+            <td rowspan="1" align="left">
+				<a href="mujoco/notes/Lec1_MuJoCoPy_xml_files.pdf">Notes: Modelling in MuJoCo</a> 
+				<br> <br>
+				<a href = "https://youtu.be/WJa-FeFRl3Q">Video: Modifying xml files</a>
+			</td>
+           <td rowspan="1" align="left"> 
+			   <a href="mujoco/startercode/hello.xml">Starter: hello.xml </a>
+			   <br><br>
+			   <a href="mujoco/lear/python/learning_xml.zip">Final: learning_xml.zip </a>
+			</td>
+           <td rowspan="1"> <ul>
+              <li>Using the executable *simulate* to load hello.xml </li>
+			   <li>Understanding the various features of *simulate* </li>
+              <li><a href="https://mujoco.readthedocs.io/en/latest/XMLreference.html">Using the XML reference</a></li>
+			  <li>Adding more geometries to hello.xml and viewing with *simulate*</li>
+			   <a id="lec3"></a> <!--tag for dropdown -->
+           </ul>
+           </td>
+        </tr>
+		
+	   <!-- Number 4-->
+<!--		<tr style="background-color: #f0f0f2">-->
+<!--
+			<tr>
+			<td rowspan="1" align="left"> 4 </td>
+            <td rowspan="1" align="left">
+				<a href="mujoco/notes/Lec2_MuJoCo_projectile_w_drag.pdf">Notes: Simulations in MuJoCo</a> 
+				<br> <br>
+                 <a href = "https://youtu.be/Ga3twtlgKsM">Video: Projectile with drag</a>
+			</td>
+			<td rowspan="1" align="left"> 
+			   <a href="mujoco/startercode/template.zip">Starter: template.zip </a>
+			   <br> <br>
+               <a href="mujoco/code/projectile.zip">Final: projectile.zip </a>
+			</td>
+           <td rowspan="1"> <ul>
+              <li>Using the executable *simulate* to model a projectile </li>
+			   <li>Compiling and running your own executable file </li>
+              <li><a href="https://mujoco.readthedocs.io/en/latest/APIreference.html">Using the API reference</a></li>
+			  <li>Setting initial conditions for the projectile</li>
+			  <li>Adding a drag force to the projectile</li>
+			   <a id="lec4"></a> 
+           </ul>
+           </td>
+        </tr>
+-->
+	
+       
+          </table>
+	     </div>
+</div>
+   
+	
+	<!--- Projects -->
+    
+    <!--	Tag to create shortcut-->
+<div id="Homework">
+</div>
+	
+<!--<h1 class="display-2 text-center"> Homework</h1> -->
+<h1 align="center"> Homework (will be updated)</h1>
+    <div align="center" class="col-xl-12">
+    <table style="width:90%" border="3">
+		
+		
+        <tr>
+            <!-- Adding the header colums of content materials and videos -->
+            <th style="text-align: center"><big><big>Content</big></big></th>
+            <th style="text-align: center"><big><big>Concepts Tested</big></big></th>
+        </tr>
+        
+		<!-- HW1-->
+         <tr style="background-color: #f0f0f9" align="center">
+           <td rowspan="1" align="left"><a href="mujoco/homework/Hw1_MuJoCo.pdf">HW1: Rube Goldberg Machine</a></td>
+           <td rowspan="1" align="left"> Generate different geometries in xml and initializing using code (lec 0, lec 1, and lec 2).</td>
+        </tr> 
+		
+		
+ 		<!-- HW2 -->
+<!--        <tr style="background-color: #f0f0f9" align="center">-->
+	  <tr >
+            <td rowspan="1" align="left"><a href="mujoco/homework/Hw2_MuJoCo.pdf">HW2: Rott's pendulum &amp; Coupled pendulum </a></td>
+            <td rowspan="1" align="left"> Model systems with pin joints. Simulate spring behavior (lec 0, lec 1, and lec 3).&nbsp; &nbsp;&nbsp;</td>
+      </tr> 
+		
+		 		<!-- HW3 -->
+        <tr style="background-color: #f0f0f9" align="center">
+<!--	  <tr >-->
+            <td rowspan="1" align="left"><a href="mujoco/homework/Hw3_MuJoCo.pdf">HW3: Pumping a pendulum swing </a></td>
+            <td rowspan="1" align="left"> Model systems with pin/hinge joints. Position control. Finite State machine (lec 0, lec 1,&nbsp; lec 3, lec 5).&nbsp; &nbsp;&nbsp;</td>
+      </tr> 
+		
+				 		<!-- HW4 -->
+<!--        <tr style="background-color: #f0f0f9" align="center">-->
+	  <tr >
+          <td rowspan="1" align="left"><a href="mujoco/homework/Hw4_MuJoCo.pdf">HW4: Manipulator drawing &amp; Balance a cart-pendulum </a></td>
+          <td rowspan="1" align="left"> Jacobian and Inverse Kinematics. Linearization and linear quadratic control (lec 6 and lec 7).&nbsp;</td>
+      </tr> 
+		
+		    <tr style="background-color: #f0f0f9" align="center">
+<!--	  <tr >-->
+            <td rowspan="1" align="left"><a href="mujoco/homework/Hw5_MuJoCo.pdf">HW5: Simulate a biped on level ground </a></td>
+            <td rowspan="1" align="left"> Position control. Finite State machine. 2D hopper/biped (lec 0, lec 1,&nbsp; lec 3, lec 5, lec 9, and lec 13).&nbsp; &nbsp;&nbsp;</td>
+      </tr> 
+        
+        
+</table> </div>
+    
+    <br>
+	<!-- Comment here-->
+	<br>
+		<ul>
+		<li> If you have any <font style="color:red">feedback including suggestions for more course content</font> use this <a href="https://docs.google.com/forms/d/1ErjmkZonNXlxZVSkk4S33uiGTvh_YnkFB4wYyDUHYaw"> form</a>.
+		</li>
+        <li>Comments/Suggestions to Pranav A. Bhounsule (pranavb129 AT gmail.com) </li>
+		<li>Last updated: August 11, 2022</li>
+</ul>
+<br> 
+		 <!-- line break-->
+	
+	  <!--Comment here-->
+<!-- Default Statcounter code for MuJoCoPy
+https://pab47.github.io/mujocopy.html -->
+<script type="text/javascript">
+var sc_project=12783074; 
+var sc_invisible=1; 
+var sc_security="d4e7cfcb"; 
+</script>
+<script type="text/javascript"
+src="https://www.statcounter.com/counter/counter.js"
+async></script>
+<noscript><div class="statcounter"><a title="Web Analytics"
+href="https://statcounter.com/" target="_blank"><img
+class="statcounter"
+src="https://c.statcounter.com/12783074/0/d4e7cfcb/1/"
+alt="Web Analytics"
+referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
+<!-- End of Statcounter Code -->
+
+    
+</body>
+</html>
