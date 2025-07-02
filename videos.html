@@ -5,845 +5,858 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Robotics and Motion Laboratory at University of Illinois at Chicago</title>
-    <title>Robotics and Motion Laboratory at University of Illinois at Chicago</title>
     <!-- Bootstrap -->
 	  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     <link href="bootstrap-4.4.1.css" rel="stylesheet">
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-4.4.1.js"></script>
   </head>
-<!-- navbar start -->
-   <body>
+
+  <body>
+    <!-- navbar start -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-      <a class="navbar-brand"><img src="RAMlab-logo.png" width="89" height="50" alt="RAM Lab Logo"/></a>
+      <a class="navbar-brand">
+        <img src="RAMlab-logo.png" width="89" height="50" alt="RAM Lab Logo"/>
+      </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-		</button>
+        <span class="navbar-toggler-icon"></span>
+		  </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mx-auto">
-           <li class="nav-item">
-            <a class="nav-link" href="index.html">Home</a>
-          </li>
- <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="about.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            People
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="about.html">Faculty</a>
-              <a class="dropdown-item" href="lab-members.html">Current members</a>
-              <a class="dropdown-item" href="alumni-graduates.html">Graduate alumni</a>
-              <a class="dropdown-item" href="alumni-undergrads.html">Undergraduate/High school alumni</a>
-              <a class="dropdown-item" href="awards.html">Student Awards</a>
-            </div>
-          </li>
-	<li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="research.html" id="navbarDropdownPub" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Publications
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-				<a class="dropdown-item" href="research.html#2025">2025</a>
-				<a class="dropdown-item" href="research.html#2024">2024</a>
-			  <a class="dropdown-item" href="research.html#2022">2023</a>
-              <a class="dropdown-item" href="research.html#2022">2022</a>
-              <a class="dropdown-item" href="research.html#2021">2021</a>
-              <a class="dropdown-item" href="research.html#2020">2020</a>
-              <a class="dropdown-item" href="research.html#2019">2019</a>
-              <a class="dropdown-item" href="research.html#2018">2018</a>
-              <a class="dropdown-item" href="research.html#2017">2017</a>
-              <a class="dropdown-item" href="research.html#2016">2016</a>
-              <a class="dropdown-item" href="research.html#2015">2015</a>
-              <a class="dropdown-item" href="research.html#2014">2014</a>
-              <a class="dropdown-item" href="research.html#20082013">2008-2013</a>
-              <a class="dropdown-item" href="research.html#theses">Theses</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="funding.html">Funding</a>
-          </li>
- <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="teaching.html" id="navbarDropdownTeach" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Teaching
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="teaching.html#courses">Courses</a>
-              <a class="dropdown-item" href="teaching.html#tutorials">Tutorials</a>
-              <a class="dropdown-item" href="teaching.html#outreach">Outreach</a>
-            </div>
-          </li>
- <li class="nav-item dropdown active">
-            <a class="nav-link dropdown-toggle" href="multimedia.html" id="navbarDropdownMedia" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Multimedia
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item active" href="videos.html">Videos</a>
-              <a class="dropdown-item" href="multimedia.html#robots">Robots</a>
-              <a class="dropdown-item" href="multimedia.html#articles">Articles</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
-          </li>
-        <form class="form-inline my-2 my-lg-0">
-        </form>
-		  </ul>
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="about.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                People
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="about.html">Faculty</a>
+                <a class="dropdown-item" href="lab-members.html">Current members</a>
+                <a class="dropdown-item" href="alumni-graduates.html">Graduate alumni</a>
+                <a class="dropdown-item" href="alumni-undergrads.html">Undergraduate/High school alumni</a>
+                <a class="dropdown-item" href="awards.html">Student Awards</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="research.html" id="navbarDropdownPub" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Publications
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="research.html#2025">2025</a>
+                <a class="dropdown-item" href="research.html#2024">2024</a>
+                <a class="dropdown-item" href="research.html#2022">2023</a>
+                <a class="dropdown-item" href="research.html#2022">2022</a>
+                <a class="dropdown-item" href="research.html#2021">2021</a>
+                <a class="dropdown-item" href="research.html#2020">2020</a>
+                <a class="dropdown-item" href="research.html#2019">2019</a>
+                <a class="dropdown-item" href="research.html#2018">2018</a>
+                <a class="dropdown-item" href="research.html#2017">2017</a>
+                <a class="dropdown-item" href="research.html#2016">2016</a>
+                <a class="dropdown-item" href="research.html#2015">2015</a>
+                <a class="dropdown-item" href="research.html#2014">2014</a>
+                <a class="dropdown-item" href="research.html#20082013">2008-2013</a>
+                <a class="dropdown-item" href="research.html#theses">Theses</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="funding.html">Funding</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="teaching.html" id="navbarDropdownTeach" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Teaching
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="teaching.html#courses">Courses</a>
+                <a class="dropdown-item" href="teaching.html#tutorials">Tutorials</a>
+                <a class="dropdown-item" href="teaching.html#outreach">Outreach</a>
+              </div>
+            </li>
+            <li class="nav-item dropdown active">
+              <a class="nav-link dropdown-toggle" href="multimedia.html" id="navbarDropdownMedia" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Multimedia
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item active" href="videos.html">Videos</a>
+                <a class="dropdown-item" href="multimedia.html#robots">Robots</a>
+                <a class="dropdown-item" href="multimedia.html#articles">Articles</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+        </ul>
       </div>
     </nav>
 
-<!-- page start -->
+
+    <!-- page start -->
     <section>
       <div class="container">
         <div class="row">
           <div class="col-12 text-left">
-            <h2><br><br>
-            Videos</h2>
-			  <hr>
-<section>
-    </section>
-    <section>
+            <h2 style="margin-top: 80px;">Videos</h2>
+            <hr>
+            <section>
+              <div class="container mt-2">
+                <div class="row">
 
-      <div class="container mt-2">
-        <div class="row">
-			<!--	video starts	-->
-          <div class="col-md-4 col-12 col-xl-6">
-            <ul class="list-unstyled">
-              <li class="media">
-                <td style="vertical-align: top;"><iframe src="https://www.youtube.com/embed/mvILnM4_WAU?si=uViAPn4D0TF_Gm8L" allowfullscreen="" frameborder="0" height="290" width="515">
-	</iframe><br>
-      </td>
-              </li>
-            </ul>
-          </div>
-			<p class="col-xl-6"><strong>Dynamic Pick-and-place System For A Manipulator On A Quadruped Using Object Detection
-</strong><br>
-			<br>Abhishek Kasaragod, <a href="reports/Abhishek_Kasaragod_MS_Thesis.pdf">Dynamic Pick-and-place System For A Manipulator On A Quadruped Using Object Detection</a>, MS Thesis, UIC  August 2024.
-		   <br> <br>
-			</p>
-			<!--	video ends	-->
-			<!--	video starts	-->
-          <div class="col-md-4 col-12 col-xl-6">
-            <ul class="list-unstyled">
-              <li class="media">
-                <td style="vertical-align: top;"><iframe src="https://www.youtube.com/embed/AiFOhzciszE?si=f5zEN_tl78BsulEY" allowfullscreen="" frameborder="0" height="290" width="515">
-	</iframe><br>
-      </td>
-              </li>
-            </ul>
-          </div>
-			<p class="col-xl-6"><strong>Autonomous Navigation Of Quadruped Integrated With Manipulator</strong><br>
-			<br>Venkata Chinthalapati, <a href="reports/Venkata_Chinthalapati_MS_Thesis.pdf">Autonomous Navigation Of Quadruped Integrated With Manipulator</a>, MS Thesis, UIC  August 2024.
-		   <br> <br>
-			</p>
-			<!--	video ends	-->
-			<!--	video starts	-->
-          <div class="col-md-4 col-12 col-xl-6">
-            <ul class="list-unstyled">
-              <li class="media">
-                <td style="vertical-align: top;"><iframe src="https://www.youtube.com/embed/kN4HDIm9V9o" allowfullscreen="" frameborder="0" height="290" width="515">
-	</iframe><br>
-      </td>
-              </li>
-            </ul>
-          </div>
-			<p class="col-xl-6"><strong>Data-driven Identification of a Non-homogeneous Inverted Pendulum Model for Enhanced Humanoid Control</strong><br>
-			<br>E. Hernandez-Hinojosa, and P. A. Bhounsule, <a href="papers/2023Hernandez_Datadriven.pdf">Data-driven Identification of a Non-homogeneous Inverted Pendulum Model for Enhanced Humanoid Control</a>, In 2023 IEEE-RAS 22nd International Conference on Humanoid Robots (Humanoids), Austin, TX, USA,  Dec 12-13 2023
-		   <br> <br>
-			</p>
-			<!--	video ends	-->
-			<!--	video starts	-->
-          <div class="col-md-4 col-12 col-xl-6">
-            <ul class="list-unstyled">
-              <li class="media">
-                <td style="vertical-align: top;"><iframe src="https://www.youtube.com/embed/OKZ4axbqo44" allowfullscreen="" frameborder="0" height="290" width="515">
-	</iframe><br>
-      </td>
-              </li>
-            </ul>
-          </div>
-			<p class="col-xl-6"><strong>Task-level control and Poincare map-based sim-to-real transfer for effective command following of quadrupedal trot gait</strong><br>
-			<br>Pranav A. Bhounsule, Daniel Torres, Ernesto Hernandez Hinojosa,  Adel Alaeddini <a href="papers/2023Bhounsule_Tasklevel.pdf">Task-level control and Poincare map-based sim-to-real transfer for effective command following of quadrupedal trot gait</a>, In 2023 IEEE-RAS 22nd International Conference on Humanoid Robots (Humanoids), Austin, TX, USA,  Dec 12-13 2023.
-		   <br> <br>
-			</p>
-			<!--	video starts	-->
-          <div class="col-md-4 col-12 col-xl-6">
-            <ul class="list-unstyled">
-              <li class="media">
-                <td style="vertical-align: top;"><iframe src="https://www.youtube.com/embed/ik4X11rU3zc" allowfullscreen="" frameborder="0" height="290" width="515">
-	</iframe><br>
-      </td>
-              </li>
-            </ul>
-          </div>
-			<p class="col-xl-6"><strong>Optimizing Fuel-Constrained UAV-UGV Routes for Large Scale Coverage: Bilevel Planning in Heterogeneous Multi-Agent Systems</strong><br>
-			<br>Md. S. Mondal, S. Ramasamy, J. F. Reddinger, J. M. Dotterweich, J. D. Humann, M. A. Childers, P. A. Bhounsule <a href="papers/2023Mondal_optmizing.pdf">Optimizing Fuel-Constrained UAV-UGV Routes for Large Scale Coverage: Bilevel Planning in Heterogeneous Multi-Agent Systems,</a>, IEEE International Symposium on Multi-Robot \& Multi-Agent Systems, Dec 4-5 2023, Boston, MA, USA 
-		   <br> <br>
-			</p>
-			<!--	video starts	-->
-          <div class="col-md-4 col-12 col-xl-6">
-            <ul class="list-unstyled">
-              <li class="media">
-                <td style="vertical-align: top;"><iframe src="https://www.youtube.com/embed/YSb-WUQflgY" allowfullscreen="" frameborder="0" height="290" width="515">
-	</iframe><br>
-      </td>
-              </li>
-            </ul>
-          </div>
-			<p class="col-xl-6"><strong>Gaussian Process Regression For Sim-to-real Transfer Of Hopping Gaits</strong><br>
-			<br>Jeremy Krause,  Adel Alaeddini, Pranav A. Bhounsule, <a href="papers/2023Krause_gaussian.pdf">Gaussian Process Regression For Sim-to-real Transfer Of Hopping Gaits</a>, ASME-International Design Engineering &amp Technical Conference,  Boston, MA, USA, Aug 20-23, 2023. 
-		   <br> <br>
-			</p>
-			
-	<!--	video starts	-->
-          <div class="col-md-4 col-12 col-xl-6">
-            <ul class="list-unstyled">
-              <li class="media">
-                <td style="vertical-align: top;"><iframe src="https://www.youtube.com/embed/o8qkcMmQTQI" allowfullscreen="" frameborder="0" height="290" width="515">
-	</iframe><br>
-      </td>
-              </li>
-            </ul>
-          </div>
-			<p class="col-xl-6"><strong>A Simple Controller for Omnidirectional Trotting of Quadrupedal Robots: Command Following and Waypoint Tracking</strong><br>
-			<br>Pranav A. Bhounsule, Chun-Ming Yang, <a href="papers/2023Bhounsule_simple.pdf">A Simple Controller for Omnidirectional Trotting of Quadrupedal Robots: Command Following and Waypoint Tracking</a>, Robotics 12, no. 2 (2023): 35. 
-		  <a href="https://github.com/pab47/quadruped/tree/main/a1_waypoint">Simulation code on Github</a>. <br> <br>
-			</p>
-			
-		<!--	video starts	-->
-          <div class="col-md-4 col-12 col-xl-6">
-            <ul class="list-unstyled">
-              <li class="media">
-                <td style="vertical-align: top;"><iframe src="https://www.youtube.com/embed/Jp8ZNr-G5ag" allowfullscreen="" frameborder="0" height="290" width="515">
-	</iframe><br>
-      </td>
-              </li>
-            </ul>
-          </div>
-			<p class="col-xl-6"><strong>Computer vision-based obstacle avoidance system for a quadruped robot</strong><br>
-			Senior Design Project, August 2021 - May 2022 <br>
-			Emily Hernandez, Alex Domagala, Pranay Singh, Jon Perthel (ECE Seniors) <br> 
-				 1) <a href="reports/Quadruped_vision_report.pdf">Report</a> 2) <a href="reports/Quadruped_vision_presentation.pdf">Presentation</a> 3) <a href="https://youtu.be/Jp8ZNr-G5ag">Video</a> 4) <a href="https://github.com/jonathanperthel/PathVision">Github</a> <br> <br>
-			</p>
-			
-				<!--	video starts	-->
-          <div class="col-md-4 col-12 col-xl-6">
-            <ul class="list-unstyled">
-              <li class="media">
-                <td style="vertical-align: top;"><iframe src="https://www.youtube.com/embed/CzphgU75FCc" allowfullscreen="" frameborder="0" height="290" width="515">
-	</iframe><br>
-      </td>
-              </li>
-            </ul>
-          </div>
-			<p class="col-xl-6"><strong>Sawfly larvae inspired swarm robots</strong><br>
-			Senior Design Project, August 2021 - May 2022 <br>
-			Eric Najera, Kyle Kendra, Joe Downie, Yuki Nojima (ME Seniors) <br>
-			1) <a href="reports/Sawfly_report.pdf">Report</a> 2) <a href="reports/Sawfly_presentation.pdf">Presentation</a> 3) <a href="https://youtu.be/CzphgU75FCc">Video</a> <br> <br>
-			</p>
-			
-	<!--	video starts	-->
-          <div class="col-md-4 col-12 col-xl-6">
-            <ul class="list-unstyled">
-              <li class="media">
-                <td style="vertical-align: top;"><iframe src="https://www.youtube.com/embed/GSUqOxDhg6w" allowfullscreen="" frameborder="0" height="290" width="515">
-	</iframe><br>
-      </td>
-              </li>
-            </ul>
-          </div>
-			<p class="col-xl-6"><strong>A Tic-Tac-Toe Playing Robot</strong><br>
-			Jonathan Garcia (ME Senior), May 2021 - May 2022 <br> <br>
-			</p>
-			
-<!--	video starts	-->
-          <div class="col-md-4 col-12 col-xl-6">
-            <ul class="list-unstyled">
-              <li class="media">
-                <td style="vertical-align: top;"><iframe src="https://www.youtube.com/embed/SNxeP29ayhI" allowfullscreen="" frameborder="0" height="290" width="515">
-	</iframe><br>
-      </td>
-              </li>
-            </ul>
-          </div>
-			<p class="col-xl-6"><strong>Rowdy Runner II: An Independently Actuated Rimless Wheel Robot</strong><br>
-			<br>Eric Sanchez, <a href="reports/Eric_Sanchez_MS_Thesis.pdf">MS Thesis</a>, ME UTSA<br>
-				and <br>
-Sebastian Sanchez* and Pranav A. Bhounsule, <a href="papers/2020Sanchez_rimlesswheel.pdf">A differential drive rimless wheel that can move straight and turn, </a>Intl. Conference on Advanced Intelligent Mechatronics,&nbsp; July 6-10,&nbsp; 2020.<br>
-      <br>
-			</p>
-<!--	video starts	-->
+                  <!--	video starts	-->
+                  <div class="col-md-4 col-12 col-xl-6">
+                    <ul class="list-unstyled">
+                    <li class="media">
+                      <td style="vertical-align: top;"><iframe loading="lazy" src="https://www.youtube.com/embed/mvILnM4_WAU?si=uViAPn4D0TF_Gm8L" allowfullscreen="" frameborder="0" height="290" width="515">
+                    </iframe><br>
+                    </td>
+                        </li>
+                      </ul>
+                  </div>
+
+                  <p class="col-xl-6">
+                    <strong>Dynamic Pick-and-place System For A Manipulator On A Quadruped Using Object Detection</strong>
+                    <br>
+                    <br>
+                    Abhishek Kasaragod, <a href="reports/Abhishek_Kasaragod_MS_Thesis.pdf">Dynamic Pick-and-place System For A Manipulator On A Quadruped Using Object Detection</a>, MS Thesis, UIC  August 2024.
+                    <br>
+                    <br>
+                  </p>
+                  <!--	video ends	-->
+
+                  <!--	video starts	-->
+                  <div class="col-md-4 col-12 col-xl-6">
+                  <ul class="list-unstyled">
+                    <li class="media">
+                      <td style="vertical-align: top;"><iframe loading="lazy" src="https://www.youtube.com/embed/AiFOhzciszE?si=f5zEN_tl78BsulEY" allowfullscreen="" frameborder="0" height="290" width="515">
+                  </iframe><br>
+                      </td>
+                              </li>
+                  </ul>
+                  </div>
+                  <p class="col-xl-6"><strong>Autonomous Navigation Of Quadruped Integrated With Manipulator</strong><br>
+                  <br>Venkata Chinthalapati, <a href="reports/Venkata_Chinthalapati_MS_Thesis.pdf">Autonomous Navigation Of Quadruped Integrated With Manipulator</a>, MS Thesis, UIC  August 2024.
+                  <br> <br>
+                  </p>
+                  <!--	video ends	-->
+                  <!--	video starts	-->
+                  <div class="col-md-4 col-12 col-xl-6">
+                  <ul class="list-unstyled">
+                    <li class="media">
+                      <td style="vertical-align: top;"><iframe loading="lazy" src="https://www.youtube.com/embed/kN4HDIm9V9o" allowfullscreen="" frameborder="0" height="290" width="515">
+                  </iframe><br>
+                  </td>
+                    </li>
+                  </ul>
+                  </div>
+                  <p class="col-xl-6"><strong>Data-driven Identification of a Non-homogeneous Inverted Pendulum Model for Enhanced Humanoid Control</strong><br>
+                 <br>E. Hernandez-Hinojosa, and P. A. Bhounsule, <a href="papers/2023Hernandez_Datadriven.pdf">Data-driven Identification of a Non-homogeneous Inverted Pendulum Model for Enhanced Humanoid Control</a>, In 2023 IEEE-RAS 22nd International Conference on Humanoid Robots (Humanoids), Austin, TX, USA,  Dec 12-13 2023
+                  <br> <br>
+                 </p>
+                  <!--	video ends	-->
+                  <!--	video starts	-->
+                  <div class="col-md-4 col-12 col-xl-6">
+                  <ul class="list-unstyled">
+                    <li class="media">
+                      <td style="vertical-align: top;"><iframe loading="lazy" src="https://www.youtube.com/embed/OKZ4axbqo44" allowfullscreen="" frameborder="0" height="290" width="515">
+                  </iframe><br>
+                   </td>
+                    </li>
+                  </ul>
+                  </div>
+                   <p class="col-xl-6"><strong>Task-level control and Poincare map-based sim-to-real transfer for effective command following of quadrupedal trot gait</strong><br>
+                   <br>Pranav A. Bhounsule, Daniel Torres, Ernesto Hernandez Hinojosa,  Adel Alaeddini <a href="papers/2023Bhounsule_Tasklevel.pdf">Task-level control and Poincare map-based sim-to-real transfer for effective command following of quadrupedal trot gait</a>, In 2023 IEEE-RAS 22nd International Conference on Humanoid Robots (Humanoids), Austin, TX, USA,  Dec 12-13 2023.
+                   <br> <br>
+                    </p>
+            <!--	video starts	-->
+                <div class="col-md-4 col-12 col-xl-6">
+                  <ul class="list-unstyled">
+                    <li class="media">
+                      <td style="vertical-align: top;"><iframe loading="lazy" src="https://www.youtube.com/embed/ik4X11rU3zc" allowfullscreen="" frameborder="0" height="290" width="515">
+        </iframe><br>
+            </td>
+                    </li>
+                  </ul>
+                </div>
+            <p class="col-xl-6"><strong>Optimizing Fuel-Constrained UAV-UGV Routes for Large Scale Coverage: Bilevel Planning in Heterogeneous Multi-Agent Systems</strong><br>
+            <br>Md. S. Mondal, S. Ramasamy, J. F. Reddinger, J. M. Dotterweich, J. D. Humann, M. A. Childers, P. A. Bhounsule <a href="papers/2023Mondal_optmizing.pdf">Optimizing Fuel-Constrained UAV-UGV Routes for Large Scale Coverage: Bilevel Planning in Heterogeneous Multi-Agent Systems,</a>, IEEE International Symposium on Multi-Robot \& Multi-Agent Systems, Dec 4-5 2023, Boston, MA, USA 
+            <br> <br>
+            </p>
+            <!--	video starts	-->
+                <div class="col-md-4 col-12 col-xl-6">
+                  <ul class="list-unstyled">
+                    <li class="media">
+                      <td style="vertical-align: top;"><iframe loading="lazy" src="https://www.youtube.com/embed/YSb-WUQflgY" allowfullscreen="" frameborder="0" height="290" width="515">
+        </iframe><br>
+            </td>
+                    </li>
+                  </ul>
+                </div>
+            <p class="col-xl-6"><strong>Gaussian Process Regression For Sim-to-real Transfer Of Hopping Gaits</strong><br>
+            <br>Jeremy Krause,  Adel Alaeddini, Pranav A. Bhounsule, <a href="papers/2023Krause_gaussian.pdf">Gaussian Process Regression For Sim-to-real Transfer Of Hopping Gaits</a>, ASME-International Design Engineering &amp Technical Conference,  Boston, MA, USA, Aug 20-23, 2023. 
+            <br> <br>
+            </p>
+            
+        <!--	video starts	-->
+                <div class="col-md-4 col-12 col-xl-6">
+                  <ul class="list-unstyled">
+                    <li class="media">
+                      <td style="vertical-align: top;"><iframe loading="lazy" src="https://www.youtube.com/embed/o8qkcMmQTQI" allowfullscreen="" frameborder="0" height="290" width="515">
+        </iframe><br>
+            </td>
+                    </li>
+                  </ul>
+                </div>
+            <p class="col-xl-6"><strong>A Simple Controller for Omnidirectional Trotting of Quadrupedal Robots: Command Following and Waypoint Tracking</strong><br>
+            <br>Pranav A. Bhounsule, Chun-Ming Yang, <a href="papers/2023Bhounsule_simple.pdf">A Simple Controller for Omnidirectional Trotting of Quadrupedal Robots: Command Following and Waypoint Tracking</a>, Robotics 12, no. 2 (2023): 35. 
+            <a href="https://github.com/pab47/quadruped/tree/main/a1_waypoint">Simulation code on Github</a>. <br> <br>
+            </p>
+            
+          <!--	video starts	-->
+                <div class="col-md-4 col-12 col-xl-6">
+                  <ul class="list-unstyled">
+                    <li class="media">
+                      <td style="vertical-align: top;"><iframe loading="lazy" src="https://www.youtube.com/embed/Jp8ZNr-G5ag" allowfullscreen="" frameborder="0" height="290" width="515">
+        </iframe><br>
+            </td>
+                    </li>
+                  </ul>
+                </div>
+            <p class="col-xl-6"><strong>Computer vision-based obstacle avoidance system for a quadruped robot</strong><br>
+            Senior Design Project, August 2021 - May 2022 <br>
+            Emily Hernandez, Alex Domagala, Pranay Singh, Jon Perthel (ECE Seniors) <br> 
+              1) <a href="reports/Quadruped_vision_report.pdf">Report</a> 2) <a href="reports/Quadruped_vision_presentation.pdf">Presentation</a> 3) <a href="https://youtu.be/Jp8ZNr-G5ag">Video</a> 4) <a href="https://github.com/jonathanperthel/PathVision">Github</a> <br> <br>
+            </p>
+            
+              <!--	video starts	-->
+                <div class="col-md-4 col-12 col-xl-6">
+                  <ul class="list-unstyled">
+                    <li class="media">
+                      <td style="vertical-align: top;"><iframe loading="lazy" src="https://www.youtube.com/embed/CzphgU75FCc" allowfullscreen="" frameborder="0" height="290" width="515">
+        </iframe><br>
+            </td>
+                    </li>
+                  </ul>
+                </div>
+            <p class="col-xl-6"><strong>Sawfly larvae inspired swarm robots</strong><br>
+            Senior Design Project, August 2021 - May 2022 <br>
+            Eric Najera, Kyle Kendra, Joe Downie, Yuki Nojima (ME Seniors) <br>
+            1) <a href="reports/Sawfly_report.pdf">Report</a> 2) <a href="reports/Sawfly_presentation.pdf">Presentation</a> 3) <a href="https://youtu.be/CzphgU75FCc">Video</a> <br> <br>
+            </p>
+            
+        <!--	video starts	-->
+                <div class="col-md-4 col-12 col-xl-6">
+                  <ul class="list-unstyled">
+                    <li class="media">
+                      <td style="vertical-align: top;"><iframe loading="lazy" src="https://www.youtube.com/embed/GSUqOxDhg6w" allowfullscreen="" frameborder="0" height="290" width="515">
+        </iframe><br>
+            </td>
+                    </li>
+                  </ul>
+                </div>
+            <p class="col-xl-6"><strong>A Tic-Tac-Toe Playing Robot</strong><br>
+            Jonathan Garcia (ME Senior), May 2021 - May 2022 <br> <br>
+            </p>
+            
+      <!--	video starts	-->
+                <div class="col-md-4 col-12 col-xl-6">
+                  <ul class="list-unstyled">
+                    <li class="media">
+                      <td style="vertical-align: top;"><iframe loading="lazy" src="https://www.youtube.com/embed/SNxeP29ayhI" allowfullscreen="" frameborder="0" height="290" width="515">
+        </iframe><br>
+            </td>
+                    </li>
+                  </ul>
+                </div>
+            <p class="col-xl-6"><strong>Rowdy Runner II: An Independently Actuated Rimless Wheel Robot</strong><br>
+            <br>Eric Sanchez, <a href="reports/Eric_Sanchez_MS_Thesis.pdf">MS Thesis</a>, ME UTSA<br>
+              and <br>
+      Sebastian Sanchez* and Pranav A. Bhounsule, <a href="papers/2020Sanchez_rimlesswheel.pdf">A differential drive rimless wheel that can move straight and turn, </a>Intl. Conference on Advanced Intelligent Mechatronics,&nbsp; July 6-10,&nbsp; 2020.<br>
+            <br>
+            </p>
+      <!--	video starts	-->
+                <div class="col-md-4 col-12 offset-xl-0 col-xl-6">
+                  <ul class="list-unstyled">
+                    <li class="media">
+                      <td style="vertical-align: top;"><iframe loading="lazy" src="https://www.youtube.com/embed/DPUNslHj5VE" allowfullscreen="" frameborder="0" height="290" width="515">
+      </iframe><br>
+            </td>
+                    </li>
+                  </ul>
+                </div>
+            <p class="col-xl-6"><strong>A miniature size 3D printed linear pneumatic actuator for robotic applications</strong><br>
+            <br>Christian Trevino, <a href="reports/Christian_Trevino_MS_Thesis.pdf">MS Thesis</a>, ME UTSA<br>
+      and <br>
+      Christian Nall*, Pranav A. Bhounsule, <a href="papers/2019Nall_actuator.pdf">A Miniature 3D Printed On-Off Linear Pneumatic Actuator and Its Demonstration into a Cartoon Character of a Hopping Lamp</a>. Actuators 2019, 8, 72<br>
+            <br>
+            </p>
+      <!--	video starts	-->
+      <div class="col-md-4 col-12 offset-xl-0 col-xl-6">
+                  <ul class="list-unstyled">
+                    <li class="media">
+                      <td style="vertical-align: top;"><iframe loading="lazy" src="https://www.youtube.com/embed/-DLU-bjDOhE" allowfullscreen="" frameborder="0" height="290" width="515">
+      </iframe><br>
+            </td>
+                    </li>
+                  </ul>
+                </div>
+            <p class="col-xl-6"><strong>Domain Randomziation for detection and localization
+      of bolts</strong><br>
+            <br>Ezra Ameperosa*, Pranav A.
+      Bhounsule, <a href="papers/Ameperosa2019_bolts.pdf">Domain
+      randomization for detection and position estimation
+      of multiples of a single object with applications to localizing bolts
+      on structures</a>, ASME-International Design Engineering &amp;
+      Technical
+      Conference, Anaheim, CA, USA,&nbsp; Aug 18--21, 2019.<br>
+            <br>
+            </p> 
+            <div class="col-md-4 col-12 offset-xl-0 col-xl-6">
+                  <ul class="list-unstyled">
+                    <li class="media">
+                      <td style="vertical-align: top;"><iframe loading="lazy" src="https://www.youtube.com/embed/ZZ2UbopP5pM" allowfullscreen="" frameborder="0" height="290" width="515">
+      </iframe><br>
+            </td>
+                    </li>
+                  </ul>
+                </div>
+            <p class="col-xl-6"><strong>Mini project
+      in the robotics class -- LEGO robots for simulated Nuclear Disaster
+      site relief</strong><br>
+            <br>LARPA Robotics Challenge<br>
+      LARPA = LEGO, Automated, Reliable, Powered, Agents<br>
+            <br>
+      Instructions are on <a href="https://github.com/pab47/LARPA_Robotics_Challenge">GitHub</a><br>
+            <br>
+            </p>
+            <div class="col-md-4 col-12 offset-xl-0 col-xl-6">
+                  <ul class="list-unstyled">
+                    <li class="media">
+                      <td style="vertical-align: top;"><iframe loading="lazy" src="https://www.youtube.com/embed/2qO0kL8-p4Y" allowfullscreen="" frameborder="0" height="290" width="515">
+      </iframe><br>
+            </td>
+                    </li>
+                  </ul>
+                </div>
+            <p class="col-xl-6"><strong>Senior Design Project</strong><br>
+            <br>By Steven Farra, Emiliano Rodriguez, Mario Navarro, John Carroll<br>
+            <br>
+      All ME Seniors
+              <br>
+              <a href="reports/quadruped_robot.pdf">Project Report</a> (3.3 MB)
+            </p>
+            <div class="col-md-4 col-12 offset-xl-0 col-xl-6">
+                  <ul class="list-unstyled">
+                    <li class="media">
+                      <td style="vertical-align: top;"><iframe loading="lazy" src="https://www.youtube.com/embed/videoseries?list=PLc7bpbeTIk77kdx4O8HoIr_Ep76HiSwil" allowfullscreen="" frameborder="0" height="290" width="515">
+      </iframe><br>
+            </td>
+                    </li>
+                  </ul>
+                </div>
+            <p class="col-xl-6"><strong>UTSA Mechatronics final project Fall 2018</strong> -
+      Hall of engineering professors <br>
+            <br>
+      The students had to visit an assigned
+      professor record his/her voice, take a photo and then create a robotic
+      face that incorporated the face, voice. The robotic face had to have
+      two moving parts, one of which was the mouth and the other was left to
+      their choice. There had to be two sensors on board that would allow
+      interaction between the user and the robotics face (e.g., on waving to
+      the animatronics the face would talk).<br>
+            <br>
+      The entire playlist of 40 profs is to the left but you can select
+      videos to play by clicking this shortened link: <a href="http://tiny.cc/roboprof" target="_blank">http://tiny.cc/roboprof</a><br>
+            <br>
+            </p>
+            <div class="col-md-4 col-12 offset-xl-0 col-xl-6">
+                  <ul class="list-unstyled">
+                    <li class="media">
+                      <td style="vertical-align: top;"><iframe loading="lazy" src="https://www.youtube.com/embed/bQjF9xGCF20" allowfullscreen="" frameborder="0" height="290" width="515">
+      </iframe><br>
+            </td>
+                    </li>
+                  </ul>
+                </div>
+            <p class="col-xl-6"><strong>Auto sunglass</strong><br>
+            <br>Independent project<br>
+      June - August 2018<br>
+            <br>
+      Victor Guzman (High School Student)<br>
+            <a href="reports/Guzman_Auto_Sunglasses.pdf">Project Report</a> 
+            <br>
+            </p>
+            <div class="col-md-4 col-12 offset-xl-0 col-xl-6">
+                  <ul class="list-unstyled">
+                    <li class="media">
+                      <td style="vertical-align: top;"><iframe loading="lazy" src="https://www.youtube.com/embed/7ovG-mC6xFs" allowfullscreen="" frameborder="0" height="290" width="515">
+      </iframe><br>
+            </td>
+                    </li>
+                  </ul>
+                </div>
+            <p class="col-xl-6"><strong>DIY: Robobug, a vibration motor actuated
+      robot</strong><br>
+            <br>Independent project<br>
+            <br>
+      Sierra Baumbusch (ME Senior)<br>
+            <br>
+            <a href="tutorials/RoboBugTutorial.pdf">Tutorial slides</a> (3.1
+      MB)<br>
+            </p>
+            <div class="col-md-4 col-12 offset-xl-0 col-xl-6">
+                  <ul class="list-unstyled">
+                    <li class="media">
+                      <td style="vertical-align: top;"><iframe loading="lazy" src="https://www.youtube.com/embed/_-Ivn1zhD6g" allowfullscreen="" frameborder="0" height="290" width="515">
+      </iframe><br>
+            </td>
+                    </li>
+                  </ul>
+                </div>
+            <p class="col-xl-6"><strong>Humanoid
+      robot dancing to UTSA song and others</strong><br>
+            <br>
+      Undergraduate research<br>
+            <br>
+      Emiliano Rodriguez (ME Senior)<br>
+            </p>
+            <div class="col-md-4 col-12 offset-xl-0 col-xl-6">
+                  <ul class="list-unstyled">
+                    <li class="media">
+                      <td style="vertical-align: top;"><iframe loading="lazy" src="https://www.youtube.com/embed/bpgAn6hZhl0" allowfullscreen="" frameborder="0" height="290" width="515">
+      </iframe><br>
+            </td>
+                    </li>
+                  </ul>
+                </div>
+            <p class="col-xl-6"><strong>Tic-Tac-Toe
+      Robot</strong><br>
+            <br>
+      Independent Project<br>
+            <br>
+      Drishya Dahal (ME Junior)<br>
+            </p>
+            <div class="col-md-4 col-12 offset-xl-0 col-xl-6">
+                  <ul class="list-unstyled">
+                    <li class="media">
+                      <td style="vertical-align: top;"><iframe loading="lazy" src="https://www.youtube.com/embed/rlaOOx0Boos" allowfullscreen="" frameborder="0" height="290" width="515">
+      </iframe><br>
+            </td>
+                    </li>
+                  </ul>
+                </div>
+            <p class="col-xl-6"><strong>An Inchworm Robot</strong><br>
+            <br>
+      Senior Design Project<br>
+            <br>
+      By Anthony Abundis, Michael Aguirre, Justin Castillo, and Flavio Moreira<br>
+            <br>
+      All ME Seniors<br>
+            <br>
+            <a href="reports/Inchworm_report.pdf">Project Report</a> (7.5 MB)<br>
+            </p>
+            <div class="col-md-4 col-12 offset-xl-0 col-xl-6">
+                  <ul class="list-unstyled">
+                    <li class="media">
+                      <td style="vertical-align: top;"><iframe loading="lazy" src="https://www.youtube.com/embed/mNHBRSlg1EM" allowfullscreen="" frameborder="0" height="290" width="515">
+      </iframe><br>
+            </td>
+                    </li>
+                  </ul>
+                </div>
+            <p class="col-xl-6"><strong>Pumping a
+      playground swing in the standing position</strong><br>
+            <br>Independent Project<br>
+            <br>
+      By Gerardo (Aaron) Rios and Joseph Galloway<br>
+            <br>
+      ME Juniors
+            <br>
+            <a href="reports/Pumping_Swing.pdf">Project report</a> (1.2 MB)<br>
+            </p>
+            <div class="col-md-4 col-12 offset-xl-0 col-xl-6">
+                  <ul class="list-unstyled">
+                    <li class="media">
+                      <td style="vertical-align: top;"><iframe loading="lazy" src="https://www.youtube.com/embed/deA2DIyGwks" allowfullscreen="" frameborder="0" height="290" width="515">
+      </iframe><br>
+            </td>
+                    </li>
+                  </ul>
+                </div>
+            <p class="col-xl-6"><strong>3D
+      printing of rolling cylinders for demonstration of energy principles</strong><br>
+            <br>Two cylinders identical in all respects (same mass, radius, length)
+      except that one is filled with water and other with honey are made to
+      roll down an incline. The one filled with water rolls down first. Why?<span style="font-weight: bold;"> Watch the video for the answer.<br>
+            <br>
+            </span>By Nour K. El-Ghori (High School Student)<br>
+            <br>
+            <br>
+      (i) <a href="tutorials/RollingCylinders.pdf">Project Report,</a>&nbsp;
+      (ii) <a href="tutorials/RollingCylindersCAD.zip">CAD files</a><br>
+            </p>
+            <div class="col-md-4 col-12 offset-xl-0 col-xl-6">
+                  <ul class="list-unstyled">
+                    <li class="media">
+                      <td style="vertical-align: top;"><iframe loading="lazy" src="https://www.youtube.com/embed/LSevwuNdBks" allowfullscreen="" frameborder="0" height="290" width="515">
+      </iframe><br>
+            </td>
+                    </li>
+                  </ul>
+                </div>
+            <p class="col-xl-6"><strong>Trashbot:
+      A trash collecting robot</strong><br>
+            <br>Independent Project<br>
+            <br>
+      By Drishya Dahal and Joseph Galloway<br>
+            <br>
+      ME Sophomores<br><a href="reports/Trash_Bot_Report.pdf">Project Report</a> (0.2 MB)<br>
+            </p>
+            <div class="col-md-4 col-12 offset-xl-0 col-xl-6">
+                  <ul class="list-unstyled">
+                    <li class="media">
+                      <td style="vertical-align: top;"><iframe loading="lazy" src="https://www.youtube.com/embed/P5YftCPE4rw" allowfullscreen="" frameborder="0" height="290" width="515">
+      </iframe><br>
+            </td>
+                    </li>
+                  </ul>
+                </div>
+            <p class="col-xl-6"><strong>How to Beat
+      Flappy Bird: A mixed-integer model predictive control approach</strong><br>
+            <br>Matthew Piper, Pranav A. Bhounsule and Krystel K. Castillo-Villar, <a href="papers/Piper2017_FlappyBird.pdf">How to beat Flappy Bird: A
+      Mixed-integer Model Predictive Control Approach</a>, ASME-Dynamics
+      Systems and Controls Conference, October 11-13, 2017, Tysons Corner,
+      Virginia, USA.<br>
+            </p>
+            <div class="col-md-4 col-12 offset-xl-0 col-xl-6">
+                  <ul class="list-unstyled">
+                    <li class="media">
+                      <td style="vertical-align: top;"><iframe loading="lazy" src="https://www.youtube.com/embed/1YEbfwa-3RQ" allowfullscreen="" frameborder="0" height="290" width="515">
+      </iframe><br>
+            </td>
+                    </li>
+                  </ul>
+                </div>
+            <p class="col-xl-6"><strong>Rowdy Wear: a gadget that helps you make swift
+      decisions</strong><br>
+            <br>Summer Project<br>
+            <br>
+      By Panchajanya Karasani<br>
+            <br>
+      ME Sophomore<br>
+            <br>
+      Total cost is about $5.00:<br>
+            <br>
+      1 ATtiny85 controller, $1.25 <br>
+      1 Prototyping board, $1.25<br>
+      1 Push Button, $ 1.0<br>
+      2 LED, $0.50<br>
+      1 Coin cell CR2032, $0.50 <br>
+      1 Socket, $0.50 <br>
+      1 VELCRO strip (optional)<br>
+            </p>
+            <div class="col-md-4 col-12 offset-xl-0 col-xl-6">
+                  <ul class="list-unstyled">
+                    <li class="media">
+                      <td style="vertical-align: top;"><iframe loading="lazy" src="https://www.youtube.com/embed/I2E7iWqU2IU" allowfullscreen="" frameborder="0" height="290" width="515">
+      </iframe><br>
+            </td>
+                    </li>
+                  </ul>
+                </div>
+            <p class="col-xl-6"><strong>Pneumatic
+      Shoes For Jump Height Augmentation</strong><br>
+            <br>Senior Design Project<br>
+            <br>
+      By Ivelisse Negroni, Noah Trent, Cesar Sifuentes, Michael Turasz <br>
+            <br>
+      All ME Seniors<br>
+            <br>
+            <a href="reports/Jumping_Contraption.pdf">Project Report</a> (3.4
+      MB)<br>
+            </p>
+            <div class="col-md-4 col-12 offset-xl-0 col-xl-6">
+                  <ul class="list-unstyled">
+                    <li class="media">
+                      <td style="vertical-align: top;"><iframe loading="lazy" src="https://www.youtube.com/embed/wJ3W3MomWl4" allowfullscreen="" frameborder="0" height="290" width="515">
+      </iframe><br>
+            </td>
+                    </li>
+                  </ul>
+                </div>
+            <p class="col-xl-6"><strong>Rowdy
+      walker: A 3D printed downhill walking toy</strong><br>
+            <br>BS Thesis, Honors College<br>
+            <br>
+      By Christian Trevino, <br>
+            <br>
+      ME Senior (currently ME Grad. Student)<br>
+            <br><a href="reports/Christian_Trevino_BS_Thesis.pdf">
+      BS Thesis</a><br>
+            </p>
+            <div class="col-md-4 col-12 offset-xl-0 col-xl-6">
+                  <ul class="list-unstyled">
+                    <li class="media">
+                      <td style="vertical-align: top;"><iframe loading="lazy" src="https://www.youtube.com/embed/xkze1_hnam0" allowfullscreen="" frameborder="0" height="290" width="515">
+      </iframe><br>
+            </td>
+                    </li>
+                  </ul>
+                </div>
+            <p class="col-xl-6"><strong>Animatronics
+      Face</strong><br>
+            <br>Independent Study Project,<br>
+            <br>
+      Entry to the Spring 2016, Center for Innovation, Technology, and
+      Entrepreneurship (CITE) <br>
+      $100 K Business Competition at UTSA,<br>
+            <br>
+      Finalist in the Instructables Robotic Contest 2016 (only 19 finalists
+      out of 222 entries) (<a href="http://www.instructables.com/contest/robotics2016/">link</a>) (<a href="media/RomoBot_RoboticsContest2016.pdf">cached</a>) <br>
+            <br>
+      By Geoffrey Toombs and James Schopfer<br>
+            <br>
+      ME Seniors<br>
+            <br>
+            <a href="reports/Animatronics_Face_Report.pdf"> Project Report</a>
+      (4.7 MB)<br>
+            </p>
+            <div class="col-md-4 col-12 offset-xl-0 col-xl-6">
+                  <ul class="list-unstyled">
+                    <li class="media">
+                      <td style="vertical-align: top;"><iframe loading="lazy" src="https://www.youtube.com/embed/51WeRWwHMUU" allowfullscreen="" frameborder="0" height="290" width="515">
+      </iframe><br>
+            </td>
+                    </li>
+                  </ul>
+                </div>
+            <p class="col-xl-6"><strong>Paper walker</strong> for the Inventors
+      Workshop at the Children's Museum, San Antonio.<br>
+            <br>By Christian Trevino, ME Graduate Student, UTSA.<br>
+            <br>
+      COE Innovations Magazine back cover (<a href="media/Trevino_innovations_winter2015.pdf">cached</a>)<br>
+            </p>
+            <div class="col-md-4 col-12 offset-xl-0 col-xl-6">
+                  <ul class="list-unstyled">
+                    <li class="media">
+                      <td style="vertical-align: top;"><iframe loading="lazy" src="https://www.youtube.com/embed/SjSFgzGT--0" allowfullscreen="" frameborder="0" height="290" width="515">
+      </iframe><br>
+            </td>
+                    </li>
+                  </ul>
+                </div>
+            <p class="col-xl-6"><strong>ME 4773: Fundamentals of Robotics,
+      Technical Elective for ME Juniors/Seniors at UTSA.</strong><br>
+            <br>Robotics Labs<br>
+      1. Line following robots.<br>
+      2. Can picking robot.<br>
+      3. Face drawing robot.<br>
+            </p>
+                  <div class="col-md-4 col-12 offset-xl-0 col-xl-6">
+                  <ul class="list-unstyled">
+                    <li class="media">
+                      <td style="vertical-align: top;"><iframe loading="lazy" src="https://www.youtube.com/embed/ZTBn79uAvYQ" allowfullscreen="" frameborder="0" height="290" width="515">
+      </iframe><br>
+            </td>
+                    </li>
+                  </ul>
+                </div>
+            <p class="col-xl-6"><strong>Physics demonstration: Dancing pendulums
+      for San Antonio Children's Museum</strong> (Prototype)<br>
+            <br>By Christian Trevino, ME Senior, UTSA.<br>
+            <br>
+            <br>
+      UTSA news (<a href="http://www.utsa.edu/today/2015/06/christianpendulum.html">link</a>)
+      (<a href="trevino_pendulum.pdf">cached</a>)
+            </p>
+                  <div class="col-md-4 col-12 offset-xl-0 col-xl-6">
+                  <ul class="list-unstyled">
+                    <li class="media">
+                      <td style="vertical-align: top;"><iframe loading="lazy" src="https://www.youtube.com/embed/DNGm9m6z6jo" allowfullscreen="" frameborder="0" height="290" width="515">
+      </iframe><br>
+            </td>
+                    </li>
+                  </ul>
+                </div>
+            <p class="col-xl-6"><strong>UTSA Commercial 2015</strong><br>
+            <br>Our robots were featured in the UTSA commercial.<br>
+            <br>
+      At 6 sec:<br>
+      Christian Trevino, Raquel De La Garza, and Eric Sanchez with Ein<br>
+            <br>
+            <br>
+      At 10 sec:<br>
+      Roarunner rolling around with<br>
+      Rico Ulep, Scott Miller, Ezra Ameperosa, Robert Brothers, Raquel De La
+      Garza and Eric Sanchez in the background<br>
+            </p>
+                  <div class="col-md-4 col-12 offset-xl-0 col-xl-6">
+                  <ul class="list-unstyled">
+                    <li class="media">
+                      <td style="vertical-align: top;"><iframe loading="lazy" src="https://www.youtube.com/embed/_gyI_xIkAdw" allowfullscreen="" frameborder="0" height="290" width="515">
+      </iframe><br>
+            </td>
+                    </li>
+                  </ul>
+                </div>
+            <p class="col-xl-6"><strong>Ein: A modular robotic leg</strong><br>
+            <br>Senior Design Project<br>
+            <br>
+      By Christian Trevino, Eric Sanchez, Robert Brothers, and Raquel De La
+      Garza, <br>
+            <br>
+      All ME Seniors<br>
+            <br>
+            <a href="reports/Ein-Report.pdf">Project Report</a> (9.3 MB)<br>
+            </p>
+                  <div class="col-md-4 col-12 offset-xl-0 col-xl-6">
+                  <ul class="list-unstyled">
+                    <li class="media">
+                      <td style="vertical-align: top;"><iframe loading="lazy" src="https://www.youtube.com/embed/xTSG48KMMR4" allowfullscreen="" frameborder="0" height="290" width="515">
+      </iframe><br>
+            </td>
+                    </li>
+                  </ul>
+                </div>
+            <p class="col-xl-6"><strong>Roadrunner: A rimless wheel based
+      locomotion robot</strong><br>
+            <br>Senior Design Project<br>
+            <br>
+      By Rico Ulep, Scott Miller, Ezra Ameperosa, and Kyle Seay <br>
+            <br>
+      All ME Seniors<br>
+            <br>
+            <a href="reports/Roadrunner-Report.pdf">Project Report</a> (7 MB)
+            </p>
           <div class="col-md-4 col-12 offset-xl-0 col-xl-6">
-            <ul class="list-unstyled">
-              <li class="media">
-                <td style="vertical-align: top;"><iframe src="https://www.youtube.com/embed/DPUNslHj5VE" allowfullscreen="" frameborder="0" height="290" width="515">
-</iframe><br>
-      </td>
-              </li>
-            </ul>
+                  <ul class="list-unstyled">
+                    <li class="media">
+                      <td style="vertical-align: top;"><iframe loading="lazy" src="https://www.youtube.com/embed/Ju9SLrtdkLQ" allowfullscreen="" frameborder="0" height="290" width="515">
+      </iframe><br>
+            </td>
+                    </li>
+                  </ul>
+                </div>
+            <p class="col-xl-6"><strong>Smart Humanoid Used for Silencing Humans
+      (SHUSH) Bot: A robot for silencing noisy students in the library</strong><br>
+            <br>Senior Design Project<br>
+            <br>
+      By Javi Gonzalez, Stacy Alexander, Thilo Janssen, Roberto Mexquitic, <br>
+            <br>
+      All ECE Seniors.<br>
+            <br>
+            <a href="reports/SHUSHBot-Report.pdf">Project Report.</a> (3 MB)<br>
+            </p>
+            <div class="col-md-4 col-12 offset-xl-0 col-xl-6">
+                  <ul class="list-unstyled">
+                    <li class="media">
+                      <td style="vertical-align: top;"><iframe loading="lazy" src="https://www.youtube.com/embed/9zL_FL8JV0M" allowfullscreen="" frameborder="0" height="290" width="515">
+      </iframe><br>
+            </td>
+                    </li>
+                  </ul>
+                </div>
+            <p class="col-xl-6"><strong>Mobile Automatd Directory (MAD "Max): A
+      guide robot for UTSA.</strong><br>
+            <br>Senior Design Project<br>
+            <br>
+      By Cory Royal, William Morris, Dylan Odle, <br>
+            <br>
+      All ECE Seniors.<br>
+            <br>
+            <a href="reports/MADMax-Report.pdf">Project Report.</a> (1 MB)<br>
+            </p>
+            <div class="col-md-4 col-12 offset-xl-0 col-xl-6">
+                  <ul class="list-unstyled">
+                    <li class="media">
+                      <td style="vertical-align: top;"><iframe loading="lazy" src="https://www.youtube.com/embed/KLepY1AsaRk" allowfullscreen="" frameborder="0" height="290" width="515">
+      </iframe><br>
+            </td>
+                    </li>
+                  </ul>
+                </div>
+            <p class="col-xl-6"><strong><a href="http://ruina.tam.cornell.edu/research/topics/locomotion_and_robotics/ranger/Ranger2011/">Cornell
+      Ranger walks a 40.5 mile (65 km) ultra-marathon</a></strong><br>
+            <br>P. A. Bhounsule, J.
+      Cortell, A. Grewal, B. Hendriksen, J.G.D. Karssen,
+      C. Paul, A. Ruina. <a href="rangerIJRR2013.pdf">Low-bandwidth
+      reflex-based control for lower power
+      walking: 65 km on a single battery charge.</a> International
+      Journal of
+      Robotics Research, vol 33. no. 10. 1305-1321.<br>
+            </p>
+            <div class="col-md-4 col-12 offset-xl-0 col-xl-6">
+                  <ul class="list-unstyled">
+                    <li class="media">
+                      <td style="vertical-align: top;"><iframe loading="lazy" src="https://www.youtube.com/embed/L-XIWTSCAcY" allowfullscreen="" frameborder="0" height="290" width="515">
+      </iframe><br>
+            </td>
+                    </li>
+                  </ul>
+                </div>
+            <p class="col-xl-6"><strong></strong><br>
+            <br>Cornell Ranger's most energy-efficient
+      walk with a Total Cost of
+      Transport (Energy used per unit weight per unit distance moved) of
+      0.19. This is the lowest TCOT ever achieved on a legged robot. <br>
+            </p>
+            <div class="col-md-4 col-12 offset-xl-0 col-xl-6">
+                  <ul class="list-unstyled">
+                    <li class="media">
+                      <td style="vertical-align: top;"><iframe loading="lazy" src="https://www.youtube.com/embed/GCGeDHKNzm4" allowfullscreen="" frameborder="0" height="290" width="515">
+      </iframe><br>
+            </td>
+                    </li>
+                  </ul>
+                </div>
+            <p class="col-xl-6"><strong>Controlling a system with time delays
+      larger than the characteristic
+      time constant of the system. </strong><br>
+            <br>P.A. Bhounsule and A. Ruina. Discrete <a href="event-based-intermittent.pdf">Decision Continuous Actuation
+      control: balance of an inverted pendulum and pumping a pendulum swing</a>.<br>
+      J. Dyn. Sys., Meas., Control 137(5), 051012 (2015)<br>
+            </p>
+            <div class="col-md-4 col-12 offset-xl-0 col-xl-6">
+                  <ul class="list-unstyled">
+                    <li class="media">
+                      <td style="vertical-align: top;"><iframe loading="lazy" src="https://www.youtube.com/embed/dk8n1J9m_4Q" allowfullscreen="" frameborder="0" height="290" width="515">
+      </iframe><br>
+            </td>
+                    </li>
+                  </ul>
+                </div>
+            <p class="col-xl-6"><strong>ME 4543: Mechatronics Course</strong><br>
+            <br>Core Course for ME Juniors/Seniors at UTSA.<br>
+            <br>
+      Final Hardware Project: Battling Rowdy Bots<br>
+            </p>
+          <div class="col-md-4 col-12 offset-xl-0 col-xl-6">
+                  <ul class="list-unstyled">
+                    <li class="media">
+                      <td style="vertical-align: top;"><iframe loading="lazy" src="https://www.youtube.com/embed/41_59SHMm2E" allowfullscreen="" frameborder="0" height="290" width="515">
+      </iframe><br>
+            </td>
+                    </li>
+                  </ul>
+                </div>
+            <p class="col-xl-6"><strong>When Iron Man came to the Mechatronics
+      Class at UTSA</strong><br>
+            <br>Starring: Albert Lee. Read more about him over here:<a href="http://www.utsa.edu/today/2015/02/lee.html">
+      http://www.utsa.edu/today/2015/02/lee.html</a>
+            </p>
+                </div>
+              </div>
+            </section>
           </div>
-			<p class="col-xl-6"><strong>A miniature size 3D printed linear pneumatic actuator for robotic applications</strong><br>
-			<br>Christian Trevino, <a href="reports/Christian_Trevino_MS_Thesis.pdf">MS Thesis</a>, ME UTSA<br>
-and <br>
-Christian Nall*, Pranav A. Bhounsule, <a href="papers/2019Nall_actuator.pdf">A Miniature 3D Printed On-Off Linear Pneumatic Actuator and Its Demonstration into a Cartoon Character of a Hopping Lamp</a>. Actuators 2019, 8, 72<br>
-      <br>
-			</p>
-<!--	video starts	-->
- <div class="col-md-4 col-12 offset-xl-0 col-xl-6">
-            <ul class="list-unstyled">
-              <li class="media">
-                <td style="vertical-align: top;"><iframe src="https://www.youtube.com/embed/-DLU-bjDOhE" allowfullscreen="" frameborder="0" height="290" width="515">
-</iframe><br>
-      </td>
-              </li>
-            </ul>
-          </div>
-			<p class="col-xl-6"><strong>Domain Randomziation for detection and localization
-of bolts</strong><br>
-			<br>Ezra Ameperosa*, Pranav A.
-Bhounsule, <a href="papers/Ameperosa2019_bolts.pdf">Domain
-randomization for detection and position estimation
-of multiples of a single object with applications to localizing bolts
-on structures</a>, ASME-International Design Engineering &amp;
-Technical
-Conference, Anaheim, CA, USA,&nbsp; Aug 18--21, 2019.<br>
-      <br>
-			</p> 
-			<div class="col-md-4 col-12 offset-xl-0 col-xl-6">
-            <ul class="list-unstyled">
-              <li class="media">
-                <td style="vertical-align: top;"><iframe src="https://www.youtube.com/embed/ZZ2UbopP5pM" allowfullscreen="" frameborder="0" height="290" width="515">
-</iframe><br>
-      </td>
-              </li>
-            </ul>
-          </div>
-			<p class="col-xl-6"><strong>Mini project
-in the robotics class -- LEGO robots for simulated Nuclear Disaster
-site relief</strong><br>
-			<br>LARPA Robotics Challenge<br>
-LARPA = LEGO, Automated, Reliable, Powered, Agents<br>
-      <br>
-Instructions are on <a href="https://github.com/pab47/LARPA_Robotics_Challenge">GitHub</a><br>
-      <br>
-			</p>
-			<div class="col-md-4 col-12 offset-xl-0 col-xl-6">
-            <ul class="list-unstyled">
-              <li class="media">
-                <td style="vertical-align: top;"><iframe src="https://www.youtube.com/embed/2qO0kL8-p4Y" allowfullscreen="" frameborder="0" height="290" width="515">
-</iframe><br>
-      </td>
-              </li>
-            </ul>
-          </div>
-			<p class="col-xl-6"><strong>Senior Design Project</strong><br>
-			<br>By Steven Farra, Emiliano Rodriguez, Mario Navarro, John Carroll<br>
-      <br>
-All ME Seniors
-				<br>
-				 <a href="reports/quadruped_robot.pdf">Project Report</a> (3.3 MB)
-			</p>
-			<div class="col-md-4 col-12 offset-xl-0 col-xl-6">
-            <ul class="list-unstyled">
-              <li class="media">
-                <td style="vertical-align: top;"><iframe src="https://www.youtube.com/embed/videoseries?list=PLc7bpbeTIk77kdx4O8HoIr_Ep76HiSwil" allowfullscreen="" frameborder="0" height="290" width="515">
-</iframe><br>
-      </td>
-              </li>
-            </ul>
-          </div>
-			<p class="col-xl-6"><strong>UTSA Mechatronics final project Fall 2018</strong> -
-Hall of engineering professors <br>
-      <br>
-The students had to visit an assigned
-professor record his/her voice, take a photo and then create a robotic
-face that incorporated the face, voice. The robotic face had to have
-two moving parts, one of which was the mouth and the other was left to
-their choice. There had to be two sensors on board that would allow
-interaction between the user and the robotics face (e.g., on waving to
-the animatronics the face would talk).<br>
-      <br>
-The entire playlist of 40 profs is to the left but you can select
-videos to play by clicking this shortened link: <a href="http://tiny.cc/roboprof" target="_blank">http://tiny.cc/roboprof</a><br>
-      <br>
-			</p>
-			<div class="col-md-4 col-12 offset-xl-0 col-xl-6">
-            <ul class="list-unstyled">
-              <li class="media">
-                <td style="vertical-align: top;"><iframe src="https://www.youtube.com/embed/bQjF9xGCF20" allowfullscreen="" frameborder="0" height="290" width="515">
-</iframe><br>
-      </td>
-              </li>
-            </ul>
-          </div>
-			<p class="col-xl-6"><strong>Auto sunglass</strong><br>
-			<br>Independent project<br>
-June - August 2018<br>
-      <br>
-Victor Guzman (High School Student)<br>
-      <a href="reports/Guzman_Auto_Sunglasses.pdf">Project Report</a> 
-      <br>
-			</p>
-			<div class="col-md-4 col-12 offset-xl-0 col-xl-6">
-            <ul class="list-unstyled">
-              <li class="media">
-                <td style="vertical-align: top;"><iframe src="https://www.youtube.com/embed/7ovG-mC6xFs" allowfullscreen="" frameborder="0" height="290" width="515">
-</iframe><br>
-      </td>
-              </li>
-            </ul>
-          </div>
-			<p class="col-xl-6"><strong>DIY: Robobug, a vibration motor actuated
-robot</strong><br>
-			<br>Independent project<br>
-      <br>
-Sierra Baumbusch (ME Senior)<br>
-      <br>
-      <a href="tutorials/RoboBugTutorial.pdf">Tutorial slides</a> (3.1
-MB)<br>
-			</p>
-			<div class="col-md-4 col-12 offset-xl-0 col-xl-6">
-            <ul class="list-unstyled">
-              <li class="media">
-                <td style="vertical-align: top;"><iframe src="https://www.youtube.com/embed/_-Ivn1zhD6g" allowfullscreen="" frameborder="0" height="290" width="515">
-</iframe><br>
-      </td>
-              </li>
-            </ul>
-          </div>
-			<p class="col-xl-6"><strong>Humanoid
-robot dancing to UTSA song and others</strong><br>
-			<br>
-Undergraduate research<br>
-      <br>
-Emiliano Rodriguez (ME Senior)<br>
-			</p>
-			<div class="col-md-4 col-12 offset-xl-0 col-xl-6">
-            <ul class="list-unstyled">
-              <li class="media">
-                <td style="vertical-align: top;"><iframe src="https://www.youtube.com/embed/bpgAn6hZhl0" allowfullscreen="" frameborder="0" height="290" width="515">
-</iframe><br>
-      </td>
-              </li>
-            </ul>
-          </div>
-			<p class="col-xl-6"><strong>Tic-Tac-Toe
-Robot</strong><br>
-			<br>
-Independent Project<br>
-      <br>
-Drishya Dahal (ME Junior)<br>
-			</p>
-			<div class="col-md-4 col-12 offset-xl-0 col-xl-6">
-            <ul class="list-unstyled">
-              <li class="media">
-                <td style="vertical-align: top;"><iframe src="https://www.youtube.com/embed/rlaOOx0Boos" allowfullscreen="" frameborder="0" height="290" width="515">
-</iframe><br>
-      </td>
-              </li>
-            </ul>
-          </div>
-			<p class="col-xl-6"><strong>An Inchworm Robot</strong><br>
-      <br>
-Senior Design Project<br>
-      <br>
-By Anthony Abundis, Michael Aguirre, Justin Castillo, and Flavio Moreira<br>
-      <br>
-All ME Seniors<br>
-      <br>
-      <a href="reports/Inchworm_report.pdf">Project Report</a> (7.5 MB)<br>
-			</p>
-			<div class="col-md-4 col-12 offset-xl-0 col-xl-6">
-            <ul class="list-unstyled">
-              <li class="media">
-                <td style="vertical-align: top;"><iframe src="https://www.youtube.com/embed/mNHBRSlg1EM" allowfullscreen="" frameborder="0" height="290" width="515">
-</iframe><br>
-      </td>
-              </li>
-            </ul>
-          </div>
-			<p class="col-xl-6"><strong>Pumping a
-playground swing in the standing position</strong><br>
-			<br>Independent Project<br>
-      <br>
-By Gerardo (Aaron) Rios and Joseph Galloway<br>
-      <br>
-ME Juniors
-      <br>
-      <a href="reports/Pumping_Swing.pdf">Project report</a> (1.2 MB)<br>
-			</p>
-			<div class="col-md-4 col-12 offset-xl-0 col-xl-6">
-            <ul class="list-unstyled">
-              <li class="media">
-                <td style="vertical-align: top;"><iframe src="https://www.youtube.com/embed/deA2DIyGwks" allowfullscreen="" frameborder="0" height="290" width="515">
-</iframe><br>
-      </td>
-              </li>
-            </ul>
-          </div>
-			<p class="col-xl-6"><strong>3D
-printing of rolling cylinders for demonstration of energy principles</strong><br>
-			<br>Two cylinders identical in all respects (same mass, radius, length)
-except that one is filled with water and other with honey are made to
-roll down an incline. The one filled with water rolls down first. Why?<span style="font-weight: bold;"> Watch the video for the answer.<br>
-      <br>
-      </span>By Nour K. El-Ghori (High School Student)<br>
-      <br>
-      <br>
-(i) <a href="tutorials/RollingCylinders.pdf">Project Report,</a>&nbsp;
-(ii) <a href="tutorials/RollingCylindersCAD.zip">CAD files</a><br>
-			</p>
-			<div class="col-md-4 col-12 offset-xl-0 col-xl-6">
-            <ul class="list-unstyled">
-              <li class="media">
-                <td style="vertical-align: top;"><iframe src="https://www.youtube.com/embed/LSevwuNdBks" allowfullscreen="" frameborder="0" height="290" width="515">
-</iframe><br>
-      </td>
-              </li>
-            </ul>
-          </div>
-			<p class="col-xl-6"><strong>Trashbot:
-A trash collecting robot</strong><br>
-			<br>Independent Project<br>
-      <br>
-By Drishya Dahal and Joseph Galloway<br>
-      <br>
-ME Sophomores<br><a href="reports/Trash_Bot_Report.pdf">Project Report</a> (0.2 MB)<br>
-			</p>
-			<div class="col-md-4 col-12 offset-xl-0 col-xl-6">
-            <ul class="list-unstyled">
-              <li class="media">
-                <td style="vertical-align: top;"><iframe src="https://www.youtube.com/embed/P5YftCPE4rw" allowfullscreen="" frameborder="0" height="290" width="515">
-</iframe><br>
-      </td>
-              </li>
-            </ul>
-          </div>
-			<p class="col-xl-6"><strong>How to Beat
-Flappy Bird: A mixed-integer model predictive control approach</strong><br>
-			<br>Matthew Piper, Pranav A. Bhounsule and Krystel K. Castillo-Villar, <a href="papers/Piper2017_FlappyBird.pdf">How to beat Flappy Bird: A
-Mixed-integer Model Predictive Control Approach</a>, ASME-Dynamics
-Systems and Controls Conference, October 11-13, 2017, Tysons Corner,
-Virginia, USA.<br>
-			</p>
-			<div class="col-md-4 col-12 offset-xl-0 col-xl-6">
-            <ul class="list-unstyled">
-              <li class="media">
-                <td style="vertical-align: top;"><iframe src="https://www.youtube.com/embed/1YEbfwa-3RQ" allowfullscreen="" frameborder="0" height="290" width="515">
-</iframe><br>
-      </td>
-              </li>
-            </ul>
-          </div>
-			<p class="col-xl-6"><strong>Rowdy Wear: a gadget that helps you make swift
-decisions</strong><br>
-			<br>Summer Project<br>
-      <br>
-By Panchajanya Karasani<br>
-      <br>
-ME Sophomore<br>
-      <br>
-Total cost is about $5.00:<br>
-      <br>
-1 ATtiny85 controller, $1.25 <br>
-1 Prototyping board, $1.25<br>
-1 Push Button, $ 1.0<br>
-2 LED, $0.50<br>
-1 Coin cell CR2032, $0.50 <br>
-1 Socket, $0.50 <br>
-1 VELCRO strip (optional)<br>
-			</p>
-			<div class="col-md-4 col-12 offset-xl-0 col-xl-6">
-            <ul class="list-unstyled">
-              <li class="media">
-                <td style="vertical-align: top;"><iframe src="https://www.youtube.com/embed/I2E7iWqU2IU" allowfullscreen="" frameborder="0" height="290" width="515">
-</iframe><br>
-      </td>
-              </li>
-            </ul>
-          </div>
-			<p class="col-xl-6"><strong>Pneumatic
-Shoes For Jump Height Augmentation</strong><br>
-			<br>Senior Design Project<br>
-      <br>
-By Ivelisse Negroni, Noah Trent, Cesar Sifuentes, Michael Turasz <br>
-      <br>
-All ME Seniors<br>
-      <br>
-      <a href="reports/Jumping_Contraption.pdf">Project Report</a> (3.4
-MB)<br>
-			</p>
-			<div class="col-md-4 col-12 offset-xl-0 col-xl-6">
-            <ul class="list-unstyled">
-              <li class="media">
-                <td style="vertical-align: top;"><iframe src="https://www.youtube.com/embed/wJ3W3MomWl4" allowfullscreen="" frameborder="0" height="290" width="515">
-</iframe><br>
-      </td>
-              </li>
-            </ul>
-          </div>
-			<p class="col-xl-6"><strong>Rowdy
-walker: A 3D printed downhill walking toy</strong><br>
-			<br>BS Thesis, Honors College<br>
-      <br>
-By Christian Trevino, <br>
-      <br>
-ME Senior (currently ME Grad. Student)<br>
-      <br><a href="reports/Christian_Trevino_BS_Thesis.pdf">
-BS Thesis</a><br>
-			</p>
-			<div class="col-md-4 col-12 offset-xl-0 col-xl-6">
-            <ul class="list-unstyled">
-              <li class="media">
-                <td style="vertical-align: top;"><iframe src="https://www.youtube.com/embed/xkze1_hnam0" allowfullscreen="" frameborder="0" height="290" width="515">
-</iframe><br>
-      </td>
-              </li>
-            </ul>
-          </div>
-			<p class="col-xl-6"><strong>Animatronics
-Face</strong><br>
-			<br>Independent Study Project,<br>
-      <br>
-Entry to the Spring 2016, Center for Innovation, Technology, and
-Entrepreneurship (CITE) <br>
-$100 K Business Competition at UTSA,<br>
-      <br>
-Finalist in the Instructables Robotic Contest 2016 (only 19 finalists
-out of 222 entries) (<a href="http://www.instructables.com/contest/robotics2016/">link</a>) (<a href="media/RomoBot_RoboticsContest2016.pdf">cached</a>) <br>
-      <br>
-By Geoffrey Toombs and James Schopfer<br>
-      <br>
-ME Seniors<br>
-      <br>
-      <a href="reports/Animatronics_Face_Report.pdf"> Project Report</a>
-(4.7 MB)<br>
-			</p>
-			<div class="col-md-4 col-12 offset-xl-0 col-xl-6">
-            <ul class="list-unstyled">
-              <li class="media">
-                <td style="vertical-align: top;"><iframe src="https://www.youtube.com/embed/51WeRWwHMUU" allowfullscreen="" frameborder="0" height="290" width="515">
-</iframe><br>
-      </td>
-              </li>
-            </ul>
-          </div>
-			<p class="col-xl-6"><strong>Paper walker</strong> for the Inventors
-Workshop at the Children's Museum, San Antonio.<br>
-			<br>By Christian Trevino, ME Graduate Student, UTSA.<br>
-      <br>
-COE Innovations Magazine back cover (<a href="media/Trevino_innovations_winter2015.pdf">cached</a>)<br>
-			</p>
-			<div class="col-md-4 col-12 offset-xl-0 col-xl-6">
-            <ul class="list-unstyled">
-              <li class="media">
-                <td style="vertical-align: top;"><iframe src="https://www.youtube.com/embed/SjSFgzGT--0" allowfullscreen="" frameborder="0" height="290" width="515">
-</iframe><br>
-      </td>
-              </li>
-            </ul>
-          </div>
-			<p class="col-xl-6"><strong>ME 4773: Fundamentals of Robotics,
-Technical Elective for ME Juniors/Seniors at UTSA.</strong><br>
-			<br>Robotics Labs<br>
-1. Line following robots.<br>
-2. Can picking robot.<br>
-3. Face drawing robot.<br>
-			</p>
-						<div class="col-md-4 col-12 offset-xl-0 col-xl-6">
-            <ul class="list-unstyled">
-              <li class="media">
-                <td style="vertical-align: top;"><iframe src="https://www.youtube.com/embed/ZTBn79uAvYQ" allowfullscreen="" frameborder="0" height="290" width="515">
-</iframe><br>
-      </td>
-              </li>
-            </ul>
-          </div>
-			<p class="col-xl-6"><strong>Physics demonstration: Dancing pendulums
-for San Antonio Children's Museum</strong> (Prototype)<br>
-			<br>By Christian Trevino, ME Senior, UTSA.<br>
-      <br>
-      <br>
-UTSA news (<a href="http://www.utsa.edu/today/2015/06/christianpendulum.html">link</a>)
-(<a href="trevino_pendulum.pdf">cached</a>)
-			</p>
-						<div class="col-md-4 col-12 offset-xl-0 col-xl-6">
-            <ul class="list-unstyled">
-              <li class="media">
-                <td style="vertical-align: top;"><iframe src="https://www.youtube.com/embed/DNGm9m6z6jo" allowfullscreen="" frameborder="0" height="290" width="515">
-</iframe><br>
-      </td>
-              </li>
-            </ul>
-          </div>
-			<p class="col-xl-6"><strong>UTSA Commercial 2015</strong><br>
-			<br>Our robots were featured in the UTSA commercial.<br>
-      <br>
-At 6 sec:<br>
-Christian Trevino, Raquel De La Garza, and Eric Sanchez with Ein<br>
-      <br>
-      <br>
-At 10 sec:<br>
-Roarunner rolling around with<br>
-Rico Ulep, Scott Miller, Ezra Ameperosa, Robert Brothers, Raquel De La
-Garza and Eric Sanchez in the background<br>
-			</p>
-						<div class="col-md-4 col-12 offset-xl-0 col-xl-6">
-            <ul class="list-unstyled">
-              <li class="media">
-                <td style="vertical-align: top;"><iframe src="https://www.youtube.com/embed/_gyI_xIkAdw" allowfullscreen="" frameborder="0" height="290" width="515">
-</iframe><br>
-      </td>
-              </li>
-            </ul>
-          </div>
-			<p class="col-xl-6"><strong>Ein: A modular robotic leg</strong><br>
-			<br>Senior Design Project<br>
-      <br>
-By Christian Trevino, Eric Sanchez, Robert Brothers, and Raquel De La
-Garza, <br>
-      <br>
-All ME Seniors<br>
-      <br>
-      <a href="reports/Ein-Report.pdf">Project Report</a> (9.3 MB)<br>
-			</p>
-						<div class="col-md-4 col-12 offset-xl-0 col-xl-6">
-            <ul class="list-unstyled">
-              <li class="media">
-                <td style="vertical-align: top;"><iframe src="https://www.youtube.com/embed/xTSG48KMMR4" allowfullscreen="" frameborder="0" height="290" width="515">
-</iframe><br>
-      </td>
-              </li>
-            </ul>
-          </div>
-			<p class="col-xl-6"><strong>Roadrunner: A rimless wheel based
-locomotion robot</strong><br>
-			<br>Senior Design Project<br>
-      <br>
-By Rico Ulep, Scott Miller, Ezra Ameperosa, and Kyle Seay <br>
-      <br>
-All ME Seniors<br>
-      <br>
-      <a href="reports/Roadrunner-Report.pdf">Project Report</a> (7 MB)
-			</p>
-		<div class="col-md-4 col-12 offset-xl-0 col-xl-6">
-            <ul class="list-unstyled">
-              <li class="media">
-                <td style="vertical-align: top;"><iframe src="https://www.youtube.com/embed/Ju9SLrtdkLQ" allowfullscreen="" frameborder="0" height="290" width="515">
-</iframe><br>
-      </td>
-              </li>
-            </ul>
-          </div>
-			<p class="col-xl-6"><strong>Smart Humanoid Used for Silencing Humans
-(SHUSH) Bot: A robot for silencing noisy students in the library</strong><br>
-			<br>Senior Design Project<br>
-      <br>
-By Javi Gonzalez, Stacy Alexander, Thilo Janssen, Roberto Mexquitic, <br>
-      <br>
-All ECE Seniors.<br>
-      <br>
-      <a href="reports/SHUSHBot-Report.pdf">Project Report.</a> (3 MB)<br>
-			</p>
-			<div class="col-md-4 col-12 offset-xl-0 col-xl-6">
-            <ul class="list-unstyled">
-              <li class="media">
-                <td style="vertical-align: top;"><iframe src="https://www.youtube.com/embed/9zL_FL8JV0M" allowfullscreen="" frameborder="0" height="290" width="515">
-</iframe><br>
-      </td>
-              </li>
-            </ul>
-          </div>
-			<p class="col-xl-6"><strong>Mobile Automatd Directory (MAD "Max): A
-guide robot for UTSA.</strong><br>
-			<br>Senior Design Project<br>
-      <br>
-By Cory Royal, William Morris, Dylan Odle, <br>
-      <br>
-All ECE Seniors.<br>
-      <br>
-      <a href="reports/MADMax-Report.pdf">Project Report.</a> (1 MB)<br>
-			</p>
-			<div class="col-md-4 col-12 offset-xl-0 col-xl-6">
-            <ul class="list-unstyled">
-              <li class="media">
-                <td style="vertical-align: top;"><iframe src="https://www.youtube.com/embed/KLepY1AsaRk" allowfullscreen="" frameborder="0" height="290" width="515">
-</iframe><br>
-      </td>
-              </li>
-            </ul>
-          </div>
-			<p class="col-xl-6"><strong><a href="http://ruina.tam.cornell.edu/research/topics/locomotion_and_robotics/ranger/Ranger2011/">Cornell
-Ranger walks a 40.5 mile (65 km) ultra-marathon</a></strong><br>
-			<br>P. A. Bhounsule, J.
-Cortell, A. Grewal, B. Hendriksen, J.G.D. Karssen,
-C. Paul, A. Ruina. <a href="rangerIJRR2013.pdf">Low-bandwidth
-reflex-based control for lower power
-walking: 65 km on a single battery charge.</a> International
-Journal of
-Robotics Research, vol 33. no. 10. 1305-1321.<br>
-			</p>
-			<div class="col-md-4 col-12 offset-xl-0 col-xl-6">
-            <ul class="list-unstyled">
-              <li class="media">
-                <td style="vertical-align: top;"><iframe src="https://www.youtube.com/embed/L-XIWTSCAcY" allowfullscreen="" frameborder="0" height="290" width="515">
-</iframe><br>
-      </td>
-              </li>
-            </ul>
-          </div>
-			<p class="col-xl-6"><strong></strong><br>
-			<br>Cornell Ranger's most energy-efficient
-walk with a Total Cost of
-Transport (Energy used per unit weight per unit distance moved) of
-0.19. This is the lowest TCOT ever achieved on a legged robot. <br>
-			</p>
-			<div class="col-md-4 col-12 offset-xl-0 col-xl-6">
-            <ul class="list-unstyled">
-              <li class="media">
-                <td style="vertical-align: top;"><iframe src="https://www.youtube.com/embed/GCGeDHKNzm4" allowfullscreen="" frameborder="0" height="290" width="515">
-</iframe><br>
-      </td>
-              </li>
-            </ul>
-          </div>
-			<p class="col-xl-6"><strong>Controlling a system with time delays
-larger than the characteristic
-time constant of the system. </strong><br>
-			<br>P.A. Bhounsule and A. Ruina. Discrete <a href="event-based-intermittent.pdf">Decision Continuous Actuation
-control: balance of an inverted pendulum and pumping a pendulum swing</a>.<br>
-J. Dyn. Sys., Meas., Control 137(5), 051012 (2015)<br>
-			</p>
-			<div class="col-md-4 col-12 offset-xl-0 col-xl-6">
-            <ul class="list-unstyled">
-              <li class="media">
-                <td style="vertical-align: top;"><iframe src="https://www.youtube.com/embed/dk8n1J9m_4Q" allowfullscreen="" frameborder="0" height="290" width="515">
-</iframe><br>
-      </td>
-              </li>
-            </ul>
-          </div>
-			<p class="col-xl-6"><strong>ME 4543: Mechatronics Course</strong><br>
-			<br>Core Course for ME Juniors/Seniors at UTSA.<br>
-      <br>
-Final Hardware Project: Battling Rowdy Bots<br>
-			</p>
-		<div class="col-md-4 col-12 offset-xl-0 col-xl-6">
-            <ul class="list-unstyled">
-              <li class="media">
-                <td style="vertical-align: top;"><iframe src="https://www.youtube.com/embed/41_59SHMm2E" allowfullscreen="" frameborder="0" height="290" width="515">
-</iframe><br>
-      </td>
-              </li>
-            </ul>
-          </div>
-			<p class="col-xl-6"><strong>When Iron Man came to the Mechatronics
-Class at UTSA</strong><br>
-			<br>Starring: Albert Lee. Read more about him over here:<a href="http://www.utsa.edu/today/2015/02/lee.html">
-http://www.utsa.edu/today/2015/02/lee.html</a>
-			</p>
         </div>
       </div>
-    </section>
-    </div>
-  <hr>
+		</section>
+
+
+    <!-- Footer -->
     <footer class="text-left">
       <div class="container">
         <div class="row">
@@ -853,31 +866,25 @@ http://www.utsa.edu/today/2015/02/lee.html</a>
         </div>
       </div>
     </footer>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="js/jquery-3.4.1.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap-4.4.1.js"></script>
-		  </div>
-		</div>
-			  </section>
-	   <!-- Default Statcounter code for Pranav Bhounsule HomePage
-https://pab47.github.io/ -->
-<script type="text/javascript">
-var sc_project=6467122; 
-var sc_invisible=0; 
-var sc_security="926f6293"; 
-var scJsHost = "https://";
-document.write("<sc"+"ript type='text/javascript' src='" +
-scJsHost+
-"statcounter.com/counter/counter.js'></"+"script>");
-</script>
-<noscript><div class="statcounter"><a title="Web Analytics
-Made Easy - Statcounter" href="https://statcounter.com/"
-target="_blank"><img class="statcounter"
-src="https://c.statcounter.com/6467122/0/926f6293/0/"
-alt="Web Analytics Made Easy - Statcounter"
-referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
-<!-- End of Statcounter Code -->
+
+
+	  <!-- Default Statcounter code for Pranav Bhounsule HomePage https://pab47.github.io/ -->
+    <script type="text/javascript">
+      var sc_project=6467122; 
+      var sc_invisible=0; 
+      var sc_security="926f6293"; 
+      var scJsHost = "https://";
+      document.write("<sc"+"ript type='text/javascript' src='" + scJsHost+ "statcounter.com/counter/counter.js'></"+"script>");
+    </script>
+
+
+    <noscript>
+      <div class="statcounter">
+        <a title="Web Analytics Made Easy - Statcounter" href="https://statcounter.com/" target="_blank">
+          <img class="statcounter" src="https://c.statcounter.com/6467122/0/926f6293/0/" alt="Web Analytics Made Easy - Statcounter" referrerPolicy="no-referrer-when-downgrade">
+        </a>
+      </div>
+    </noscript>
+    <!-- End of Statcounter Code -->
   </body>
 </html>
