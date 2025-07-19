@@ -6,24 +6,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Robotics and Motion Laboratory at University of Illinois at Chicago</title>
     <!-- Bootstrap -->
-	  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
     <link href="bootstrap-4.4.1.css" rel="stylesheet">
+    
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap-4.4.1.js"></script>
+
+    <!-- JS/CSS Code for searchbar -->
+    <script src="search.js" defer></script>
+    <link rel="stylesheet" href="search.css">
+
+
   </head>
-<!-- navbar start -->
+
   <body>
+
+    <!-- navbar start -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
       <a class="navbar-brand"><img src="RAMlab-logo.png" width="89" height="50" alt="RAM Lab Logo"/></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
-		</button>
+		  </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mx-auto">
            <li class="nav-item">
             <a class="nav-link" href="index.html">Home</a>
           </li>
- <li class="nav-item dropdown">
+      <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle active" href="about.html" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             People
             </a>
@@ -35,7 +49,7 @@
               <a class="dropdown-item" href="awards.html"> Student Awards</a>
             </div>
           </li>
-	<li class="nav-item dropdown">
+	    <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="research.html" id="navbarDropdownPub" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             Publications
             </a>
@@ -87,63 +101,66 @@
 		  </ul>
       </div>
     </nav>
-<!-- page start -->
+
+    <!-- page start -->
     <section>
       <div class="container">
         <div class="row">
           <div class="col-12 text-left">
-		  <h2><br><br>
-            Undergraduate/High School Students</h2>
-  <hr><table style="text-align: left; width: 1110px; height: 28px;" border="1" cellpadding="2" cellspacing="2">
-  <tbody>
+		      <h2><br><br>Undergraduate/High School Students</h2><hr>
+
+          <input type="text" id="searchBar" placeholder="Search Students">
+          
+          <table style="text-align: left; width: 1110px; height: 28px;" border="1" cellpadding="2" cellspacing="2">
+          <tbody>
+
 	  	    <!-- Start (Senior Design)	  -->
-<tr>
-      <td style="vertical-align: top;">
-	 <img style="width: 100px; height: 93px;" alt="Christian_Zamudio" src="people/Christian_Zamudio.png"> 
-	  <img style="width: 85px; height: 97px;" alt="Edwyn_Arrezola" src="people/Edwyn_Arrezola.png"><br>
-      <img style="width: 100px; height: 93px;" alt="Juan_Estrada" src="people/Juan_Estrada.png"> 
-	  <img style="width: 85px; height: 92px;" alt="Parin_Pandit" src="people/Parin_Pandit.png"><br>
-      </td>
-      <td style="vertical-align: top;"><span style="font-weight: bold;">Senior
-Design Project: Litter Bot </span><a style="color: red;"><span style="font-weight: bold;"></span></a><br><br>
-(Top Row L
-to R) Christian Zamudio, Edwyn Arrezola, <br>
-(Bottom Row L to R) Juan Estrada,	Parin Pandit  Aug 2024 - May 2025<br>
-      <span style="font-weight: bold;"><br>
-      </span>All ECE Seniors<br>
-      <br>
-      1) <a href="reports/LitterBot.pdf">Report</a> 2)  <a href="https://github.com/cm-zamudio/Autonomous-Litter-Bot">GitHub</a> 
-		  3)  <a href="https://youtu.be/8s1aPp4qPkk">YouTube</a>
-		  
-		  <br>
-      </td>
-    </tr>
-<!-- Ends (senior Design)	  --> 
-	    <!-- Start (Senior Design)	  -->
-<tr>
-      <td style="vertical-align: top;">
-	 <img style="width: 100px; height: 93px;" alt="Ibrahim_Ahad" src="people/Ibrahim_Ahad.png"> 
-	  <img style="width: 85px; height: 97px;" alt="J_J_Sebastian" src="people/J_J_Sebastian.JPG"><br>
-      <img style="width: 100px; height: 93px;" alt="Jamye_Brothers" src="people/Jamye_Brothers.png"> 
-	  <img style="width: 85px; height: 92px;" alt="Sultan Muhammad" src="people/Neil_Rasmussen.png"><br>
-	  <img style="width: 95px; height: 92px;" alt="Qasim Rizvi" src="people/Qasim Rizvi.png"><br>
-      </td>
-      <td style="vertical-align: top;"><span style="font-weight: bold;">Senior
-Design Project: ChocBot: Retrofitting Extruder for Chocolate Design </span><a style="color: red;"><span style="font-weight: bold;"></span></a><br><br>
-(Top Row L
-to R) Ibrahim_Ahad, J. J. Sebastian, <br>
-(Middle Row L
-to R) Jamye Brothers, Neil Rasmussen, <br>
-(Bottom Row) Qasim Rizvi,	  Aug 2024 - May 2025<br>
-      <span style="font-weight: bold;"><br>
-      </span>All ME Seniors<br>
-      <br>
-      1) <a href="reports/ChocoBot.pdf">Report</a> 2) <a href="https://youtube.com/shorts/p1_u0b1AxlA">Video</a><br>
-      </td>
-    </tr>
-<!-- Ends (senior Design)	  --> 
-	  <!-- Starts here (independent project)	  -->
-    <tr>
+          <tr class="publication">
+            <td style="vertical-align: top;">
+            <img style="width: 100px; height: 93px;" alt="Christian_Zamudio" src="people/Christian_Zamudio.png"> 
+            <img style="width: 85px; height: 97px;" alt="Edwyn_Arrezola" src="people/Edwyn_Arrezola.png"><br>
+            <img style="width: 100px; height: 93px;" alt="Juan_Estrada" src="people/Juan_Estrada.png"> 
+            <img style="width: 85px; height: 92px;" alt="Parin_Pandit" src="people/Parin_Pandit.png"><br>
+            </td>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Senior
+            Design Project: Litter Bot </span><a style="color: red;"><span style="font-weight: bold;"></span></a><br><br>
+            (Top Row L
+            to R) Christian Zamudio, Edwyn Arrezola, <br>
+            (Bottom Row L to R) Juan Estrada,	Parin Pandit  Aug 2024 - May 2025<br>
+            <span style="font-weight: bold;"><br>
+            </span>All ECE Seniors<br>
+            <br>
+            1) <a href="reports/LitterBot.pdf">Report</a> 2)  <a href="https://github.com/cm-zamudio/Autonomous-Litter-Bot">GitHub</a> 
+            3)  <a href="https://youtu.be/8s1aPp4qPkk">YouTube</a>
+            <br>
+            </td>
+          </tr>
+
+	        <!-- Start (Senior Design)	  -->
+          <tr class="publication">
+            <td style="vertical-align: top;">
+        <img style="width: 100px; height: 93px;" alt="Ibrahim_Ahad" src="people/Ibrahim_Ahad.png"> 
+          <img style="width: 85px; height: 97px;" alt="J_J_Sebastian" src="people/J_J_Sebastian.JPG"><br>
+            <img style="width: 100px; height: 93px;" alt="Jamye_Brothers" src="people/Jamye_Brothers.png"> 
+          <img style="width: 85px; height: 92px;" alt="Sultan Muhammad" src="people/Neil_Rasmussen.png"><br>
+          <img style="width: 95px; height: 92px;" alt="Qasim Rizvi" src="people/Qasim Rizvi.png"><br>
+            </td>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Senior
+      Design Project: ChocBot: Retrofitting Extruder for Chocolate Design </span><a style="color: red;"><span style="font-weight: bold;"></span></a><br><br>
+      (Top Row L
+      to R) Ibrahim_Ahad, J. J. Sebastian, <br>
+      (Middle Row L
+      to R) Jamye Brothers, Neil Rasmussen, <br>
+      (Bottom Row) Qasim Rizvi,	  Aug 2024 - May 2025<br>
+            <span style="font-weight: bold;"><br>
+            </span>All ME Seniors<br>
+            <br>
+            1) <a href="reports/ChocoBot.pdf">Report</a> 2) <a href="https://youtube.com/shorts/p1_u0b1AxlA">Video</a><br>
+            </td>
+          </tr>
+
+	        <!-- Starts here (independent project)	  -->
+          <tr class="publication">
       <td style="vertical-align: top;"><img style="width: 100px; height: 100px;" alt="Ahmed_Shahab" src="people/Ahmed_Shahab.png"><br>
       </td>
       <td style="vertical-align: top;"><span style="font-weight: bold;">Undergraduate Research: Evaluating Efficient Object Detection Models for Real-Time Robotic Applications</span><br> <br>
@@ -154,98 +171,98 @@ Ahmed Shahab (CS senior), Jan 2025 - May 2025 <br>
 		  <br>
 <br>
 		  </td>
-		</tr>
-	  <!-- Ends here (independent project)	  -->
-	  	  <!-- Starts here (independent project)	  -->
-    <tr>
-      <td style="vertical-align: top;"><img style="width: 100px; height: 100px;" alt="mubashir_farooqi" src="people/mubashir_farooqi.png"><br>
-      </td>
-      <td style="vertical-align: top;"><span style="font-weight: bold;">Undergraduate Research: Hiwonder Mentorpi A1 Ackerman Chassis Automomous Vehicle (focus on SLAM)</span><br> <br>
-Mubashir Farooqi (ME senior), Jan 2025 - Apr 2025 <br>
-		  <br>
-	  1) <a href="reports/Hiwonder_SLAM.pdf"> Report</a>  2) <a href="https://github.com/mubashirfarooqi/Hiwonder.git"> GitHub Instructions</a>
-		  <br>
-<br>
-		  </td>
-		</tr>
-	  <!-- Ends here (independent project)	  -->
-	  <!-- Starts here (independent project)	  -->
-    <tr>
-      <td style="vertical-align: top;"><img style="width: 100px; height: 100px;" alt="Aaron Griffith" src="people/Aaron_Griffith.jpg"><br>
-      </td>
-      <td style="vertical-align: top;"><span style="font-weight: bold;">Undergraduate Research: Data Driven Ergonomic Design of a Passive Spinal
-Exoskeleton</span><br> <br>
-Aaron Griffith (ME senior), Aug 2024 - Dec 2024 <br>
-		  <br>
-	  <a href="reports/Exo_Design.pdf"> Report</a>
-		  <br>
-<br>
-		  </td>
-		</tr>
-	  <!-- Ends here (independent project)	  -->
-	  <!-- Starts here (independent project)	  -->
-    <tr>
-      <td style="vertical-align: top;"><img style="width: 100px; height: 100px;" alt="Yamin Mir" src="people/Yamin_Mir.png"><br>
-      </td>
-      <td style="vertical-align: top;"><p><span style="font-weight: bold;">Summer internship: Car navigation using Aruco Markers (UIC GPIP program)</span><br>
-  <a href="https://github.com/MirYamin123/Car-with-Aruco-Marker-detection"> Github files</a> 
-		  (June 2024 - August 2025)
-  <br><br>
-        <b>Undergraduate Research: Design and Control of Autonomous Car</b><br> 
-			 <a href="reports/AutonomousCar.pdf"> Autonomous Car</a> 
-			(Aug 2024 - May 2025)
-           <br> <br>
-          Yamin Mir (ME sophomore), June 2024 - May 2025 <br>
- 
-        </p>
-		  </td>
-		</tr>
-	  <!-- Ends here (independent project)	  -->
-	  <!-- Starts here (independent project)	  -->
-    <tr>
-      <td style="vertical-align: top;"><img style="width: 100px; height: 100px;" alt="Adam_Trojak" src="people/Adam_Trojak.png"><br>
-      </td>
-      <td style="vertical-align: top;"><span style="font-weight: bold;">Summer internship: Robot Data Visualization (UIC GPIP program)</span><br> <br>
-Adam_Trojak (CS sophomore), June 2024 - Aug 2024 <br>
-		  <br>
-      1) <a href="https://www.youtube.com/watch?v=jYlf2gbSums&feature=youtu.be"> Visualization Demo</a>
-	  2) <a href="https://github.com/Trojak0/mujoco-simulate-csv-replay"> Github files</a>
-		 
-		  <br>
-<br>
-		  </td>
-		</tr>
-	  <!-- Ends here (independent project)	  -->
-	  <!-- Starts here (independent project)	  -->
-    <tr>
-      <td style="vertical-align: top;"><img style="width: 100px; height: 100px;" alt="Trenton_Coleman" src="people/Trenton_Coleman.png"><br>
-      </td>
-      <td style="vertical-align: top;"><span style="font-weight: bold;">Summer internship: Webpage Design (UIC GPIP program)</span><br> <br>
-Trenton Coleman (CS sophomore), June 2024 - Aug 2024 <br>
-		  <br>
-      1) <a href="https://pab47.github.io/courses.html"> Online courses landing page</a>
-	  2) <a href="https://pab47.github.io/mechatronics/spring23b.html"> Mechatronics Project Page</a>
-		  <br>
-		<br>
-		  </td>
-		</tr>
-<!-- Ends here (independent project)	  -->
-	  	  	  	 <!-- Starts here (independent project)	  -->
-    <tr>
-      <td style="vertical-align: top;"><img style="width: 100px; height: 100px;" alt="Shane_Kilmas" src="people/Shane_Kilmas.png"><br>
-      </td>
-      <td style="vertical-align: top;"><span style="font-weight: bold;">Summer internship: Reinforcement Learning on Flappy Bird Game (UIC GPIP program)</span><br> <br>
-Shane Kilmas (CS sophomore), June 2024 - Aug 2024 <br>
-		  <br>
-      <a href="reports/FlappyBird.zip"> Flappy Bird Code</a>
-	   
-		  <br>
-<br>
-		  </td>
-		</tr>
-	  <!-- Ends here (independent project)	  -->
-	  	   <!-- Start (Senior Design)	  -->
-<tr>
+		      </tr>
+
+          <!-- Starts here (independent project)	  -->
+          <tr class="publication">
+            <td style="vertical-align: top;"><img style="width: 100px; height: 100px;" alt="mubashir_farooqi" src="people/mubashir_farooqi.png"><br>
+            </td>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Undergraduate Research: Hiwonder Mentorpi A1 Ackerman Chassis Automomous Vehicle (focus on SLAM)</span><br> <br>
+      Mubashir Farooqi (ME senior), Jan 2025 - Apr 2025 <br>
+            <br>
+          1) <a href="reports/Hiwonder_SLAM.pdf"> Report</a>  2) <a href="https://github.com/mubashirfarooqi/Hiwonder.git"> GitHub Instructions</a>
+            <br>
+      <br>
+            </td>
+          </tr>
+        
+          <!-- Starts here (independent project)	  -->
+          <tr class="publication">
+            <td style="vertical-align: top;"><img style="width: 100px; height: 100px;" alt="Aaron Griffith" src="people/Aaron_Griffith.jpg"><br>
+            </td>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Undergraduate Research: Data Driven Ergonomic Design of a Passive Spinal
+      Exoskeleton</span><br> <br>
+      Aaron Griffith (ME senior), Aug 2024 - Dec 2024 <br>
+            <br>
+          <a href="reports/Exo_Design.pdf"> Report</a>
+            <br>
+      <br>
+            </td>
+          </tr>
+	  
+          <!-- Starts here (independent project)	  -->
+          <tr class="publication">
+            <td style="vertical-align: top;"><img style="width: 100px; height: 100px;" alt="Yamin Mir" src="people/Yamin_Mir.png"><br>
+            </td>
+            <td style="vertical-align: top;"><p><span style="font-weight: bold;">Summer internship: Car navigation using Aruco Markers (UIC GPIP program)</span><br>
+        <a href="https://github.com/MirYamin123/Car-with-Aruco-Marker-detection"> Github files</a> 
+            (June 2024 - August 2025)
+        <br><br>
+              <b>Undergraduate Research: Design and Control of Autonomous Car</b><br> 
+            <a href="reports/AutonomousCar.pdf"> Autonomous Car</a> 
+            (Aug 2024 - May 2025)
+                <br> <br>
+                Yamin Mir (ME sophomore), June 2024 - May 2025 <br>
+      
+              </p>
+            </td>
+          </tr>
+	  
+          <!-- Starts here (independent project)	  -->
+          <tr class="publication">
+            <td style="vertical-align: top;"><img style="width: 100px; height: 100px;" alt="Adam_Trojak" src="people/Adam_Trojak.png"><br>
+            </td>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Summer internship: Robot Data Visualization (UIC GPIP program)</span><br> <br>
+      Adam_Trojak (CS sophomore), June 2024 - Aug 2024 <br>
+            <br>
+            1) <a href="https://www.youtube.com/watch?v=jYlf2gbSums&feature=youtu.be"> Visualization Demo</a>
+          2) <a href="https://github.com/Trojak0/mujoco-simulate-csv-replay"> Github files</a>
+          
+            <br>
+      <br>
+            </td>
+          </tr>
+	  
+          <!-- Starts here (independent project)	  -->
+          <tr class="publication">
+            <td style="vertical-align: top;"><img style="width: 100px; height: 100px;" alt="Trenton_Coleman" src="people/Trenton_Coleman.png"><br>
+            </td>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Summer internship: Webpage Design (UIC GPIP program)</span><br> <br>
+      Trenton Coleman (CS sophomore), June 2024 - Aug 2024 <br>
+            <br>
+            1) <a href="https://pab47.github.io/courses.html"> Online courses landing page</a>
+          2) <a href="https://pab47.github.io/mechatronics/spring23b.html"> Mechatronics Project Page</a>
+            <br>
+          <br>
+            </td>
+          </tr>
+
+          <!-- Starts here (independent project)	  -->
+          <tr class="publication">
+            <td style="vertical-align: top;"><img style="width: 100px; height: 100px;" alt="Shane_Kilmas" src="people/Shane_Kilmas.png"><br>
+            </td>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Summer internship: Reinforcement Learning on Flappy Bird Game (UIC GPIP program)</span><br> <br>
+      Shane Kilmas (CS sophomore), June 2024 - Aug 2024 <br>
+            <br>
+            <a href="reports/FlappyBird.zip"> Flappy Bird Code</a>
+          
+            <br>
+      <br>
+            </td>
+          </tr>
+	  
+	  	    <!-- Start (Senior Design)	  -->
+          <tr class="publication">
       <td style="vertical-align: top;">
 	 <img style="width: 100px; height: 93px;" alt="Alyssa Mejia" src="people/Alyssa Mejia.jpg"> 
 	  <img style="width: 85px; height: 97px;" alt="Edward Gonzalez" src="people/Edward Gonzalez.jpg"><br>
@@ -265,823 +282,822 @@ to R) Taiga Larkin, Sultan Muhammad, <br>
       <br>
       1) <a href="reports/Robot Arm Teleoperation.pdf">Report</a> 2) <a href="reports/Robot Arm Teleoperation Poster.pdf">Poster</a><br>
       </td>
-    </tr>
-<!-- Ends (senior Design)	  --> 
-	  <!-- Start (Senior Design)	  -->
-<tr>
-      <td style="vertical-align: top;">
-      </td>
-      <td style="vertical-align: top;"><span style="font-weight: bold;">Senior
-Design Project: An end-effector for a humanoid robot</span><a style="color: red;"><span style="font-weight: bold;"></span></a><br><br>
-(Top Row L
-to R) Jeremy Ovalle,  Andres Jimenez,Nick Casale, <br>
-(Bottom Row L
-to R)  Matt Rothenbaum, Praveen Ghimire , Aug 2023 - May 2024<br>
+          </tr>
+      <!-- Ends (senior Design)	  --> 
+          <!-- Start (Senior Design)	  -->
+          <tr class="publication">
+            <td style="vertical-align: top;">
+            </td>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Senior
+      Design Project: An end-effector for a humanoid robot</span><a style="color: red;"><span style="font-weight: bold;"></span></a><br><br>
+      (Top Row L
+      to R) Jeremy Ovalle,  Andres Jimenez,Nick Casale, <br>
+      (Bottom Row L
+      to R)  Matt Rothenbaum, Praveen Ghimire , Aug 2023 - May 2024<br>
 
-      <span style="font-weight: bold;"><br>
-      </span>All ME Seniors<br>
+            <span style="font-weight: bold;"><br>
+            </span>All ME Seniors<br>
+            <br>
+            <a href="reports/End Effector for Robot.pdf">Report</a> 
+            </td>
+          </tr>
+      <!-- Ends (senior Design)	  -->
+          <!-- Starts here (independent project)	  -->
+          <tr class="publication">
+            <td style="vertical-align: top;"><img style="width: 100px; height: 100px;" alt="Saul Ortiz" src="people/Saul Ortiz.jpg"><br>
+            </td>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Undergraduate research: Joystick-based control of a small-size humanoid robot</span><br> <br>
+      Saul Ortiz (ME senior), Jan. 2024 - May 2024 <br>
+            <br>
+            <a href="https://youtu.be/_Rs9yqkoHKY">YouTube Video</a> 
+            <br>
       <br>
-      <a href="reports/End Effector for Robot.pdf">Report</a> 
-      </td>
-    </tr>
-<!-- Ends (senior Design)	  -->
-	  <!-- Starts here (independent project)	  -->
-    <tr>
-      <td style="vertical-align: top;"><img style="width: 100px; height: 100px;" alt="Saul Ortiz" src="people/Saul Ortiz.jpg"><br>
-      </td>
-      <td style="vertical-align: top;"><span style="font-weight: bold;">Undergraduate research: Joystick-based control of a small-size humanoid robot</span><br> <br>
-Saul Ortiz (ME senior), Jan. 2024 - May 2024 <br>
-		  <br>
-       <a href="https://youtu.be/_Rs9yqkoHKY">YouTube Video</a> 
-		  <br>
-<br>
-		  </td>
-		</tr>
-<!-- Ends here (independent project)	  -->
-	  	  	 <!-- Starts here (independent project)	  -->
-    <tr>
-      <td style="vertical-align: top;"><img style="width: 100px; height: 100px;" alt="Conrad_Domagala" src="people/Conrad_Domagala.jpeg"><br>
-      </td>
-      <td style="vertical-align: top;"><span style="font-weight: bold;">Summer internship: MuJoCo User Interface programming (UIC GPIP program)</span><br> <br>
-Conrad Domagala (CS sophomore), June 2023 - Aug 2023 <br>
-		  <br>
-      1) <a href="reports/Robot_GUI_Instructions.pdf"> Robot GUI Instructions</a>
-	  2) <a href="https://github.com/cd-1578/RoboGUI"> Github files</a>
-		 
-		  <br>
-<br>
-		  </td>
-		</tr>
-	  <!-- Ends here (independent project)	  -->
-	  	 <!-- Starts here (independent project)	  -->
-    <tr>
-      <td style="vertical-align: top;"><img style="width: 100px; height: 100px;" alt="Daniel_Barajas" src="people/Daniel_Barajas.jpg"><br>
-      </td>
-      <td style="vertical-align: top;"><span style="font-weight: bold;">Summer internship: MuJoCo User Interface programming (UIC GPIP program)</span><br> <br>
-Daniel Barajas (CS sophomore), June 2023 - Aug 2023 <br>
-		  <br>
-      <a href="reports/MuJoCo UI Projectile Game.zip">MuJoCo UI Projectile Game (C files)</a><br>
-<br>
-		  </td>
-		</tr>
-<!-- Ends here (independent project)	  -->
-	 <!-- Starts here (independent project)	  -->
-    <tr>
-      <td style="vertical-align: top;"><img style="width: 100px; height: 100px;" alt="Amer_Almhtachem" src="people/Amer_Almhtachem.JPG"><br>
-      </td>
-      <td style="vertical-align: top;"><span style="font-weight: bold;">Summer internship: Cable Management System for Quadruped Robots (UIC GPIP program)</span><br> <br>
-Amer Almhtachem (ME sophomore), June 2023 - Aug 2023 <br>
-		  <br>
-      <a href="reports/A1_cable_management_CAD.zip">Cable Management CAD files</a><br>
-<br>
-		  </td>
-		</tr>
-<!-- Ends here (independent project)	  -->
-	   <!-- Start (Senior Design)	  -->
-<tr>
-      <td style="vertical-align: top;">
-	 <img style="width: 100px; height: 93px;" alt="Ahmed Al Khuridah" src="people/Ahmed Al Khuridah.png"> 
-	  <img style="width: 85px; height: 97px;" alt="Danielle Lee" src="people/Danielle Lee.png"><br>
-      <img style="width: 100px; height: 93px;" alt="Gabriel Barba" src="people/Gabriel Barba.png"> 
-	  <img style="width: 85px; height: 92px;" alt="Kali Giancana" src="people/Kali Giancana.png"><br>
-	  <img style="width: 95px; height: 92px;" alt="Sebastian Kowal" src="people/Sebastian Kowal.png"><br>
-      </td>
-      <td style="vertical-align: top;"><span style="font-weight: bold;">Senior
-Design Project: Hopping Luxo Jr. Lamp </span><a style="color: red;"><span style="font-weight: bold;"></span></a><br><br>
-(Top Row L
-to R) Ahmed Al Khuridah, Danielle Lee, <br>
-(Middle Row L
-to R)  Gabriel Barba, Kali Giancana, <br>
-(Bottom Row) Sebastian Kowal	  Aug 2022 - May 2023<br>
-      <span style="font-weight: bold;"><br>
-      </span>All ME Seniors<br>
-      <br>
-      1) <a href="reports/Luxo_Jr_Lamp.pdf">Report</a> 2) <a href="https://youtu.be/W1CabKbOciY">Video</a><br>
-      </td>
-    </tr>
-<!-- Ends (senior Design)	  --> 
-	
- <!-- Start (Senior Design)	  -->
-<tr>
-      <td style="vertical-align: top;">
-	 <img style="width: 100px; height: 93px;" alt="Alejandro Gonzales" src="people/Alejandro Gonzales.jpg"> 
-	  <img style="width: 85px; height: 97px;" alt="Alvin Le" src="people/Alvin Le.png"><br>
-      <img style="width: 100px; height: 93px;" alt="Liam Doherty" src="people/Liam Doherty.jpg"> 
-	  <img style="width: 95px; height: 92px;" alt="Man Pham" src="people/Man Pham.jpg"><br>
-	  <img style="width: 95px; height: 92px;" alt="Sean Burns" src="people/Sean Burns.jpg"><br>
-      </td>
-      <td style="vertical-align: top;"><span style="font-weight: bold;">Senior
-Design Project: Manipulator mounting system</span><a style="color: red;"><span style="font-weight: bold;"></span></a><br><br>
-(Top Row L
-to R) Alejandro Gonzales, Alvin Le, <br>
-(Middle Row L
-to R)  Liam Doherty, Man Pham, <br>
-(Bottom Row) Sean Burns,		  Aug 2022 - May 2023<br>
-      <span style="font-weight: bold;"><br>
-      </span>All ME Seniors<br>
+            </td>
+          </tr>
 
+                <!-- Starts here (independent project)	  -->
+          <tr class="publication">
+            <td style="vertical-align: top;"><img style="width: 100px; height: 100px;" alt="Conrad_Domagala" src="people/Conrad_Domagala.jpeg"><br>
+            </td>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Summer internship: MuJoCo User Interface programming (UIC GPIP program)</span><br> <br>
+      Conrad Domagala (CS sophomore), June 2023 - Aug 2023 <br>
+            <br>
+            1) <a href="reports/Robot_GUI_Instructions.pdf"> Robot GUI Instructions</a>
+          2) <a href="https://github.com/cd-1578/RoboGUI"> Github files</a>
+          
+            <br>
       <br>
+            </td>
+          </tr>
+          
+            <!-- Starts here (independent project)	  -->
+          <tr class="publication">
+            <td style="vertical-align: top;"><img style="width: 100px; height: 100px;" alt="Daniel_Barajas" src="people/Daniel_Barajas.jpg"><br>
+            </td>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Summer internship: MuJoCo User Interface programming (UIC GPIP program)</span><br> <br>
+      Daniel Barajas (CS sophomore), June 2023 - Aug 2023 <br>
+            <br>
+            <a href="reports/MuJoCo UI Projectile Game.zip">MuJoCo UI Projectile Game (C files)</a><br>
+      <br>
+            </td>
+          </tr>
 
-      1) <a href="reports/Mounting_system_quadruped.pdf">Report</a> 
-      2) <a href="reports/Mounting_sytem_CAD_Files.zip">CAD Files</a>
-	  3) <a href="reports/Makerspace Fabrication Instructions.pdf">Makerspace Fabrication Instructions</a>  
-		  <br>
-      </td>
-    </tr>
-<!-- Ends (senior Design)	  --> 
-	    <!-- Starts here (independent project)	  -->
-    <tr>
-      <td style="vertical-align: top;"><img style="width: 100px; height: 100px;" alt="aleena_albert" src="people/aleena_albert.png"><br>
-      </td>
-      <td style="vertical-align: top;"><span style="font-weight: bold;">Undergraduate research: April tag-based drone following (partly supported by NSF REU)</span><br> <br>
-Aleena Albert (ME senior), Aug. 2022 - May 2022 <br>
-		   
-		  <br>
-      1) <a href="https://youtu.be/wJ9mwitagVo">YouTube Video</a> 2) <a href="https://github.com/chnuggie/UICspring2023RoboticsLab">Code on Github</a>
-		  <br>
-<br>
-		  </td>
-		</tr>
-<!-- Ends here (independent project)	  -->
-	  <!-- Starts here (independent project)	  -->
-    <tr>
-      <td style="vertical-align: top;"><br>
-</td>
-      <td style="vertical-align: top;"><span style="font-weight: bold;">Summer internship: Redesign of Robotics and Motion Lab website (UIC GPIP)</span><br> <br>
-Emily Phan (CS sophomore), June 2022 - Aug 2022 <br> 
-<br>
-      <a href="https://pab47.github.io">Website</a><br>
+        <!-- Starts here (independent project)	  -->
+          <tr class="publication">
+            <td style="vertical-align: top;"><img style="width: 100px; height: 100px;" alt="Amer_Almhtachem" src="people/Amer_Almhtachem.JPG"><br>
+            </td>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Summer internship: Cable Management System for Quadruped Robots (UIC GPIP program)</span><br> <br>
+      Amer Almhtachem (ME sophomore), June 2023 - Aug 2023 <br>
+            <br>
+            <a href="reports/A1_cable_management_CAD.zip">Cable Management CAD files</a><br>
       <br>
-      </td>
-    </tr>
-	   <!-- Ends here (independent project)	  -->
-	    <!-- Starts here (independent project)	  -->
-    <tr>
-      <td style="vertical-align: top;"><img style="width: 100px; height: 100px;" alt="calvin_bitakis" src="people/calvin_bitakis.png"><br>
-      </td>
-      <td style="vertical-align: top;"><span style="font-weight: bold;">Summer internship: Visualization for robotic controller development (UIC GPIP program)</span><br> <br>
-Calvin Bitakis (ME junior), June 2022 - Aug 2022 <br>
-		  <br>
-      <a href="reports/robot_data_viz_MATLAB.zip">MATLAB app for visualization</a><br>
-<br>
-		  </td>
-		</tr>
-<!-- Ends here (independent project)	  -->
-	  <!-- Start (Senior Design)	  -->
-<tr>
-      <td style="vertical-align: top;"><img style="width: 100px; height: 93px;" alt="emily_hernandez" src="people/emily_hernandez.png"> <img style="width: 100px; height: 97px;" alt="alex_domagala" src="people/alex_domagala.png"><br>
-      <img style="width: 100px; height: 93px;" alt="pranay_singh" src="people/pranay_singh.png"> <img style="width: 95px; height: 92px;" alt="jon_perthel" src="people/jon_perthel.png"><br>
-      </td>
-      <td style="vertical-align: top;"><span style="font-weight: bold;">Senior
-Design Project: Computer vision-based obstacle avoidance system for a quadruped robot</span><a style="color: red;"><span style="font-weight: bold;"></span></a><br><br>
-(Top Row L
-to R) Emily Hernandez, Alex Domagala <br>
-(Bottom Row L
-to R)  Pranay Singh, Jon Perthel, Aug 2021 - May 2022<br>
+            </td>
+          </tr>
 
-      <span style="font-weight: bold;"><br>
-      </span>All ECE Seniors<br>
+          <!-- Start (Senior Design)	  -->
+      <tr class="publication">
+            <td style="vertical-align: top;">
+        <img style="width: 100px; height: 93px;" alt="Ahmed Al Khuridah" src="people/Ahmed Al Khuridah.png"> 
+          <img style="width: 85px; height: 97px;" alt="Danielle Lee" src="people/Danielle Lee.png"><br>
+            <img style="width: 100px; height: 93px;" alt="Gabriel Barba" src="people/Gabriel Barba.png"> 
+          <img style="width: 85px; height: 92px;" alt="Kali Giancana" src="people/Kali Giancana.png"><br>
+          <img style="width: 95px; height: 92px;" alt="Sebastian Kowal" src="people/Sebastian Kowal.png"><br>
+            </td>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Senior
+      Design Project: Hopping Luxo Jr. Lamp </span><a style="color: red;"><span style="font-weight: bold;"></span></a><br><br>
+      (Top Row L
+      to R) Ahmed Al Khuridah, Danielle Lee, <br>
+      (Middle Row L
+      to R)  Gabriel Barba, Kali Giancana, <br>
+      (Bottom Row) Sebastian Kowal	  Aug 2022 - May 2023<br>
+            <span style="font-weight: bold;"><br>
+            </span>All ME Seniors<br>
+            <br>
+            1) <a href="reports/Luxo_Jr_Lamp.pdf">Report</a> 2) <a href="https://youtu.be/W1CabKbOciY">Video</a><br>
+            </td>
+          </tr>
+      <!-- Ends (senior Design)	  --> 
+        
+      <!-- Start (Senior Design)	  -->
+      <tr class="publication">
+            <td style="vertical-align: top;">
+        <img style="width: 100px; height: 93px;" alt="Alejandro Gonzales" src="people/Alejandro Gonzales.jpg"> 
+          <img style="width: 85px; height: 97px;" alt="Alvin Le" src="people/Alvin Le.png"><br>
+            <img style="width: 100px; height: 93px;" alt="Liam Doherty" src="people/Liam Doherty.jpg"> 
+          <img style="width: 95px; height: 92px;" alt="Man Pham" src="people/Man Pham.jpg"><br>
+          <img style="width: 95px; height: 92px;" alt="Sean Burns" src="people/Sean Burns.jpg"><br>
+            </td>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Senior
+      Design Project: Manipulator mounting system</span><a style="color: red;"><span style="font-weight: bold;"></span></a><br><br>
+      (Top Row L
+      to R) Alejandro Gonzales, Alvin Le, <br>
+      (Middle Row L
+      to R)  Liam Doherty, Man Pham, <br>
+      (Bottom Row) Sean Burns,		  Aug 2022 - May 2023<br>
+            <span style="font-weight: bold;"><br>
+            </span>All ME Seniors<br>
 
-      <br>
+            <br>
 
-      1) <a href="reports/Quadruped_vision_report.pdf">Report</a> 2) <a href="reports/Quadruped_vision_presentation.pdf">Presentation</a> 3) <a href="https://youtu.be/Jp8ZNr-G5ag">Video</a> 4) <a href="https://github.com/jonathanperthel/PathVision">Github</a> <br>
-      </td>
-    </tr>
-<!-- Ends (senior Design)	  --> 
-	 	  <!-- Start (Senior Design)	  -->
-<tr>
-      <td style="vertical-align: top;"><img style="width: 100px; height: 93px;" alt="eric_najera" src="people/eric_najera.png"> <img style="width: 100px; height: 97px;" alt="kyle_kendra" src="people/kyle_kendra.png"><br>
-      <img style="width: 100px; height: 93px;" alt="joe_downie" src="people/joe_downie.png"> <img style="width: 95px; height: 92px;" alt="yuki_nojima" src="people/yuki_nojima.png"><br>
-      </td>
-      <td style="vertical-align: top;"><span style="font-weight: bold;">Senior
-Design Project: Sawfly Larvae inspired swarm robots</span><a style="color: red;"><span style="font-weight: bold;"></span></a><br><br>
-(Top Row L
-to R) Eric Najera, Kyle Kendra, <br>
-(Bottom Row L
-to R)  Joe Downie, Yuki Nojima, Aug 2021 - May 2022<br>
+            1) <a href="reports/Mounting_system_quadruped.pdf">Report</a> 
+            2) <a href="reports/Mounting_sytem_CAD_Files.zip">CAD Files</a>
+          3) <a href="reports/Makerspace Fabrication Instructions.pdf">Makerspace Fabrication Instructions</a>  
+            <br>
+            </td>
+          </tr>
+      <!-- Ends (senior Design)	  --> 
+            <!-- Starts here (independent project)	  -->
+          <tr class="publication">
+            <td style="vertical-align: top;"><img style="width: 100px; height: 100px;" alt="aleena_albert" src="people/aleena_albert.png"><br>
+            </td>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Undergraduate research: April tag-based drone following (partly supported by NSF REU)</span><br> <br>
+      Aleena Albert (ME senior), Aug. 2022 - May 2022 <br>
+            
+            <br>
+            1) <a href="https://youtu.be/wJ9mwitagVo">YouTube Video</a> 2) <a href="https://github.com/chnuggie/UICspring2023RoboticsLab">Code on Github</a>
+            <br>
+      <br>
+            </td>
+          </tr>
 
-      <span style="font-weight: bold;"><br>
-      </span>All ME Seniors<br>
+          <!-- Starts here (independent project)	  -->
+          <tr class="publication">
+            <td style="vertical-align: top;"><br>
+      </td>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Summer internship: Redesign of Robotics and Motion Lab website (UIC GPIP)</span><br> <br>
+      Emily Phan (CS sophomore), June 2022 - Aug 2022 <br> 
+      <br>
+            <a href="https://pab47.github.io">Website</a><br>
+            <br>
+            </td>
+          </tr>
+          
+            <!-- Starts here (independent project)	  -->
+          <tr class="publication">
+            <td style="vertical-align: top;"><img style="width: 100px; height: 100px;" alt="calvin_bitakis" src="people/calvin_bitakis.png"><br>
+            </td>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Summer internship: Visualization for robotic controller development (UIC GPIP program)</span><br> <br>
+      Calvin Bitakis (ME junior), June 2022 - Aug 2022 <br>
+            <br>
+            <a href="reports/robot_data_viz_MATLAB.zip">MATLAB app for visualization</a><br>
+      <br>
+            </td>
+          </tr>
 
-      <br>
+          <!-- Start (Senior Design)	  -->
+      <tr class="publication">
+            <td style="vertical-align: top;"><img style="width: 100px; height: 93px;" alt="emily_hernandez" src="people/emily_hernandez.png"> <img style="width: 100px; height: 97px;" alt="alex_domagala" src="people/alex_domagala.png"><br>
+            <img style="width: 100px; height: 93px;" alt="pranay_singh" src="people/pranay_singh.png"> <img style="width: 95px; height: 92px;" alt="jon_perthel" src="people/jon_perthel.png"><br>
+            </td>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Senior
+      Design Project: Computer vision-based obstacle avoidance system for a quadruped robot</span><a style="color: red;"><span style="font-weight: bold;"></span></a><br><br>
+      (Top Row L
+      to R) Emily Hernandez, Alex Domagala <br>
+      (Bottom Row L
+      to R)  Pranay Singh, Jon Perthel, Aug 2021 - May 2022<br>
 
-      1) <a href="reports/Sawfly_report.pdf">Report</a> 2) <a href="reports/Sawfly_presentation.pdf">Presentation</a> 3) <a href="https://youtu.be/CzphgU75FCc">Video</a><br>
-      </td>
-    </tr>
-<!-- Ends (senior Design)	  --> 
-	  <!-- Start (Senior Design)	  -->
-<tr>
-      <td style="vertical-align: top;">
-      </td>
-      <td style="vertical-align: top;"><span style="font-weight: bold;">Senior
-Design Project: An actuator inspired by the chameleon's tongue</span><a style="color: red;"><span style="font-weight: bold;"></span></a><br><br>
-(Top Row L
-to R) Baneza Hernandez, Mohammad Ibrahim Raffay, <br>
-(Bottom Row L
-to R)  Gregory Dachowski, Zach Williams, Aug 2021 - May 2022<br>
+            <span style="font-weight: bold;"><br>
+            </span>All ECE Seniors<br>
 
-      <span style="font-weight: bold;"><br>
-      </span>All ME Seniors<br>
+            <br>
 
-      <br>
+            1) <a href="reports/Quadruped_vision_report.pdf">Report</a> 2) <a href="reports/Quadruped_vision_presentation.pdf">Presentation</a> 3) <a href="https://youtu.be/Jp8ZNr-G5ag">Video</a> 4) <a href="https://github.com/jonathanperthel/PathVision">Github</a> <br>
+            </td>
+          </tr>
+      <!-- Ends (senior Design)	  --> 
+            <!-- Start (Senior Design)	  -->
+      <tr class="publication">
+            <td style="vertical-align: top;"><img style="width: 100px; height: 93px;" alt="eric_najera" src="people/eric_najera.png"> <img style="width: 100px; height: 97px;" alt="kyle_kendra" src="people/kyle_kendra.png"><br>
+            <img style="width: 100px; height: 93px;" alt="joe_downie" src="people/joe_downie.png"> <img style="width: 95px; height: 92px;" alt="yuki_nojima" src="people/yuki_nojima.png"><br>
+            </td>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Senior
+      Design Project: Sawfly Larvae inspired swarm robots</span><a style="color: red;"><span style="font-weight: bold;"></span></a><br><br>
+      (Top Row L
+      to R) Eric Najera, Kyle Kendra, <br>
+      (Bottom Row L
+      to R)  Joe Downie, Yuki Nojima, Aug 2021 - May 2022<br>
 
-      1) <a href="reports/Chameleon_Tongue_report.pdf">Report</a> 2) <a href="reports/Chameleon_Tongue_presentation.pdf">Presentation</a> 3) <a href="https://youtu.be/Ivo-NA6rvM0">Video</a><br>
-      </td>
-    </tr>
-<!-- Ends (senior Design)	  -->
-<!-- Starts here (independent project)	  -->
-    <tr>
-      <td style="vertical-align: top;"><img style="width: 100px; height: 100px;" alt="jonathan_garcia" src="people/jonathan_garcia.jpg"><br>
-</td>
-      <td style="vertical-align: top;"><span style="font-weight: bold;">Undergraduate research: Tic-Tac-Toe playing robot (NSF-REU)</span><br>
-Jonathan Garcia (ME senior), May 2021 - May 2022 <br>
-<br>
-      <a href="https://youtu.be/GSUqOxDhg6w">YouTube Video</a><br>
-      <br>
-      </td>
-    </tr>
-<!-- Ends here (independent project)	  -->
-    <tr>
-      <td style="vertical-align: top;"><br>
-      </td>
-      <td style="vertical-align: top;"><span style="font-weight: bold;">Summer internship: Website design for robotics courses (UIC GPIP program)</span><br>
-	Mohamed Hassan (CS sophomore), June 2021 - Aug 2021 <br>
-      <br>
-1) Legged robotics (<a href="legs.html">link</a>)<br>
-2) Robotics  (<a href="robotics.html">link</a>)<br>
-      <br>
-      </td>
-    </tr>
-<!-- Starts here	  -->
-    <tr>
-      <td style="vertical-align: top;"><img style="width: 100px; height: 100px;" alt="NguyenHoa_Pham" src="people/nguyenhoa_pham.jpg"><br>
-</td>
-      <td style="vertical-align: top;"><span style="font-weight: bold;">Summer internship: Data mining of human walking data (UIC GPIP program)</span><br>
-Nguyen Hoa Pham (CS senior), June 2021 - Aug 2021 <br>
-<br>
-      <a href="reports/Data_mining_walking.pdf">Project presentation</a><br>
-      <br>
-      </td>
-    </tr>
-    <tr>
-      <td style="vertical-align: top;"><img style="width: 100px; height: 100px;" alt="tanmay_mittal" src="people/tanmay_mittal.jpg"><br>
-      </td>
-      <td style="vertical-align: top;"><span style="font-weight: bold;">Summer internship: Trajectory generation (UIC GPIP program)</span><br>
-Tanmay Mittal (ME sophomore), June 2021 - Aug 2021 <br>
-<br>
-      <a href="reports/Trajectory_Generation.pdf">Project presentation</a><br>
-      <br>
- </td>
-    </tr>
-    <tr>
-      <td style="vertical-align: top;"><img style="width: 100px; height: 100px;" alt="michael_hernandez" src="people/michael_hernandez.jpg"><br>
-      </td>
-      <td style="vertical-align: top;"><span style="font-weight: bold;">Summer internship: Visualization of UAV-UGV routes, Army Research Lab project (UIC GPIP program)</span><br>
-      Michael Hernandez (ME sophomore), June 2021 - Aug 2021 <br>
-      <br>
-      <a href="reports/uav_ugv_visualization.pdf">Project presentation</a><br>
-      <br>
-      </td>
-    </tr>
-<!-- Ends here	  -->	  
-<tr>
-      <td style="vertical-align: top;"><br>
-      </td>
-      <td style="vertical-align: top;"><span style="font-weight: bold;">Senior
-Design Project: Inchworm that can move straight and turn</span>
-     <br>Alex Lewandowski, Daniel Kulach, Omer A. Durrani, Matt A. Halverson, and Mikayla A. Sirovatka, Aug 2020 - May 2021<br><br>All ME Seniors<br>
-      <br>
-1)
-      <a href="reports/Inchworm_report2.pdf">Project Report</a> 2) <a href="reports/Inchworm_presentation.pdf">Project Presentation</a> 3) <a href="reports/Inchworm_summary.pdf">Project Summary</a> 4) <a href="https://vimeo.com/532506169">Video</a><br><br></td>
-    </tr>
-    <tr>
-      <td style="vertical-align: top;"><br>
-      </td>
-      <td style="vertical-align: top;"><span style="font-weight: bold;">Senior
-Design Project: Automated Wet Wipe Sampling System</span><br>Mikhail W. Clayton, Amer Khalil, Sebastian C. Mihulet, Umar M. Siddiqui, and Sulieman Sarmad, 
-Aug 2020 - May 2021<br> <br>All ME Seniors<br>
-      <br>
-1)
-      <a href="reports/automated_report.pdf">Project Report&nbsp;</a> 2) <a href="reports/automated_presentation.pdf">Project Presentation</a>&nbsp;3) <a href="https://vimeo.com/532513318">Video</a><br><br></td>
-    </tr>
-    <tr>
-      <td style="vertical-align: top;"><br>
-      </td>
-      <td style="vertical-align: top;"><span style="font-weight: bold;">Senior
-Design Project: Spider Web Catapult</span><br>
-John Gerig, Tom Bates, Manuel Avitia, Gunnar Waldvogel, Tesfay Legesse, and Justin Washington, Aug 2020 - May 2021<br>
+            <span style="font-weight: bold;"><br>
+            </span>All ME Seniors<br>
 
-<br>
-All ME Seniors<br>
+            <br>
 
-      <br>
-1)&nbsp;
+            1) <a href="reports/Sawfly_report.pdf">Report</a> 2) <a href="reports/Sawfly_presentation.pdf">Presentation</a> 3) <a href="https://youtu.be/CzphgU75FCc">Video</a><br>
+            </td>
+          </tr>
+      <!-- Ends (senior Design)	  --> 
+          <!-- Start (Senior Design)	  -->
+      <tr class="publication">
+            <td style="vertical-align: top;">
+            </td>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Senior
+      Design Project: An actuator inspired by the chameleon's tongue</span><a style="color: red;"><span style="font-weight: bold;"></span></a><br><br>
+      (Top Row L
+      to R) Baneza Hernandez, Mohammad Ibrahim Raffay, <br>
+      (Bottom Row L
+      to R)  Gregory Dachowski, Zach Williams, Aug 2021 - May 2022<br>
 
-      <a href="reports/Slingshot_report.pdf">Project Report</a>&nbsp; 2) <a href="reports/Slingshot_presentation.pdf">Project Presentation</a> 3) <a href="reports/Slingshot_poster.pdf">Project Poster</a> 4) <a href="https://vimeo.com/532476183">Video</a><br><br>
-      </td>
-    </tr>
-<tr>
-      <td style="vertical-align: top;"><img style="width: 100px; height: 100px;" alt="anthony_dudlo" src="people/anthony_dudlo.jpg"><br>
-      </td>
-      <td style="vertical-align: top;"><span style="font-weight: bold;">Independent
-Project: Low Cost Security System for a UIC lab using motioneyeos
-open-source security software and raspberry pi single-board computers</span><br>
-      <br>
-Anthony Dudlo (ME Senior), Jan 2020 - May 2020<br>
-      <br>
-      <a href="reports/surveillance.pdf">Project Report</a><br><br>
-      </td>
-    </tr>
-    <tr>
-      <td style="vertical-align: top;"><br>
-      </td>
-      <td style="vertical-align: top;"><span style="font-weight: bold;">Senior
-Design Project: Quadrupedal robot</span><a style="color: red;" href="index.html#inchworm"><span style="font-weight: bold;"></span></a><br>
-Liridona Ashiku, Maha Mohammad, Nick Pippin, and Erik Silva, Aug 2019 - May 2020<br>
+            <span style="font-weight: bold;"><br>
+            </span>All ME Seniors<br>
 
+            <br>
+
+            1) <a href="reports/Chameleon_Tongue_report.pdf">Report</a> 2) <a href="reports/Chameleon_Tongue_presentation.pdf">Presentation</a> 3) <a href="https://youtu.be/Ivo-NA6rvM0">Video</a><br>
+            </td>
+          </tr>
+      <!-- Ends (senior Design)	  -->
+      <!-- Starts here (independent project)	  -->
+          <tr class="publication">
+            <td style="vertical-align: top;"><img style="width: 100px; height: 100px;" alt="jonathan_garcia" src="people/jonathan_garcia.jpg"><br>
+      </td>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Undergraduate research: Tic-Tac-Toe playing robot (NSF-REU)</span><br>
+      Jonathan Garcia (ME senior), May 2021 - May 2022 <br>
+      <br>
+            <a href="https://youtu.be/GSUqOxDhg6w">YouTube Video</a><br>
+            <br>
+            </td>
+          </tr>
+
+          <tr class="publication">
+            <td style="vertical-align: top;"><br>
+            </td>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Summer internship: Website design for robotics courses (UIC GPIP program)</span><br>
+        Mohamed Hassan (CS sophomore), June 2021 - Aug 2021 <br>
+            <br>
+      1) Legged robotics (<a href="legs.html">link</a>)<br>
+      2) Robotics  (<a href="robotics.html">link</a>)<br>
+            <br>
+            </td>
+          </tr>
+      <!-- Starts here	  -->
+          <tr class="publication">
+            <td style="vertical-align: top;"><img style="width: 100px; height: 100px;" alt="NguyenHoa_Pham" src="people/nguyenhoa_pham.jpg"><br>
+      </td>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Summer internship: Data mining of human walking data (UIC GPIP program)</span><br>
+      Nguyen Hoa Pham (CS senior), June 2021 - Aug 2021 <br>
+      <br>
+            <a href="reports/Data_mining_walking.pdf">Project presentation</a><br>
+            <br>
+            </td>
+          </tr>
+          <tr class="publication">
+            <td style="vertical-align: top;"><img style="width: 100px; height: 100px;" alt="tanmay_mittal" src="people/tanmay_mittal.jpg"><br>
+            </td>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Summer internship: Trajectory generation (UIC GPIP program)</span><br>
+      Tanmay Mittal (ME sophomore), June 2021 - Aug 2021 <br>
+      <br>
+            <a href="reports/Trajectory_Generation.pdf">Project presentation</a><br>
+            <br>
+      </td>
+          </tr>
+          <tr class="publication">
+            <td style="vertical-align: top;"><img style="width: 100px; height: 100px;" alt="michael_hernandez" src="people/michael_hernandez.jpg"><br>
+            </td>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Summer internship: Visualization of UAV-UGV routes, Army Research Lab project (UIC GPIP program)</span><br>
+            Michael Hernandez (ME sophomore), June 2021 - Aug 2021 <br>
+            <br>
+            <a href="reports/uav_ugv_visualization.pdf">Project presentation</a><br>
+            <br>
+            </td>
+          </tr>
+      <!-- Ends here	  -->	  
+          <tr class="publication">
+            <td style="vertical-align: top;"><br>
+            </td>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Senior
+      Design Project: Inchworm that can move straight and turn</span>
+          <br>Alex Lewandowski, Daniel Kulach, Omer A. Durrani, Matt A. Halverson, and Mikayla A. Sirovatka, Aug 2020 - May 2021<br><br>All ME Seniors<br>
+            <br>
+      1)
+            <a href="reports/Inchworm_report2.pdf">Project Report</a> 2) <a href="reports/Inchworm_presentation.pdf">Project Presentation</a> 3) <a href="reports/Inchworm_summary.pdf">Project Summary</a> 4) <a href="https://vimeo.com/532506169">Video</a><br><br></td>
+          </tr>
+          <tr class="publication">
+            <td style="vertical-align: top;"><br>
+            </td>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Senior
+      Design Project: Automated Wet Wipe Sampling System</span><br>Mikhail W. Clayton, Amer Khalil, Sebastian C. Mihulet, Umar M. Siddiqui, and Sulieman Sarmad, 
+      Aug 2020 - May 2021<br> <br>All ME Seniors<br>
+            <br>
+      1)
+            <a href="reports/automated_report.pdf">Project Report&nbsp;</a> 2) <a href="reports/automated_presentation.pdf">Project Presentation</a>&nbsp;3) <a href="https://vimeo.com/532513318">Video</a><br><br></td>
+          </tr>
+          <tr class="publication">
+            <td style="vertical-align: top;"><br>
+            </td>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Senior
+      Design Project: Spider Web Catapult</span><br>
+      John Gerig, Tom Bates, Manuel Avitia, Gunnar Waldvogel, Tesfay Legesse, and Justin Washington, Aug 2020 - May 2021<br>
 
       <br>
       All ME Seniors<br>
 
-      <br>
-      <a href="reports/UIC_quadruped.pdf">Project Report</a></td> <br><br> </tr>
-	  <tr>
-      <td style="vertical-align: top;"><br>
-      </td>
-      <td style="vertical-align: top;"><span style="font-weight: bold;">Senior
-Design Project: Bipedal robot</span><a style="color: red;" href="index.html#inchworm"><span style="font-weight: bold;"></span></a><br>
-Alex Bandurin, John Lajka, and Felipe Cabrera, Aug 2019 - May 2020<br>
+            <br>
+      1)&nbsp;
 
-      <span style="font-weight: bold;"><br>
-      </span>All ME Seniors<br>
+            <a href="reports/Slingshot_report.pdf">Project Report</a>&nbsp; 2) <a href="reports/Slingshot_presentation.pdf">Project Presentation</a> 3) <a href="reports/Slingshot_poster.pdf">Project Poster</a> 4) <a href="https://vimeo.com/532476183">Video</a><br><br>
+            </td>
+          </tr>
+          <tr class="publication">
+            <td style="vertical-align: top;"><img style="width: 100px; height: 100px;" alt="anthony_dudlo" src="people/anthony_dudlo.jpg"><br>
+            </td>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Independent
+      Project: Low Cost Security System for a UIC lab using motioneyeos
+      open-source security software and raspberry pi single-board computers</span><br>
+            <br>
+      Anthony Dudlo (ME Senior), Jan 2020 - May 2020<br>
+            <br>
+            <a href="reports/surveillance.pdf">Project Report</a><br><br>
+            </td>
+          </tr>
+          <tr class="publication">
+            <td style="vertical-align: top;"><br>
+            </td>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Senior
+      Design Project: Quadrupedal robot</span><a style="color: red;" href="index.html#inchworm"><span style="font-weight: bold;"></span></a><br>
+      Liridona Ashiku, Maha Mohammad, Nick Pippin, and Erik Silva, Aug 2019 - May 2020<br>
 
 
-      <br>
+            <br>
+            All ME Seniors<br>
+
+            <br>
+            <a href="reports/UIC_quadruped.pdf">Project Report</a></td> <br><br> 
+          </tr>
+          <tr class="publication">
+            <td style="vertical-align: top;"><br>
+            </td>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Senior
+      Design Project: Bipedal robot</span><a style="color: red;" href="index.html#inchworm"><span style="font-weight: bold;"></span></a><br>
+      Alex Bandurin, John Lajka, and Felipe Cabrera, Aug 2019 - May 2020<br>
+
+            <span style="font-weight: bold;"><br>
+            </span>All ME Seniors<br>
 
 
-      <a href="reports/UIC_bipedal.pdf">Project Report</a> <br><br></td>
-    </tr>
-<!-- Start (Senior Design)	  -->
-<tr>
-      <td style="vertical-align: top;"><img style="width: 100px; height: 93px;" alt="Kyle Kinsey" src="people/Kyle%20Kinsey_tn.jpg"> <img style="width: 100px; height: 97px;" alt="Mathew Pantoja" src="people/Mathew%20Pantoja_tn.jpg"><br>
-      <img style="width: 100px; height: 93px;" alt="Ramon Vazquez" src="people/Ramon%20Vazquez_tn.jpg"> <img style="width: 95px; height: 92px;" alt="Tarunjeet Singh" src="people/Tarunjeet%20Singh_tn.jpg"><br>
-      </td>
-      <td style="vertical-align: top;"><span style="font-weight: bold;">Senior
-Design Project: Paramotor Flight Control Development Platform</span><a style="color: red;" href="index.html#inchworm"><span style="font-weight: bold;"></span></a><br>
-(Top Row L
-to R) Kyle Kinsey, Mathew Pantoja, <br>
-(Bottom Row L
-to R) Ramon Vazquez, and Tarunjeet Singh, Jan 2019 - Dec 2019<br>
+            <br>
 
-      <span style="font-weight: bold;"><br>
-      </span>All ME Seniors<br>
 
-      <br>
-
-      1) <a href="reports/Paramotor.pdf">Project Report</a> 2) <a href="https://youtu.be/3cR4UzW2j0c">Video</a><br>
-      </td>
-    </tr>
-<!-- Ends (senior Design)	  -->
-<tr>
-      <td style="vertical-align: top;"><img style="width: 81px; height: 120px;" alt="Steven Farra" src="people/Steven_Farra.png"> <img style="width: 80px; height: 120px;" alt="Emiliano Rodriguez" src="people/Emiliano_Rodriguez2.png"><br>
-      <img style="width: 85px; height: 126px;" alt="Mario Navarro" src="people/Mario_Navarro.png"> <img style="width: 80px; height: 120px;" alt="John Carroll" src="people/John_Carroll.png"><br>
-      </td>
-      <td style="vertical-align: top;"><span style="font-weight: bold;">Senior
-Design Project: Lil Bro: An inexpensive open-source quadrupedal robot </span><br>(Top Row L
-to R) Steven Farra, Emiliano Rodriguez<br>
-(Bottom Row L
-to R) Mario Navarro, and John Carroll, Aug 2018 - May 2019<br>
-
-      <span style="font-weight: bold;"><br>
-      </span>All ME Seniors<br>
-      <br>
-      1) <a href="reports/quadruped_robot.pdf">Project Report</a> 2) 
-      <a href="https://github.com/BroboticsInc31/LilBro">Construction
-details on GitHub</a> 3) <a href="https://www.youtube.com/watch?v=2qO0kL8-p4Y">Video</a> <br>
-      <br>
-      </td>
-    </tr>
-    <tr>
-      <td style="vertical-align: top;"><img style="width: 98px; height: 100px;" alt="Daniel Jiwani" src="people/Daniel_Jiwani_tn.jpg"> <img style="width: 75px; height: 100px;" alt="Chad Parker" src="people/Chad_Parker_tn.jpg"><br>
-      <br>
-      <img style="width: 84px; height: 100px;" alt="Christian Morales" src="people/Cristian_Morales_tn.jpg"> <img style="width: 100px; height: 100px;" alt="William Hinojosa" src="people/William_Hinojosa_tn.jpg"><br>
-      </td>
-      <td style="vertical-align: top;"><span style="font-weight: bold;">Senior
-Design Project: Sky Transportation Attachment System </span><a style="color: red;" href="index.html#inchworm"><span style="font-weight: bold;"></span></a><br>
-    (Top Row L
-to R) Daniel Jiwani, Chad Parker<br>
-(Bottom Row L
-to R) Cristian Morales, and William Hinojosa, Jan 2018 - Dec 2018<br>
-      <br><br>All ME Seniors<br>
-      <br>
-      1) <a href="reports/Sky_Transportation.pdf">Project Report</a> 2)  <a href="https://youtu.be/HDO0i35NzEw">Video</a><br>
-      <br>
-      </td>
-    </tr>
- 
-    <tr>
-      <td style="vertical-align: top;"><img style="width: 84px; height: 100px;" alt="Panch_Karasani" src="people/panch_karasani.jpg"></td>
-      <td style="vertical-align: top;">1) <span style="font-weight: bold;">Summer Project:</span> Rowdy wear: a
-gadget to help you make quick decisions <a href="https://www.youtube.com/watch?v=1YEbfwa-3RQ">Video</a><a style="color: red;" href="index.html#wear"><span style="font-weight: bold;"></span></a> <br>
-      <br>
-May 2016 - Aug 2016, As an ME Sophomore<br>
-      <br>
-2) <span style="font-weight: bold;">Independent Project:</span> Simplest walker simulation using direct
-collocation <a href="simplest_walker_collocation.m">MATLAB code</a><br>
-      <br>
-Aug 2018 - Dec 2018, As an ME Senior<br>
-      <br>
-Panchajanya Karasani <br>
-<br>
-      </td>
-    </tr>
-    <tr>
-      <td style="vertical-align: top;"><img style="width: 75px; height: 100px;" alt="Victor Guzman" src="people/victor_guzman.jpg"><br>
-      </td>
-      <td style="vertical-align: top;"><span style="font-weight: bold;">Independent
-Projects: <br>
-      <br>
-(1) Auto sunglass</span><br>
-      <br>
-Victor Guzman (High School Student),
-June - Aug 2018<br>
-      <br>
-1)  <a href="reports/Guzman_Auto_Sunglasses.pdf">Project Report</a>
-2)  <a href="https://www.youtube.com/watch?v=bQjF9xGCF20">Video</a><br>
-      <br>
-      <span style="font-weight: bold;">(2) RoboCar </span><br>
-      <br>
-June - July 2019<br>
-      <br>
-1) <a href="tutorials/RoboCarTutorial.pdf">RoboCarTutorials</a>  2) <a href="https://youtu.be/rFQ8wNH19YQ">Video</a><br>
-      <br>
-RC controlled cars available in hobby stores provide a nice sturdy
-chassis and powerful motors. However, they are limited to RC control.
-What if we remove the existing electronics and controllers in an RC car
-and replace them with Arduino and our own sensors? This project
-explores the idea. The resulting car equipped with multiple line
-sensors and a controller is quite fast as seen in the video.<br>
-
-<br>
-      <br>
-      </td>
-    </tr>
-    <tr>
-      <td style="vertical-align: top;"><img style="width: 81px; height: 100px;" alt="Sierra Baumbusch" src="people/Sierra%20Baumbusch.jpg"><br>
-      </td>
-      <td style="vertical-align: top;"><span style="font-weight: bold;">Independent
-Projects: <br>
-(1) DIY: Robobug, a vibration motor actuated robot</span><br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="tutorials/RoboBugTutorial.pdf">Tutorial</a> and a detailed step-by-step <a href="https://www.youtube.com/watch?v=7ovG-mC6xFs">video</a>.<br>
-      <br>
- <span style="font-weight: bold;">(2) Tutorials: 3D scanning using
-Artec EVA</span> <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A <a href="reports/Baumbusch_3D_Scanner.pdf">one-page file</a> and an
-accompanying <a href="https://youtu.be/CgkkgWLzhTU">video</a>. <br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A jpg file that shows a 3D printed
-produced by the scan is <a href="reports/3Dscan_print.jpg">here</a>.<br>
-      <br>
-Sierra Baumbusch (ME Senior), May 2018 - Dec 2018<br>
-      <br>
-      <br>
-      </td>
-    </tr>
-    <tr>
-      <td style="vertical-align: top;"><img style="width: 93px; height: 100px;" alt="emiliano_rodriguez" src="people/emiliano_rodriguez.png"><br>
-      </td>
-      <td style="vertical-align: top;"><span style="font-weight: bold;">Undergraduate
-Research: Darwin humanoid dancing to UTSA and other songs</span><br>
-Emiliano Rodriguez (ME Senior), May 2018 - Aug 2018<br>
-      <br><a  href="https://www.youtube.com/watch?v=_-Ivn1zhD6g">Video</a><br>
-      <br>
-      </td>
-    </tr>
-    <tr>
-      <td style="vertical-align: top;"><img style="width: 100px; height: 134px;" alt="Drishya Dahal" src="people/Drishya_Dahal.jpg"><br>
-      </td>
-      <td style="vertical-align: top;"><span style="font-weight: bold;">Independent
-Project: Tic-Tac-Toe Robot</span><br>
-Drishya Dahal (ME Junior), Aug 2017 - May 2018<br>
-      <br><a href="https://www.youtube.com/watch?v=bpgAn6hZhl0">Video</a>
-      <br>
-      </td>
-    </tr>
-    <tr>
-      <td style="vertical-align: top;"><img src="people/Anthony_Abundis.jpg" alt="Anthony Abundis" style="width: 98px; height: 110px;">&nbsp; <img style="width: 100px; height: 110px;" alt="Michael Aguirre" src="people/Michael_Aguirre.jpg"><br>
-&nbsp;<br>
-      <img style="width: 98px; height: 105px;" alt="Justin Castillo" src="people/Justin_Castillo.jpg"> &nbsp;<img style="width: 104px; height: 105px;" alt="Flavio Moreira" src="people/Flavio_Moreira.jpg"> <br>
-      </td>
-      <td style="vertical-align: top;"><span style="font-weight: bold;">Senior
-Design Project: Inchworm Robot </span><br>
-(Top Row L
-to R) Anthony Abundis, Michael Aguirre<br>
-(Bottom Row L
-to R) Justin Castillo, and Flavio Moreira, Jan 2017 - Dec 2017<br>
-      <br>All ME Seniors<br>
-      <br>
-		  1) <a href="reports/Inchworm_report.pdf">Project Report</a> 2) <a href="https://www.youtube.com/watch?v=rlaOOx0Boos">Video</a>
-      <br>
-      </td>
-    </tr>
-    <tr>
-      <td style="vertical-align: top;"><img style="width: 93px; height: 120px;" alt="Joseph Galloway" src="people/Joseph_Galloway.jpg">&nbsp;&nbsp;&nbsp; <img style="width: 102px; height: 110px;" alt="Gerardo Rios" src="people/gerardo_rios.jpg"><br>
-      </td>
-      <td style="vertical-align: top;"><span style="font-weight: bold;">Independent
-Project: Pumping a swing -- simulation and experiments </span>
-      <br>
-(L to R) Joseph Galloway and Gerardo (Aaron) Rios, Sep 2017 - Dec 2017<br><br>(ME Juniors)
-      <br><br>
-      1) <a href="reports/Pumping_Swing.pdf">Project report</a> 2) <a href="https://www.youtube.com/watch?v=mNHBRSlg1EM">Video</a>
-      <span style="font-weight: bold;"><br>
-      </span></td>
-    </tr>
-    <tr>
-      <td style="vertical-align: top;"><img style="width: 91px; height: 120px;" alt="Nour El-Ghori" src="people/nour_el_ghori.jpg"><br>
-      </td>
-      <td style="vertical-align: top;"><span style="font-weight: bold;">Independent
-Project: 3D printing of rolling cylinders for demonstration of energy
-principles</span><br>
-      <br>
-Nour K. El-Ghori (High School Student), June - Aug 2017<br>
-      <br>
-      <br>
-1) <a href="tutorials/RollingCylinders.pdf">Project Report</a>&nbsp;
-2) <a href="tutorials/RollingCylindersCAD.zip">CAD files</a> 3) <a href="https://www.youtube.com/watch?v=deA2DIyGwks">Video</a><br>
-      </td>
-    </tr>
-    <tr>
-      <td style="vertical-align: top;"><img style="width: 100px; height: 134px;" alt="Drishya Dahal" src="people/Drishya_Dahal.jpg"> <img style="width: 104px; height: 134px;" alt="Joseph Galloway" src="people/Joseph_Galloway.jpg"><br>
-      </td>
-      <td style="vertical-align: top;"><span style="font-weight: bold;"><br>
-Independent Project: Trashbot - a trash collecting robot</span><br>
-(L to R) Drishya Dahal and Joseph Galloway, Jan 2017 - May 2017<br>
-      <br>(ME Sophomores)<br><br>
-      1) <a href="reports/Trash_Bot_Report.pdf">Project Report</a> 2) <a href="https://www.youtube.com/watch?v=LSevwuNdBks">Video</a> </td>
-    </tr>
-    <tr>
-      <td style="vertical-align: top;"><img style="width: 100px; height: 134px;" alt="Kyle_Lamoureux" src="people/Kyle_Lamoureux.jpg"><br>
-      </td>
-      <td style="vertical-align: top;"><br>
-      <span style="font-weight: bold;">Independent Study: Drop Off
-Detection Sensor for Blind Persons</span><br>
-Kyle Lamoureux (ME Senior), Jan 2017 - May 2017<br>
-      <br>
-      <a href="reports/DropOff_Detection_Blind.pdf">Project Report</a><br>
-      </td>
-    </tr>
-    <tr>
-      <td style="vertical-align: top;"><img style="width: 100px; height: 100px;" alt="Sergio Molina" src="people/Sergio_Molina.jpg"> <img style="width: 100px; height: 100px;" alt="Paul Alabi" src="people/Paul_Alabi.jpg"><br>
-      <br>
-      <img style="width: 100px; height: 100px;" alt="Omar Castro" src="people/Omar_Castro.jpg"> <img style="width: 100px; height: 100px;" alt="Jonathan Sacket" src="people/Jonathan_Sacket.jpg"><br>
-      </td>
-      <td style="vertical-align: top;"><br>
-      <span style="font-weight: bold;">Senior Design Project:
-Multi-link Robotic Manipulator </span><br>
-      <br>(Top Row L
-to R) Sergio Molina, Paul Alabi, <br>
-(Bottom Row L to R) Omar Castro, and Jonathan Sacketl, 
-Jan 2016 - Dec 2016<br>
-      <br>
-All ME Seniors<br>
-      <br>
-      <a href="reports/Manipulator_robot.pdf">Project Report</a>
-      </td>
-    </tr>
-    <tr>
-      <td style="vertical-align: top;"><img style="width: 100px; height: 100px;" alt="Aspen Meineke" src="people/Aspen_Meineke.jpg"> <img style="width: 100px; height: 100px;" alt="Bianca Dumlao" src="people/Bianca_Dumlao.jpg"><br>
-      <br>
-      <img style="width: 100px; height: 100px;" alt="Noel Cantu" src="people/Noel_Cantu.jpg"> <img style="width: 100px; height: 100px;" alt="James Crisler" src="people/James_Crisler.jpg"><br>
-      </td>
-      <td style="vertical-align: top;"><br>
-      <span style="font-weight: bold;">Senior Design Project: The
-Roadrunner Robot 2: The Rimless Wheeled Robot</span>
-      <br>(Top Row L
-to R) Aspen Meineke, Bianca Dumlao, <br>
-(Bottom Row L to R) Noel Cantu, and James Crisler, 
-Jan 2016 - Dec 2016<br>
-      <br>
-All ME Seniors<br>
-      <br>
-      <a href="reports/Roadrunner2_report.pdf">Project Report</a><br>
-      </td>
-    </tr>
-    <tr>
-      <td style="vertical-align: top;"><img style="width: 100px; height: 100px;" alt="Chelsea Moussouni" src="people/chelsea_moussouni.jpg"><br>
-      </td>
-      <td style="vertical-align: top;"><br>
-        <strong> Independent Project</strong>: 1) <a href="index.html#tut-hopper">Hopping
-tutorial</a> 2) <a href="index.html#comparative">Walking simulation
-and optimization.</a><br>
-Chelsea Moussouni (ME Senior), May 2016 - Dec 2016<br>
-      <br>
-      </td>
-    </tr>
-    <tr>
-      <td style="vertical-align: top;"><img style="width: 81px; height: 99px;" alt="Ivelisse_Negroni" src="people/Ivelisse_Negroni.jpg">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img style="width: 100px; height: 94px;" alt="Noah Trent" src="people/Noah_Trent.jpg"> <br>
-      <br>
-      <img style="width: 97px; height: 100px;" alt="Cesar Sifuentes" src="people/Cesar_Sifuentes.jpg">&nbsp;&nbsp;&nbsp; <img style="width: 70px; height: 100px;" alt="Michael Turasz" src="people/Michael_Turasz.jpg"><br>
-      </td>
-      <td style="vertical-align: top;"><br>
-        <strong>Senior Design Project: Pneumatic shoes for jumping height augmentation</strong>
-      <br>(Top Row L
-to R) Ivelisse Negroni, Noah Trent <br>
-(Bottom Row L to R) Cesar Sifuentes, and Michael Turasz, 
-Aug 2015 - May 16<br>
-      <br>
-All ME Seniors<br>
-      <br>
-      1) <a href="reports/Jumping_Contraption.pdf">Project Report</a> 2) <a href="https://www.youtube.com/watch?v=I2E7iWqU2IU">Video</a> <br>
-      </td>
-    </tr>
-    <tr>
-      <td style="vertical-align: top;"><img style="width: 90px; height: 100px;" alt="Andy_Plascencia" src="people/Andy_Plascencia.jpg">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img style="width: 80px; height: 100px;" alt="Tyler_Rowe" src="people/Tyler_Rowe.jpg"> <br>
-      </td>
-      <td style="vertical-align: top;"><span style="font-weight: bold;"><br>
-Independent Study Project: Balancing a ball on a beam</span>&nbsp;<a style="color: red;" href="index.html#romo-face"><span style="font-weight: bold;"></span></a> <br>
-(L to R) Andy Plascencia, Tyler Rowe, and Geoffrey Chiou (not pictured), Jan 2016 - May 2016<br>
-      <br>(ME
-Seniors)<br>
-      <br>
-1) <a href="reports/Beam_Ball_Balancing.pdf">Project Report</a> 2) <a href="reports/ball_beam_STL.zip">Files for 3D printing</a> 3) <a href="reports/ball_beam_code.zip">Arduino code</a><br>
-      </td>
-    </tr>
-    <tr>
-      <td style="vertical-align: top;"><img style="width: 92px; height: 100px;" alt="Geoofrey Toombs" src="people/geoffrey_toombs.jpg">&nbsp;&nbsp;&nbsp; <img style="width: 71px; height: 110px;" alt="James Schopfer" src="people/james_schopfer.jpg"><br>
-      </td>
-      <td style="vertical-align: top;"><br>
-      <span style="font-weight: bold;">Independent Study Project:
-Animatronics Face -- RomoBot</span> <br>
-(L to R) Geoffrey Toombs and James Schopfer (ME Seniors), Jan 2016 - May 2016<br><br>
-Entry to the Spring 2016, Center for Innovation, Technology, and
-Entrepreneurship (CITE) <br>
-$100 K Business Competition at UTSA.<br>
-      <br>
-Finalist in the Instructables Robotic Contest 2016 (only 19 finalists
-out of 222 entries) <a href="http://www.instructables.com/contest/robotics2016/">Link</a> | <a href="media/RomoBot_RoboticsContest2016.pdf">Cached</a> <br>
-      <br>
-      1) <a href="reports/Animatronics_Face_Report.pdf">Project Report</a> 2) <a href="https://www.youtube.com/watch?v=xkze1_hnam0">Video</a><br>
-      <br>
-      </td>
-    </tr>
-    <tr>
-      <td style="vertical-align: top;"><img style="width: 85px; height: 100px;" alt="chris_von_brecht" src="people/chris_von_brecht.png"><br>
-      <br>
-      </td>
-      <td style="vertical-align: top;"><strong>Independent Project:
-Vibration-based robots for the Children's museum, San Antonio.</strong> <br>
-      <br>
-Christopher von Brecht (ME Senior), Aug 2015 - Dec 2015<br>
-      <br>
-      <br>
-1) <a href="tutorials/Vibration-based-robots.pdf">Write-up.</a> 2) <a href="tutorials/VibrationRobots_STL.zip">Files for 3D
-		  printing</a> 3) <a href="https://youtu.be/QoDUXx42l4c">Video</a><br>
-      </td>
-    </tr>
-    <tr>
-      <td style="vertical-align: top; width: 213px; height: 150px;"><img src="people/racquel_de_la_garza.png" alt="Racquel De La Garza" style="width: 100px; height: 135px;">&nbsp;<img style="width: 100px; height: 134px;" alt="Christian Trevino" src="people/christian_trevino.png"><br>
-&nbsp;<img style="width: 100px; height: 135px; top: 807px;" alt="Robert Brothers" src="people/robert_brothers.png">&nbsp;<img style="width: 100px; height: 138px;" alt="Eric Sanchez" src="people/eric_sanchez.png"> <br>
-      </td>
-      <td style="vertical-align: top; width: 613px; height: 150px;"><br>
-      <br>
-      <br>
-<strong>Senior Design Project: Development of a Robotic Leg</strong> <br>
+            <a href="reports/UIC_bipedal.pdf">Project Report</a> <br><br></td>
+          </tr>
+          <!-- Start (Senior Design)	  -->
+          <tr class="publication">
+            <td style="vertical-align: top;"><img style="width: 100px; height: 93px;" alt="Kyle Kinsey" src="people/Kyle%20Kinsey_tn.jpg"> <img style="width: 100px; height: 97px;" alt="Mathew Pantoja" src="people/Mathew%20Pantoja_tn.jpg"><br>
+            <img style="width: 100px; height: 93px;" alt="Ramon Vazquez" src="people/Ramon%20Vazquez_tn.jpg"> <img style="width: 95px; height: 92px;" alt="Tarunjeet Singh" src="people/Tarunjeet%20Singh_tn.jpg"><br>
+            </td>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Senior
+      Design Project: Paramotor Flight Control Development Platform</span><a style="color: red;" href="index.html#inchworm"><span style="font-weight: bold;"></span></a><br>
       (Top Row L
-to R) Raquel De La Garza, Christian Trevino, <br>
-(Bottom Row L to R) Robert Brothers, Eric
-Sanchez, Aug 2014 - May 15<br>
+      to R) Kyle Kinsey, Mathew Pantoja, <br>
+      (Bottom Row L
+      to R) Ramon Vazquez, and Tarunjeet Singh, Jan 2019 - Dec 2019<br>
+
+            <span style="font-weight: bold;"><br>
+            </span>All ME Seniors<br>
+
+            <br>
+
+            1) <a href="reports/Paramotor.pdf">Project Report</a> 2) <a href="https://youtu.be/3cR4UzW2j0c">Video</a><br>
+            </td>
+          </tr>
+          <!-- Ends (senior Design)	  -->
+          <tr class="publication">
+            <td style="vertical-align: top;"><img style="width: 81px; height: 120px;" alt="Steven Farra" src="people/Steven_Farra.png"> <img style="width: 80px; height: 120px;" alt="Emiliano Rodriguez" src="people/Emiliano_Rodriguez2.png"><br>
+            <img style="width: 85px; height: 126px;" alt="Mario Navarro" src="people/Mario_Navarro.png"> <img style="width: 80px; height: 120px;" alt="John Carroll" src="people/John_Carroll.png"><br>
+            </td>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Senior
+      Design Project: Lil Bro: An inexpensive open-source quadrupedal robot </span><br>(Top Row L
+      to R) Steven Farra, Emiliano Rodriguez<br>
+      (Bottom Row L
+      to R) Mario Navarro, and John Carroll, Aug 2018 - May 2019<br>
+
+            <span style="font-weight: bold;"><br>
+            </span>All ME Seniors<br>
+            <br>
+            1) <a href="reports/quadruped_robot.pdf">Project Report</a> 2) 
+            <a href="https://github.com/BroboticsInc31/LilBro">Construction
+      details on GitHub</a> 3) <a href="https://www.youtube.com/watch?v=2qO0kL8-p4Y">Video</a> <br>
+            <br>
+            </td>
+          </tr>
+          <tr class="publication">
+            <td style="vertical-align: top;"><img style="width: 98px; height: 100px;" alt="Daniel Jiwani" src="people/Daniel_Jiwani_tn.jpg"> <img style="width: 75px; height: 100px;" alt="Chad Parker" src="people/Chad_Parker_tn.jpg"><br>
+            <br>
+            <img style="width: 84px; height: 100px;" alt="Christian Morales" src="people/Cristian_Morales_tn.jpg"> <img style="width: 100px; height: 100px;" alt="William Hinojosa" src="people/William_Hinojosa_tn.jpg"><br>
+            </td>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Senior
+      Design Project: Sky Transportation Attachment System </span><a style="color: red;" href="index.html#inchworm"><span style="font-weight: bold;"></span></a><br>
+          (Top Row L
+      to R) Daniel Jiwani, Chad Parker<br>
+      (Bottom Row L
+      to R) Cristian Morales, and William Hinojosa, Jan 2018 - Dec 2018<br>
+            <br><br>All ME Seniors<br>
+            <br>
+            1) <a href="reports/Sky_Transportation.pdf">Project Report</a> 2)  <a href="https://youtu.be/HDO0i35NzEw">Video</a><br>
+            <br>
+            </td>
+          </tr>
+          <tr class="publication">
+            <td style="vertical-align: top;"><img style="width: 84px; height: 100px;" alt="Panch_Karasani" src="people/panch_karasani.jpg"></td>
+            <td style="vertical-align: top;">1) <span style="font-weight: bold;">Summer Project:</span> Rowdy wear: a
+      gadget to help you make quick decisions <a href="https://www.youtube.com/watch?v=1YEbfwa-3RQ">Video</a><a style="color: red;" href="index.html#wear"><span style="font-weight: bold;"></span></a> <br>
+            <br>
+      May 2016 - Aug 2016, As an ME Sophomore<br>
+            <br>
+      2) <span style="font-weight: bold;">Independent Project:</span> Simplest walker simulation using direct
+      collocation <a href="simplest_walker_collocation.m">MATLAB code</a><br>
+            <br>
+      Aug 2018 - Dec 2018, As an ME Senior<br>
+            <br>
+      Panchajanya Karasani <br>
       <br>
-All ME Seniors
-      <br>
-      <br>2nd place among all ME Senior Design
-Projects for Spring 2015 semester. <br><br>
-      1) <a href="reports/Ein-Report.pdf">Project Report</a> 2) <a href="https://www.youtube.com/watch?v=_gyI_xIkAdw">Video</a><br><br>
-      </td>
-    </tr>
-    <tr>
-      <td style="vertical-align: top; width: 213px; height: 116px;"><img style="width: 100px; height: 100px;" alt="Rico" src="people/Rico_Jovanni_Ulep.jpg">&nbsp; <img style="width: 100px; height: 100px;" alt="Kyle" src="people/Kyle_Seay.jpg"><br>
-      <img style="width: 100px; height: 100px;" alt="Ezra" src="people/Ezra_Ameperosa.jpg">&nbsp; <img style="width: 100px; height: 100px;" alt="Scott" src="people/Scott_Miller.jpg"><br>
-      </td>
-      <td style="vertical-align: top; width: 613px; height: 116px;"><strong>Senior
-Design Project: Design and Construction of Rimless Wheeled robot</strong>
-      <br>
-(Top Row L
-to R) Rico Jovanni Ulep, Kyle Seay, <br>
-(Bottom Row L to R) Ezra Ameperosa, and Scott Miller, Aug 2014 - May 15<br>
-      <br>
-All ME
-Seniors <br>
-      <br>3rd place among all ME Senior Design
-Projects for Spring 2015 semester <br><br>
-      1) <a href="reports/Roadrunner-Report.pdf">Project Report</a> 2) <a href="https://www.youtube.com/watch?v=xTSG48KMMR4">Video</a>
-      </td>
-    </tr>
-    <tr>
-      <td style="vertical-align: top; width: 213px;"><img style="width: 74px; height: 100px;" alt="Cory Royal" src="people/Cory_Royal.png">&nbsp;<img style="width: 75px; height: 100px;" alt="curtis odle" src="people/Curtis_Odle.png">&nbsp;<img style="width: 75px; height: 100px;" alt="william morris" src="people/William_Morris.png"> <br>
-      </td>
-      <td style="vertical-align: top; width: 613px;"><br>
-<strong>Senior Design Project: Mobile Automated Directory: UTSA guide robot</strong><br>
-(Top Row L to R) Cory Royal, Curtis
-Odle, <br>
-(Bottom Row) William Morris, Aug 2014 - May 15<br>
+            </td>
+          </tr>
+          <tr class="publication">
+            <td style="vertical-align: top;"><img style="width: 75px; height: 100px;" alt="Victor Guzman" src="people/victor_guzman.jpg"><br>
+            </td>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Independent
+      Projects: <br>
+            <br>
+      (1) Auto sunglass</span><br>
+            <br>
+      Victor Guzman (High School Student),
+      June - Aug 2018<br>
+            <br>
+      1)  <a href="reports/Guzman_Auto_Sunglasses.pdf">Project Report</a>
+      2)  <a href="https://www.youtube.com/watch?v=bQjF9xGCF20">Video</a><br>
+            <br>
+            <span style="font-weight: bold;">(2) RoboCar </span><br>
+            <br>
+      June - July 2019<br>
+            <br>
+      1) <a href="tutorials/RoboCarTutorial.pdf">RoboCarTutorials</a>  2) <a href="https://youtu.be/rFQ8wNH19YQ">Video</a><br>
+            <br>
+      RC controlled cars available in hobby stores provide a nice sturdy
+      chassis and powerful motors. However, they are limited to RC control.
+      What if we remove the existing electronics and controllers in an RC car
+      and replace them with Arduino and our own sensors? This project
+      explores the idea. The resulting car equipped with multiple line
+      sensors and a controller is quite fast as seen in the video.<br>
 
       <br>
-All EE Seniors<br>
-      <br>
-      1) <a href="reports/MADMax-Report.pdf">Project Report</a> 2) <a href="https://www.youtube.com/watch?v=9zL_FL8JV0M">Video</a> 
-      </td>
-    </tr>
-    <tr>
-      <td style="vertical-align: top; width: 213px;">&nbsp;<img style="width: 100px; height: 100px;" alt="Javier Gonzalez" src="people/javier_gonzalez.jpg">&nbsp; <img style="width: 89px; height: 101px;" alt="Roberto Mexquiti" src="people/roberto_mexquitic.jpg"><br>
-      <img style="width: 100px; height: 100px;" alt="Stacy Alexander" src="people/stacy_alexander.jpg"> <img style="width: 106px; height: 100px;" alt="Thilo Janssen" src="people/thilo_janssen.jpg"><br>
-      </td>
-      <td style="vertical-align: top; width: 613px;"><strong>Senior Design
-Project: Smart Humanoid Used for Silencing Humans (in the
-library): SHUSHBot</strong>
-      <br>(Top L to R) Javier Gonzalez <em>(McNair
-Scholar)</em>,
-Roberto Mexquitic <em>(McNair Scholar)</em>
-      <br>
-(Bottom Row L to R) Stacy Alexander, and Thilo Janssen, Aug 2014 - May 15
-      <br><br>
-All EE Seniors<br>
-      <br>
-      1) <a href="reports/SHUSHBot-Report.pdf">Project Report</a> 2) 
-      <a href="https://www.youtube.com/watch?v=Ju9SLrtdkLQ">Video</a>
-      </td>
-    </tr>
-    <tr>
-      <td style="vertical-align: top; width: 213px;"><img style="width: 84px; height: 113px; top: 1492px; left: 294px;" alt="Christian Trevino" src="people/christian_trevino.png"></td>
-      <td style="vertical-align: top; width: 613px;"><strong>1. Independent
-Project: Simple
-pendulum physics for SA Children's Museum</strong> <a href="https://www.youtube.com/watch?v=ZTBn79uAvYQ">Video</a><br>
-UTSA newsarticle <a href="http://www.utsa.edu/today/2015/06/christianpendulum.html">Link</a> | <a href="media/trevino_pendulum.pdf">Cached</a><br>
-Jan 2015 - February 2015<br><br>
-<strong>2. Honors Thesis: Passive Dynamic Toys</strong>
-      <a href="https://www.youtube.com/watch?v=wJ3W3MomWl4">Video</a><br>
-BS Thesis: Modern Day Advanced Manufacturing of Antique Toy Walkers, <a href="reports/Christian_Trevino_BS_Thesis.pdf">Thesis</a> | <a href="papers/2018Trevino_Rowdy.pdf">Paper</a><br>
-Aug 2014 - July 2015
-      <br><br>
-<strong>3. Paper walker for the
-	Inventors Workshop at the Children's Museum</strong> <a href="https://www.youtube.com/watch?v=51WeRWwHMUU">Video</a><br>
-COE Innovations Magazine back cover <a href="media/Trevino_innovations_winter2015.pdf">Cached</a><br><br>
-Christian Trevino (ME Senior/ME MS), Aug 2015 - Nov 2015<br>
-      <br><br>
-      </td>
-    </tr>
-    <tr>
-      <td style="vertical-align: top;"><img style="width: 67px; height: 100px;" alt="gerardo ramos" src="people/gerardo_ramos.png"></td>
-      <td style="vertical-align: top;"><strong>Independent Project: T-maze for
-neural experiments on mice. (for Prof.
-Alfonso Apicella, Dept of Biology, UTSA)</strong><br>
-      <br>Gerardo Ramos (ME Junior), Jan 2015 - May 2015<br>
-      </td>
-    </tr>
-  </tbody>
-</table>
-<br>
-<br>
-<table style="text-align: left; width: 859px; height: 35px; color: rgb(0, 34, 68);" border="0" cellpadding="2" cellspacing="2">
-  <tbody>
-    <tr>
-    </tr>
-  </tbody>
-</table><hr>
+            <br>
+            </td>
+          </tr>
+          <tr class="publication">
+            <td style="vertical-align: top;"><img style="width: 81px; height: 100px;" alt="Sierra Baumbusch" src="people/Sierra%20Baumbusch.jpg"><br>
+            </td>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Independent
+      Projects: <br>
+      (1) DIY: Robobug, a vibration motor actuated robot</span><br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="tutorials/RoboBugTutorial.pdf">Tutorial</a> and a detailed step-by-step <a href="https://www.youtube.com/watch?v=7ovG-mC6xFs">video</a>.<br>
+            <br>
+      <span style="font-weight: bold;">(2) Tutorials: 3D scanning using
+      Artec EVA</span> <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A <a href="reports/Baumbusch_3D_Scanner.pdf">one-page file</a> and an
+      accompanying <a href="https://youtu.be/CgkkgWLzhTU">video</a>. <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; A jpg file that shows a 3D printed
+      produced by the scan is <a href="reports/3Dscan_print.jpg">here</a>.<br>
+            <br>
+      Sierra Baumbusch (ME Senior), May 2018 - Dec 2018<br>
+            <br>
+            <br>
+            </td>
+          </tr>
+          <tr class="publication">
+            <td style="vertical-align: top;"><img style="width: 93px; height: 100px;" alt="emiliano_rodriguez" src="people/emiliano_rodriguez.png"><br>
+            </td>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Undergraduate
+      Research: Darwin humanoid dancing to UTSA and other songs</span><br>
+      Emiliano Rodriguez (ME Senior), May 2018 - Aug 2018<br>
+            <br><a  href="https://www.youtube.com/watch?v=_-Ivn1zhD6g">Video</a><br>
+            <br>
+            </td>
+          </tr>
+          <tr class="publication">
+            <td style="vertical-align: top;"><img style="width: 100px; height: 134px;" alt="Drishya Dahal" src="people/Drishya_Dahal.jpg"><br>
+            </td>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Independent
+      Project: Tic-Tac-Toe Robot</span><br>
+      Drishya Dahal (ME Junior), Aug 2017 - May 2018<br>
+            <br><a href="https://www.youtube.com/watch?v=bpgAn6hZhl0">Video</a>
+            <br>
+            </td>
+          </tr>
+          <tr class="publication">
+            <td style="vertical-align: top;"><img src="people/Anthony_Abundis.jpg" alt="Anthony Abundis" style="width: 98px; height: 110px;">&nbsp; <img style="width: 100px; height: 110px;" alt="Michael Aguirre" src="people/Michael_Aguirre.jpg"><br>
+      &nbsp;<br>
+            <img style="width: 98px; height: 105px;" alt="Justin Castillo" src="people/Justin_Castillo.jpg"> &nbsp;<img style="width: 104px; height: 105px;" alt="Flavio Moreira" src="people/Flavio_Moreira.jpg"> <br>
+            </td>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Senior
+      Design Project: Inchworm Robot </span><br>
+      (Top Row L
+      to R) Anthony Abundis, Michael Aguirre<br>
+      (Bottom Row L
+      to R) Justin Castillo, and Flavio Moreira, Jan 2017 - Dec 2017<br>
+            <br>All ME Seniors<br>
+            <br>
+            1) <a href="reports/Inchworm_report.pdf">Project Report</a> 2) <a href="https://www.youtube.com/watch?v=rlaOOx0Boos">Video</a>
+            <br>
+            </td>
+          </tr>
+          <tr class="publication">
+            <td style="vertical-align: top;"><img style="width: 93px; height: 120px;" alt="Joseph Galloway" src="people/Joseph_Galloway.jpg">&nbsp;&nbsp;&nbsp; <img style="width: 102px; height: 110px;" alt="Gerardo Rios" src="people/gerardo_rios.jpg"><br>
+            </td>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Independent
+      Project: Pumping a swing -- simulation and experiments </span>
+            <br>
+      (L to R) Joseph Galloway and Gerardo (Aaron) Rios, Sep 2017 - Dec 2017<br><br>(ME Juniors)
+            <br><br>
+            1) <a href="reports/Pumping_Swing.pdf">Project report</a> 2) <a href="https://www.youtube.com/watch?v=mNHBRSlg1EM">Video</a>
+            <span style="font-weight: bold;"><br>
+            </span></td>
+          </tr>
+          <tr class="publication">
+            <td style="vertical-align: top;"><img style="width: 91px; height: 120px;" alt="Nour El-Ghori" src="people/nour_el_ghori.jpg"><br>
+            </td>
+            <td style="vertical-align: top;"><span style="font-weight: bold;">Independent
+      Project: 3D printing of rolling cylinders for demonstration of energy
+      principles</span><br>
+            <br>
+      Nour K. El-Ghori (High School Student), June - Aug 2017<br>
+            <br>
+            <br>
+      1) <a href="tutorials/RollingCylinders.pdf">Project Report</a>&nbsp;
+      2) <a href="tutorials/RollingCylindersCAD.zip">CAD files</a> 3) <a href="https://www.youtube.com/watch?v=deA2DIyGwks">Video</a><br>
+            </td>
+          </tr>
+          <tr class="publication">
+            <td style="vertical-align: top;"><img style="width: 100px; height: 134px;" alt="Drishya Dahal" src="people/Drishya_Dahal.jpg"> <img style="width: 104px; height: 134px;" alt="Joseph Galloway" src="people/Joseph_Galloway.jpg"><br>
+            </td>
+            <td style="vertical-align: top;"><span style="font-weight: bold;"><br>
+      Independent Project: Trashbot - a trash collecting robot</span><br>
+      (L to R) Drishya Dahal and Joseph Galloway, Jan 2017 - May 2017<br>
+            <br>(ME Sophomores)<br><br>
+            1) <a href="reports/Trash_Bot_Report.pdf">Project Report</a> 2) <a href="https://www.youtube.com/watch?v=LSevwuNdBks">Video</a> </td>
+          </tr>
+          <tr class="publication">
+            <td style="vertical-align: top;"><img style="width: 100px; height: 134px;" alt="Kyle_Lamoureux" src="people/Kyle_Lamoureux.jpg"><br>
+            </td>
+            <td style="vertical-align: top;"><br>
+            <span style="font-weight: bold;">Independent Study: Drop Off
+      Detection Sensor for Blind Persons</span><br>
+      Kyle Lamoureux (ME Senior), Jan 2017 - May 2017<br>
+            <br>
+            <a href="reports/DropOff_Detection_Blind.pdf">Project Report</a><br>
+            </td>
+          </tr>
+          <tr class="publication">
+            <td style="vertical-align: top;"><img style="width: 100px; height: 100px;" alt="Sergio Molina" src="people/Sergio_Molina.jpg"> <img style="width: 100px; height: 100px;" alt="Paul Alabi" src="people/Paul_Alabi.jpg"><br>
+            <br>
+            <img style="width: 100px; height: 100px;" alt="Omar Castro" src="people/Omar_Castro.jpg"> <img style="width: 100px; height: 100px;" alt="Jonathan Sacket" src="people/Jonathan_Sacket.jpg"><br>
+            </td>
+            <td style="vertical-align: top;"><br>
+            <span style="font-weight: bold;">Senior Design Project:
+      Multi-link Robotic Manipulator </span><br>
+            <br>(Top Row L
+      to R) Sergio Molina, Paul Alabi, <br>
+      (Bottom Row L to R) Omar Castro, and Jonathan Sacketl, 
+      Jan 2016 - Dec 2016<br>
+            <br>
+      All ME Seniors<br>
+            <br>
+            <a href="reports/Manipulator_robot.pdf">Project Report</a>
+            </td>
+          </tr>
+          <tr class="publication">
+            <td style="vertical-align: top;"><img style="width: 100px; height: 100px;" alt="Aspen Meineke" src="people/Aspen_Meineke.jpg"> <img style="width: 100px; height: 100px;" alt="Bianca Dumlao" src="people/Bianca_Dumlao.jpg"><br>
+            <br>
+            <img style="width: 100px; height: 100px;" alt="Noel Cantu" src="people/Noel_Cantu.jpg"> <img style="width: 100px; height: 100px;" alt="James Crisler" src="people/James_Crisler.jpg"><br>
+            </td>
+            <td style="vertical-align: top;"><br>
+            <span style="font-weight: bold;">Senior Design Project: The
+      Roadrunner Robot 2: The Rimless Wheeled Robot</span>
+            <br>(Top Row L
+      to R) Aspen Meineke, Bianca Dumlao, <br>
+      (Bottom Row L to R) Noel Cantu, and James Crisler, 
+      Jan 2016 - Dec 2016<br>
+            <br>
+      All ME Seniors<br>
+            <br>
+            <a href="reports/Roadrunner2_report.pdf">Project Report</a><br>
+            </td>
+          </tr>
+          <tr class="publication">
+            <td style="vertical-align: top;"><img style="width: 100px; height: 100px;" alt="Chelsea Moussouni" src="people/chelsea_moussouni.jpg"><br>
+            </td>
+            <td style="vertical-align: top;"><br>
+              <strong> Independent Project</strong>: 1) <a href="index.html#tut-hopper">Hopping
+      tutorial</a> 2) <a href="index.html#comparative">Walking simulation
+      and optimization.</a><br>
+      Chelsea Moussouni (ME Senior), May 2016 - Dec 2016<br>
+            <br>
+            </td>
+          </tr>
+          <tr class="publication">
+            <td style="vertical-align: top;"><img style="width: 81px; height: 99px;" alt="Ivelisse_Negroni" src="people/Ivelisse_Negroni.jpg">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img style="width: 100px; height: 94px;" alt="Noah Trent" src="people/Noah_Trent.jpg"> <br>
+            <br>
+            <img style="width: 97px; height: 100px;" alt="Cesar Sifuentes" src="people/Cesar_Sifuentes.jpg">&nbsp;&nbsp;&nbsp; <img style="width: 70px; height: 100px;" alt="Michael Turasz" src="people/Michael_Turasz.jpg"><br>
+            </td>
+            <td style="vertical-align: top;"><br>
+              <strong>Senior Design Project: Pneumatic shoes for jumping height augmentation</strong>
+            <br>(Top Row L
+      to R) Ivelisse Negroni, Noah Trent <br>
+      (Bottom Row L to R) Cesar Sifuentes, and Michael Turasz, 
+      Aug 2015 - May 16<br>
+            <br>
+      All ME Seniors<br>
+            <br>
+            1) <a href="reports/Jumping_Contraption.pdf">Project Report</a> 2) <a href="https://www.youtube.com/watch?v=I2E7iWqU2IU">Video</a> <br>
+            </td>
+          </tr>
+          <tr class="publication">
+            <td style="vertical-align: top;"><img style="width: 90px; height: 100px;" alt="Andy_Plascencia" src="people/Andy_Plascencia.jpg">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <img style="width: 80px; height: 100px;" alt="Tyler_Rowe" src="people/Tyler_Rowe.jpg"> <br>
+            </td>
+            <td style="vertical-align: top;"><span style="font-weight: bold;"><br>
+      Independent Study Project: Balancing a ball on a beam</span>&nbsp;<a style="color: red;" href="index.html#romo-face"><span style="font-weight: bold;"></span></a> <br>
+      (L to R) Andy Plascencia, Tyler Rowe, and Geoffrey Chiou (not pictured), Jan 2016 - May 2016<br>
+            <br>(ME
+      Seniors)<br>
+            <br>
+      1) <a href="reports/Beam_Ball_Balancing.pdf">Project Report</a> 2) <a href="reports/ball_beam_STL.zip">Files for 3D printing</a> 3) <a href="reports/ball_beam_code.zip">Arduino code</a><br>
+            </td>
+          </tr>
+          <tr class="publication">
+            <td style="vertical-align: top;"><img style="width: 92px; height: 100px;" alt="Geoofrey Toombs" src="people/geoffrey_toombs.jpg">&nbsp;&nbsp;&nbsp; <img style="width: 71px; height: 110px;" alt="James Schopfer" src="people/james_schopfer.jpg"><br>
+            </td>
+            <td style="vertical-align: top;"><br>
+            <span style="font-weight: bold;">Independent Study Project:
+      Animatronics Face -- RomoBot</span> <br>
+      (L to R) Geoffrey Toombs and James Schopfer (ME Seniors), Jan 2016 - May 2016<br><br>
+      Entry to the Spring 2016, Center for Innovation, Technology, and
+      Entrepreneurship (CITE) <br>
+      $100 K Business Competition at UTSA.<br>
+            <br>
+      Finalist in the Instructables Robotic Contest 2016 (only 19 finalists
+      out of 222 entries) <a href="http://www.instructables.com/contest/robotics2016/">Link</a> | <a href="media/RomoBot_RoboticsContest2016.pdf">Cached</a> <br>
+            <br>
+            1) <a href="reports/Animatronics_Face_Report.pdf">Project Report</a> 2) <a href="https://www.youtube.com/watch?v=xkze1_hnam0">Video</a><br>
+            <br>
+            </td>
+          </tr>
+          <tr class="publication">
+            <td style="vertical-align: top;"><img style="width: 85px; height: 100px;" alt="chris_von_brecht" src="people/chris_von_brecht.png"><br>
+            <br>
+            </td>
+            <td style="vertical-align: top;"><strong>Independent Project:
+      Vibration-based robots for the Children's museum, San Antonio.</strong> <br>
+            <br>
+      Christopher von Brecht (ME Senior), Aug 2015 - Dec 2015<br>
+            <br>
+            <br>
+      1) <a href="tutorials/Vibration-based-robots.pdf">Write-up.</a> 2) <a href="tutorials/VibrationRobots_STL.zip">Files for 3D
+            printing</a> 3) <a href="https://youtu.be/QoDUXx42l4c">Video</a><br>
+            </td>
+          </tr>
+          <tr class="publication">
+            <td style="vertical-align: top; width: 213px; height: 150px;"><img src="people/racquel_de_la_garza.png" alt="Racquel De La Garza" style="width: 100px; height: 135px;">&nbsp;<img style="width: 100px; height: 134px;" alt="Christian Trevino" src="people/christian_trevino.png"><br>
+      &nbsp;<img style="width: 100px; height: 135px; top: 807px;" alt="Robert Brothers" src="people/robert_brothers.png">&nbsp;<img style="width: 100px; height: 138px;" alt="Eric Sanchez" src="people/eric_sanchez.png"> <br>
+            </td>
+            <td style="vertical-align: top; width: 613px; height: 150px;"><br>
+            <br>
+            <br>
+      <strong>Senior Design Project: Development of a Robotic Leg</strong> <br>
+            (Top Row L
+      to R) Raquel De La Garza, Christian Trevino, <br>
+      (Bottom Row L to R) Robert Brothers, Eric
+      Sanchez, Aug 2014 - May 15<br>
+            <br>
+      All ME Seniors
+            <br>
+            <br>2nd place among all ME Senior Design
+      Projects for Spring 2015 semester. <br><br>
+            1) <a href="reports/Ein-Report.pdf">Project Report</a> 2) <a href="https://www.youtube.com/watch?v=_gyI_xIkAdw">Video</a><br><br>
+            </td>
+          </tr>
+          <tr class="publication">
+            <td style="vertical-align: top; width: 213px; height: 116px;"><img style="width: 100px; height: 100px;" alt="Rico" src="people/Rico_Jovanni_Ulep.jpg">&nbsp; <img style="width: 100px; height: 100px;" alt="Kyle" src="people/Kyle_Seay.jpg"><br>
+            <img style="width: 100px; height: 100px;" alt="Ezra" src="people/Ezra_Ameperosa.jpg">&nbsp; <img style="width: 100px; height: 100px;" alt="Scott" src="people/Scott_Miller.jpg"><br>
+            </td>
+            <td style="vertical-align: top; width: 613px; height: 116px;"><strong>Senior
+      Design Project: Design and Construction of Rimless Wheeled robot</strong>
+            <br>
+      (Top Row L
+      to R) Rico Jovanni Ulep, Kyle Seay, <br>
+      (Bottom Row L to R) Ezra Ameperosa, and Scott Miller, Aug 2014 - May 15<br>
+            <br>
+      All ME
+      Seniors <br>
+            <br>3rd place among all ME Senior Design
+      Projects for Spring 2015 semester <br><br>
+            1) <a href="reports/Roadrunner-Report.pdf">Project Report</a> 2) <a href="https://www.youtube.com/watch?v=xTSG48KMMR4">Video</a>
+            </td>
+          </tr>
+          <tr class="publication">
+            <td style="vertical-align: top; width: 213px;"><img style="width: 74px; height: 100px;" alt="Cory Royal" src="people/Cory_Royal.png">&nbsp;<img style="width: 75px; height: 100px;" alt="curtis odle" src="people/Curtis_Odle.png">&nbsp;<img style="width: 75px; height: 100px;" alt="william morris" src="people/William_Morris.png"> <br>
+            </td>
+            <td style="vertical-align: top; width: 613px;"><br>
+      <strong>Senior Design Project: Mobile Automated Directory: UTSA guide robot</strong><br>
+      (Top Row L to R) Cory Royal, Curtis
+      Odle, <br>
+      (Bottom Row) William Morris, Aug 2014 - May 15<br>
+
+            <br>
+      All EE Seniors<br>
+            <br>
+            1) <a href="reports/MADMax-Report.pdf">Project Report</a> 2) <a href="https://www.youtube.com/watch?v=9zL_FL8JV0M">Video</a> 
+            </td>
+          </tr>
+          <tr class="publication">
+            <td style="vertical-align: top; width: 213px;">&nbsp;<img style="width: 100px; height: 100px;" alt="Javier Gonzalez" src="people/javier_gonzalez.jpg">&nbsp; <img style="width: 89px; height: 101px;" alt="Roberto Mexquiti" src="people/roberto_mexquitic.jpg"><br>
+            <img style="width: 100px; height: 100px;" alt="Stacy Alexander" src="people/stacy_alexander.jpg"> <img style="width: 106px; height: 100px;" alt="Thilo Janssen" src="people/thilo_janssen.jpg"><br>
+            </td>
+            <td style="vertical-align: top; width: 613px;"><strong>Senior Design
+      Project: Smart Humanoid Used for Silencing Humans (in the
+      library): SHUSHBot</strong>
+            <br>(Top L to R) Javier Gonzalez <em>(McNair
+      Scholar)</em>,
+      Roberto Mexquitic <em>(McNair Scholar)</em>
+            <br>
+      (Bottom Row L to R) Stacy Alexander, and Thilo Janssen, Aug 2014 - May 15
+            <br><br>
+      All EE Seniors<br>
+            <br>
+            1) <a href="reports/SHUSHBot-Report.pdf">Project Report</a> 2) 
+            <a href="https://www.youtube.com/watch?v=Ju9SLrtdkLQ">Video</a>
+            </td>
+          </tr>
+          <tr class="publication">
+            <td style="vertical-align: top; width: 213px;"><img style="width: 84px; height: 113px; top: 1492px; left: 294px;" alt="Christian Trevino" src="people/christian_trevino.png"></td>
+            <td style="vertical-align: top; width: 613px;"><strong>1. Independent
+      Project: Simple
+      pendulum physics for SA Children's Museum</strong> <a href="https://www.youtube.com/watch?v=ZTBn79uAvYQ">Video</a><br>
+      UTSA newsarticle <a href="http://www.utsa.edu/today/2015/06/christianpendulum.html">Link</a> | <a href="media/trevino_pendulum.pdf">Cached</a><br>
+      Jan 2015 - February 2015<br><br>
+      <strong>2. Honors Thesis: Passive Dynamic Toys</strong>
+            <a href="https://www.youtube.com/watch?v=wJ3W3MomWl4">Video</a><br>
+      BS Thesis: Modern Day Advanced Manufacturing of Antique Toy Walkers, <a href="reports/Christian_Trevino_BS_Thesis.pdf">Thesis</a> | <a href="papers/2018Trevino_Rowdy.pdf">Paper</a><br>
+      Aug 2014 - July 2015
+            <br><br>
+      <strong>3. Paper walker for the
+        Inventors Workshop at the Children's Museum</strong> <a href="https://www.youtube.com/watch?v=51WeRWwHMUU">Video</a><br>
+      COE Innovations Magazine back cover <a href="media/Trevino_innovations_winter2015.pdf">Cached</a><br><br>
+      Christian Trevino (ME Senior/ME MS), Aug 2015 - Nov 2015<br>
+            <br><br>
+            </td>
+          </tr>
+          <tr class="publication">
+            <td style="vertical-align: top;"><img style="width: 67px; height: 100px;" alt="gerardo ramos" src="people/gerardo_ramos.png"></td>
+            <td style="vertical-align: top;"><strong>Independent Project: T-maze for
+      neural experiments on mice. (for Prof.
+      Alfonso Apicella, Dept of Biology, UTSA)</strong><br>
+            <br>Gerardo Ramos (ME Junior), Jan 2015 - May 2015<br>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+
+    <br>
+    <br>
+
+
+
+    <hr>
     <footer class="text-left">
       <div class="container">
         <div class="row">
           <div class="col-3 col-xl-12 col-lg-6">
             <p>Last updated&nbsp; June 20, 2025 by Pranav Bhounsule<br>
-			Website designed by <a href="mailto:emilymyphan@gmail.com">Emily Phan</a></p>
+			      Website designed by <a href="mailto:emilymyphan@gmail.com">Emily Phan</a></p>
           </div>
         </div>
       </div>
     </footer>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="js/jquery-3.4.1.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap-4.4.1.js"></script>
+    
 		  </div>
 		  </div>
 		</div>
-			  </section>
-<!-- Default Statcounter code for Pranav Bhounsule HomePage
-https://pab47.github.io/ -->
-<script type="text/javascript">
-var sc_project=6467122; 
-var sc_invisible=0; 
-var sc_security="926f6293"; 
-var scJsHost = "https://";
-document.write("<sc"+"ript type='text/javascript' src='" +
-scJsHost+
-"statcounter.com/counter/counter.js'></"+"script>");
-</script>
-<noscript><div class="statcounter"><a title="Web Analytics
-Made Easy - Statcounter" href="https://statcounter.com/"
-target="_blank"><img class="statcounter"
-src="https://c.statcounter.com/6467122/0/926f6293/0/"
-alt="Web Analytics Made Easy - Statcounter"
-referrerPolicy="no-referrer-when-downgrade"></a></div></noscript>
-<!-- End of Statcounter Code -->
+    </section>
+
+
+    <!-- Default Statcounter code for Pranav Bhounsule HomePage https://pab47.github.io/ -->
+    <script type="text/javascript">
+      var sc_project=6467122; 
+      var sc_invisible=0; 
+      var sc_security="926f6293"; 
+      var scJsHost = "https://";
+      document.write("<sc"+"ript type='text/javascript' src='" +
+      scJsHost+
+      "statcounter.com/counter/counter.js'></"+"script>");
+    </script>
+    <noscript>
+      <div class="statcounter"><a title="Web Analytics
+      Made Easy - Statcounter" href="https://statcounter.com/"
+      target="_blank"><img class="statcounter"
+      src="https://c.statcounter.com/6467122/0/926f6293/0/"
+      alt="Web Analytics Made Easy - Statcounter"
+      referrerPolicy="no-referrer-when-downgrade"></a></div>
+    </noscript>
+    <!-- End of Statcounter Code -->
+
   </body>
 </html>

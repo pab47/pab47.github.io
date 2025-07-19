@@ -1,0 +1,44 @@
+.hide {
+	display: none;
+}
+.anchor {
+	scroll-margin-top: 80px;
+}	
+
+/* Search Hiding feature */
+.publication {
+	margin-top: 15px;
+	margin-bottom: 15px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+/* Videos Page */
+.videoContainer {
+	display: flex;
+	align-items: flex-start;
+	text-align: center;
+	gap: 20px;
+	max-width: 100%;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	margin-left: 10px;
+}
+
+.videoContainer iframe {
+	height: 290px;
+	width: 515px;
+	flex-shrink: 0;
+}
+
+@media (max-width: 768px) {
+	.videoContainer {
+		flex-direction: column;
+		align-items: center; 
+		text-align: center;  
+	}
+
+	.videoContainer p {
+		max-width: none; 
+	}
+}
