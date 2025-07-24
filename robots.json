@@ -1,0 +1,72 @@
+[
+	{
+		"name": "Shush-Bot",
+		"img": "robots/ShushBot_tn.jpg",
+		"link": "https://www.youtube.com/watch?v=Ju9SLrtdkLQ"
+	},
+	{
+		"name": "Rowdy Walker",
+		"img": "robots/Rowdy_Walker_tn.jpg",
+		"link": "https://www.youtube.com/watch?v=wJ3W3MomWl4"
+	},
+	{
+		"name": "Romo-bot",
+		"img": "robots/romo_bot_tn.jpg",
+		"link": "https://www.youtube.com/watch?v=xkze1_hnam0"
+	},
+	{
+		"name": "Roadrunner 1",
+		"img": "robots/Roadrunner_tn.jpg",
+		"link": "https://www.youtube.com/watch?v=xTSG48KMMR4"
+	},
+	{
+		"name": "Paper Walker",
+		"img": "robots/Paper_walkers_tn.jpg",
+		"link": "https://www.youtube.com/watch?v=51WeRWwHMUU"
+	},
+	{
+		"name": "Guide-bot",
+		"img": "robots/MaxGuideBot_tn.jpg",
+		"link": "https://www.youtube.com/watch?v=9zL_FL8JV0M"
+	},
+	{
+		"name": "Ein, Modular Legs",
+		"img": "robots/EinModularLeg_tn.jpg",
+		"link": "https://www.youtube.com/watch?v=_gyI_xIkAdw"
+	},
+	{
+		"name": "Dancing Pendulums",
+		"img": "robots/Dancing_pendulums_tn.jpg",
+		"link": "https://www.youtube.com/watch?v=ZTBn79uAvYQ"
+	},
+	{
+		"name": "Inchworm",
+		"img": "robots/UTSA_Inchworm_tn.jpg",
+		"link": "https://www.youtube.com/watch?v=rlaOOx0Boos"
+	},
+	{
+		"name": "Luxo Jr. Hopping Lamp",
+		"img": "robots/MaxGuideBot_tn.jpg",
+		"link": "https://www.youtube.com/watch?v=DPUNslHj5VE"
+	},
+	{
+		"name": "Pumping a swing robot",
+		"img": "robots/Pumping_Swing_robot_tn.jpg",
+		"link": "https://www.youtube.com/watch?v=mNHBRSlg1EM"
+	},
+	{
+		"name": "UTSA Darwin",
+		"img": "robots/utsa_darwin_tn.jpg",
+		"link": "https://www.youtube.com/watch?v=_-Ivn1zhD6g"
+	},
+	{
+		"name": "Roadrunner 2",
+		"img": "robots/roadrunner2_tn.jpg",
+		"link": "https://www.youtube.com/watch?v=SNxeP29ayhI"
+	},
+	{
+		"name": "Open source quadruped",
+		"img": "robots/quadruped_tn.jpg",
+		"link": "https://www.youtube.com/watch?v=2qO0kL8-p4Y"
+	}
+]

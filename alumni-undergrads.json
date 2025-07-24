@@ -1,0 +1,865 @@
+[
+	{
+		"title": "Senior Design Project: Litter Bot",
+		"years": "Aug 2024 - May 2025",
+		"major": "All ECE Seniors",
+		"links": [
+			{ "label": "Report", "url": "reports/LitterBot.pdf" },
+			{ "label": "GitHub", "url": "https://github.com/cm-zamudio/Autonomous-Litter-Bot"},
+			{ "label": "Youtube", "url": "https://youtu.be/8s1aPp4qPkk" }
+		],
+		"people": [
+			{ "name": "Christian Zamudio", "img": "people/Christian_Zamudio.png"},
+			{ "name": "Edwyn Arrezola", "img": "people/Edwyn_arrezola.png"},
+			{ "name": "Juan Estrada", "img": "people/Juan_Estrada.png"},
+			{ "name": "Parin Pandit", "img": "people/Parin_Pandit.png"}
+		]
+	},
+	{
+		"title": "Senior Design Project: ChocBot: Retrofitting Extruder for Chocolate Design",
+		"years": "Aug 2024 - May 2025",
+		"major": "All ME Seniors",
+		"links": [
+			{ "label": "Report", "url": "reports/ChocoBot.pdf"},
+			{ "label": "Video", "url": "https://youtube.com/shorts/p1_u0b1AxlA"}
+		],
+		"people": [
+			{ "name": "Ibrahim Ahad", "img": "people/Ibrahim_Ahad.png"},
+			{ "name": "J J Sebastion", "img": "people/J_J_Sebastian.JPG"},
+			{ "name": "Jamye Brothers", "img": "people/Jamye_Brothers.png"},
+			{ "name": "Neil Rasmussen", "img": "people/Neil_Rasmussen.png"},
+			{ "name": "Qasim Rizvi", "img": "people/Qasim Rizvi.png"}
+		]
+	},
+	{
+		"title": "Undergraduate Research: Evaluating Efficient Object Detection Models for Real-Time Robotic Applications",
+		"years": "Jan 2025 - May 2025",
+		"major": "CS Senior",
+		"links": [
+			{ "label": "Poster", "url": "reports/Object_Detection.pdf"},
+			{ "label": "GitHub", "url": "https://github.com/Shahab-Ahmed/URF"}
+		],
+		"people": [
+			{ "name": "Ahmed Shahab", "img": "people/Ahmed_Shahab.png"}
+		]
+	},
+	{
+		"title": "Undergraduate Research: Hiwonder Mentorpi A1 Ackerman Chassis Automomous Vehicle (focus on SLAM)",
+		"years": "Jan 2025 - Apr 2025",
+		"major": "ME Senior",
+		"links": [
+			{ "label": "Report", "url": "reports/Hiwonder_SLAM.pdf"},
+			{ "label": "GitHub Instructions", "url": "https://github.com/mubashirfarooqi/Hiwonder.git"}
+		],
+		"people": [
+			{ "name": "Mubashir Farooqi", "img": "people/mubashir_farooqi.png"}
+		]
+	},
+	{
+		"title": "Undergraduate Research: Data Driven Ergonomic Design of a Passive Spinal",
+		"years": "Aug 2024 - Dec 2024",
+		"major": "ME Senior",
+		"links": [
+			{ "label": "Report", "url": "reports/Exo_Design.pdf"}
+		],
+		"people": [
+			{ "name": "Aaron Griffith", "img": "people/Aaron_Griffith.jpg"}
+		]
+	},
+	{
+		"title": "Summer internship: Car navigation using Aruco Markers (UIC GPIP program)",
+		"years": "June 2024 - August 2025",
+		"major": "ME Sophomore",
+		"links": [
+			{ "label": "Github", "url": "https://github.com/MirYamin123/Car-with-Aruco-Marker-detection"},
+			{ "label": "Autonomous Car", "url": "reports/AutonomousCar.pdf"}
+		],
+		"people": [
+			{ "name": "Yamin Mir", "img": "people/Yamin_Mir.png"}
+		]
+	},
+	{
+		"title": "Summer internship: Robot Data Visualization (UIC GPIP program)",
+		"years": "June 2024 - Aug 2024",
+		"major": "CS Sophomore",
+		"links": [
+			{ "label": "Visualization Demo", "url": "https://www.youtube.com/watch?v=jYlf2gbSums&feature=youtu.be"},
+			{ "label": "Github", "url": "https://github.com/Trojak0/mujoco-simulate-csv-replay"}
+		],
+		"people": [
+			{ "name": "Adam Trojak", "img": "people/Adam_Trojak.png"}
+		]
+	},
+	{
+		"title": "Summer internship: Webpage Design (UIC GPIP program)",
+		"years": "June 2024 - Aug 2024",
+		"major": "CS Sophomore",
+		"links": [
+			{ "label": "Online courses landing page", "url": "https://pab47.github.io/courses.html"},
+			{ "label": "Mechatronics Project Page", "url": "https://pab47.github.io/mechatronics/spring23b.html"}
+		],
+		"people": [
+			{ "name": "Trenton Coleman", "img": "people/Trenton_Coleman.png"}
+		]
+	},
+	{
+		"title": "Summer internship: Reinforcement Learning on Flappy Bird Game (UIC GPIP program)",
+		"years": "June 2024 - Aug 2024",
+		"major": "CS Sophomore",
+		"links": [
+			{ "label": "Flappy Bird Code", "url": "reports/FlappyBird.zip"}
+		],
+		"people": [
+			{ "name": "Shane Kilmas", "img": "people/Shane_Kilmas.png"}
+		]
+	},
+	{
+		"title": "Senior Design Project: Robot Arm Teleoperation",
+		"years": "Aug 2023 - May 2024",
+		"major": "All ME Seniors",
+		"links": [
+			{ "label": "Report", "url": "reports/Robot Arm Teleoperation.pdf"},
+			{ "label": "Poster", "url": "reports/Robot Arm Teleoperation Poster.pdf"}
+		],
+		"people": [
+			{ "name": "Alyssa Mejia", "img": "people/Alyssa Mejia.jpg"},
+			{ "name": "Edward Gonzalez", "img": "people/Edward Gonzalez.jpg"},
+			{ "name": "Elena Esparza", "img": "people/Elena Esparza.jpg"},
+			{ "name": "Sultan Muhammad", "img": "people/Sultan Muhammad.jpg"},
+			{ "name": "Paul Peretz", "img": "people/Paul Peretz.jpg"}
+		]
+	},
+	{
+		"title": "Senior Design Project: An end-effector for a humanoid robot",
+		"years": "Aug 2023 - May 2024",
+		"major": "All ME Seniors",
+		"links": [
+			{ "label": "Report", "url": "reports/End Effector for Robot.pdf"}
+		],
+		"people": [
+			{ "name": "Jeremy Ovalle", "img": "people/unknown.jpg"},
+			{ "name": "Andres Jimenez", "img": "people/unknown.jpg"},
+			{ "name": "Nick Casale", "img": "people/unknown.jpg"},
+			{ "name": "Matt Rothenbaum", "img": "people/unknown.jpg"},
+			{ "name": "Praveen Ghimire", "img": "people/unknown.jpg"}
+		]
+	},
+	{
+		"title": "Undergraduate research: Joystick-based control of a small-size humanoid robot",
+		"years": "Jan 2024 - May 2024",
+		"major": "ME Senior",
+		"links": [
+			{ "label": "Youtube", "url": "https://youtu.be/_Rs9yqkoHKY"}
+		],
+		"people": [
+			{ "name": "Saul Ortiz", "img": "people/Saul Ortiz.jpg"}
+		]
+	},
+	{
+		"title": "Summer internship: MuJoCo User Interface programming (UIC GPIP program)",
+		"years": "June 2023 - Aug 2023",
+		"major": "CS Sophomore",
+		"links": [
+			{ "label": "Robot GUI Instructions", "url": "reports/Robot_GUI_Instructions.pdf"},
+			{ "label": "Github", "url": "https://github.com/cd-1578/RoboGUI"}
+		],
+		"people": [
+			{ "name": "Conrad Domagala", "img": "people/Conrad_Domagala.jpeg"}
+		]
+	},
+	{
+		"title": "Summer internship: MuJoCo User Interface programming (UIC GPIP program)",
+		"years": "June 2023 - Aug 2023",
+		"major": "CS Sophomore",
+		"links": [
+			{ "label": "MuJoCo UI Projectile Game (C files)", "url": "reports/MuJoCo UI Projectile Game.zip"}
+		],
+		"people": [
+			{ "name": "Daniel Barajas", "img": "people/Daniel_Barajas.jpg"}
+		]
+	},
+	{
+		"title": "Summer internship: Cable Management System for Quadruped Robots (UIC GPIP program)",
+		"years": "June 2023 - Aug 2023",
+		"major": "ME Sophomore",
+		"links": [
+			{ "label": "Cable Management CAD files", "url": "reports/A1_cable_management_CAD.zip"}
+		],
+		"people": [
+			{ "name": "Amer Almhtachem", "img": "people/Amer_Almhtachem.JPG"}
+		]
+	},
+	{
+		"title": "Senior Design Project: Hopping Luxo Jr. Lamp",
+		"years": "Aug 2022 - May 2023",
+		"major": "All ME Seniors",
+		"links": [
+			{ "label": "Report", "url": "reports/Luxo_Jr_Lamp.pdf"},
+			{ "label": "Video", "url": "https://youtu.be/W1CabKbOciY"}
+		],
+		"people": [
+			{ "name": "Ahmed Al Khuridah", "img": "people/Ahmed Al Khuridah.png"},
+			{ "name": "Danielle Lee", "img": "people/Danielle Lee.png"},
+			{ "name": "Gabriel Barba", "img": "people/Gabriel Barba.png"},
+			{ "name": "Kali Giancana", "img": "people/Kali Giancana.png"},
+			{ "name": "Sebastian Kowal", "img": "people/Sebastian Kowal.png"}
+		]
+	},
+	{
+		"title": "Senior Design Project: Manipulator mounting system",
+		"years": "Aug 2022 - May 2023",
+		"major": "All ME Seniors",
+		"links": [
+			{ "label": "Report", "url": "reports/Mounting_system_quadruped.pdf"},
+			{ "label": "CAD Files", "url": "reports/Mounting_sytem_CAD_Files.zip"},
+			{ "label": "Makerspace Fabrication Instructions", "url": "reports/Makerspace Fabrication Instructions.pdf"}
+		],
+		"people": [
+			{ "name": "Alejandro Gonzales", "img": "people/Alejandro Gonzales.jpg"},
+			{ "name": "Alvin Le", "img": "people/Alvin Le.png"},
+			{ "name": "Liam Doherty", "img": "people/Liam Doherty.jpg"},
+			{ "name": "Man Pham", "img": "people/Man Pham.jpg"},
+			{ "name": "Sean Burns", "img": "people/Sean Burns.jpg"}
+		]
+	},
+	{
+		"title": "Undergraduate research: April tag-based drone following (partly supported by NSF REU)",
+		"years": "Aug 2022 - May 2022",
+		"major": "ME Senior",
+		"links": [
+			{ "label": "Youtube", "url": "https://youtu.be/wJ9mwitagVo"},
+			{ "label": "Github", "url": "https://github.com/chnuggie/UICspring2023RoboticsLab"}
+		],
+		"people": [
+			{ "name": "Aleena Albert", "img": "people/aleena_albert.png"}
+		]
+	},
+	{
+		"title": "Summer internship: Redesign of Robotics and Motion Lab website (UIC GPIP)",
+		"years": "June 2022 - Aug 2022",
+		"major": "CS Sophomore",
+		"links": [
+			{ "label": "Website", "url": "https://pab47.github.io"}
+		],
+		"people": [
+			{ "name": "Emily Phan", "img": "people/unknown.jpg"}
+		]
+	},
+	{
+		"title": "Summer internship: Visualization for robotic controller development (UIC GPIP program)",
+		"years": "June 2022 - Aug 2022",
+		"major": "ME Junior",
+		"links": [
+			{ "label": "MATLAB", "url": "reports/robot_data_viz_MATLAB.zip"}
+		],
+		"people": [
+			{ "name": "Calvin Bitakis", "img": "people/calvin_bitakis.png"}
+		]
+	},
+	{
+		"title": "Senior Design Project: Computer vision-based obstacle avoidance system for a quadruped robot",
+		"years": "Aug 2021 - May 2022",
+		"major": "All ECE Seniors",
+		"links": [
+			{ "label": "Report", "url": "reports/Quadruped_vision_report.pdf"},
+			{ "label": "Presentation", "url": "reports/Quadruped_vision_presentation.pdf"},
+			{ "label": "Video", "url": "https://youtu.be/Jp8ZNr-G5ag"},
+			{ "label": "Github", "url": "https://github.com/jonathanperthel/PathVision"}
+		],
+		"people": [
+			{ "name": "Emily Hernandez", "img": "people/emily_hernandez.png"},
+			{ "name": "Alex Domagala", "img": "people/alex_domagala.png"},
+			{ "name": "Pranay Singh", "img": "people/pranay_singh.png"},
+			{ "name": "Jon Perthel", "img": "people/jon_perthel.png"}
+		]
+	},
+	{
+		"title": "Senior Design Project: Sawfly Larvae inspired swarm robots",
+		"years": "Aug 2021 - May 2022",
+		"major": "All ME Seniors",
+		"links": [
+			{ "label": "Report", "url": "reports/Sawfly_report.pdf"},
+			{ "label": "Presentation", "url": "reports/Sawfly_presentation.pdf"},
+			{ "label": "Video", "url": "https://youtu.be/CzphgU75FCc"}
+		],
+		"people": [
+			{ "name": "Eric Najera", "img": "people/eric_najera.png"},
+			{ "name": "Kyle Kendra", "img": "people/kyle_kendra.png"},
+			{ "name": "Joe Downie", "img": "people/joe_downie.png"},
+			{ "name": "Yuki Nojima", "img": "people/yuki_nojima.png"}
+		]
+	},
+	{
+		"title": "Senior Design Project: An actuator inspired by the chameleon's tongue",
+		"years": "Aug 2021 - May 2022",
+		"major": "All ME Seniors",
+		"links": [
+			{ "label": "Report", "url": "reports/Chameleon_Tongue_report.pdf"},
+			{ "label": "Presentation", "url": "reports/Chameleon_Tongue_presentation.pdf"},
+			{ "label": "Video", "url": "https://youtu.be/Ivo-NA6rvM0"}
+		],
+		"people": [
+			{ "name": "Baneza Hernandez", "img": "people/unknown.jpg"},
+			{ "name": "Mohammad Ibrahim Raffay", "img": "people/unknown.jpg"},
+			{ "name": "Gregory Dachowski", "img": "people/unknown.jpg"},
+			{ "name": "Zach Williams", "img": "people/unknown.jpg"}
+		]
+	},
+	{
+		"title": "Undergraduate research: Tic-Tac-Toe playing robot (NSF-REU)",
+		"years": "May 2021 - May 2022",
+		"major": "ME Senior",
+		"links": [
+			{ "label": "Youtube", "url": "https://youtu.be/GSUqOxDhg6w"}
+		],
+		"people": [
+			{ "name": "Jonathan Garcia", "img": "people/unknown.jpg"}
+		]
+	},
+	{
+		"title": "Summer internship: Website design for robotics courses (UIC GPIP program)",
+		"years": "June 2021 - Aug 2021",
+		"major": "CS Sophomore",
+		"links": [
+			{ "label": "Legged Robotics", "url": "legs.html"},
+			{ "label": "Robotics", "url": "robotics.html"}
+		],
+		"people": [
+			{ "name": "Mohamed Hassan", "img": "people/unknown.jpg"}
+		]
+	},
+	{
+		"title": "Summer internship: Data mining of human walking data (UIC GPIP program)",
+		"years": "June 2021 - Aug 2021",
+		"major": "CS Senior",
+		"links": [
+			{ "label": "Presentation", "url": "reports/Data_mining_walking.pdf"}
+		],
+		"people": [
+			{ "name": "Nguyen Hoa Pham", "img": "people/nguyenhoa_pham.jpg"}
+		]
+	},
+	{
+		"title": "Summer internship: Trajectory generation (UIC GPIP program)",
+		"years": "June 2021 - Aug 2021",
+		"major": "ME Sophomore",
+		"links": [
+			{ "label": "Presentation", "url": "reports/Trajectory_Generation.pdf"}
+		],
+		"people": [
+			{ "name": "Tanmay Mittal", "img": "people/tanmay_mittal.jpg"}
+		]
+	},
+	{
+		"title": "Summer internship: Visualization of UAV-UGV routes, Army Research Lab project (UIC GPIP program)",
+		"years": "June 2021 - Aug 2021",
+		"major": "ME Sophomore",
+		"links": [
+			{ "label": "Presentation", "url": "reports/uav_ugv_visualization.pdf"}
+		],
+		"people": [
+			{ "name": "Michael Hernandez", "img": "people/michael_hernandez.jpg"}
+		]
+	},
+	{
+		"title": "Senior Design Project: Inchworm that can move straight and turn",
+		"years": "Aug 2020 - May 2021",
+		"major": "All ME Seniors",
+		"links": [
+			{ "label": "Report", "url": "reports/Inchworm_report2.pdf"},
+			{ "label": "Presentation", "url": "reports/Inchworm_presentation.pdf"},
+			{ "label": "Summary", "url": "reports/Inchworm_summary.pdf"},
+			{ "label": "Video", "url": "https://vimeo.com/532506169"}
+		],
+		"people": [
+			{ "name": "Alex Lewandowski", "img": "people/unknown.jpg"},
+			{ "name": "Daniel Kulach", "img": "people/unknown.jpg"},
+			{ "name": "Omer A. Durrani", "img": "people/unknown.jpg"},
+			{ "name": "Matt A. Halverson", "img": "people/unknown.jpg"},
+			{ "name": "Mikayla A. Sirovatka", "img": "people/unknown.jpg"}
+		]
+	},
+	{
+		"title": "Senior Design Project: Automated Wet Wipe Sampling System",
+		"years": "Aug 2020 - May 2021",
+		"major": "All ME Seniors",
+		"links": [
+			{ "label": "Report", "url": "reports/automated_report.pdf"},
+			{ "label": "Presentation", "url": "reports/automated_presentation.pdf"},
+			{ "label": "Video", "url": "https://vimeo.com/532513318"}
+		],
+		"people": [
+			{ "name": "Mikhail W. Clayton", "img": "people/unknown.jpg"},
+			{ "name": "Amer Khalil", "img": "people/unknown.jpg"},
+			{ "name": "Sebastian C. Mihulet", "img": "people/unknown.jpg"},
+			{ "name": "Umar M. Siddiqui", "img": "people/unknown.jpg"},
+			{ "name": "Sulieman Sarmad", "img": "people/unknown.jpg"}
+		]
+	},
+	{
+		"title": "Senior Design Project: Spider Web Catapult",
+		"years": "Aug 2020 - May 2021",
+		"major": "All ME Seniors",
+		"links": [
+			{ "label": "Report", "url": "reports/Slingshot_report.pdf"},
+			{ "label": "Presentation", "url": "reports/Slingshot_presentation.pdf"},
+			{ "label": "Poster", "url": "reports/Slingshot_poster.pdf"},
+			{ "label": "Video", "url": "https://vimeo.com/532476183"}
+		],
+		"people": [
+			{ "name": "John Gerig", "img": "people/unknown.jpg"},
+			{ "name": "Tom Bates", "img": "people/unknown.jpg"},
+			{ "name": "Manuel Avitia", "img": "people/unknown.jpg"},
+			{ "name": "Gunnar Waldvogel", "img": "people/unknown.jpg"},
+			{ "name": "Tesfay Legesse", "img": "people/unknown.jpg"},
+			{ "name": "Justin Washington", "img": "people/unknown.jpg"}
+		]
+	},
+	{
+		"title": "Independent Project: Low Cost Security System for a UIC lab motioneyeos open-source security software and raspberry pi single-board computers",
+		"years": "Jan 2020 - May 2020",
+		"major": "ME Senior",
+		"links": [
+			{ "label": "Report", "url": "reports/surveillance.pdf"}
+		],
+		"people": [
+			{ "name": "Anthony Dudlo", "img": "people/anthony_dudlo.jpg"}
+		]
+	},
+	{
+		"title": "Senior Design Project: Quadrupedal robot",
+		"years": "Aug 2019 - May 2020",
+		"major": "All ME Seniors",
+		"links": [
+			{ "label": "Report", "url": "reports/UIC_quadruped.pdf"}
+		],
+		"people": [
+			{ "name": "Liridona Ashiku", "img": "people/unknown.jpg"},
+			{ "name": "Maha Mohammad", "img": "people/unknown.jpg"},
+			{ "name": "Nick Pippin", "img": "people/unknown.jpg"},
+			{ "name": "Erik Silva", "img": "people/unknown.jpg"}
+		]
+	},
+	{
+		"title": "Senior Design Project: Bipedal robot",
+		"years": "Aug 2019 - May 2020",
+		"major": "All ME Seniors",
+		"links": [
+			{ "label": "Report", "url": "reports/UIC_bipedal.pdf"}
+		],
+		"people": [
+			{ "name": "Alex Bandurin", "img": "people/unknown.jpg"},
+			{ "name": "John Lajka", "img": "people/unknown.jpg"},
+			{ "name": "Felipe Cabrera", "img": "people/unknown.jpg"}
+		]
+	},
+	{
+		"title": "Senior Design Project: Paramotor Flight Control Development Platform",
+		"years": "Jan 2019 - Dec 2019",
+		"major": "All ME Seniors",
+		"links": [
+			{ "label": "Report", "url": "reports/Paramotor.pdf"},
+			{ "label": "Video", "url": "https://youtu.be/3cR4UzW2j0c"}
+		],
+		"people": [
+			{ "name": "Kyle Kinsey", "img": "people/Kyle%20Kinsey_tn.jpg"},
+			{ "name": "Mathew Pantoja", "img": "people/Mathew%20Pantoja_tn.jpg"},
+			{ "name": "Ramon Vazquez", "img": "people/Ramon%20Vazquez_tn.jpg"},
+			{ "name": "Tarunjeet Singh", "img": "people/Tarunjeet%20Singh_tn.jpg"}
+		]
+	},
+	{
+		"title": "Senior Design Project: Lil Bro: An inexpensive open-source quadrupedal robot",
+		"years": "Aug 2018 - May 2019",
+		"major": "All ME Seniors",
+		"links": [
+			{ "label": "Report", "url": "reports/quadruped_robot.pdf"},
+			{ "label": "Github", "url": "https://github.com/BroboticsInc31/LilBro"},
+			{ "label": "Video", "url": "https://www.youtube.com/watch?v=2qO0kL8-p4Y"}
+		],
+		"people": [
+			{ "name": "Steven Farra", "img": "people/Steven_Farra.png"},
+			{ "name": "Emiliano Rodriguez", "img": "people/Emiliano_Rodriguez2.png"},
+			{ "name": "Mario Navarro", "img": "people/Mario_Navarro.png"},
+			{ "name": "John Carroll", "img": "people/John_Carroll.png"}
+		]
+	},
+	{
+		"title": "Senior Design Project: Sky Transportation Attachment System",
+		"years": "Jan 2018 - Dec 2018",
+		"major": "All ME Seniors",
+		"links": [
+			{ "label": "Report", "url": "reports/Sky_Transportation.pdf"},
+			{ "label": "Video", "url": "https://youtu.be/HDO0i35NzEw"}
+		],
+		"people": [
+			{ "name": "Daniel Jiwani", "img": "people/Daniel_Jiwani_tn.jpg"},
+			{ "name": "Chad Parker", "img": "people/Chad_Parker_tn.jpg"},
+			{ "name": "Cristian Morales", "img": "people/Cristian_Morales_tn.jpg"},
+			{ "name": "William Hinojosa", "img": "people/William_Hinojosa_tn.jpg"}
+		]
+	},
+	{
+		"title": "Independent Project: Simplest walker simulation using direct collocation",
+		"years": "Aug 2018 - Dec 2018",
+		"major": "ME Senior",
+		"links": [
+			{ "label": "MATLAB", "url": "simplest_walker_collocation.m"}
+		],
+		"people": [
+			{ "name": "Panch Karasani", "img": "people/panch_karasani.jpg"}
+		]
+	},
+	{
+		"title": "Summer Project: Rowdy wear: a gadget to help you make quick decisions",
+		"years": "May 2016 - Aug 2016",
+		"major": "ME Sophomore",
+		"links": [
+			{ "label": "Video", "url": "https://www.youtube.com/watch?v=1YEbfwa-3RQ"}
+		],
+		"people": [
+			{ "name": "Panch Karasani", "img": "people/panch_karasani.jpg"}
+		]
+	},
+	{
+		"title": "Independent Project: Auto sunglass",
+		"years": "June 2018 - Aug 2018",
+		"major": "High School Student",
+		"links": [
+			{ "label": "Report", "url": "reports/Guzman_Auto_Sunglasses.pdf"},
+			{ "label": "Video", "url": "https://www.youtube.com/watch?v=bQjF9xGCF20"}
+		],
+		"people": [
+			{ "name": "Victor Guzman", "img": "people/victor_guzman.jpg"}
+		]
+	},
+	{
+		"title": "Independent Project: RoboCar",
+		"years": "June 2019 - July 2019",
+		"major": "High School Student",
+		"links": [
+			{ "label": "Tutorials", "url": "tutorials/RoboCarTutorial.pdf"},
+			{ "label": "Video", "url": "https://youtu.be/rFQ8wNH19YQ"}
+		],
+		"people": [
+			{ "name": "Victor Guzman", "img": "people/victor_guzman.jpg"}
+		]
+	},
+	{
+		"title": "Independent Project: DIY: Robobug, a vibration motor actuated robot",
+		"years": "May 2018 - Dec 2018",
+		"major": "ME Senior",
+		"links": [
+			{ "label": "Tutorial", "url": "tutorials/RoboBugTutorial.pdf"},
+			{ "label": "Video", "url": "https://www.youtube.com/watch?v=7ovG-mC6xFs"}
+		],
+		"people": [
+			{ "name": "Sierra Baumbusch", "img": "people/Sierra%20Baumbusch.jpg"}
+		]
+	},
+	{
+		"title": "Independent Project: Tutorials: 3D scanning using Artec EVA",
+		"years": "May 2018 - Dec 2018",
+		"major": "ME Senior",
+		"links": [
+			{ "label": "File", "url": "reports/Baumbusch_3D_Scanner.pdf"},
+			{ "label": "Video", "url": "https://youtu.be/CgkkgWLzhTU"},
+			{ "label": "3D Scan Print", "url": "reports/3Dscan_print.jpg"}
+		],
+		"people": [
+			{ "name": "Sierra Baumbusch", "img": "people/Sierra%20Baumbusch.jpg"}
+		]
+	},
+	{
+		"title": "Undergraduate Research: Darwin humanoid dancing to UTSA and other songs",
+		"years": "May 2018 - Aug 2018",
+		"major": "ME Senior",
+		"links": [
+			{ "label": "Video", "url": "https://www.youtube.com/watch?v=_-Ivn1zhD6g"}
+		],
+		"people": [
+			{ "name": "Emiliano Rodriguez", "img": "people/emiliano_rodriguez.png"}
+		]
+	},
+	{
+		"title": "Independent Project: Tic-Tac-Toe Robot",
+		"years": "Aug 2017 - May 2018",
+		"major": "ME Junior",
+		"links": [
+			{ "label": "Video", "url": "https://www.youtube.com/watch?v=bpgAn6hZhl0"}
+		],
+		"people": [
+			{ "name": "Drishya Dahal", "img": "people/Drishya_Dahal.jpg"}
+		]
+	},
+	{
+		"title": "Senior Design Project: Inchworm Robot",
+		"years": "Jan 2017 - Dec 2017",
+		"major": "All ME Seniors",
+		"links": [
+			{ "label": "Report", "url": "reports/Inchworm_report.pdf"},
+			{ "label": "Video", "url": "https://www.youtube.com/watch?v=rlaOOx0Boos"}
+		],
+		"people": [
+			{ "name": "Anthony Abundis", "img": "people/Anthony_Abundis.jpg"},
+			{ "name": "Michael Aguirre", "img": "people/Michael_Aguirre.jpg"},
+			{ "name": "Justin Castillo", "img": "people/Justin_Castillo.jpg"},
+			{ "name": "Flavio Moreira", "img": "people/Flavio_Moreira.jpg"}
+		]
+	},
+	{
+		"title": "Independent Project: Pumping a swing -- simulation and experiments",
+		"years": "Sep 2017 - Dec 2017",
+		"major": "ME Juniors",
+		"links": [
+			{ "label": "Report", "url": "reports/Pumping_Swing.pdf"},
+			{ "label": "Video", "url": "https://www.youtube.com/watch?v=mNHBRSlg1EM"}
+		],
+		"people": [
+			{ "name": "Joseph Galloway", "img": "people/Joseph_Galloway.jpg"},
+			{ "name": "Gerardo Rios", "img": "people/gerardo_rios.jpg"}
+		]
+	},
+	{
+		"title": "Independent Project: 3D printing of rolling cylinders for demonstration of energy principles",
+		"years": "June 2017 - Aug 2017",
+		"major": "High School Student",
+		"links": [
+			{ "label": "Report", "url": "tutorials/RollingCylinders.pdf"},
+			{ "label": "CAD Files", "url": "tutorials/RollingCylindersCAD.zip"},
+			{ "label": "Video", "url": "https://www.youtube.com/watch?v=deA2DIyGwks"}
+		],
+		"people": [
+			{ "name": "Nour K. El-Ghori", "img": "people/nour_el_ghori.jpg"}
+		]
+	},
+	{
+		"title": "Independent Project: Trashbot - a trash collecting robot",
+		"years": "Jan 2017 - May 2017",
+		"major": "ME Sophomores",
+		"links": [
+			{ "label": "Report", "url": "reports/Trash_Bot_Report.pdf"},
+			{ "label": "Video", "url": "https://www.youtube.com/watch?v=LSevwuNdBks"}
+		],
+		"people": [
+			{ "name": "Drishya Dahal", "img": "people/Drishya_Dahal.jpg"},
+			{ "name": "Joseph Galloway", "img": "people/Joseph_Galloway.jpg"}
+		]
+	},
+	{
+		"title": "Independent Study: Drop Off Detection Sensor for Blind Persons",
+		"years": "Jan 2017 - May 2017",
+		"major": "ME Senior",
+		"links": [
+			{ "label": "Report", "url": "reports/DropOff_Detection_Blind.pdf"}
+		],
+		"people": [
+			{ "name": "Kyle Lamoureux", "img": "people/Kyle_Lamoureux.jpg"}
+		]
+	},
+	{
+		"title": "Senior Design Project: Multi-link Robotic Manipulator",
+		"years": "Jan 2016 - Dec 2016",
+		"major": "All ME Seniors",
+		"links": [
+			{ "label": "Report", "url": "reports/Manipulator_robot.pdf"}
+		],
+		"people": [
+			{ "name": "Sergio Molina", "img": "people/Sergio_Molina.jpg"},
+			{ "name": "Paul Alabi", "img": "people/Paul_Alabi.jpg"},
+			{ "name": "Omar Castro", "img": "people/Omar_Castro.jpg"},
+			{ "name": "Jonathan Sacket", "img": "people/Jonathan_Sacket.jpg"}
+		]
+	},
+	{
+		"title": "Senior Design Project: The Roadrunner Robot 2: The Rimless Wheeled Robot",
+		"years": "Jan 2016 - Dec 2016",
+		"major": "All ME Seniors",
+		"links": [
+			{ "label": "Report", "url": "reports/Roadrunner2_report.pdf"}
+		],
+		"people": [
+			{ "name": "Aspen Meineke", "img": "people/Aspen_Meineke.jpg"},
+			{ "name": "Bianca Dumlao", "img": "people/Bianca_Dumlao.jpg"},
+			{ "name": "Noel Cantu", "img": "people/Noel_Cantu.jpg"},
+			{ "name": "James Crisler", "img": "people/James_Crisler.jpg"}
+		]
+	},
+	{
+		"title": "Independent Project",
+		"years": "May 2016 - Dec 2016",
+		"major": "ME Senior",
+		"links": [
+			{ "label": "Hopping tutorial", "url": "index.html#tut-hopper"},
+			{ "label": "Walking simulation and optimization", "url": "index.html#comparative"}
+		],
+		"people": [
+			{ "name": "Chelsea Moussouni", "img": "people/chelsea_moussouni.jpg"}
+		]
+	},
+	{
+		"title": "Senior Design Project: Pneumatic shoes for jumping height augmentation",
+		"years": "Aug 2015 - May 2016",
+		"major": "All ME Seniors",
+		"links": [
+			{ "label": "Report", "url": "reports/Jumping_Contraption.pdf"},
+			{ "label": "Video", "url": "https://www.youtube.com/watch?v=I2E7iWqU2IU"}
+		],
+		"people": [
+			{ "name": "Ivelisse Negroni", "img": "people/Ivelisse_Negroni.jpg"},
+			{ "name": "Noah Trent", "img": "people/Noah_Trent.jpg"},
+			{ "name": "Cesar Sifuentes", "img": "people/Cesar_Sifuentes.jpg"},
+			{ "name": "Michael Turasz", "img": "people/Michael_Turasz.jpg"}
+		]
+	},
+	{
+		"title": "Independent Study Project: Balancing a ball on a beam",
+		"years": "Jan 2016 - May 2016",
+		"major": "ME Seniors",
+		"links": [
+			{ "label": "Report", "url": "reports/Beam_Ball_Balancing.pdf"},
+			{ "label": "Files for 3D Printing", "url": "reports/ball_beam_STL.zip"},
+			{ "label": "Arduino Code", "url": "reports/ball_beam_code.zip"}
+		],
+		"people": [
+			{ "name": "Andy Plascencia", "img": "people/Andy_Plascencia.jpg"},
+			{ "name": "Tyler Rowe", "img": "people/Tyler_Rowe.jpg"}
+		]
+	},
+	{
+		"title": "Independent Study Project: Animatronics Face -- RomoBot",
+		"years": "Jan 2016 - May 2016",
+		"major": "ME Seniors",
+		"links": [
+			{ "label": "Link", "url": "http://www.instructables.com/contest/robotics2016/"},
+			{ "label": "Cached", "url": "media/RomoBot_RoboticsContest2016.pdf"},
+			{ "label": "Report", "url": "reports/Animatronics_Face_Report.pdf"},
+			{ "label": "Video", "url": "https://www.youtube.com/watch?v=xkze1_hnam0"}
+		],
+		"people": [
+			{ "name": "Geoffrey Toombs", "img": "people/geoffrey_toombs.jpg"},
+			{ "name": "James Schopfer", "img": "people/james_schopfer.jpg"}
+		]
+	},
+	{
+		"title": "Independent Project: Vibration-based robots for the Children's museum, San Antonio",
+		"years": "Aug 2015 - Dec 2015",
+		"major": "ME Senior",
+		"links": [
+			{ "label": "Write-up", "url": "tutorials/Vibration-based-robots.pdf"},
+			{ "label": "Files for 3D Printing", "url": "tutorials/VibrationRobots_STL.zip"},
+			{ "label": "Video", "url": "https://youtu.be/QoDUXx42l4c"}
+		],
+		"people": [
+			{ "name": "Christopher von Brecht", "img": "people/chris_von_brecht.png"}
+		]
+	},
+	{
+		"title": "Senior Design Project: Development of a Robotic Leg",
+		"years": "Aug 2014 - May 2015",
+		"major": "All ME Seniors",
+		"links": [
+			{ "label": "Report", "url": "reports/Ein-Report.pdf"},
+			{ "label": "Video", "url": "https://www.youtube.com/watch?v=_gyI_xIkAdw"}
+		],
+		"people": [
+			{ "name": "Raquel De La Garza", "img": "people/racquel_de_la_garza.png"},
+			{ "name": "Christian Trevino", "img": "people/christian_trevino.png"},
+			{ "name": "Robert Brothers", "img": "people/robert_brothers.png"},
+			{ "name": "Eric Sanchez", "img": "people/eric_sanchez.png"}
+		]
+	},
+	{
+		"title": "Senior Design Project: Design and Construction of Rimless Wheeled robot",
+		"years": "Aug 2014 - May 2015",
+		"major": "All ME Seniors",
+		"links": [
+			{ "label": "Report", "url": "reports/Roadrunner-Report.pdf"},
+			{ "label": "Video", "url": "https://www.youtube.com/watch?v=xTSG48KMMR4"}
+		],
+		"people": [
+			{ "name": "Rico Jovanni Ulep", "img": "people/Rico_Jovanni_Ulep.jpg"},
+			{ "name": "Kyle Seay", "img": "people/Kyle_Seay.jpg"},
+			{ "name": "Ezra Ameperosa", "img": "people/Ezra_Ameperosa.jpg"},
+			{ "name": "Scott Miller", "img": "people/Scott_Miller.jpg"}
+		]
+	},
+	{
+		"title": "Senior Design Project: Mobile Automated Directory: UTSA guide robot",
+		"years": "Aug 2014 - May 2015",
+		"major": "All EE Seniors",
+		"links": [
+			{ "label": "Report", "url": "reports/MADMax-Report.pdf"},
+			{ "label": "Video", "url": "https://www.youtube.com/watch?v=9zL_FL8JV0M"}
+		],
+		"people": [
+			{ "name": "Cory Royal", "img": "people/Cory_Royal.png"},
+			{ "name": "Curtis Odle", "img": "people/Curtis_Odle.png"},
+			{ "name": "William Morris", "img": "people/William_Morris.png"}
+		]
+	},
+	{
+		"title": "Senior Design Project: Smart Humanoid Used for Silencing Humans (in the library): SHUSHBot",
+		"years": "Aug 2014 - May 2015",
+		"major": "All EE Seniors",
+		"links": [
+			{ "label": "Report", "url": "reports/SHUSHBot-Report.pdf"},
+			{ "label": "Video", "url": "https://www.youtube.com/watch?v=Ju9SLrtdkLQ"}
+		],
+		"people": [
+			{ "name": "Javier Gonzalez", "img": "people/javier_gonzalez.jpg"},
+			{ "name": "Roberto Mexquitic", "img": "people/roberto_mexquitic.jpg"},
+			{ "name": "Stacy Alexander", "img": "people/stacy_alexander.jpg"},
+			{ "name": "Thilo Janssen", "img": "people/thilo_janssen.jpg"}
+		]
+	},
+	{
+		"title": "Independent Project: Simple pendulum physics for SA Children's Museum",
+		"years": "Jan 2015 - February 2015",
+		"major": "ME Senior",
+		"links": [
+			{ "label": "Video", "url": "https://www.youtube.com/watch?v=ZTBn79uAvYQ"},
+			{ "label": "Link", "url": "http://www.utsa.edu/today/2015/06/christianpendulum.html"},
+			{ "label": "Cached", "url": "media/trevino_pendulum.pdf"}
+		],
+		"people": [
+			{ "name": "Christian Trevino", "img": "people/christian_trevino.png"}
+		]
+	},
+	{
+		"title": "Honors Thesis: Passive Dynamic Toys",
+		"years": "Aug 2014 - July 2015",
+		"major": "ME Senior",
+		"links": [
+			{ "label": "Video", "url": "https://www.youtube.com/watch?v=wJ3W3MomWl4"},
+			{ "label": "Thesis", "url": "reports/Christian_Trevino_BS_Thesis.pdf"},
+			{ "label": "Paper", "url": "papers/2018Trevino_Rowdy.pdf"}
+		],
+		"people": [
+			{ "name": "Christian Trevino", "img": "people/christian_trevino.png"}
+		]
+	},
+	{
+		"title": "Paper walker for the Inventors Workshop at the Children's Museum",
+		"years": "Aug 2015 - Nov 2015",
+		"major": "ME MS",
+		"links": [
+			{ "label": "Video", "url": "https://www.youtube.com/watch?v=51WeRWwHMUU"},
+			{ "label": "Cached", "url": "media/Trevino_innovations_winter2015.pdf"}
+		],
+		"people": [
+			{ "name": "Christian Trevino", "img": "people/christian_trevino.png"}
+		]
+	},
+	{
+		"title": "Independent Project: T-maze for neural experiments on mice. (for Prof. Alfonso Apicella, Dept of Biology, UTSA)",
+		"years": "Jan 2015 - May 2015",
+		"major": "ME Junior",
+		"links": [
+			{ "label": "", "url": ""}
+		],
+		"people": [
+			{ "name": "Gerardo Ramos", "img": "people/gerardo_ramos.png"}
+		]
+	}
+]
