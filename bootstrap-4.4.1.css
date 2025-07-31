@@ -10239,3 +10239,8 @@ a.text-dark:hover, a.text-dark:focus {
   }
 }
 /*# sourceMappingURL=bootstrap.css.map */
+
+/* class to account for navbar when navigating to a part of the page */
+.anchor {     
+	scroll-margin-top: 80px;
+}	
