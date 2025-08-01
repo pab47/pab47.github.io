@@ -1,115 +1,146 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html><head>
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>RAM Lab Info page</title>
+    <!-- Bootstrap -->
+	  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <link href="bootstrap-4.4.1.css" rel="stylesheet">
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+		<script src="js/jquery-3.4.1.min.js"></script>
+		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap-4.4.1.js"></script>
+		
+		<!-- JS/CSS Code for searchbar -->
+		<script src="search.js" defer></script>
+		<link rel="stylesheet" href="search.css">
+  </head>
+  
+  <body>
+    <div class="container">
+      <a href="index.html"><img src="RAMlab-logo.png" width="89" height="50" alt="RAM Lab Logo"/></a>
+      <h2>Information/Resources</h2>
+      <hr>
+      Last update: June 20 , 2025 
+      <br> <br>
+      <!-- Search bar -->
+      <input type="text" id="searchBar" placeholder="Search Info">
 
+      <div class="publication">
+        <strong>MATLAB</strong>
+        <ul>
+          <li>Tutorial on creating simple animations. Animate sunrise/sunset <a href="https://youtu.be/bnbLVNRj0II">YouTube link</a>.&nbsp; <a href="info/sunrise_sunset.m">MATLAB file.</a></li>
+          <ul>
+            <li>After learning the tutorial try to make an animated face. Here is a <a href="https://youtu.be/A4dvcQHA05U">YouTube link</a> to students' work in my robotics class.</li>
+          </ul>
+        </ul>
+      </div>
 
+      <div class="publication">
+        <strong>3D printing and machining</strong>
+        <ul>
+          <li><a href="info/Ultimaker-3DPrinting.pdf">3DPrinting on Ultimaker&nbsp;</a></li>
+          <li><a href="info/CNC_Router_Tutorial.pdf">CNC router tutorial</a></li>
+        </ul>
+      </div>
 
+      <div class="publication">
+        <strong>TurtleBot</strong>
+        <ul>
+          <li><a href="info/Turtlebot%20Teleop%20With%20Android%20Device.pdf">Turtlebot Teleop With Android Device</a></li>
+          <li><a href="info/Turtlebot%20Pair%20Turtlebot%20With%20Workstation.pdf">Turtlebot Pair Turtlebot With Workstation</a></li>
+          <li><a href="info/TurtleBot%20Create%20a%20SLAM%20Map.pdf">TurtleBot Create a SLAM Map</a></li>
+          <li><a href="info/Operating%20Shushbot.pdf">Operating SHUSH Bot</a></li>
+        </ul>
+      </div>
 
+      <div class="publication">
+        <strong>Manipulator</strong>
+        <ul>
+          <li><a href="info/Troubleshooting_UTSA_Dynamixel_Manipulator.pdf">Troubleshooting UTSA Dynamixel Manipulator</a></li>
+        </ul>
+      </div>
 
+      <div class="publication">
+        <strong>Darwin op2</strong>
+        <ul>
+          <li>Darwin op2, <a href="info/darwin_op2_files.zip">original files on the robot</a></li>
+          <li>Darwin op2, <a href="info/darwin_op2_get_started.pdf">getting started manual, charging batteries etc.</a></li>
+          <li>Darwin model/animation on Mac OS. </li>
 
+          <ul>
+            <li>Install gcc and x11 on mac</li>
+            <li>Download the zipped file <a href="info/darwin_animation.zip">darwin_animation.zip</a></li>
+            <li>Unzip the file and follow the instructions in the read_me file
+            which includes two things: 1) set path to textures in animate.c, and 2)
+            in terminal type ./run</li>
+            <li>If you do above steps correctly you will see the following animation, <a href="info/darwin_animation.mp4">darwin_animation.mp4</a></li>
+          </ul>
+        </ul>
+      </div>
 
+      <div class="publication">
+        <strong>Minitaur <span style="text-decoration: underline;">quadruped</span><a href="info/Minitaur%20Handle.zip"></a></strong>
+        <ul>
+          <li><a href="info/UTSAminitaur/MinitaurHandle.zip">3D CAD files for Minitaur Handle</a></li>
+          <li>Minitaur Battery: <a href="info/UTSAminitaur/Battery%20Charger%20Manual.pdf">Manual</a>, <a href="info/UTSAminitaur/Battery-Safety-Sheet.pdf">Safety</a></li>
+        </ul>
+      </div>
 
+      <div class="publication">
+        <strong>Open source quadruped</strong>
+        <ul>
+          <li><a href="info/opensource_quadruped_notes.zip">Files and read me</a></li>
+        </ul>
+      </div>
+      
+      <div class="publication">
+        <strong>Rowdy Walker</strong>
+        <ul>
+          <li><a href="info/rowdy_walker_instructions.zip">Instruction files including cad files</a></li>
+        </ul>
+      </div>
 
+      <div class="publication">
+        <strong>Simulations</strong>
+        <ul>
+          <li><a href="info/tutorial_sdfast.zip">SD/Fast tutorials -- Triple pendulum</a></li>
+        </ul>
+      </div>
 
+      <div class="publication">
+        <strong>Writing</strong>
+        <ul>
+          <li><a href="info/RAMLab_ReportTemplate.doc">ASME style template for submitting independent study reports and course project reports</a></li>
+          <li>How to create plots and edit plots for paper. See the <a href="https://youtu.be/rxYQq7zZf2g">video </a>description for MATLAB file.&nbsp; &nbsp;&nbsp;</li>
+          <li>Getting started with latex</li>
+          <ul>
+            <li>Windows 1) Download miketex (<a href="https://miktex.org/">https://miktex.org/</a>) and install; 2) Download texStudio and install (<a href="http://www.texstudio.org/">http://www.texstudio.org/</a>)</li>
+            <li>Mac 1) Download and install miketex for mac (<a href="https://miktex.org/howto/install-miktex-mac">https://miktex.org/howto/install-miktex-mac</a>); 2) Download and install texShop (<a href="http://pages.uoregon.edu/koch/texshop/">http://pages.uoregon.edu/koch/texshop/</a>)</li>
+            <li>After installing mikeTex and editor (texStudio or texShop), download this <a href="info/latex_template.zip">latex example file</a>
+              and open the template.tex file in the editor and press the green button
+              that says "&gt;" on texStudio or type Apple key + T on texShop. This
+              will create a pdf file template.pdf, which is the final result.</li>
+          </ul>
+        </ul>
+      </div>
 
-<meta content="text/html; charset=ISO-8859-1" http-equiv="content-type"><title>RAM Lab Info page</title></head><body><big><big><a href="aux.coe.utsa.edu/%7Epab/index.html">Robotics and Motion Lab</a> &nbsp;&nbsp; (Information/Resources)</big></big><br>
-<br>
-Last update: June 20 , 2025<br>
-<br>
-MATLAB<br>
-<ul>
-  <li>Tutorial on creating simple animations. Animate sunrise/sunset <a href="https://youtu.be/bnbLVNRj0II">YouTube link</a>.&nbsp; <a href="info/sunrise_sunset.m">MATLAB file.</a></li>
-  <ul>
-    <li>After learning the tutorial try to make an animated face. Here is a <a href="https://youtu.be/A4dvcQHA05U">YouTube link</a> to students' work in my robotics class. <br>
-    </li>
-  </ul>
-</ul>
+      <div class="publication">
+        <strong>MuJoCo</strong>
+        <ul>
+        <li> <a href="info/template_mujoco_deepmind.zip"> Instructions on getting MuJoCo C version working</a>. See read_me.rtf (opens with wordpad/word) for instructions</li>
+          <li> <a href="info/a1_trotting9_win.zip"> A1 trotting and keyboard control on windows</a>. See read_me.rtf (opens with wordpad/word) for instructions</li>
+          <li> <a href="info/A1_startup_scripts.zip"> Instructions on running own startup scripts on A1 hardware </a>. See read_me_startup_script.rtf (opens with wordpad/word) for instructions  </li>
+        </ul>
+      </div>
 
-<br>
-3D printing and machining<br>
-<ul>
-  <li><a href="info/Ultimaker-3DPrinting.pdf">3DPrinting on Ultimaker&nbsp;</a></li>
-  <li><a href="info/CNC_Router_Tutorial.pdf">CNC router tutorial</a> <br>
-  </li>
+    </div>
+  </body>
 
-</ul>
-TurtleBot<br>
-<ul>
-  <li><a href="info/Turtlebot%20Teleop%20With%20Android%20Device.pdf">Turtlebot Teleop With Android Device</a></li>
-  <li><a href="info/Turtlebot%20Pair%20Turtlebot%20With%20Workstation.pdf">Turtlebot Pair Turtlebot With Workstation</a></li>
-  <li><a href="info/TurtleBot%20Create%20a%20SLAM%20Map.pdf">TurtleBot Create a SLAM Map</a></li>
-  <li><a href="info/Operating%20Shushbot.pdf">Operating SHUSH Bot</a><br>
-  </li>
-
-</ul>
-Manipulator<br>
-<ul>
-  <li><a href="info/Troubleshooting_UTSA_Dynamixel_Manipulator.pdf">Troubleshooting UTSA Dynamixel Manipulator <br>
-</a></li>
-</ul>Darwin op2<br>
-<ul>
-  <li>Darwin op2, <a href="info/darwin_op2_files.zip">original files on the robot</a></li>
-  <li>Darwin op2, <a href="info/darwin_op2_get_started.pdf">getting started manual, charging batteries etc. </a><br>
-  </li>
-
-  <li>Darwin model/animation on Mac OS. <br>
-  </li>
-
-  <ul>
-    <li>Install gcc and x11 on mac</li>
-    <li>Download the zipped file <a href="info/darwin_animation.zip">darwin_animation.zip</a></li>
-    <li>Unzip the file and follow the instructions in the read_me file
-which includes two things: 1) set path to textures in animate.c, and 2)
-in terminal type ./run</li>
-    <li>If you do above steps correctly you will see the following animation, <a href="info/darwin_animation.mp4">darwin_animation.mp4</a><br>
-    </li>
-  </ul>
-</ul>
-<br>Minitau<span style="text-decoration: underline;">r quadruped</span><a href="info/Minitaur%20Handle.zip"><br>
-</a>
-<ul>
-  <li><a href="info/UTSAminitaur/MinitaurHandle.zip">3D CAD files for Minitaur Handle</a></li>
-  <li>Minitaur Battery: <a href="info/UTSAminitaur/Battery%20Charger%20Manual.pdf">Manual</a>, <a href="info/UTSAminitaur/Battery-Safety-Sheet.pdf">Safety</a></li>
-
-</ul>Open source quadruped<br>
-<ul>
-  <li><a href="info/opensource_quadruped_notes.zip">Files and read me</a></li>
-</ul>Rowdy walker<br>
-<ul>
-  <li><a href="info/rowdy_walker_instructions.zip">Instruction files including cad files</a><br>
-  </li>
-</ul>
-
-
-<br>
-Simulations <br>
-<ul>
-  <li><a href="info/tutorial_sdfast.zip">SD/Fast tutorials -- Triple pendulum</a><br>
-  </li>
-</ul>
-<br>
-Writing<br>
-<ul>
-  <li><a href="info/RAMLab_ReportTemplate.doc">ASME style template for submitting independent study reports and course project reports</a></li>
-  <li>How to create plots and edit plots for paper. See the <a href="https://youtu.be/rxYQq7zZf2g">video </a>description for MATLAB file.&nbsp; &nbsp;&nbsp;</li>
-<li>Getting started with latex</li>
-  <ul>
-    <li>Windows 1) Download miketex (<a href="https://miktex.org/">https://miktex.org/</a>) and install; 2) Download texStudio and install (<a href="http://www.texstudio.org/">http://www.texstudio.org/</a>)</li>
-    <li>Mac 1) Download and install miketex for mac (<a href="https://miktex.org/howto/install-miktex-mac">https://miktex.org/howto/install-miktex-mac</a>); 2) Download and install texShop (<a href="http://pages.uoregon.edu/koch/texshop/">http://pages.uoregon.edu/koch/texshop/</a>)</li>
-    <li>After installing mikeTex and editor (texStudio or texShop), download this <a href="info/latex_template.zip">latex example file</a>
-and open the template.tex file in the editor and press the green button
-that says "&gt;" on texStudio or type Apple key + T on texShop. This
-will create a pdf file template.pdf, which is the final result.<br>
-    </li>
-  </ul>
-
-</ul>
-<p> <br>
-  MuJoCo<br>
-</p>
-	<ul>
-	<li> <a href="info/template_mujoco_deepmind.zip"> Instructions on getting MuJoCo C version working</a>. See read_me.rtf (opens with wordpad/word) for instructions</li>
-	  <li> <a href="info/a1_trotting9_win.zip"> A1 trotting and keyboard control on windows</a>. See read_me.rtf (opens with wordpad/word) for instructions</li>
-	  <li> <a href="info/A1_startup_scripts.zip"> Instructions on running own startup scripts on A1 hardware </a>. See read_me_startup_script.rtf (opens with wordpad/word) for instructions  </li>
-    </ul>
-
-</body></html>
+</html>
