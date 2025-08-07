@@ -1,0 +1,190 @@
+[
+	{
+		"img": "people/subramanian_ramasamy.png",
+		"name": "Subramanian Ramasamy (PhD, ME UIC)",
+		"years": "Aug 2020 - May 2025",
+		"study": "PhD Thesis: Developing Computationally Efficient Optimization Framework for Collaborative Routing of UAV-UGV System",
+		"links": [
+			{ "label": "Website", "url": "https://subram0212.github.io/website_subram0212/"},
+			{ "label": "PhD Thesis", "url": "reports/Subramanian_Ramasamy_PhD_Thesis.pdf"}
+		]
+	},
+	{
+		"img": "people/Venkata_Chinthalapati.png",
+		"name": "Venkata Chinthalapati (MS, ME UIC)",
+		"years": "Jan 2023 - Aug 2024",
+		"study": "MS Thesis: Autonomous Navigation Of Quadruped Integrated With Manipulator",
+		"links": [
+			{ "label": "MS Thesis", "url": "reports/Venkata_Chinthalapati_MS_Thesis.pdf"},
+			{ "label": "Video", "url": "https://youtu.be/AiFOhzciszE?si=OVu6jiNtpiLtxE58"},
+			{ "label": "Github", "url": "https://github.com/vchint6/pathplanning_go1"},
+			{ "label": "PPT", "url": "reports/Venkata_Chinthalapati_PPT.pdf"}
+		]
+	},
+	{
+		"img": "people/Abhishek_Kasargod.png",
+		"name": "Abhishek Kasaragod (MS, ME UIC)",
+		"years": "Jan 2023 - Aug 2024",
+		"study": "MS: Dynamic Pick-and-place System For A Manipulator On A Quadruped Using Object Detection",
+		"links": [
+			{ "label": "MS Thesis", "url": "reports/Abhishek_Kasaragod_MS_Thesis.pdf"},
+			{ "label": "Video", "url": "https://youtu.be/mvILnM4_WAU?si=M7c6BOGRlZPJhuBL"},
+			{ "label": "Github", "url": "https://github.com/iambshake/VisionBasedSorting"},
+			{ "label": "PPT", "url": "reports/Abhishek_Kasaragod_PPT.pdf"},
+			{ "label": "Mounting Arm on A1", "url": "reports/Documentation_for_arm_on_A1.pdf"}
+		]
+	},
+	{
+		"img": "people/Saurabh Bharane.jpg",
+		"name": "Saurabh Bharane (MS, ME UIC)",
+		"years": "Jan 2024 - May 2024",
+		"study": "Independent Study: Motion Planning of Mobile Robots",
+		"links": [
+			{ "label": "Independent Study", "url": "https://github.com/pab47/CoppeliaSim_motion_planning"},
+			{ "label": "Video 1", "url": "https://youtu.be/P98ZjHzeOtQ"},
+			{ "label": "Video 2", "url": "https://youtu.be/OjDhxGP9NaU"},
+			{ "label": "Video 3", "url": "https://youtu.be/2yMcM8VPj3c"}
+		]
+	},
+	{
+		"img": "people/Ernesto_Hernandez.jpeg",
+		"name": "Ernesto Hernandez-Hinojosa (PhD, ME UIC)",
+		"years": "Jan 2020 - Dec 2023",
+		"study": "PhD Thesis: Real-world Implementation of Simplified Dynamic Models for Bipedal Robot Control",
+		"links": [
+			{ "label": "Website", "url": "http://hernandez-hinojosa.com/"},
+			{ "label": "PhD Thesis", "url": "reports/Ernesto_Hinojosa_PhD_Thesis.pdf"}
+		]
+	},
+	{
+		"img": "people/jeremy_krause.jpeg",
+		"name": "Jeremy Krause (MS, ME UIC)",
+		"years": "Aug 2018 - May 2023",
+		"study": "MS (non-thesis): Gaussian Process Regression For Sim-to-real Transfer Of Hopping Gaits",
+		"links": [
+			{ "label": "MS (non-thesis)", "url": "papers/2023Krause_gaussian.pdf"},
+			{ "label": "Video", "url": "https://youtu.be/YSb-WUQflgY"}
+		]
+	},
+	{
+		"img": "people/ali_zamani.jpg",
+		"name": "Ali Zamani (PhD, ME UIC)",
+		"years": "Aug 2015 - Dec 2020",
+		"study": "PhD Thesis: Toward Enhancing Stability and Agility of Dynamically Balancing Legged Robots: A Data-Driven Approach",
+		"links": [
+			{ "label": "PhD Thesis", "url": "reports/Ali_Zamani_PhD_Thesis.pdf"}
+		]
+	},
+	{
+		"img": "people/nonso_ovuegbe.jpg",
+		"name": "Chinonso Ovuegbe (MS, ME UTSA)",
+		"years": "Aug 2019 - May 2020",
+		"study": "MS Thesis: Parameter Selection in the Dynamic Window Approach Robot Collision Avoidance Algorithm Using Bayesian Optimization",
+		"links": [
+			{ "label": "MS Thesis", "url": "reports/Nonso_Oveugbe_MS_Thesis.pdf"}
+		]
+	},
+	{
+		"img": "people/justin_ernst.jpg",
+		"name": "Justin Ernst (MS, ME UTSA)",
+		"years": "May 2018 - Aug 2019",
+		"study": "MS Thesis: Tuning A Discrete Linear Quadratic Using The Region Of Attraction For The Simplest Walker Model",
+		"links": [
+			{ "label": "MS Thesis", "url": "reports/Justin_Ernst_MS_Thesis.pdf"}
+		]
+	},
+	{
+		"img": "people/andrew_waterreus.jpg",
+		"name": "Andrew Waterreus (MS, ME UTSA)",
+		"years": "Fall 2017 - Aug 2019",
+		"study": "MS Thesis: Utilization Of Supervised And Reinforcement Learning in the Automation of the Classical Atari Game 'pong'",
+		"links": [
+			{ "label": "MS Thesis", "url": "reports/Andrew_Waterreus_MS_Thesis.pdf"},
+			{ "label": "Obituary", "url": "https://www.legacy.com/obituaries/name/andrew-waterreus-obituary?pid=194764363"},
+			{ "label": "Donation Page", "url": "https://giving.utsa.edu/Waterreus"}
+		]
+	},
+	{
+		"img": "people/eric_sanchez.png",
+		"name": "Eric Sanchez (MS, ME UTSA)",
+		"years": "Aug 2016 - Dec 2018",
+		"study": "MS Thesis: Rowdy Runner II: An Independently Actuated Rimless Wheel Robot",
+		"links": [
+			{ "label": "MS Thesis", "url": "reports/Eric_Sanchez_MS_Thesis.pdf"},
+			{ "label": "Paper", "url": "papers/2020Sanchez_rimlesswheel.pdf"},
+			{ "label": "Video", "url": "https://www.youtube.com/watch?v=SNxeP29ayhI"}
+		]
+	},
+	{
+		"img": "people/robert_brothers.png",
+		"name": "Robert Brothers (MS, ME UTSA)",
+		"years": "Jan 2016 - Dec 2018",
+		"study": "MS Thesis: Dynamic Programming Of A Torso Actuated Rimless Wheel Robot",
+		"links": [
+			{ "label": "MS Thesis", "url": "reports/Robert_Brothers_MS_Thesis.pdf"}
+		]
+	},
+	{
+		"img": "people/Ezra_Ameperosa.jpg",
+		"name": "Ezra Ameperosa (MS, ME UTSA)",
+		"years": "Sep 2015 - Aug 2018",
+		"study": "MS Thesis: Bolt Detection and Position Estimation using Domain Randomization",
+		"links": [
+			{ "label": "MS Thesis", "url": "reports/Ezra_Ameperosa_MS_Thesis.pdf"},
+			{ "label": "Paper", "url": "papers/Ameperosa2019_bolts.pdf"},
+			{ "label": "Video", "url": "https://www.youtube.com/watch?v=-DLU-bjDOhE"}
+		]
+	},
+	{
+		"img": "people/christian_trevino.png",
+		"name": "Christian Trevino (MS, ME UTSA)",
+		"years": "Sep 2015 - Dec 2017",
+		"study": "MS Thesis: A Miniature Size 3D Printed Linear Pneumatic Actuator For Robotic Applications",
+		"links": [
+			{ "label": "MS Thesis", "url": "reports/Christian_Trevino_MS_Thesis.pdf"},
+			{ "label": "Video", "url": "https://www.youtube.com/watch?v=DPUNslHj5VE"}
+		]
+	},
+	{
+		"img": "people/unknown.jpg",
+		"name": "Geoffrey Chiou (MS, ME UTSA)",
+		"years": "Sep 2016 - Dec 2017",
+		"study": "MS Thesis: Reducing The Variance Of Intrinsic Camera Calibration Results In The ROS Camera_Calibration Package",
+		"links": [
+			{ "label": "MS Thesis", "url": "reports/Geoffrey_Chiou_MS_Thesis.pdf"}
+		]
+	},
+	{
+		"img": "people/matthew_piper.jpg",
+		"name": "Matthew Piper (MS, ME UTSA)",
+		"years": "June 2016 - May 2017",
+		"study": "MS Thesis: How to Beat Flappy Bird: A mixed-integer model predictive control approach",
+		"links": [
+			{ "label": "MS Thesis", "url": "reports/Matthew_Piper_MSThesis.pdf"},
+			{ "label": "Paper", "url": "papers/Piper2017_FlappyBird.pdf"},
+			{ "label": "Video", "url": "https://www.youtube.com/watch?v=P5YftCPE4rw"}
+		]
+	},
+	{
+		"img": "people/Abhishek_Bapat.jpg",
+		"name": "Abhishek Bapat (MS, AMIE-UTSA)",
+		"years": "Jan 2015 - Dec 2016",
+		"study": "MS Thesis: Design, prototyping and testing of an autonomous robot with C shaped compliant legs: AbhisHex",
+		"links": [
+			{ "label": "MS Thesis", "url": "reports/AbhisHex_MS_Thesis.pdf"},
+			{ "label": "CAD Files", "url": "reports/AbhisHex_CAD.zip"},
+			{ "label": "Photos", "url": "reports/AbhisHex_Photos.zip"},
+			{ "label": "Video", "url": "https://youtu.be/DpI4JOvbvIw"}
+		]
+	},
+	{
+		"img": "people/daniel_bray.jpg",
+		"name": "Daniel Bray (MS, ME-UTSA)",
+		"years": "Jan 2015 - July 2015",
+		"study": "MS Special Project: Locating position and orientation of objects using RGB-D camera",
+		"links": [
+			{ "label": "Report", "url": "reports/RGBD-Camera-Report.pdf"},
+			{ "label": "Code", "url": "reports/RGBD-Camera-Code.zip"}
+		]
+	}
+]
