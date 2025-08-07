@@ -112,7 +112,8 @@ p.bibitem-p { text-indent: 0em; margin-left: 2em; margin-top:0.6em; margin-botto
 .subparagraphHead, .likesubparagraphHead { font-weight: bold;}
 .verse{white-space:nowrap; margin-left:2em}
 div.maketitle {text-align:center;}
-h2.titleHead{text-align:center;}
+h2.titleHead{font-size: 200%; /* adjust as needed */
+  font-weight: bold; /* if you want it bolder */}
 div.maketitle{ margin-bottom: 2em; }
 div.author, div.date {text-align:center;}
 div.thanks{text-align:left; margin-left:10%; font-size:85%; font-style:italic; }
