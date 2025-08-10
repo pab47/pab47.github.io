@@ -5,7 +5,7 @@ const colors = {
 	3: 'lightblue', // Wednesday - Light Blue
 	4: 'orange', // Thursday - Orange
 	5: 'pink', // Friday - Pink
-	6: 'purple', // Saturday - Purple
+	6: 'lightpurple', // Saturday - Purple
 }
 
 const today = new Date().getDay();
