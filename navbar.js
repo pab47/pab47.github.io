@@ -88,6 +88,7 @@ div2a5.setAttribute('href', 'awards.html');
 div2a5.textContent = 'Student Awards';
 div2dropdown.appendChild(div2a5);
 
+// Papers
 const li3 = document.createElement('li');
 li3.setAttribute('class', 'nav-item dropdown');
 contentDivUl.appendChild(li3);
@@ -105,7 +106,7 @@ const div3dropdown = document.createElement('div');
 div3dropdown.setAttribute('class', 'dropdown-menu');
 div3dropdown.setAttribute('aria-labelledby', 'navbarDropdown');
 li3.appendChild(div3dropdown);
-for(let i = 2025; i >= 2014; i--) {
+for(let i = 2026; i >= 2014; i--) {
 	let year = document.createElement('a');
 	year.setAttribute('class', 'dropdown-item');
 	year.setAttribute('href', `research.html#${i}`);
