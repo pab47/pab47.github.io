@@ -1,5 +1,25 @@
 [
 	{
+		"img": "people/Ragib Rownak.jpg",
+		"name": "Ragib Rownak (MS, ME UIC)",
+		"years": "May 2024 - Aug 2025",
+		"study": "MS Thesis: Autonomous Navigation and Simultaneous 3D Mapping with a UGV in an Open-Ended Environment",
+		"links": [
+			{ "label": "MS Thesis", "url": "reports/Ragib_Rownak_MS_Thesis.pdf"},
+			{ "label": "Video", "url": "https://youtu.be/F6CJoYQWVOA"}
+		]
+	},
+	{
+		"img": "people/Simone Ughetto.jpg",
+		"name": "Simone Ughetto (MS, ECE UIC)",
+		"years": "Jan 2025 - June 2025",
+		"study": "MS Thesis: Autonomous Dynamic Grasping with a Robotic Arm: Real-Time Motion Prediction and Adaptive Control",
+		"links": [
+			{ "label": "MS Thesis", "url": "reports/Simone_Ughetto_MS_Thesis.pdf"},
+			{ "label": "Video", "url": "https://youtu.be/8iN5YvXc0vI"}
+		]
+	},
+	{
 		"img": "people/subramanian_ramasamy.png",
 		"name": "Subramanian Ramasamy (PhD, ME UIC)",
 		"years": "Aug 2020 - May 2025",
