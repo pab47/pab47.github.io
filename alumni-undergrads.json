@@ -1,5 +1,16 @@
 [
 	{
+		"title": "Independent Project: Game Design",
+		"years": "June 2025 - July 2025",
+		"major": "High School Student",
+		"links": [
+			{ "label": "Game", "url": "https://scoopish.itch.io/babeldemo"}
+		],
+		"people": [
+			{ "name": "Andrew Sun", "img": "people/Andrew_Sun.png"}
+		]
+	},
+	{
 		"title": "Senior Design Project: Litter Bot",
 		"years": "Aug 2024 - May 2025",
 		"major": "All ECE Seniors",
