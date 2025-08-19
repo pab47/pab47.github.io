@@ -1,0 +1,654 @@
+[
+	{
+		"year": "2025",
+		"title": "10. S. Echeveste, C. Yang, P. A. Bhounsule, EMG Signal Enhancement via Multi-Objective Optimization of Hankel-Based Bayesian Learning, Modeling, Estimation and Controls Conference, Pittsburgh, PA, USA, Oct 5-8, 2025.",
+		"links": [
+			{ "label": "Paper", "url": "https://pab47.github.io/papers/2025Echeveste_EMG2.pdf"}
+		]
+	},
+	{
+		"year": "2025",
+		"title": "9. C. Yang, P. A. Bhounsule, Koopman Operator Based Time-Delay Embeddings and State History Augmented LQR for Periodic Hybrid Systems: Bouncing Pendulum and Bipedal Walking, Modeling, Estimation and Controls Conference, Pittsburgh, PA, USA, Oct 5-8, 2025.",
+		"links": [
+			{ "label": "Paper", "url": "https://pab47.github.io/papers/2025Yang_Koopman3.pdf"},
+			{ "label": "Github", "url": "https://github.com/Chun-MingYang/koopman-timeDelay-lqr.git"}
+		]
+	},
+	{
+		"year": "2025",
+		"title": "8. S. Echeveste, A. Subramanian, J. Zatz, P. A. Bhounsule, Tuning Squatting Controllers for a Hip Exoskeleton Using EMG-Based Bayesian Optimization, ASME-International Design Engineering and Technical Conference, Anaheim, California, USA, Aug 17-20, 2025.",
+		"links": [
+			{ "label": "Paper", "url": "https://pab47.github.io/papers/2025Echeveste_squatting.pdf"}
+		]
+	},
+	{
+		"year": "2025",
+		"title": "7. L. Russo, Md. S. Mondal, S. Ramasamy, P. A. Bhounsule, Precision Auto-Landing of an Aerial Vehicle on a Moving Ground Vehicle: A Modular Ros2 Approach, ASME-International Design Engineering and Technical Conference, Anaheim, California, USA, Aug 17-20, 2025.",
+		"links": [
+			{ "label": "Paper", "url": "https://pab47.github.io/papers/2025Russo_landing.pdf"}
+		]
+	},
+	{
+		"year": "2025",
+		"title": "6. Md. S. Mondal, S. Ramasamy, L. Russo, J. D. Humann, J. M. Dotterweich, P. A. Bhounsule, How to Coordinate UAVs and UGVs for Efficient Mission Planning? Optimizing Energy-Constrained, Cooperative Routing with a DRL Framework, Robotics, Science, and Systems (RSS), Los Angeles, California, CA, USA, June 21-25, 2025.",
+		"links": [
+			{ "label": "Paper", "url": "https://pab47.github.io/papers/2025Mondal_Coordinate.pdf"},
+			{ "label": "Webpage", "url": "https://sites.google.com/view/muavugvdrl/home"}
+		]
+	},
+	{
+		"year": "2025",
+		"title": "5. S. Echeveste, P. A. Bhounsule. Electromyography-Based Human-in-the-Loop Bayesian Optimization to Assist Free Leg Swinging, MDPI Biomechanics, vol. 5, no. 2: 21, 2025.",
+		"links": [
+			{ "label": "Paper", "url": "https://pab47.github.io/papers/2025Echeveste_EMG.pdf"},
+			{ "label": "MDPI", "url": "https://doi.org/10.3390/biomechanics5020021"}
+		]
+	},
+	{
+		"year": "2025",
+		"title": "4. C. Yang, P. A. Bhounsule,  Koopman Operator-Based Linear Model Predictive Control for 2D Quadruped Trotting, Bounding, and Gait Transition, American Controls Conference (ACC), Denver, CO, July 8-10, 2025.",
+		"links": [
+			{ "label": "Paper", "url": "https://pab47.github.io/papers/2025Yang_Koopman2.pdf"}
+		]
+	},
+	{
+		"year": "2025",
+		"title": "3. C. Yang, P. A. Bhounsule, Koopman Operator-Based Linear Model Predictive Control for Quadruped Trotting, International Conference on Robotics and Automation, Atlanta, Georgia, USA, May 19-23, 2025.",
+		"links": [
+			{ "label": "Paper", "url": "https://pab47.github.io/papers/2025Yang_Koopman.pdf"},
+			{ "label": "Youtube", "url": "https://youtu.be/D8VOsKOSLB4"}
+		]
+	},
+	{
+		"year": "2025",
+		"title": "2. Md. S. Mondal, S. Ramasamy, J. F. Reddinger, J. M. Dotterweich, J. D. Humann, M. A. Childers, P. A. Bhounsule, Risk-Aware Energy-Constrained UAV-UGV Cooperative Routing using Attention-Guided Reinforcement Learning, International Conference on Robotics and Automation, Atlanta, Georgia, USA, May 19-23, 2025.",
+		"links": [
+			{ "label": "Paper", "url": "https://pab47.github.io/papers/2025Mondal_Riskaware.pdf"},
+			{ "label": "Youtube", "url": "https://youtu.be/a239WEXkWiw"}
+		]
+	},
+	{
+		"year": "2025",
+		"title": "1. Md. S. Mondal, S. Ramasamy, J. F. Reddinger, J. M. Dotterweich, J. D. Humann, M. A. Childers, P. A. Bhounsule, Cooperative Multi-Agent Planning Framework for Fuel Constrained UAV-UGV Routing Problem, J Intell Robot Syst 111, 12 (2025).",
+		"links": [
+			{ "label": "Paper", "url": "https://pab47.github.io/papers/2025Mondal_Cooperative.pdf"},
+			{ "label": "MDPI", "url": "https://doi.org/10.1007/s10846-024-02209-w"},
+			{ "label": "Github", "url": "https://github.com/imsafwan/bilevel_opt_uav_ugv_routing"}
+		]
+	},
+	{
+		"year": "2024",
+		"title": "7. J. D. Humann, S. C. Ortega, J. Glenn, J. L. Folsom, Md. S. Mondal, S. Ramasamy, P. A. Bhounsule, J. F. Reddinger, J. M. Dotterweich, Data Model and Simulation for Persistent Mission Planning with Energy-Sharing Autonomous Ground and Air Vehicles, Proceedings of the Winter Simulation Conference, Orlando, Florida, USA, Dec 15-18, 2024.",
+		"links": [
+			{ "label": "Paper", "url": "https://pab47.github.io/papers/2024Humann_persistent.pdf"}
+		]
+	},
+	{
+		"year": "2024",
+		"title": "6. Md. S. Mondal, S. Ramasamy, J. F. Reddinger, J. M. Dotterweich, J. D. Humann, M. A. Childers, P. A. Bhounsule An Attention-aware Deep Reinforcement Learning Framework for UAV-UGV Collaborative Route Planning, 2024 International Conference of Robots and Systems (IROS) Abu Dhabi, UAE. Oct 14-18, 2024.",
+		"links": [
+			{ "label": "Paper", "url": "https://pab47.github.io/papers/2024Mondal_attention.pdf"},
+			{ "label": "Youtube", "url": "https://youtu.be/94NyNQ414kg?si=X7zJpb5MbzgsjNnF"}
+		]
+	},
+	{
+		"year": "2024",
+		"title": "5. S. Echeveste, Md. S. Mondal, S. Ramasamy, P. A. Bhounsule. Enhancing Hip Exoskeleton Tuning Performance with Machine Learning: An Anthropometric Data-Driven Approach, Modeling, Estimation and Controls Conference (MECC), Chicago, IL, USA, Oct 28-30, 2024.",
+		"links": [
+			{ "label": "Paper", "url": "https://pab47.github.io/papers/2024Echeveste_enhancing.pdf"}
+		]
+	},
+	{
+		"year": "2024",
+		"title": "4. C. Yang, P. A. Bhounsule. Robust Control using Control Lyapunov Function and Hamilton-Jacobi Reachability, Modeling, Estimation and Controls Conference (MECC), Chicago, IL, USA, Oct 28-30, 2024.",
+		"links": [
+			{ "label": "Paper", "url": "https://pab47.github.io/papers/2024Yang_robust.pdf"}
+		]
+	},
+	{
+		"year": "2024",
+		"title": "3. S. Ramasamy, Md. S. Mondal, J. F. Reddinger, J. M. Dotterweich, J. D. Humann, M. A. Childers, P. A. Bhounsule. Computationally Efficient Multi-Agent Optimization Framework for Online Routing of UAV-UGV System, IEEE International Conference on Automation Science and Engineering (CASE) Bari, Italy, UAE. Aug 28 - Sep 1, 2024.",
+		"links": [
+			{ "label": "Paper", "url": "https://pab47.github.io/papers/2024Ramasamy_computationally.pdf"}
+		]
+	},
+	{
+		"year": "2024",
+		"title": "2. S. Ramasamy, Md. S. Mondal, J. F. Reddinger, J. M. Dotterweich, J. D. Humann, M. A. Childers, P. A. Bhounsule. Optimizing Routes of Heterogenous Unmanned Systems using Supervised Learning in a Multi-Agent Framework: A computational study, 2024 International Conference on Unmanned Aircraft Systems (ICUAS) Chania, Greece. June 4-7, 2024.",
+		"links": [
+			{ "label": "Paper", "url": "https://pab47.github.io/papers/2024Ramasamy_optimizing.pdf"}
+		]
+	},
+	{
+		"year": "2024",
+		"title": "1. Md. S. Mondal, S. Ramasamy, J. F. Reddinger, J. M. Dotterweich, J. D. Humann, M. A. Childers, P. A. Bhounsule. A Robust UAV-UGV Collaborative Framework for Persistent Surveillance in Disaster Management Applications, 2024 International Conference on Unmanned Aircraft Systems (ICUAS) Chania, Greece. June 4-7, 2024.",
+		"links": [
+			{ "label": "Paper", "url": "https://pab47.github.io/papers/2024Safwan_robust.pdf"}
+		]
+	},
+	{
+		"year": "2023",
+		"title": "9. Md. S. Mondal, S. Ramasamy, J. F. Reddinger, J. M. Dotterweich, J. D. Humann, M. A. Childers, P. A. Bhounsule. Optimizing Fuel-Constrained UAV-UGV Routes for Large Scale Coverage: Bilevel Planning in Heterogeneous Multi-Agent Systems, IEEE International Symposium on Multi-Robot and Multi-Agent Systems, Dec 4-5 2023, Boston, MA, USA.",
+		"links": [
+			{ "label": "Paper", "url": "https://pab47.github.io/papers/2023Mondal_optmizing.pdf"},
+			{ "label": "Youtube", "url": "https://youtu.be/ik4X11rU3zc"}
+		]
+	},
+	{
+		"year": "2023",
+		"title": "8. P. A. Bhounsule, E. Hernandez-Hinojosa, Daniel Torres A. Alaeddini Task-level control and Poincare map-based sim-to-real transfer for effective command following of quadrupedal trot gait, In 2023 IEEE-RAS 22nd International Conference on Humanoid Robots (Humanoids), Austin, TX, USA, Dec 12-13 2023.",
+		"links": [
+			{ "label": "Paper", "url": "https://pab47.github.io/papers/2023Bhounsule_Tasklevel.pdf"},
+			{ "label": "Youtube", "url": "https://youtu.be/OKZ4axbqo44"}
+		]
+	},
+	{
+		"year": "2023",
+		"title": "7. E. Hernandez-Hinojosa, P. A. Bhounsule, Data-driven Identification of a Non-homogeneous Inverted Pendulum Model for Enhanced Humanoid Control., In 2023 IEEE-RAS 22nd International Conference on Humanoid Robots (Humanoids), Austin, TX, USA, Dec 12-13 2023.",
+		"links": [
+			{ "label": "Paper", "url": "https://pab47.github.io/papers/2023Hernandez_Datadriven.pdf"},
+			{ "label": "Youtube", "url": "https://youtu.be/kN4HDIm9V9o"}
+		]
+	},
+	{
+		"year": "2023",
+		"title": "6. J. Bittler, P. A. Bhounsule, Hybrid Unscented Kalman Filter:Application to the Simplest Walker, Modeling, Estimation and Controls Conference, Lake Tahoe, NV, USA, Oct 2-5, 2023.",
+		"links": [
+			{ "label": "Paper", "url": "https://pab47.github.io/papers/2023Bittler_hybrid.pdf"}
+		]
+	},
+	{
+		"year": "2023",
+		"title": "5. S. Echeveste, E. Hernandez-Hinojosa, Optimal Swing Assistance Using A Hip Exoskeleton: Comparing Simulations With Hardware Implementation , ASME-International Design Engineering & Technical Conference, Boston, MA, USA, Aug 20-23, 2023.",
+		"links": [
+			{ "label": "Paper", "url": "https://pab47.github.io/papers/2023Echeveste_optimal.pdf"}
+		]
+	},
+	{
+		"year": "2023",
+		"title": "4. D. Torres, E. Hernandez-Hinojosa, P. A. Bhounsule, Control of a Bipedal Walking Using PartialFeedback Linearization and Gaussian Process Regression-Based of the Step-to-Step Map , ASME-International Design Engineering & Technical Conference, Boston, MA, USA, Aug 20-23, 2023.",
+		"links": [
+			{ "label": "Paper", "url": "https://pab47.github.io/papers/2023Torres_control.pdf"}
+		]
+	},
+	{
+		"year": "2023",
+		"title": "3. J. Krause, A. Alaeddini, P. A. Bhounsule, Gaussian Process Regression For Sim-to-real Transfer Of Hopping Gaits, ASME-International Design Engineering & Technical Conference, Boston, MA, USA, Aug 20-23, 2023.",
+		"links": [
+			{ "label": "Paper", "url": "https://pab47.github.io/papers/2023Krause_gaussian.pdf"},
+			{ "label": "Youtube", "url": "https://youtu.be/YSb-WUQflgY"}
+		]
+	},
+	{
+		"year": "2023",
+		"title": "2. S. Ramasamy, Md. S. Mondal, J. F. Reddinger, J. M. Dotterweich, J. D. Humann, M. A. Childers, P. A. Bhounsule. Solving Vehicle Routing Problem For Unmanned Heterogeneous VehicleSystems Using Asynchronous Multi-agent Architecture (A-teams), 2023 International Conference on Unmanned Aircraft Systems (ICUAS) Warsaw, Poland. June 6-9, 2023.",
+		"links": [
+			{ "label": "Paper", "url": "https://pab47.github.io/papers/2023Ramasamy_ATeams.pdf"}
+		]
+	},
+	{
+		"year": "2023",
+		"title": "1. Pranav A. Bhounsule, Chun-Ming Yang. A Simple Controller for Omnidirectional Trotting of Quadrupedal Robots: Command Following and Waypoint Tracking. Robotics 12, no. 2 (2023): 35.",
+		"links": [
+			{ "label": "Paper", "url": "https://pab47.github.io/papers/2023Bhounsule_simple.pdf"},
+			{ "label": "Youtube", "url": "https://youtu.be/o8qkcMmQTQI"},
+			{ "label": "Github", "url": "https://github.com/pab47/quadruped/tree/main/a1_waypoint"}
+		]
+	},
+	{
+		"year": "2022",
+		"title": "5. Ernesto Hernandez Hinojosa, Daniel Torres, and Pranav A. Bhounsule. Quadratically constrained quadratic programs using approximations of the step-to-step dynamics: application on a 2D model of Digit. In 2022 IEEE-RAS 21st International Conference on Humanoid Robots (Humanoids), pp. 96-103. IEEE, 2022.",
+		"links": [
+			{ "label": "Paper", "url": "https://pab47.github.io/papers/2022Hernandez_quadratically.pdf"}
+		]
+	},
+	{
+		"year": "2022",
+		"title": "4. Ramasamy, Subramanian, Jean-Paul F. Reddinger, James M. Dotterweich, Marshal A. Childers, and Pranav A. Bhounsule. Coordinated Route Planning of Multiple Fuel-constrained Unmanned Aerial Systems with Recharging on an Unmanned Ground Vehicle for Mission Coverage. Journal of Intelligent and Robotic Systems 106, no. 1 (2022): 30.",
+		"links": [
+			{ "label": "Paper", "url": "https://pab47.github.io/papers/2022Ramasamy_coordinated.pdf"}
+		]
+	},
+	{
+		"year": "2022",
+		"title": "3. Subramanian Ramasamy, Md Safwan Mondal, Jean-Paul F. Reddinger, James M. Dotterweich, James D. Humann, Marshal A. Childers, Pranav A. Bhounsule . Heterogenous vehicle routing: comparing parameter tuning using genetic algorithm and bayesian optimization , 2022 International Conference on Unmanned Aircraft Systems (ICUAS) Dubrovnik, Croatia. June 21-24, 2022.",
+		"links": [
+			{ "label": "Paper", "url": "https://pab47.github.io/papers/2022Safwan_heterogenous.pdf"}
+		]
+	},
+	{
+		"year": "2022",
+		"title": "2. Pranav A. Bhounsule, Lorena Claeys, Belinda Harmon, Cynthia Lima, and Emily Young. Coding Camp for Middle School Girls Helps Improve Awareness of Science/Engineering Careers and Pathways , ASEE IL-IN 2022",
+		"links": [
+			{ "label": "Paper", "url": "https://pab47.github.io/papers/2022Bhounsule_Coding.pdf"}
+		]
+	},
+	{
+		"year": "2022",
+		"title": "1. Tom Bates, John Gerig, Manuel Avitia, Gunnar Waldvogel, Tesfay Legesse, Justin Washington, and Pranav A. Bhounsule. A High-Speed Launching Mechanism Inspired by a Slingshot Spider's Web. Journal of Bionic Engineering (2022): 1-8.",
+		"links": [
+			{ "label": "Paper", "url": "papers/2022Bates_HighSpeed.pdf"}
+		]
+	},
+	{
+		"year": "2021",
+		"title": "5. Echeveste Salvador, Ernesto Hernandez-Hinojosa, and Pranav A. Bhounsule 2021. Event-Based, Intermittent, Discrete Adaptive Control for Speed Regulation of Artificial Legs. Actuators 10, no. 10: 264.",
+		"links": [
+			{ "label": "Paper", "url": "papers/2021Echeveste_eventbased.pdf"},
+			{ "label": "MDPI", "url": "https://doi.org/10.3390/act10100264"}
+		]
+	},
+	{
+		"year": "2021",
+		"title": "4. Sanchez Sebastian* and Pranav A. Bhounsule, Design, Modeling, and Control of a Differential Drive Rimless Wheel That Can Move Straight and Turn, Automation 2, no. 3: 98-115. 2021",
+		"links": [
+			{ "label": "Paper", "url": "papers/2021Sanchez_design.pdf"},
+			{ "label": "Youtube", "url": "https://www.youtube.com/watch?v=SNxeP29ayhI"},
+			{ "label": "Appendix", "url": "papers/2021Sanchez_rimlessSupplement.pdf"},
+			{ "label": "Github", "url": "https://github.com/pab47/RoadRunner2"}
+		]
+	},
+	{
+		"year": "2021",
+		"title": "3. R. Meka, A. Alaeddini, C. Ovuegbe, P. A. Bhounsule, P. Najafirad, and K. Yang, Multi-Armed Bandit Regularized Expected Improvement for Efficient Global Optimization of Expensive Computer Experiments With Low Noise, in IEEE Access, vol. 9, pp. 100125-100140, 2021, doi: 10.1109/ACCESS.2021.3095755.",
+		"links": [
+			{ "label": "Paper", "url": "papers/2021Meka_multiarmed.pdf"}
+		]
+	},
+	{
+		"year": "2021",
+		"title": "2. Subramanian Ramasamy*, Jean-Paul F. Reddinger, James M. Dotterweich, Marshal A. Childers, Pranav A. Bhounsule, Cooperative route planning of multiple fuel-constrained Unmanned Aerial Vehicles with recharging on an Unmanned Ground Vehicle, International Conference on Unmanned Aircraft System (ICUAS 2021), June 15-18, 2021.",
+		"links": [
+			{ "label": "Paper", "url": "papers/2021Ramasamy_cooperative.pdf"}
+		]
+	},
+	{
+		"year": "2021",
+		"title": "1. Ernesto Hernandez-Hinojosa*,  Aykut C. Satici, Pranav A. Bhounsule, Optimal Control of a 5-link biped using quadratic polynomial model of two-point boundary value problem, ASME-International Design Engineering & Technical Conference, (virtual),  Aug 17-20, 2021.",
+		"links": [
+			{ "label": "Paper", "url": "papers/2021Hernandez_optimal.pdf"}
+		]
+	},
+	{
+		"year": "2020",
+		"title": "8. Pranav A. Bhounsule, Ernesto Hernandez-Hinojosa*, Adel Alaeddini One-Step Deadbeat Control of a 5-Link Biped Using Data-Driven Nonlinear Approximation of the Step-to-Step Dynamics. MDPI Robotics 9(4): 90, 2020.",
+		"links": [
+			{ "label": "Paper", "url": "papers/2020Bhounsule_onestep.pdf"}
+		]
+	},
+	{
+		"year": "2020",
+		"title": "7. Ali Zamani* and Pranav A. Bhounsule.  Nonlinear model predictive control of hopping model using approximate step-to-step models for navigation on complex terrain, IEEE/RSJ Intl. Conference on Intelligent Robots and Systems, Virtual Conference, October 25-29, 2020.",
+		"links": [
+			{ "label": "Paper", "url": "papers/2020Zamani_nonlinear.pdf"}
+		]
+	},
+	{
+		"year": "2020",
+		"title": "6. Ali Zamani* and Pranav A. Bhounsule.  Receding Horizon Control For A 2D Point-mass Hopping Model Navigating On Terrain With Stepping Stones and Stairs, ASME-Dynamics Systems and Controls Conference, Virtual Conference, October 5 - 7, 2020.",
+		"links": [
+			{ "label": "Paper", "url": "papers/2020Zamani_receding.pdf"}
+		]
+	},
+	{
+		"year": "2020",
+		"title": "5. Sebastian Sanchez* and Pranav A. Bhounsule,  A differential drive rimless wheel that can move straight and turn, Intl. Conference on Advanced Intelligent Mechatronics,  Boston, MA July 6-10,  2020. (See publications in 2021 for extended journal version to MDPI Automation)",
+		"links": [
+			{ "label": "Paper", "url": "papers/2020Sanchez_rimlesswheel.pdf"}
+		]
+	},
+	{
+		"year": "2020",
+		"title": "4. Pranav A. Bhounsule,  Myunghee Kim, Adel Alaeddini, Approximation of the Step-to-step Dynamics Enables Computationally Efficient and Fast Optimal Control of Legged Robots, ASME-International Design Engineering & Technical Conference, St. Louis, MO, USA,  Aug. 16-19, 2019.",
+		"links": [
+			{ "label": "Paper", "url": "papers/2020Bhounsule_approximation.pdf"}
+		]
+	},
+	{
+		"year": "2020",
+		"title": "3. Ezra Ameperosa* and Pranav A. Bhounsule, Domain randomization using deep neural networks for estimating positions of bolts, ASME Journal of Computing and Information Science in Engineering (JCISE) 2020.",
+		"links": [
+			{ "label": "Paper", "url": "papers/2020Ameperosa_domain.pdf"}
+		]
+	},
+	{
+		"year": "2020",
+		"title": "2. Pranav A. Bhounsule, Ali Zamani*, Jeremy Krause*, Steven Farra^, Jason Pusey, Control policies for large region of attraction for dynamically balancing legged robots: a sampling-based approach,  Robotica, 39(1), 107-122, 2021.",
+		"links": [
+			{ "label": "Paper", "url": "papers/2020Bhounsule_control.pdf"}
+		]
+	},
+	{
+		"year": "2020",
+		"title": "1. Randall Manteufel, Amir Karimi, Pranav A. Bhounsule. Use of Phones and Online Tutors to Cheat on Engineering Exams American Society of Engineering Education Gulf-South West Section, University of New Mexico, NM, USA, April 23-24, 2020.",
+		"links": [
+			{ "label": "Paper", "url": "papers/2020Manteufel_cheating.pdf"}
+		]
+	},
+	{
+		"year": "2019",
+		"title": "4. Christian Nall*, Pranav A. Bhounsule, A Miniature 3D Printed On-Off Linear Pneumatic Actuator and Its Demonstration into a Cartoon Character of a Hopping Lamp. Actuators 2019, 8, 72.",
+		"links": [
+			{ "label": "Paper", "url": "papers/2019Nall_actuator.pdf"},
+			{	"label": "Youtube", "url": "https://www.youtube.com/watch?v=DPUNslHj5VE"}
+		]
+	},
+	{
+		"year": "2019",
+		"title": "3. Ezra Ameperosa*, Pranav A. Bhounsule, Domain randomization for detection and position estimation of multiples of a single object with applications to localizing bolts on structures, ASME-International Design Engineering & Technical Conference, Anaheim, CA, USA,  Aug. 18--21, 2019. (Best paper at ASME IDETC/CIE 2019)",
+		"links": [
+			{ "label": "Paper", "url": "papers/Ameperosa2019_bolts.pdf"},
+			{	"label": "Youtube", "url": "https://www.youtube.com/watch?v=-DLU-bjDOhE"}
+		]
+	},
+	{
+		"year": "2019",
+		"title": "2. Wankun Sirichotiyakul,  Aykut C. Satici, Sebastian Sanchez*, Pranav A. Bhounsule, Energetically-optimal Discrete And Continuous Stabilization Of The Rimless Wheel With Torso, ASME-International Design Engineering & Technical Conference, Anaheim, CA, USA, Aug 18--21, 2019.",
+		"links": [
+			{ "label": "Paper", "url": "papers/Sirichotiyakul2019_energetic.pdf"}
+		]
+	},
+	{
+		"year": "2019",
+		"title": "1. A. Zamani* and J. Galloway II^, P. A. Bhounsule, Feedback motion planning of legged robots by composing orbital Lyapunov functions using rapidly-exploring random trees, IEEE Conference on Robotics and Automation, Montreal, Canada, May 20-24, 2019",
+		"links": [
+			{ "label": "Paper", "url": "papers/Zamani2019Feedback.pdf"},
+			{	"label": "Youtube", "url": "https://youtu.be/Ie-WGqAl6-4"},
+			{ "label": "Github", "url": "https://github.com/pab47/HopperRRT"}
+		]
+	},
+	{
+		"year": "2018",
+		"title": "8. A. Zamani*, P. A. Bhounsule, Control Synergies for Rapid Stabilization and Enlarged Region of Attraction for a Model of Hopping, Biomimetics 2018, 3(3), 25;",
+		"links": [
+			{ "label": "Paper", "url": "papers/2018Zamani_synergy.pdf"},
+			{	"label": "MDPI", "url": "https://doi.org/10.3390/biomimetics3030025"}
+		]
+	},
+	{
+		"year": "2018",
+		"title": "7. C. Lima, L. Claeys, and P. A. Bhounsule, Academy for Teacher Excellence: Promoting STEM Education and STEM Careers among Latinos Service Learning (Under) Represented Latins in STEM: Increasing Participation Throughout Education and the Work- place, Editors: Timothy T. Yuen, Emily P. Bonner, Maria G. Arreguin-Anderson. Publisher: Peter Lang Inc, 2018, ISBN. 978-1-4331-5176-7,",
+		"links": [
+			{ "label": "Paper", "url": "papers/2018Lima_service_learning.pdf"},
+			{	"label": "MDPI", "url": "https://doi.org/10.3726/b13022"}
+		]
+	},
+	{
+		"year": "2018",
+		"title": "6. F. Moreira^, A. Abundis^ M. Aguirre^, J. Castillo^, P. A. Bhounsule, An Inchworm-inspired Robot Based on Modular Body, Electronics and Passive Friction Pads Performing the Two-anchor Crawl Gait, Journal of Bionic Engineering, Volume 15, Issue 5, 2018,",
+		"links": [
+			{ "label": "Paper", "url": "papers/Moreira2018_inchworm.pdf"},
+			{	"label": "MDPI", "url": "https://doi.org/10.1007/s42235-018-0069-x"},
+			{ "label": "Youtube", "url": "https://www.youtube.com/watch?v=rlaOOx0Boos"}
+		]
+	},
+	{
+		"year": "2018",
+		"title": "5. C. L. Trevino*, J. D. Galloway II^, P. A. Bhounsule, A Three-Dimensional Printed, Non-Assembly, Passive Dynamic Walking Toy: Design and Analysis, Journal of Mechanisms and Robotics,",
+		"links": [
+			{ "label": "Paper", "url": "papers/2018Trevino_Rowdy.pdf"},
+			{	"label": "ASME", "url": "https://mechanismsrobotics.asmedigitalcollection.asme.org/article.aspx?articleid=2686558"},
+			{ "label": "Appendix", "url": "papers/2018Trevino_Rowdy_Appendix.pdf"},
+			{ "label": "Youtube", "url": "https://www.youtube.com/watch?v=wJ3W3MomWl4"},
+			{ "label": "Simulation Video", "url": "https://youtu.be/sAGWg-DyDOw"},
+			{ "label": "Github", "url": "https://github.com/pab47/RowdyWalker"}
+		]
+	},
+	{
+		"year": "2018",
+		"title": "4. J. Krause*, P A. Bhounsule, A 3D Printed Linear Pneumatic Actuator for Position, Force and Impedance Control, Actuators 7(2), 24, 2018,",
+		"links": [
+			{ "label": "Paper", "url": "papers/Krause2018_actuator.pdf"},
+			{	"label": "MDPI", "url": "http://dx.doi.org/10.3390/act7020024"}
+		]
+	},
+	{
+		"year": "2018",
+		"title": "3. J. D. Galloway II ^, G. A. Rios^, Pranav A. Bhounsule, Mechanics And Control Of Pumping A Playground Swing And Robotic Implementation, UTSA Journal Of Undergraduate And Scholarly Works, Volume 3, 2018",
+		"links": [
+			{ "label": "Paper", "url": "papers/Galloway2018_swing.pdf"},
+			{	"label": "Youtube", "url": "https://www.youtube.com/watch?v=mNHBRSlg1EM"}
+		]
+	},
+	{
+		"year": "2018",
+		"title": "2. P. A. Bhounsule, A. Zamani*, and J. Pusey, Switching between Limit Cycles in a Model of Running Using Exponentially Stabilizing Discrete Control Lyapunov Function, American Controls Conference (ACC), Milwaukee, WI, USA June 27 - 29, 2018",
+		"links": [
+			{ "label": "Paper", "url": "papers/Bhounsule2018_switching.pdf"},
+			{	"label": "Youtube", "url": "https://youtu.be/4nZz1J9ew9k"}
+		]
+	},
+	{
+		"year": "2018",
+		"title": "1. P. A. Bhounsule, A. Taha, and S. Nugruho, Control Systems and Robotics Outreach to Middle-school Girls: Approach, Results, and Suggestions, Proceedings of the 2018 ASEE Gulf-Southwest Section Annual Conference The University of Texas at Austin, TX, USA April 4-6, 2018. (Paper award, 2nd place)",
+		"links": [
+			{ "label": "Paper", "url": "papers/ASEE18_robotics_outreach.pdf"},
+			{	"label": "Youtube", "url": "https://youtu.be/nJW5tSn7uFA"},
+			{ "label": "Github", "url": "https://github.com/pab47/IEEE_CSS_Outreach"}
+		]
+	},
+	{
+		"year": "2017",
+		"title": "9. M. Piper*, P. A. Bhounsule and K. K. Castillo-Villar, How to beat Flappy Bird: A Mixed-integer Model Predictive Control Approach, ASME-Dynamics Systems and Controls Conference, October 11-13, 2017, Tysons Corner, Virginia, USA.",
+		"links": [
+			{ "label": "Paper", "url": "papers/Piper2017_FlappyBird.pdf"},
+			{ "label": "Github", "url": "https://github.com/pab47/FlappyBirdController"}
+		]
+	},
+	{
+		"year": "2017",
+		"title": "8. P. A. Bhounsule, Control based on passive dynamic walking, Bioinspired Legged Locomotion: Models, Concepts, Control and Applications, 1st edition, Editors: Maziar Sharbafi and Andre Seyfarth. Publisher: Elsevier, Butterworth-Heinemann, 2017,  ISBN. 9780128037744 (Book chapter).",
+		"links": [
+			{ "label": "Paper", "url": "papers/Bhounsule2017_Control_based_on_passive_dynamic_walking.pdf"}
+		]
+	},
+	{
+		"year": "2017",
+		"title": "7. P. A. Bhounsule and A Zamani*, A Discrete Control Lyapunov Function for Exponential Orbital Stabilization of the Simplest Walker, ASME Journal of Mechanism and Robotics Vol 9, No 5, 2017 doi:10.1115/1.4037440.",
+		"links": [
+			{ "label": "Paper", "url": "papers/Bhounsule2017_dclf.pdf"}
+		]
+	},
+	{
+		"year": "2017",
+		"title": "6. P. A. Bhounsule, Two benchmarks for optimization of legged robots – hybrid systems with impulse effects, Dynamics of Continuous, Discrete and Impulsive Systems Series B: Applications and Algorithms, 24 (2017) 269-282.",
+		"links": [
+			{ "label": "Paper", "url": "papers/Bhounsule2017_Benchmarks.pdf"}
+		]
+	},
+	{
+		"year": "2017",
+		"title": "5. P. A. Bhounsule, K.Yamane. Accurate Task-Space Tracking for Humanoids with Modeling Errors using Iterative Learning Control. Intl. Journal of Humanoid Robots, Vol. 14, No. 3 (2017) 1750015 DOI: 10.1142/S0219843617500153",
+		"links": [
+			{ "label": "Paper", "url": "papers/Bhounsule2017_humanoids.pdf"},
+			{ "label": "Multimedia", "url": "https://www.disneyresearch.com/publication/accurate-task-space-tracking/"}
+		]
+	},
+	{
+		"year": "2017",
+		"title": "4. P. A. Bhounsule and A. Zamani*. Stable Bipedal Walking Motions with a Swing-Leg Protraction Strategy, Journal of Biomechanics, vol. 51, pp. 123 -- 127, 2017",
+		"links": [
+			{ "label": "Paper", "url": "papers/Bhounsule2016_protraction.pdf"},
+			{ "label": "MDPI", "url": "http://dx.doi.org/10.1016/j.jbiomech.2016.11.063"}
+		]
+	},
+	{
+		"year": "2017",
+		"title": "3. A. Zamani* and P. A. Bhounsule. Foot Placement and Ankle Push-off Control for the Orbital Stabilization of Bipedal Robots IEEE/RSJ Intl. Conference on Intelligent Robots and Systems, Vancouver, BC, Canada, September 24-28, 2017.",
+		"links": [
+			{ "label": "Paper", "url": "papers/Zamani2017_orbital.pdf"}
+		]
+	},
+	{
+		"year": "2017",
+		"title": "2. J. Krause* and P. A. Bhounsule, Variable Position and Force Control of a Pneumatically Actuated Knee Joint, ASME-International Design Engineering & Technical Conference, August 6-9, 2017, Cleveland, Ohio.",
+		"links": [
+			{ "label": "Paper", "url": "papers/Krause2017_pneumatic.pdf"}
+		]
+	},
+	{
+		"year": "2017",
+		"title": "1. P.A. Bhounsule, D. Chaney, L. Claeys and R.D. Manteufel. Robotics service learning for improving learning outcomes and increasing community engagement, American Society of Engineering Education Gulf-South West Section, Dallas, Texas, USA, March 13-14, 2017.",
+		"links": [
+			{ "label": "Paper", "url": "papers/ASEE17_service_learning.pdf"}
+		]
+	},
+	{
+		"year": "2016",
+		"title": "7. P. A. Bhounsule, J. Pusey, C. Moussouni^, A comparative study of leg geometry for energy-efficient locomotion, IEEE  International Conference on Simulation, Modeling, and Programming for Autonomous Robots (SIMPAR), San Francisco, USA Dec 13-16, 2016.",
+		"links": [
+			{ "label": "Paper", "url": "papers/Bhounsule2016_LegKinematics.pdf"}
+		]
+	},
+	{
+		"year": "2016",
+		"title": "6. P. A. Bhounsule, K. Yamane, A. Bapat, A task-level iterative learning control algorithm for accurate tracking in manipulators with modeling errors and stringent joint limits, ASME-Dynamics Systems and Controls Conference, Minneapolis, MN, USA Oct 12-14, 2016.",
+		"links": [
+			{ "label": "Paper", "url": "papers/Bhounsule_DSCC2016-9759.pdf"}
+		]
+	},
+	{
+		"year": "2016",
+		"title": "5. P. A. Bhounsule, E. Ameperosa^, S. Miller^, K. Seay^, R. Ulep^,  Dead-beat control of walking for a torso-actuated rimless wheel using an event-based, discrete, linear controller, ASME-International Design Engineering & Technical Conference, Charlotte, NC, USA Aug 21–25, 2016.",
+		"links": [
+			{ "label": "Paper", "url": "papers/Bhounsule2016_rimlesswheel.pdf"}
+		]
+	},
+	{
+		"year": "2016",
+		"title": "4. A. Zamani*, P. A. Bhounsule and J. Hurst. Energy-efficient planning for dynamic legged robots on patterned terrain, Dynamic Walking 2016, Holly, Michigan, USA, June 4 - 7, 2016.",
+		"links": [
+			{ "label": "Paper", "url": "papers/DW16_Zamani.pdf"}
+		]
+	},
+	{
+		"year": "2016",
+		"title": "3. C. von Brecht^, B. Kramer^, P. A. Bhounsule, A. Jafari. An impulse actuator for high speed & high torque applications, Dynamic Walking 2016, Holly, Michigan, USA, June 4 - 7, 2016.",
+		"links": [
+			{ "label": "Paper", "url": "papers/DW16_vonBrecht.pdf"}
+		]
+	},
+	{
+		"year": "2016",
+		"title": "2. A. Zamani*, P. A. Bhounsule, A. Taha. Planning energy-efficient bipedal locomotion on patterned terrain. In Proc. SPIE 9837, Unmanned Systems Technology XVIII, Baltimore, Maryland, USA, April 20-21, 2016.",
+		"links": [
+			{ "label": "Paper", "url": "papers/Zamani2016_MotionPlan_SPIE.pdf"},
+			{ "label": "MDPI", "url": "http://dx.doi.org/10.1117/12.2223447"}
+		]
+	},
+	{
+		"year": "2016",
+		"title": "1. P.A. Bhounsule and R.D. Manteufel. Short video clips to increase student engagement in mechatronics, American Society of Engineering Education Gulf-South West Section, Fort Worth, Texas, USA, March 6-8, 2016.",
+		"links": [
+			{ "label": "Paper", "url": "papers/Short_Videos_Mechatronics.pdf"}
+		]
+	},
+	{
+		"year": "2015",
+		"title": "4. P. A. Bhounsule, A. Ruina, G. Steissberg. Discrete Decision Continuous Actuation control: balance of an inverted pendulum and pumping a pendulum swing. ASME J. Dyn. Sys., Meas., Control 137(5), 051012 (2015) (9 pages)",
+		"links": [
+			{ "label": "Paper", "url": "event-based-intermittent.pdf"},
+			{ "label": "Youtube", "url": "https://www.youtube.com/watch?v=GCGeDHKNzm4"}
+		]
+	},
+	{
+		"year": "2015",
+		"title": "3. P. A. Bhounsule and K.Yamane. Iterative Learning Control for Accurate Task-Space Tracking with Humanoid Robots. IEEE-International Conference on Humanoid Robots, Seoul, South Korea, Nov 3-5, 2015.",
+		"links": [
+			{ "label": "Paper", "url": "papers/sky_task_humanoids.pdf"}
+		]
+	},
+	{
+		"year": "2015",
+		"title": "2. R. Brothers^, R. De La Garza^, E. Sanchez^, C. Trevino^, P. A. Bhounsule, ' Ein: A Modular Robotic Leg' Dynamic Walking 2015, Columbus, Ohio, USA.",
+		"links": [
+			{ "label": "Paper", "url": "DW15_RoboticLeg.pdf"}
+		]
+	},
+	{
+		"year": "2015",
+		"title": "1. S. Miller^, E. Ameperosa^, K. Seay^, R. Jovanni Ulep^, P. A. Bhounsule, ' The Roadrunner: A 2-D Powered Rimless Wheel Robot for Energy-efficient and Rough Terrain Locomotion' Dynamic Walking 2015, Columbus, Ohio, USA.",
+		"links": [
+			{ "label": "Paper", "url": "DW15_RimlessWheel.pdf"}
+		]
+	},
+	{
+		"year": "2014",
+		"title": "4. P. A. Bhounsule. Foot placement in the simplest slope walker reveals a wide range of walking solutions. IEEE-Transactions on Robotics, Vol 30, Issue 5, June 2014.",
+		"links": [
+			{ "label": "Paper", "url": "simplest_limits.pdf"}
+		]
+	},
+	{
+		"year": "2014",
+		"title": "3. P. A. Bhounsule. Numerical accuracy of two benchmark models of walking: the rimless wheel and the simplest walker. Dynamics of Continuous, Discrete and Impulsive Systems Series B: Applications and Algorithms, vol. 21, pp 137--148, 2014.",
+		"links": [
+			{ "label": "Paper", "url": "pdw_benchmark.pdf"},
+			{ "label": "MATLAB File 1", "url": "rimlesswheel.m"},
+			{ "label": "MATLAB File 2", "url": "simplestwalker.m"}
+		]
+	},
+	{
+		"year": "2014",
+		"title": "2. P. A. Bhounsule. Control of a compass gait walker based on energy regulation using ankle push-off and foot placement. Robotica, pp. 1--11, June 2014.",
+		"links": [
+			{ "label": "Paper", "url": "walking_model.pdf"}
+		]
+	},
+	{
+		"year": "2014",
+		"title": "1. P. A. Bhounsule, J. Cortell, A.Grewal, B. Hendriksen, J.G.D. Karssen, C. Paul, A. Ruina. Low-bandwidth reflex-based control for lower power walking: 65 km on a single battery charge. International Journal of Robotics Research, vol.33 no.10, 1305-1321, 2014.",
+		"links": [
+			{ "label": "Paper", "url": "rangerIJRR2013.pdf"},
+			{ "label": "Appendix", "url": "rangerIJRR2013supplement.pdf"},
+			{ "label": "Webpage", "url": "http://ruina.tam.cornell.edu/research/topics/locomotion_and_robotics/ranger/ranger_paper/index.html"},
+			{ "label": "Youtube", "url": "https://www.youtube.com/watch?v=KLepY1AsaRk"}
+		]
+	},
+	{
+		"year": "20082013",
+		"title": "6. P. A. Bhounsule, K.Yamane. Iterative Learning Control for High-Fidelity Tracking of Fast Motions on Entertainment Humanoid Robots. IEEE-International Conference on Humanoid Robots, Georgia, USA Oct 15- 17, 2013.",
+		"links": [
+			{ "label": "Paper", "url": "ilc_animatronics.pdf"}
+		]
+	},
+	{
+		"year": "20082013",
+		"title": "5. P. A. Bhounsule, J. Cortell,  A. Ruina, How one might realize practical, energy-efficient legged robots: 19 thoughts/ideas from the Cornell Ranger project, Dynamic Walking 2012.",
+		"links": [
+			{ "label": "Paper", "url": "DW12_Ranger_Lessons.pdf"},
+			{ "label": "Presentation", "url": "ranger_lessons_ppt.pdf"},
+			{ "label": "Youtube", "url": "https://www.youtube.com/watch?v=YhoZGSLV8rQ"}
+		]
+	},
+	{
+		"year": "20082013",
+		"title": "4. P. A. Bhounsule, J. Cortell, A. Ruina, “ Design and control of Ranger: an energy-efficient, dynamics walking robot, Climbing and Walking Robots, 441--448, CLAWAR 2012, Maryland, USA. (Best paper in Biologically Inspired Robotics)",
+		"links": [
+			{ "label": "Paper", "url": "CLAWAR12_Ranger_Design_Control.pdf"}
+		]
+	},
+	{
+		"year": "20082013",
+		"title": "3. P. A. Bhounsule, A. Ruina, ' Smooth discrete control of walking robots: An intermediate between fully passive and high bandwidth feedback control', Word Congress of Biomechanics 2010, Singapore",
+		"links": [
+			{ "label": "Paper", "url": "WCB2010_SmoothDiscreteControl.pdf"},
+			{ "label": "Presentation", "url": "wcb10_SmoothDiscrete.pdf"}
+		]
+	},
+	{
+		"year": "20082013",
+		"title": "2. P. A. Bhounsule, ' Cornell ranger: Energy optimal control', Proceedings of Dynamic Walking 2009, Vancouver, Canada.",
+		"links": [
+			{ "label": "Paper", "url": "DW09_EnergyOptimalControl.pdf"}
+		]
+	},
+	{
+		"year": "20082013",
+		"title": "1. P. A. Bhounsule, ' Cornell ranger: computer simulation and experimental fits', Proceeding of Dynamic Walking 2008, Delft, Netherland.",
+		"links": [
+			{ "label": "Paper", "url": "DW2008_poster_Bhounsule.pdf"},
+			{	"label": "Video", "url": "ranger_match.mov"}
+		]
+	}
+]
