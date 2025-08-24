@@ -1,5 +1,28 @@
 [
 	{
+		"title": "Summer internship: MuJoCo User Interface programming (UIC GPIP program)",
+		"years": "June 2025 - Aug 2025",
+		"major": "CS Sophomore",
+		"links": [
+			{ "label": "Video instruction", "url": "https://youtu.be/wjsC5dGPH0w?si=AiToVX5Fflafdxdf"},
+			{ "label": "Github", "url": "https://github.com/Goblin-95/TurtleBot-Visualization-and-GPS-Tracker-with-Python-GUI"}
+		],
+		"people": [
+			{ "name": "George Izevkov", "img": "people/George_Izevkov.png"}
+		]
+	},
+	{
+		"title": "Summer internship: Redesign of Robotics and Motion Lab website (UIC GPIP)",
+		"years": "June 2025 - Aug 2025",
+		"major": "CS Sophomoe",
+		"links": [
+			{ "label": "Website", "url": "https://pab47.github.io"}
+		],
+		"people": [
+			{ "name": "Edward Weng", "img": "people/Edward_Weng.jpeg"}
+		]
+	},
+	{
 		"title": "Independent Project: Game Design",
 		"years": "June 2025 - July 2025",
 		"major": "High School Student",
