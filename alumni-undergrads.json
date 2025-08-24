@@ -1,8 +1,8 @@
 [
 	{
-		"title": "Summer internship: MuJoCo User Interface programming (UIC GPIP program)",
+		"title": "Summer internship: Python GUI for GPS Visualization (UIC GPIP program)",
 		"years": "June 2025 - Aug 2025",
-		"major": "CS Sophomore",
+		"major": "Comp. Engg. Sophomore",
 		"links": [
 			{ "label": "Video instruction", "url": "https://youtu.be/wjsC5dGPH0w?si=AiToVX5Fflafdxdf"},
 			{ "label": "Github", "url": "https://github.com/Goblin-95/TurtleBot-Visualization-and-GPS-Tracker-with-Python-GUI"}
