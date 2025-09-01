@@ -16,7 +16,8 @@
 		"study": "MS Thesis: Autonomous Dynamic Grasping with a Robotic Arm: Real-Time Motion Prediction and Adaptive Control",
 		"links": [
 			{ "label": "MS Thesis", "url": "reports/Simone_Ughetto_MS_Thesis.pdf"},
-			{ "label": "Video", "url": "https://youtu.be/8iN5YvXc0vI"}
+			{ "label": "Video", "url": "https://youtu.be/8iN5YvXc0vI"},  
+			{ "label": "Github", "url": "https://github.com/simone-ughetto/dynamic-grasping"}
 		]
 	},
 	{
