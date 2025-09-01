@@ -1,5 +1,17 @@
 [
 	{
+		"title": "Summer internship: Unitree A1 Quadruped Custom Battery Pack (UIC GPIP program)",
+		"years": "June 2025 - Aug 2025",
+		"major": "ME Sophomore",
+		"links": [
+			{ "label": "Replacing A1 battery", "url": "reports/Battery_Replacement_A1.pdf"},
+			{ "label": "Creating Custom Battery", "url": "reports/Battery_Customized.pdf"}
+		],
+		"people": [
+			{ "name": "Ahmad Javed", "img": "people/Ahmad_Javed.jpg"}
+		]
+	},
+	{
 		"title": "Summer internship: Python GUI for GPS Visualization (UIC GPIP program)",
 		"years": "June 2025 - Aug 2025",
 		"major": "Comp. Engg. Sophomore",
