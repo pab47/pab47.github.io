@@ -1,11 +1,37 @@
 [
 	{
+		"title": "Independent Research: Quadruped with Vacuum Cleaner (CURA)",
+		"years": "Aug 2025 - Dec 2025",
+		"major": "EE Senior",
+		"links": [
+			{ "label": "Vacuum Quadruped.pdf", "url": "reports/Vacuum_Quadruped.pdf"},
+			{ "label": "Code on GitHub", "url": "https://github.com/cm-zamudio/unitree-go1-dust-collector"},
+			{ "label": "Video (coming soon)", "url": "Coming Soon"}
+		],
+		"people": [
+			{"name": "Christian Zamudio", "img": "people/Christian_Zamudio.png"}
+		]
+	},
+	{
+		"title": "Summer internship: Prototype Toy for Mass Production (UIC GPIP program)",
+		"years": "June 2025 - Aug 2025",
+		"major": "ME Sophomore",
+		"links": [
+			{ "label": "Unavailable", "url": "Unavailable"}
+		],
+		"people": [
+			{ "name": "Charlie Newboe", "img": "people/charlie_newboe.jpeg"}
+		]
+	},
+	{
 		"title": "Summer internship: Unitree A1 Quadruped Custom Battery Pack (UIC GPIP program)",
 		"years": "June 2025 - Aug 2025",
 		"major": "ME Sophomore",
 		"links": [
 			{ "label": "Replacing A1 battery", "url": "reports/Battery_Replacement_A1.pdf"},
-			{ "label": "Creating Custom Battery", "url": "reports/Battery_Customized.pdf"}
+			{ "label": "Creating Custom Battery", "url": "reports/Battery_Customized.pdf"},
+			 {"label": "External Battery for Quadruped A1", "url": "reports/Battery_External_A1.pdf"},
+			{ "label": "Video of Externa Battery on A1", "url": "Coming Soon"}
 		],
 		"people": [
 			{ "name": "Ahmad Javed", "img": "people/Ahmad_Javed.jpg"}
@@ -26,7 +52,7 @@
 	{
 		"title": "Summer internship: Redesign of Robotics and Motion Lab website (UIC GPIP)",
 		"years": "June 2025 - Aug 2025",
-		"major": "CS Sophomoe",
+		"major": "CS Sophomore",
 		"links": [
 			{ "label": "Website", "url": "https://pab47.github.io"}
 		],
