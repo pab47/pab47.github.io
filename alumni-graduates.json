@@ -1,5 +1,14 @@
 [
 	{
+		"img": "people/salvador_echeveste.png",
+		"name": "Salvador Echeveste (PhD, ME UIC)",
+		"years": "Aug 2019 - July 2025",
+		"study": "PhD Thesis: EMG-Based Human-In-The-Loop Bayesian Optimization to Assist Hip-Centric Activities",
+		"links": [
+			{ "label": "PhD Thesis", "url": "reports/Salvador_Echeveste_PhD_Thesis.pdf"}
+		]
+	},
+	{
 		"img": "people/Ragib Rownak.jpg",
 		"name": "Ragib Rownak (MS, ME UIC)",
 		"years": "May 2024 - Aug 2025",
