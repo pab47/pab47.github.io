@@ -17,7 +17,7 @@
 		"years": "June 2025 - Aug 2025",
 		"major": "ME Sophomore",
 		"links": [
-			{ "label": "Confidential", "url": "None"}
+			{ "label": "Confidential"}
 		],
 		"people": [
 			{ "name": "Charlie Newboe", "img": "people/charlie_newboe.jpeg"}
@@ -28,10 +28,10 @@
 		"years": "June 2025 - Aug 2025",
 		"major": "ME Sophomore",
 		"links": [
-			{ "label": "Replacing A1 battery", "url": "reports/Battery_Replacement_A1.pdf"},
-			{ "label": "Creating Custom Battery", "url": "reports/Battery_Customized.pdf"},
-			 {"label": "External Battery for Quadruped A1", "url": "reports/Battery_External_A1.pdf"},
-			{ "label": "Video of External Battery on A1", "url": "https://youtu.be/R0RrBMzZovs"}
+			{ "label": "1) Replacing A1 battery", "url": "reports/Battery_Replacement_A1.pdf"},
+			{ "label": "2) Creating Custom Battery", "url": "reports/Battery_Customized.pdf"},
+			 {"label": "3) External Battery for Quadruped A1", "url": "reports/Battery_External_A1.pdf"},
+			{ "label": "4) Video of External Battery on A1", "url": "https://youtu.be/R0RrBMzZovs"}
 		],
 		"people": [
 			{ "name": "Ahmad Javed", "img": "people/Ahmad_Javed.jpg"}
