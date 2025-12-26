@@ -4,9 +4,9 @@
 		"years": "Aug 2025 - Dec 2025",
 		"major": "EE Senior",
 		"links": [
-			{ "label": "Vacuum Quadruped.pdf", "url": "reports/Vacuum_Quadruped.pdf"},
-			{ "label": "Code on GitHub", "url": "https://github.com/cm-zamudio/unitree-go1-dust-collector"},
-			{ "label": "Video (coming soon)", "url": "Coming Soon"}
+			{ "label": "Report", "url": "reports/Vacuum_Quadruped.pdf"},
+			{ "label": "Github", "url": "https://github.com/cm-zamudio/unitree-go1-dust-collector"},
+			{ "label": "Video", "url": "https://youtu.be/P5t7v-KH8O8"}
 		],
 		"people": [
 			{"name": "Christian Zamudio", "img": "people/Christian_Zamudio.png"}
@@ -17,7 +17,7 @@
 		"years": "June 2025 - Aug 2025",
 		"major": "ME Sophomore",
 		"links": [
-			{ "label": "Unavailable", "url": "Unavailable"}
+			{ "label": "Confidential", "url": "None"}
 		],
 		"people": [
 			{ "name": "Charlie Newboe", "img": "people/charlie_newboe.jpeg"}
@@ -31,7 +31,7 @@
 			{ "label": "Replacing A1 battery", "url": "reports/Battery_Replacement_A1.pdf"},
 			{ "label": "Creating Custom Battery", "url": "reports/Battery_Customized.pdf"},
 			 {"label": "External Battery for Quadruped A1", "url": "reports/Battery_External_A1.pdf"},
-			{ "label": "Video of Externa Battery on A1", "url": "Coming Soon"}
+			{ "label": "Video of External Battery on A1", "url": "https://youtu.be/R0RrBMzZovs"}
 		],
 		"people": [
 			{ "name": "Ahmad Javed", "img": "people/Ahmad_Javed.jpg"}
@@ -140,11 +140,12 @@
 	},
 	{
 		"title": "Summer internship: Car navigation using Aruco Markers (UIC GPIP program)",
-		"years": "June 2024 - August 2025",
-		"major": "ME Sophomore",
+		"years": "June 2024 - Dec 2025",
+		"major": "ME Sophomore/Junior",
 		"links": [
 			{ "label": "Github", "url": "https://github.com/MirYamin123/Car-with-Aruco-Marker-detection"},
-			{ "label": "Autonomous Car", "url": "reports/AutonomousCar.pdf"}
+			{ "label": "Autonomous Car", "url": "reports/AutonomousCar.pdf"},
+			{ "label": "Autonomous Ackermann Car with NAV2", "url": "reports/AutonomousCar2.pdf"}
 		],
 		"people": [
 			{ "name": "Yamin Mir", "img": "people/Yamin_Mir.png"}
