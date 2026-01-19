@@ -146,7 +146,8 @@
 			{ "label": "Project 1: Github", "url": "https://github.com/MirYamin123/Car-with-Aruco-Marker-detection"},
 			{ "label": "Project 1: Autonomous Car", "url": "reports/AutonomousCar.pdf"},
 			{ "label": "Project 2: Github", "url": "https://github.com/MirYamin123/Autonomous-Ackermann-Steering-Car/tree/main"},
-			{ "label": "Project 2: Autonomous Ackermann Car with NAV2", "url": "reports/AutonomousCar2.pdf"}
+			{ "label": "Project 2: Autonomous Ackermann Car with NAV2", "url": "reports/AutonomousCar2.pdf"},
+			{ "label": "Project 2: Video, "url": "https://youtube.com/shorts/o-QRACmWkrA"}
 		],
 		"people": [
 			{ "name": "Yamin Mir", "img": "people/Yamin_Mir.png"}
