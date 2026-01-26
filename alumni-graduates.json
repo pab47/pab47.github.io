@@ -15,7 +15,8 @@
 		"study": "MS Thesis: Autonomous Navigation and Simultaneous 3D Mapping with a UGV in an Open-Ended Environment",
 		"links": [
 			{ "label": "MS Thesis", "url": "reports/Ragib_Rownak_MS_Thesis.pdf"},
-			{ "label": "Video", "url": "https://youtu.be/F6CJoYQWVOA"}
+			{ "label": "Video", "url": "https://youtu.be/F6CJoYQWVOA"},
+			{ "label": "Github", "url": "https://github.com/RagibRownak/Object-Detection-using-CNN-ROS"}
 		]
 	},
 	{
