@@ -1,5 +1,12 @@
 [
 	{
+		"year": "2026",
+		"title": "1. Pranav A. Bhounsule, Daniel Torres, and Salvador Echeveste. A Low-Cost, Scalable Mechatronics Course Centered on Tinker-and-Build Laboratories and Project-Based Learning , ASEE IL-IN 2026",
+		"links": [
+			{ "label": "Paper", "url": "https://pab47.github.io/papers/2026Bhounsule_mechatronics.pdf"}
+		]
+	},
+	{
 		"year": "2025",
 		"title": "10. S. Echeveste, C. Yang, P. A. Bhounsule, EMG Signal Enhancement via Multi-Objective Optimization of Hankel-Based Bayesian Learning, Modeling, Estimation and Controls Conference, Pittsburgh, PA, USA, Oct 5-8, 2025.",
 		"links": [
