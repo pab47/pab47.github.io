@@ -6,7 +6,7 @@
 		"links": [
 			{ "label": "Report", "url": "reports/Vacuum_Cleaning_Robot_Dog.pdf"},
 			{ "label": "Video", "url": "https://youtu.be/Tm34cRKZASw"},
-			{ "label": "Github", "url": "https://github.com/Rafa110904/MIE15_SWEEP-Q"},
+			{ "label": "Github", "url": "https://github.com/Rafa110904/MIE15_SWEEP-Q"}
 		],
 		"people": [
 			{ "name": "Rafa Dahlan", "img": "people/Rafa_Dahlan.png"},
