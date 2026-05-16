@@ -1,5 +1,22 @@
 [
 	{
+		"title": "Senior Design Project: Vacuum Cleaning Robot Dog.pdf",
+		"years": "Aug 2025 - May 2026",
+		"major": "ME/IE Seniors",
+		"links": [
+			{ "label": "Report", "url": "reports/Vacuum_Cleaning_Robot_Dog.pdf"},
+			{ "label": "Video", "url": "https://youtu.be/Tm34cRKZASw"},
+			{ "label": "Github", "url": "https://github.com/Rafa110904/MIE15_SWEEP-Q"},
+		],
+		"people": [
+			{ "name": "Rafa Dahlan", "img": "people/Rafa_Dahlan.png"},
+			{ "name": "Hossam Alhalabi", "img": "people/Hossam_Alhalabi.png"},
+			{ "name": "Zara Sharifi", "img": "people/Zara_Sharifi.png"},
+			{ "name": "Israel Dominguez", "img": "people/Israel_Dominguez.png"},
+			{ "name": "Thomas Cademcian", "img": "people/Thomas_Cademcian.png"}
+		]
+	},
+	{
 		"title": "Independent Research: Quadruped with Vacuum Cleaner (CURA)",
 		"years": "Aug 2025 - Dec 2025",
 		"major": "EE Senior",
@@ -140,14 +157,15 @@
 	},
 	{
 		"title": "Summer internship: Car navigation using Aruco Markers (UIC GPIP program)",
-		"years": "June 2024 - Dec 2025",
-		"major": "ME Sophomore/Junior",
+		"years": "June 2024 - May 2026",
+		"major": "ME Sophomore/Junior/Senior",
 		"links": [
 			{ "label": "Project 1: Github", "url": "https://github.com/MirYamin123/Car-with-Aruco-Marker-detection"},
 			{ "label": "Project 1: Autonomous Car", "url": "reports/AutonomousCar.pdf"},
 			{ "label": "Project 2: Github", "url": "https://github.com/MirYamin123/Autonomous-Ackermann-Steering-Car/tree/main"},
 			{ "label": "Project 2: Autonomous Ackermann Car with NAV2", "url": "reports/AutonomousCar2.pdf"},
-			{ "label": "Project 2: Video", "url": "https://youtube.com/shorts/o-QRACmWkrA"}
+			{ "label": "Project 2: Video", "url": "https://youtube.com/shorts/o-QRACmWkrA"},
+			{ "label": "Project 3: Development of an Autonomous RC Racing Car", "url": "reports/Development of an Autonomous RC Racing Car.pdf"}
 		],
 		"people": [
 			{ "name": "Yamin Mir", "img": "people/Yamin_Mir.png"}
