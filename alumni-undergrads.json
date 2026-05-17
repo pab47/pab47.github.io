@@ -12,7 +12,7 @@
 			{ "name": "Campbell Crafts", "img": "people/Campbell_Crafts.png"},
 			{ "name": "Kate Holian", "img": "people/Kate_Holian.png"},
 			{ "name": "Tommy Borowiec", "img": "people/Tommy_Borowiec.png"},
-			{ "name": "Ever Gonzalez", "img": "people/Ever_Gonzalez.png"}
+			{ "name": "Ever Gonzalez", "img": "people/unknown.jpg"}
 		]
 	},
 	{
@@ -27,8 +27,8 @@
 			{ "name": "Randy Munoz", "img": "people/Randy_Munoz.png"},
 			{ "name": "Joshua Brown-Brooks", "img": "people/Joshua_Brown_Brooks.png"},
 			{ "name": "Juan Bracamontes", "img": "people/Juan_Bracamontes.png"},
-			{ "name": "Leonardo Villafan", "img": "people/Leonardo_Villafan.png"},
-			{ "name": "Mubashir Siddiqui", "img": "people/Mubashir_Siddiqui.png"}
+			{ "name": "Leonardo Villafan", "img": "people/unknown.jpg"},
+			{ "name": "Mubashir Siddiqui", "img": "people/unknown.jpg"}
 		]
 	},
 	{
@@ -59,10 +59,10 @@
 		],
 		"people": [
 			{ "name": "Adrian Tse", "img": "people/Adrian_Tse.png"},
-			{ "name": "Jeremy Vo", "img": "people/Jeremy_Vo.png"},
+			{ "name": "Jeremy Vo", "img": "people/Jehttps://github.com/pab47/pab47.github.io/blob/master/alumni-undergrads.jsonremy_Vo.png"},
 			{ "name": "Samuel Sobieszczyk", "img": "people/Samuel_Sobieszczyk.png"},
 			{ "name": "Stuart Morrison", "img": "people/Stuart_Morrison.png"},
-			{ "name": "John Abraham", "img": "people/John_Abraham.png"}
+			{ "name": "John Abraham", "img": "people/unknown.jpg"}
 		]
 	},
 	{
