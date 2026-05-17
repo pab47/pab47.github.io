@@ -1,5 +1,21 @@
 [
 	{
+		"title": "Senior Design Project: Bicopter: Design & Control",
+		"years": "Aug 2025 - May 2026",
+		"major": "ME/IE Seniors",
+		"links": [
+			{ "label": "Report", "url": "reports/Bicopter_Design_Control.pdf"},
+			{ "label": "Video", "url": "https://youtu.be/aXwScI5uapU"}
+		],
+		"people": [
+			{ "name": "Caitlin Bouris", "img": "people/Caitlin_Bouris.png"},
+			{ "name": "Campbell Crafts", "img": "people/Campbell_Crafts.png"},
+			{ "name": "Kate Holian", "img": "people/Kate_Holian.png"},
+			{ "name": "Tommy Borowiec", "img": "people/Tommy_Borowiec.png"},
+			{ "name": "Ever Gonzalez", "img": "people/Ever_Gonzalez.png"}
+		]
+},
+	{
 		"title": "Senior Design Project: Whiteboard Cleaning Robot",
 		"years": "Aug 2025 - May 2026",
 		"major": "ME Seniors",
