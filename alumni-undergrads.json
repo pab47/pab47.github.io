@@ -14,7 +14,7 @@
 			{ "name": "Tommy Borowiec", "img": "people/Tommy_Borowiec.png"},
 			{ "name": "Ever Gonzalez", "img": "people/Ever_Gonzalez.png"}
 		]
-},
+	},
 	{
 		"title": "Senior Design Project: Whiteboard Cleaning Robot",
 		"years": "Aug 2025 - May 2026",
@@ -30,7 +30,7 @@
 			{ "name": "Leonardo Villafan", "img": "people/Leonardo_Villafan.png"},
 			{ "name": "Mubashir Siddiqui", "img": "people/Mubashir_Siddiqui.png"}
 		]
-},
+	},
 	{
 		"title": "Senior Design Project: Vacuum Cleaning Robot Dog.pdf",
 		"years": "Aug 2025 - May 2026",
@@ -46,6 +46,23 @@
 			{ "name": "Zara Sharifi", "img": "people/Zara_Sharifi.png"},
 			{ "name": "Israel Dominguez", "img": "people/Israel_Dominguez.png"},
 			{ "name": "Thomas Cademcian", "img": "people/Thomas_Cademcian.png"}
+		]
+	},
+	{
+		"title": "Senior Design Project: The AirDrop Transport Companion",
+		"years": "Aug 2025 - May 2026",
+		"major": "ECE Seniors",
+		"links": [
+			{ "label": "Report", "url": "reports/AirDrop_Transport_Companion.pdf"},
+			{ "label": "Video", "url": "https://youtu.be/QeVwLv0OFF0"},
+			{ "label": "Github", "url": "https://github.com/jvvo3/Senior-Design"}
+		],
+		"people": [
+			{ "name": "Adrian Tse", "img": "people/Adrian_Tse.png"},
+			{ "name": "Jeremy Vo", "img": "people/Jeremy_Vo.png"},
+			{ "name": "Samuel Sobieszczyk", "img": "people/Samuel_Sobieszczyk.png"},
+			{ "name": "Stuart Morrison", "img": "people/Stuart_Morrison.png"},
+			{ "name": "John Abraham", "img": "people/John_Abraham.png"}
 		]
 	},
 	{
