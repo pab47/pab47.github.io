@@ -1,5 +1,21 @@
 [
 	{
+		"title": "Senior Design Project: Whiteboard Cleaning Robot",
+		"years": "Aug 2025 - May 2026",
+		"major": "ME Seniors",
+		"links": [
+			{ "label": "Report", "url": "reports/Whiteboard_cleaning_robot.pdf"},
+			{ "label": "Video", "url": "https://youtu.be/uXGbY0-zEX4"}
+		],
+		"people": [
+			{ "name": "Randy Munoz", "img": "people/Randy_Munoz.png"},
+			{ "name": "Joshua Brown-Brooks", "img": "people/Joshua_Brown_Brooks.png"},
+			{ "name": "Juan Bracamontes", "img": "people/Juan_Bracamontes.png"},
+			{ "name": "Leonardo Villafan", "img": "people/Leonardo_Villafan.png"},
+			{ "name": "Mubashir Siddiqui", "img": "people/Mubashir_Siddiqui.png"}
+		]
+},
+	{
 		"title": "Senior Design Project: Vacuum Cleaning Robot Dog.pdf",
 		"years": "Aug 2025 - May 2026",
 		"major": "ME/IE Seniors",
