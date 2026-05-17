@@ -59,9 +59,10 @@
 		],
 		"people": [
 			{ "name": "Adrian Tse", "img": "people/Adrian_Tse.png"},
-			{ "name": "Jeremy Vo", "img": "people/Jehttps://github.com/pab47/pab47.github.io/blob/master/alumni-undergrads.jsonremy_Vo.png"},
+			{ "name": "Jeremy Vo", "img": "people/Jeremy_Vo.png"},
 			{ "name": "Samuel Sobieszczyk", "img": "people/Samuel_Sobieszczyk.png"},
-			{ "name": "Stuart Morrison", "img": "people/Stuart_Morrison.png"},
+			{ "name": "Kyle Sergelen", "img": "people/Kyle_Sergelen"},
+			{ "name": "Stuart Morrison", "img": "people/unknown.jpg"},
 			{ "name": "John Abraham", "img": "people/unknown.jpg"}
 		]
 	},
@@ -182,7 +183,7 @@
 		]
 	},
 	{
-		"title": "Undergraduate Research: Hiwonder Mentorpi A1 Ackerman Chassis Automomous Vehicle (focus on SLAM)",
+		"title": "Undergraduate Research: Hiwonder Mentorpi A1 Ackerman Chassis Autonomous Vehicle (focus on SLAM)",
 		"years": "Jan 2025 - Apr 2025",
 		"major": "ME Senior",
 		"links": [
