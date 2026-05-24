@@ -1,0 +1,90 @@
+[
+  {
+    "title": "G1 Remote Control",
+    "notes": "https://marketing.unitree.com/article/en/G1/Remote_Control.html"
+  },
+  {
+    "title": "G1 development development guide",
+    "notes": "https://support.unitree.com/home/en/G1_developer"
+  },
+  {
+    "title": "Unitree Discord Channel",
+    "notes": "https://discord.gg/Ek8679c5"
+  },
+  {
+    "title": "G1 online manual",
+    "notes": "https://marketing.unitree.com/article/en/G1/User_Manual.html"
+  },
+  {
+    "title": "G1 Debug or Development mode",
+    "notes": "L2+R2 (exit operational mode), then L2+A"
+  },
+  {
+    "title": "Teaching Mode with 1.4.5",
+    "notes": "https://www.youtube.com/watch?v=hJGe8Q4EDEc"
+  },
+  {
+    "title": "G1 Tutorials and Manual",
+    "notes": "https://www.unitree.com/app/g1"
+  },
+  {
+    "title": "Updating Robot Firmware",
+    "notes": "Procedure:\n1. A hotspot is required. Connect your phone to the hotspot via WiFi.\n2. Open the Unitree App (logged in).\n3. Navigate to: Device -> Robot Settings -> WiFi.\n4. Connect the robot to the hotspot network.\n5. In the app, go to: Device -> Update.\n6. Download the firmware update (robot battery must be at least 55%).\n7. Install the firmware update (robot battery must be at least 30%).\n8. Restart the robot after installation.\n\nCurrent firmware observed:\n- Robot updated successfully to version 1.4.7.\n\nNotes:\n1. For updating to 1.4.9:\n   - Turn on the robot.\n   - Enter debug/development mode using L2+B.\n   - Connect robot to hotspot WiFi.\n   - Start firmware update.\n\n2. Quadraconnect WiFi mode did not work reliably.\n   - Personal hotspot connection worked successfully.\n\nVideo:\nhttps://www.youtube.com/watch?v=WGIZxfJCnvs"
+  },
+  {
+    "title": "Running Arm Control Interface",
+    "notes": "SDK location: high level/g1_arm5_sdk_dds_example_cpp\n\nDescription:\nThis interface enables low-level upper body control using user-defined joint-level control (e.g., inverse kinematics) instead of predefined Unitree routines. It can be combined with loco_client for high-level locomotion and low-level manipulation simultaneously.\n\nReference:\nhttps://support.unitree.com/home/en/G1_developer/arm_control_routine\n\nProcedure:\n1. Turn on the robot.\n2. Enter ready mode: L2+B, then L2+UP.\n3. On Unitree App: Device -> Service Status -> disable g1_arm_example.\n4. Run: g1_arm5_dds_example <network_id> (press Enter twice if needed).\n\nImportant Notes:\n- Do NOT run g1_arm7 version.\n- The wrist may collide with thighs if incorrect version is used.\n- Robot should be in correct ready state before execution.\n\nExpected Output:\nRunning_Arm_Control_Interface.png"
+  },
+  {
+    "title": "Running Arm Action Interface",
+    "notes": "SDK location: high level/g1_arm_action_example_cpp\n\nDescription:\nThis interface controls predefined arm behaviors (e.g., wave, kiss gesture) when the robot is standing upright. The system operates in FSM=801 mode, where the upper body executes Unitree-defined action primitives selected by action IDs.\n\nReference:\nhttps://support.unitree.com/home/en/G1_developer/arm_action_interface\n\nProcedure:\n1. Turn on the robot.\n2. Enter ready mode: L2+B, then L2+UP.\n3. Lower robot so it is in contact with ground.\n4. Switch to standing state: R2 + A.\n5. Run: g1_arm_action_example -n <network_id> -i <action_id>.\n\nFSM Requirement:\n- Robot must be in FSM 801.\n- FSM state can be verified using provided SDK tools (e.g., fsm_id utility).\n- If modifying SDK: place code in examples/high_level and update CMakeLists.\n- Run check: ./fsm_id <network_name>."
+  },
+  {
+    "title": "High Level Locomotion Control",
+    "notes": "SDK location: highlevel/g1_loco_client_example_cpp\n\nDescription:\nThis module provides high-level locomotion control using velocity commands (vx, vy, omega). It enables motion planning and can potentially be combined with arm control interfaces for coordinated full-body behavior.\n\nReference:\nhttps://support.unitree.com/home/en/G1_developer/rpc_routine\n\nImplementation Notes:\n- Modified version exists: g1_loco_template.cpp (local file)\n- Located in high_level directory and built via unitree_sdk2\n\nBuild & Run:\nAfter adding to CMake, execute from unitree_sdk2/build:\n./g1_loco_template --network_interface=<interface> --damp\n\nExample Commands:\n- zero_torque\n- start\n- squat\n- sit\n- stand_up\n\nFSM Control:\n- get_fsm_id\n- set_fsm_id=500 or 801\n\nMotion Control:\n- continuous_gait=true/false\n- set_velocity=\"0 0 0.2 1\"\n- move=\"0 0 0.2\"\n\nLocal File:\ng1_loco_template.cpp"
+  },
+  {
+    "title": "Unitree Customer Service",
+    "notes": "https://global-serviceconsole.unitree.com/mobile/index.html#/\nhttps://global-serviceconsole.unitree.com/#/"
+  },
+  {
+    "title": "G1 microphone and audio documentation",
+    "notes": "https://support.unitree.com/home/en/G1_developer/VuiClient_Service"
+  },
+  {
+    "title": "Unitree Motors SDK",
+    "notes": "https://github.com/unitreerobotics/unitree_actuator_sdk"
+  },
+  {
+    "title": "Using the Unitree APP (G1 connection and control)",
+    "notes": "Connecting to G1 via WiFi (hotspot mode):\n1. Turn on the robot.\n2. Connect phone WiFi to a hotspot.\n3. Open Unitree App: Device -> Robot Settings -> WiFi mode.\n4. Enter hotspot name and password.\n5. Wait for connection.\n\nConnecting to G1 via AP mode:\n1. Turn on the robot.\n2. Connect phone WiFi to robot SSID (e.g., G1_6582).\n3. Turn OFF cellular data.\n4. In Unitree App: Device -> Robot Settings -> AP-mode.\n5. Use robot name (e.g., G1_6582) and password (e.g., Legs124&).\n6. Wait for connection.\n\nApp features after connection:\n1. Go: Damping mode -> Preparation -> Walk W. Use joystick for movement (forward, side, turn).\n2. Go: Pre-programmed motions (high five, handshake, hug, clap, face wave).\n3. BenBen: Available only in WiFi mode.\n4. Device: Check battery, motor temperature, calibration.\n5. Device -> Service status: Enable/disable robot applications."
+  },
+  {
+    "title": "Go1 update",
+    "notes": "https://www.unitree.com/download/go1"
+  },
+  {
+    "title": "Go1 leg calibration",
+    "notes": "https://www.youtube.com/watch?v=cOuoeAt8ka4"
+  },
+  {
+    "title": "Go1 info and setting up motor ids",
+    "notes": "Unitree actuator SDK\nhttps://github.com/unitreerobotics/unitree_actuator_sdk/tree/main/example\n\nLocal file: GO_Motor_User_Manual.pdf\n\nOther info\nhttps://deepwiki.com/unitreerobotics/unitree_actuator_sdk/3.3-go-m8010-6-motor\n\nhttps://www.manualslib.com/manual/3404486/Unitree-Go-M8010-6.html?page=4&utm_source=chatgpt.com"
+  },
+  {
+  "title": "Go1 motor debugging guide",
+  "notes": "Local file: GO1_debug_not_standing.pdf\n\nVideo: https://youtu.be/dUJUYd9EShI?si=VBhpNLGtNcReMEnB"
+  },
+  {
+    "title": "How to Open Go1",
+    "notes": "https://m.youtube.com/watch?v=71iikAynvmc&pp=0gcJCZoBo7VqN5tD"
+  },
+  {
+    "title": "Unitree resources",
+    "notes": "https://www.unitree.com/opensource"
+  },
+  {
+    "title": "A1 motor replacement",
+    "notes": "Local file: A1_Motor_Replacement.pdf\n\nhttps://unitree-docs.readthedocs.io/en/latest/A1/A1.html#which-statement-returns-version-information-that-is-the-version"
+  }
+]
