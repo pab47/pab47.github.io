@@ -1,5 +1,18 @@
 [
 	{
+		"img": "people/md_safwan_mondal.png",
+		"name": "Md Safwan Mondal (MS & PhD, ME UIC)",
+		"years": "Aug 2021 - May 2026",
+		"study": "MS Thesis: Energy-Constrained UAV-UGV Cooperative Systems: A Bilevel Optimization Framework for Routing in Heterogeneous Multi-Agent Systems",
+		"study": "PhD Thesis: Reliable Aerial-Ground Collaboration: Learning-Based Energy-Aware Routing and Field Deployment",
+		"links": [
+			{ "label": "MS Thesis", "url": "reports/Mondal_Mohammad_Safwan_MS_Thesis.pdf"},
+			{ "label": "PhD Thesis", "url": "reports/Mondal_Mohammad_Safwan_PhD_Thesis.pdf"},
+			{ "label": "Website", "url": "https://sites.google.com/view/safwan-mondal/home"},
+			{ "label": "Github", "url": "https://github.com/imsafwan"}
+		]
+	},
+	{
 		"img": "people/Francesco_Marchi.png",
 		"name": "Francesco Marchi (MS, ECE UIC)",
 		"years": "Jan 2026 - May 2026",
