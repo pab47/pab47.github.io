@@ -7,6 +7,10 @@
     "title": "G1 development development guide",
     "notes": "https://support.unitree.com/home/en/G1_developer"
   },
+ {
+  "title": "G1 quick development",
+  "notes": "https://support.unitree.com/home/en/G1_developer/quick_development\n1. Set the IP address and subnet mask to program the robot.\n2. Connect the robot to the computer with an Ethernet cable.\n3. The robot is at IP address 192.168.123.161, so you can set the computer's IP address to any unused value other than 161, e.g., 192.168.123.222.\n4. The subnet mask should be 255.255.255.0.\n5. To check the connection in Terminal, type: ping 192.168.123.161\n6. Identify the network interface name corresponding to the Ethernet connection by typing ifconfig. It should be something like en***.\n7. Once the robot is set to debug mode, navigate to build/bin and type: ./g1_ankle_swing_example en***\n8. If everything worked correctly, the robot should bend its elbows and move its ankles."
+}
   {
     "title": "Unitree Discord Channel",
     "notes": "https://discord.gg/Ek8679c5"
