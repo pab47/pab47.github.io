@@ -154,6 +154,7 @@ try:
         pygame.event.pump()  # Process event queue
         current_time = time.time()
 
+        x_axis_left = joystick.get_axis(0)  # Left joystick left-right
         y_axis_left = joystick.get_axis(1)  # Left joystick up-down
         x_axis_right = joystick.get_axis(3)  # Right joystick left-right
         y_axis_right = joystick.get_axis(4)  # Right joystick up-down
@@ -167,6 +168,16 @@ try:
             elif y_axis_left > 0.5:
                 with action_lock:
                     AGC.runActionGroup('go_backward')
+                last_action_time = current_time
+
+            # Sideways movement (strafe) with left joystick left-right
+            if x_axis_left < -0.5:
+                with action_lock:
+                    AGC.runActionGroup('left_move')
+                last_action_time = current_time
+            elif x_axis_left > 0.5:
+                with action_lock:
+                    AGC.runActionGroup('right_move')
                 last_action_time = current_time
 
             # Turning with left and right bumpers
