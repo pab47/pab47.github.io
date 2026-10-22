@@ -60,6 +60,10 @@
     "notes": "https://support.unitree.com/home/en/G1_developer/VuiClient_Service"
   },
   {
+  "title": "G1 waist fastener installation",
+  "notes": "https://youtu.be/XC3ASk6jjDg"
+  },
+  {
     "title": "Unitree Motors SDK",
     "notes": "https://github.com/unitreerobotics/unitree_actuator_sdk"
   },
@@ -94,5 +98,12 @@
   {
     "title": "A1 motor replacement",
     "notes": "Local file: A1_Motor_Replacement.pdf\n\nhttps://unitree-docs.readthedocs.io/en/latest/A1/A1.html#which-statement-returns-version-information-that-is-the-version"
-  }
+  },
+  {
+    "title": "Unitree Google Drive",
+    "notes": "https://drive.google.com/drive/folders/1TbeHQN-W5JrQWb6QFPa4sltCKAzI6xv2"
+  },
+  {
+    "title": "G1 after sales videos",
+    "notes": "https://drive.google.com/drive/folders/1z6P6AGy27TNwPwxaQdNhst6k8zvKFTyU"
 ]
