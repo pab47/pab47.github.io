@@ -1,5 +1,17 @@
 [
 	{
+		"img": "people/daniel_torres.png",
+		"name": "Daniel Torres (PhD, ME UIC)",
+		"years": "Jan 2021 - Aug 2026",
+		"study": "PhD Thesis: Reduced-Order Planning and Control for Legged Robot Navigation in Cluttered Environments",
+		"links": [
+			{ "label": "PhD Thesis", "url": "reports/Daniel_Torres_PhD_Thesis.pdf"},
+			{ "label": "Video1 Humanoid", "url": "https://www.youtube.com/watch?v=qrsJSlLEKr8"},
+			{ "label": "Video2 Humanoid", "url": "https://www.youtube.com/watch?v=jXV6v_vwQ0s"}
+			{ "label": "Video3 Quadruped", "url": "https://www.youtube.com/watch?v=SsMxkl8Wdso"}
+		]
+	},
+	{
 		"img": "people/md_safwan_mondal.png",
 		"name": "Md Safwan Mondal (MS & PhD, ME UIC)",
 		"years": "Aug 2021 - May 2026",
