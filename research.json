@@ -1,6 +1,20 @@
 [
 	{
 		"year": "2026",
+		"title": "3. Daniel Torres and Pranav A. Bhounsule, Constrained Full-Body Inverse Dynamics Enables Leg-Enhanced Kinematic Models for Obstacle Avoidance and Stepping Over in Cluttered Environments, Modeling, Estimation and Controls Conference (MECC), Phoenix, AZ, USA, Oct 25-28, 2026",
+		"links": [
+			{ "label": "Paper", "url": "https://pab47.github.io/papers/2026Torres_Constrained.pdf"}
+		]
+	},
+	{
+		"year": "2026",
+		"title": "2. Daniel Torres and Pranav A. Bhounsule, Comparative Study of Local Planners for Quadrupeds Using BARN Environments, Modeling, Estimation and Controls Conference (MECC), Phoenix, AZ, USA, Oct 25-28, 2026",
+		"links": [
+			{ "label": "Paper", "url": "https://pab47.github.io/papers/2026Torres_Comparative.pdf"}
+		]
+	},
+	{
+		"year": "2026",
 		"title": "1. Pranav A. Bhounsule, Daniel Torres, and Salvador Echeveste. A Low-Cost, Scalable Mechatronics Course Centered on Tinker-and-Build Laboratories and Project-Based Learning , ASEE IL-IN 2026",
 		"links": [
 			{ "label": "Paper", "url": "https://pab47.github.io/papers/2026Bhounsule_mechatronics.pdf"}
