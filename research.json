@@ -1,6 +1,14 @@
 [
 	{
 		"year": "2026",
+		"title": "4. Md. Safwan Mondal, Subramanian Ramasamy, James D. Humann, James M. Dotterweich, Pranav A. Bhounsule, Deep Reinforcement Learning Enabled Persistent Surveillance with Energy-Aware UAV-UGV Systems for Disaster Management Applications, IEEE Transactions on Intelligent Vehicles, vol. 11, no. 8, pp. 914-929, Aug 2026. doi: 10.1109/TIV.2026.3696943",
+		"links": [
+			{ "label": "Paper", "url": "https://pab47.github.io/papers/2026Mondal_Deep.pdf"},
+			{ "label": "Webpage", "url": "https://sites.google.com/view/ecucps"}
+		]
+	},
+	{
+		"year": "2026",
 		"title": "3. Daniel Torres and Pranav A. Bhounsule, Constrained Full-Body Inverse Dynamics Enables Leg-Enhanced Kinematic Models for Obstacle Avoidance and Stepping Over in Cluttered Environments, Modeling, Estimation and Controls Conference (MECC), Phoenix, AZ, USA, Oct 25-28, 2026",
 		"links": [
 			{ "label": "Paper", "url": "https://pab47.github.io/papers/2026Torres_Constrained.pdf"},
