@@ -1,5 +1,27 @@
 [
 	{
+		"title": "Summer internship: Sound Feedback for Posture Correction (UIC SHARP program)",
+		"years": "June 2026 - July 2026",
+		"major": "High School Student",
+		"links": [
+			{ "label": "Sound Feedback for Posture Correction", "url": "reports/Posture_Correction.pdf"}
+		],
+		"people": [
+			{ "name": "Umang Patel", "img": "people/umang_patel.png"}
+		]
+	},
+	{
+		"title": "Summer internship: Upper-Extremity Biomechanics Using Low-Cost IMU and Computer Vision Tracking (UIC SHARP program)",
+		"years": "June 2026 - July 2026",
+		"major": "High School Student",
+		"links": [
+			{ "label": "Upperbody Biomechanics", "url": "reports/Upperbody_Biomechanics.pdf"}
+		],
+		"people": [
+			{ "name": "Ethan Avila", "img": "people/ethan_avila.png"}
+		]
+	},
+	{
 		"title": "Senior Design Project: Bicopter: Design & Control",
 		"years": "Aug 2025 - May 2026",
 		"major": "ME/IE Seniors",
